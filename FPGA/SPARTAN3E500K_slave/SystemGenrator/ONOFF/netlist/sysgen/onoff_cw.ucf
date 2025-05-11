@@ -1,0 +1,38 @@
+
+
+# Global period constraint
+NET "clk" TNM_NET = "clk_aaa28ed5";
+TIMESPEC "TS_clk_aaa28ed5" = PERIOD "clk_aaa28ed5" 20.0 ns HIGH 50 %;
+
+# Offset in constraints
+
+# Offset out constraints
+
+# Offset inout constraints
+
+# LOC constraints
+NET "clk" LOC = "Fixed";
+NET "ja1(7)" LOC = "M16";
+NET "ja1(6)" LOC = "M14";
+NET "ja1(5)" LOC = "L16";
+NET "ja1(4)" LOC = "K13";
+NET "ja1(3)" LOC = "M15";
+NET "ja1(2)" LOC = "L17";
+NET "ja1(1)" LOC = "K12";
+NET "ja1(0)" LOC = "L15";
+NET "jb1(7)" LOC = "U18";
+NET "jb1(6)" LOC = "T18";
+NET "jb1(5)" LOC = "R16";
+NET "jb1(4)" LOC = "P17";
+NET "jb1(3)" LOC = "T17";
+NET "jb1(2)" LOC = "R15";
+NET "jb1(1)" LOC = "R18";
+NET "jb1(0)" LOC = "M13";
+NET "jc1(7)" LOC = "J12";
+NET "jc1(6)" LOC = "G16";
+NET "jc1(5)" LOC = "F14";
+NET "jc1(4)" LOC = "H15";
+NET "jc1(3)" LOC = "H16";
+NET "jc1(2)" LOC = "G13";
+NET "jc1(1)" LOC = "J16";
+NET "jc1(0)" LOC = "G15";

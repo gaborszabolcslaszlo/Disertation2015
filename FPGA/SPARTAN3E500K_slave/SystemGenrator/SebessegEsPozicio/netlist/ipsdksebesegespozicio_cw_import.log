@@ -1,0 +1,17 @@
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/ipsd
+   ksebesegespozicio_cw.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/ipsd
+   ksebesegespozicio.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+INFO:TclTasksC:2031 - Property "Register Duplication" is currently disabled, due
+   to the value of another property. The value has been get but will not be
+   used.
+INFO:TclTasksC:1786 - Property "Map Effort Level" is currently disabled, due to
+   the value of another property. The value has been set but will not be used.

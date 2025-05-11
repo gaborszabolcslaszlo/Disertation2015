@@ -1,0 +1,24 @@
+add_file -constraint "ipsdksebesegespozicio_cw.sdc"
+add_file -vhdl -lib work "ipsdksebesegespozicio.vhd"
+add_file -vhdl -lib work "ipsdksebesegespozicio_cw.vhd"
+
+project -result_file "ipsdksebesegespozicio_cw.edf"
+
+set_option -top_module ipsdksebesegespozicio_cw
+set_option -technology spartan3e
+set_option -part xc3s500e
+set_option -package pq208
+set_option -speed_grade -4
+set_option -default_enum_encoding sequential
+set_option -symbolic_fsm_compiler false
+set_option -resource_sharing true
+set_option -frequency 100
+set_option -auto_constrain_io 0
+set_option -fanout_limit 50000
+set_option -maxfan_hard false
+set_option -pipe 1
+set_option -retiming 1
+set_option -disable_io_insertion false
+set_option -write_verilog false
+set_option -write_vhdl false
+set_option -write_apr_constraint true

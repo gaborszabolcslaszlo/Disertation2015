@@ -1,0 +1,7 @@
+INFILE=C:\Diak\gl\Zybo_master\implementation\system.ncd
+OUTFILE=C:\Diak\gl\Zybo_master\implementation\system.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=C:\Diak\gl\Zybo_master\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

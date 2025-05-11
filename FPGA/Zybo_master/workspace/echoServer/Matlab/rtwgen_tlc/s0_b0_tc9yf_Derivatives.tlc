@@ -1,0 +1,15 @@
+%implements s0_b0_tc9yf_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign localVarDecl = ""
+%assign tlcDerivativesFcnOfS0B0 = OpaqueTLCBlockFcn("Derivatives", 0, 0, 0, 3)
+%assign tlcDerivativesFcnOfS0B12 = OpaqueTLCBlockFcn("Derivatives", 0, 12, 0, 3)
+%<tlcDerivativesFcnOfS0B0>\
+%<tlcDerivativesFcnOfS0B12>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

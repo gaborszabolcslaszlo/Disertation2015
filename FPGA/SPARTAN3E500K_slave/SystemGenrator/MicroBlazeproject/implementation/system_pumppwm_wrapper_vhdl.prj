@@ -1,0 +1,4 @@
+vhdl pwmmodlmag_plbw_v2_00_a "C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmodlmag_plbw_v2_00_a\hdl\vhdl\pwmmodlmag.vhd"
+vhdl pwmmodlmag_plbw_v2_00_a "C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmodlmag_plbw_v2_00_a\hdl\vhdl\pwmmodlmag_cw.vhd"
+vhdl pwmmodlmag_plbw_v2_00_a "C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmodlmag_plbw_v2_00_a\hdl\vhdl\pwmmodlmag_plbw.vhd"
+vhdl work "C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\hdl\system_pumppwm_wrapper.vhd"

@@ -1,0 +1,68 @@
+/*
+ * uartSend.c
+ *
+ *  Created on: Mar 19, 2015
+ *      Author: gaborsz
+ */
+#include "xparameters.h"
+#include "xuartps.h"
+#include  "UartSend.h"
+#include "xuartns550.h"
+#include "xiicps.h"
+#include "xuartns550.h"
+#include "xil_printf.h"
+#include "UartSend.h"
+
+XUartPs Uart_Ps;            /* PS  */
+XUartNs550 UartNs550;		/* GPS */
+
+int Send_PC(u16 DeviceId,u8 *data,int size)
+{
+		int Status;
+		int SentCount=0;
+		XUartPs_Config *Config;
+		Config = XUartPs_LookupConfig(DeviceId);
+		if (NULL == Config) {
+			return XST_FAILURE;
+		}
+		Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+		XUartPs_SetBaudRate(&Uart_Ps, 115200);
+		while (SentCount < size)
+		{
+		  SentCount+=XUartPs_Send(&Uart_Ps, &data[SentCount] ,1);
+		}
+	return 0;
+}
+u8* Rec_PC(u16 DeviceId,u8 *data,int size)
+{
+	    u8 datain[size]=;
+		int Status;
+		int SentCount=0;
+		XUartPs_Config *Config;
+		Config = XUartPs_LookupConfig(DeviceId);
+		Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+		XUartPs_SetBaudRate(&Uart_Ps, 115200);
+		while (SentCount < size)
+		{
+		  SentCount+=XUartPs_Send(&Uart_Ps, &data[SentCount] ,1);
+		}
+	return 0;
+}
+int Send_GPS(u16 DeviceId,u8 *data,int size)
+{
+	    int SentCount;
+		XUartNs550_Initialize(&UartNs550, DeviceId);
+		while (SentCount < size)
+		{
+			SentCount+=XUartNs550_Send(&UartNs550,&data[SentCount], 1);
+		}
+	return 0;
+}
+
+XUartNs550_Recv
+
+
+

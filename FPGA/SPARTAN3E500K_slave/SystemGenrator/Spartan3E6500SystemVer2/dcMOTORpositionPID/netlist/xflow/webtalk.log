@@ -1,0 +1,16 @@
+Release 14.7 - WebTalk (P.20131013)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=da03f83ddef3430881171e8abe77523d
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/xflow/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-02-19T20:45:39.  For additional details about this file, please refer to the WebTalk help file at c:/xilinx/14.7/ise_ds/ise/data/reports/webtalk_introduction.html

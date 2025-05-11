@@ -1,0 +1,8 @@
+INTSTYLE=xflow
+INFILE=C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\SebessegEsPozicio\netlist\xflow\jtagcosim_top.ncd
+OUTFILE=C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\SebessegEsPozicio\netlist\xflow\jtagcosim_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4pq208
+WORKINGDIR=C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\SebessegEsPozicio\netlist\xflow
+LICENSE=WebPack
+USER_INFO=__0_0_0

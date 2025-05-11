@@ -1,0 +1,33 @@
+#
+# Filename:    sparten3e500kpq208c4ip3motrokmerev2.ucf
+#
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              meresv2
+#
+
+NET "sys_clk" LOC = "P184";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 50 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.
+NET sebsensor(0) LOC = "P47"; # sebsensor contingent
+NET sebsensor(1) LOC = "P45"; # sebsensor contingent
+NET PosistionSens(0) LOC = "P49"; # posistionsens contingent
+NET PosistionSens(1) LOC = "P48"; # posistionsens contingent
+NET PWMseb(0) LOC = "P134"; # pwmseb contingent
+NET PWMseb(1) LOC = "P133"; # pwmseb contingent
+NET PWMpos(0) LOC = "P137"; # pwmpos contingent
+NET PWMpos(1) LOC = "P135"; # pwmpos contingent
+NET tobbi(0) LOC = "P153"; # tobbi contingent
+NET tobbi(1) LOC = "P160"; # tobbi contingent
+NET tobbi(2) LOC = "P151"; # tobbi contingent
+NET tobbi(3) LOC = "P152"; # tobbi contingent
+NET tobbi(4) LOC = "P150"; # tobbi contingent
+NET tobbi(5) LOC = "P147"; # tobbi contingent
+NET tobbi(6) LOC = "P146"; # tobbi contingent
+NET tobbi(7) LOC = "P145"; # tobbi contingent
+NET tobbi(8) LOC = "P144"; # tobbi contingent
+NET tobbi(9) LOC = "P140"; # tobbi contingent
+NET tobbi(10) LOC = "P139"; # tobbi contingent
+NET tobbi(11) LOC = "P138"; # tobbi contingent

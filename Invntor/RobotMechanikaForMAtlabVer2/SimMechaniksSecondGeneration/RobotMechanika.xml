@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PhysicalModelingXMLFile>
+
+  <formatVersion>"1.0.4"</formatVersion>
+
+  <internalVersion>1</internalVersion>
+
+  <createdUsing>"This field is no longer used - PLACE HOLDER"</createdUsing>
+
+  <createdFrom>"Autodesk Inventor 2015 SP1 (Build 190203100, 203)"</createdFrom>
+
+  <createdOn>"laca"</createdOn>
+
+  <createdBy>"03/29/15||23:11:29"</createdBy>
+
+  <name>"RobotMechanika (LevelofDetail1)"</name>
+
+  <SimMechanics>
+    <name>"RobotMechanika (LevelofDetail1)"</name>
+    <nodeID>"RobotMechanika (LevelofDetail1)"</nodeID>
+    <bodies>
+      <Body>
+        <name>"RobotAlvaz:2"</name>
+        <nodeID>"RobotAlvaz:2"</nodeID>
+        <status>""</status>
+        <mass>2050.44</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>977074,104877,7021.44,104877,2.1698e+006,4307.14,7021.44,4307.14,1.23464e+006</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>2.05044e+006</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>2.07628e+006</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotAlvaz:2::CG(AUTOGEN)"</nodeID>
+            <position>606.53,175.633,-169.455</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.0183286,0.999285,0.0330604,-0.997601,0.0204854,-0.0661247,-0.0667547,-0.0317691,0.997264</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotAlvaz:2::CS1(AUTOGEN)"</nodeID>
+            <position>788.16,-704.508,186.341</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.0183286,0.999285,0.0330604,-0.997601,0.0204854,-0.0661247,-0.0667547,-0.0317691,0.997264</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="2">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotAlvaz:2:-:RobotMechanika (LevelofDetail1)/RootPart::RobotAlvaz:2(AUTOGEN)"</nodeID>
+            <position>606.53,175.633,-169.455</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="4">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:7:-:RobotAlvaz:2::RobotAlvaz:2(AUTOGEN)"</nodeID>
+            <position>596.951,-104.706,-464.744</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="6">
+            <name>"CS4"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:5:-:RobotAlvaz:2::RobotAlvaz:2(AUTOGEN)"</nodeID>
+            <position>658.02,473.643,-442.232</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="8">
+            <name>"CS5"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:8:-:RobotAlvaz:2::RobotAlvaz:2(AUTOGEN)"</nodeID>
+            <position>620.01,455.553,125.61</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="10">
+            <name>"CS6"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:6:-:RobotAlvaz:2::RobotAlvaz:2(AUTOGEN)"</nodeID>
+            <position>558.941,-122.796,103.098</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"RobotAlvaz_ipt_1e4a51c.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.376471,0.376471,0.376471</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>1</specular>
+          <shininess>0.2</shininess>
+          <transparency>0</transparency>
+          <emission>0.2</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"RootPart"</name>
+        <nodeID>"RobotMechanika (LevelofDetail1)/RootPart"</nodeID>
+        <status>""</status>
+        <mass>0</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>0,0,0,0,0,0,0,0,0</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>0</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>0</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotMechanika (LevelofDetail1)/RootPart::CG(AUTOGEN)"</nodeID>
+            <position>623.711,142.019,-169.527</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotMechanika (LevelofDetail1)/RootPart::CS1(AUTOGEN)"</nodeID>
+            <position>0,0,0</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="1">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotAlvaz:2:-:RobotMechanika (LevelofDetail1)/RootPart::RobotMechanika (LevelofDetail1)/RootPart(AUTOGEN)"</nodeID>
+            <position>606.53,175.633,-169.455</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="12">
+            <name>"CS3"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotMechanika (LevelofDetail1)/RootPart:-:RootGround::RobotMechanika (LevelofDetail1)/RootPart(AUTOGEN)"</nodeID>
+            <position>623.711,142.019,-169.527</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>""</geometryFileName>
+      </Body>
+      <Body>
+        <name>"KarMerev:5"</name>
+        <nodeID>"KarMerev:5"</nodeID>
+        <status>""</status>
+        <mass>909.653</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>46929,82845.4,4783.86,82845.4,200083,-2139.27,4783.86,-2139.27,239094</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>909653</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>240896</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:5::CG(AUTOGEN)"</nodeID>
+            <position>730.896,444.123,-479.441</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.998953,-0.000361776,0.0457455,-0.000776496,0.999691,0.0248625,-0.0457404,-0.024872,0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:5::CS1(AUTOGEN)"</nodeID>
+            <position>943.359,420.357,-390.549</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.998953,-0.000361776,0.0457455,-0.000776496,0.999691,0.0248625,-0.0457404,-0.024872,0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="5">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:5:-:RobotAlvaz:2::KarMerev:5(AUTOGEN)"</nodeID>
+            <position>658.02,473.643,-442.232</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"KarMerev_ipt_6c6da441.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.376471,0.376471,0.376471</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>1</specular>
+          <shininess>0.2</shininess>
+          <transparency>0</transparency>
+          <emission>0.2</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"KarMerev:6"</name>
+        <nodeID>"KarMerev:6"</nodeID>
+        <status>""</status>
+        <mass>909.653</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>46929,82845.4,4783.86,82845.4,200083,-2139.27,4783.86,-2139.27,239094</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>909653</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>240896</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:6::CG(AUTOGEN)"</nodeID>
+            <position>535.889,-197.969,140.307</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>-0.62973,-0.775466,-0.0457455,-0.77532,0.631079,-0.0248625,0.048149,0.0198108,-0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:6::CS1(AUTOGEN)"</nodeID>
+            <position>420.338,-377.839,51.4147</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>-0.62973,-0.775466,-0.0457455,-0.77532,0.631079,-0.0248625,0.048149,0.0198108,-0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="9">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:6:-:RobotAlvaz:2::KarMerev:6(AUTOGEN)"</nodeID>
+            <position>558.941,-122.796,103.098</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"KarMerev_ipt_6c6da441.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.376471,0.376471,0.376471</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>1</specular>
+          <shininess>0.2</shininess>
+          <transparency>0</transparency>
+          <emission>0.2</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"KarMerev:7"</name>
+        <nodeID>"KarMerev:7"</nodeID>
+        <status>""</status>
+        <mass>909.653</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>46929,82845.4,4783.86,82845.4,200083,-2139.27,4783.86,-2139.27,239094</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>909653</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>240896</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:7::CG(AUTOGEN)"</nodeID>
+            <position>669.827,-134.226,-501.952</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.998953,-0.000361776,0.0457455,-0.000776496,0.999691,0.0248625,-0.0457404,-0.024872,0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:7::CS1(AUTOGEN)"</nodeID>
+            <position>882.29,-157.992,-413.061</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>0.998953,-0.000361776,0.0457455,-0.000776496,0.999691,0.0248625,-0.0457404,-0.024872,0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="3">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:7:-:RobotAlvaz:2::KarMerev:7(AUTOGEN)"</nodeID>
+            <position>596.951,-104.706,-464.744</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"KarMerev_ipt_6c6da441.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.376471,0.376471,0.376471</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>1</specular>
+          <shininess>0.2</shininess>
+          <transparency>0</transparency>
+          <emission>0.2</emission>
+        </MaterialProp>
+      </Body>
+      <Body>
+        <name>"KarMerev:8"</name>
+        <nodeID>"KarMerev:8"</nodeID>
+        <status>""</status>
+        <mass>909.653</mass>
+        <massUnits>"g"</massUnits>
+        <inertia>46929,82845.4,4783.86,82845.4,200083,-2139.27,4783.86,-2139.27,239094</inertia>
+        <inertiaUnits>"g*cm^2"</inertiaUnits>
+        <volume>909653</volume>
+        <volumeUnits>"mm^3"</volumeUnits>
+        <surfaceArea>240896</surfaceArea>
+        <surfaceAreaUnits>"mm^2"</surfaceAreaUnits>
+        <frames>
+          <Frame>
+            <name>"CG"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:8::CG(AUTOGEN)"</nodeID>
+            <position>596.958,380.381,162.818</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>-0.62973,-0.775466,-0.0457455,-0.77532,0.631079,-0.0248625,0.048149,0.0198108,-0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame>
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:8::CS1(AUTOGEN)"</nodeID>
+            <position>481.407,200.51,73.9266</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>-0.62973,-0.775466,-0.0457455,-0.77532,0.631079,-0.0248625,0.048149,0.0198108,-0.998644</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+          <Frame ref="7">
+            <name>"CS2"</name>
+            <displayName>""</displayName>
+            <nodeID>"KarMerev:8:-:RobotAlvaz:2::KarMerev:8(AUTOGEN)"</nodeID>
+            <position>620.01,455.553,125.61</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frames>
+        <geometryFileName>"KarMerev_ipt_6c6da441.STL"</geometryFileName>
+        <MaterialProp>
+          <color>0.376471,0.376471,0.376471</color>
+          <ambient>1</ambient>
+          <diffuse>1</diffuse>
+          <specular>1</specular>
+          <shininess>0.2</shininess>
+          <transparency>0</transparency>
+          <emission>0.2</emission>
+        </MaterialProp>
+      </Body>
+    </bodies>
+    <joints>
+      <SimpleJoint>
+        <name>"RootPart--RobotAlvaz:2"</name>
+        <nodeID>"RobotAlvaz:2:-:RobotMechanika (LevelofDetail1)/RootPart"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="1"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="2"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"KarMerev:7--RobotAlvaz:2"</name>
+        <nodeID>"KarMerev:7:-:RobotAlvaz:2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="3"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="4"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.0667547,0.0317691,-0.997264</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"KarMerev:5--RobotAlvaz:2"</name>
+        <nodeID>"KarMerev:5:-:RobotAlvaz:2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="5"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="6"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.0667547,0.0317691,-0.997264</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"KarMerev:8--RobotAlvaz:2"</name>
+        <nodeID>"KarMerev:8:-:RobotAlvaz:2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="7"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="8"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-0.0667547,-0.0317691,0.997264</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"KarMerev:6--RobotAlvaz:2"</name>
+        <nodeID>"KarMerev:6:-:RobotAlvaz:2"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="9"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="10"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"prismatic"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>-0.0667547,-0.0317691,0.997264</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+      <SimpleJoint>
+        <name>"RootGround--RootPart"</name>
+        <nodeID>"RobotMechanika (LevelofDetail1)/RootPart:-:RootGround"</nodeID>
+        <status>""</status>
+        <base>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="11"></Frame>
+            </connection>
+          </JointSide>
+        </base>
+        <follower>
+          <JointSide>
+            <name>""</name>
+            <connection>
+              <Frame ref="12"></Frame>
+            </connection>
+          </JointSide>
+        </follower>
+        <primitives>
+          <Primitive>
+            <name>"weld"</name>
+            <nodeID>""</nodeID>
+            <referenceFrame>"WORLD"</referenceFrame>
+            <axis>0.57735,0.57735,0.57735</axis>
+          </Primitive>
+        </primitives>
+      </SimpleJoint>
+    </joints>
+    <grounds>
+      <Ground>
+        <name>"RootGround"</name>
+        <nodeID>"RootGround"</nodeID>
+        <status>""</status>
+        <frame>
+          <Frame ref="11">
+            <name>"CS1"</name>
+            <displayName>""</displayName>
+            <nodeID>"RobotMechanika (LevelofDetail1)/RootPart:-:RootGround::RootGround(AUTOGEN)"</nodeID>
+            <position>623.711,142.019,-169.527</position>
+            <positionOrigin>"WORLD"</positionOrigin>
+            <positionReferenceFrame>"WORLD"</positionReferenceFrame>
+            <positionUnits>"mm"</positionUnits>
+            <orientation>1,0,0,0,1,0,0,0,1</orientation>
+            <orientationType>"3x3 Transform"</orientationType>
+            <orientationUnits>"rad"</orientationUnits>
+            <orientationReferenceFrame>"WORLD"</orientationReferenceFrame>
+          </Frame>
+        </frame>
+      </Ground>
+    </grounds>
+    <subsystems></subsystems>
+    <connectionPorts></connectionPorts>
+    <id>0</id>
+  </SimMechanics>
+
+</PhysicalModelingXMLFile>

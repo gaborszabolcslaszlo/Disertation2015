@@ -1,0 +1,5 @@
+{
+  'addsub' => 'SELECT Adder_Subtracter spartan3e Xilinx,_Inc. 11.0',
+  'counter' => 'SELECT Binary_Counter spartan3e Xilinx,_Inc. 11.0',
+  'mult' => 'SELECT Multiplier spartan3e Xilinx,_Inc. 11.2'
+}

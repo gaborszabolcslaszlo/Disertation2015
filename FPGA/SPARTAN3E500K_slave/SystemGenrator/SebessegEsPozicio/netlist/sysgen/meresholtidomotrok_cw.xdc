@@ -1,0 +1,26 @@
+
+
+# Global period constraint
+create_clock -name clk -period 20.0 [get_ports clk]
+# LOC constraints
+set_property LOC Fixed [get_ports clk]
+set_property LOC P48 [get_ports {posistionsens[1]}]
+set_property LOC P49 [get_ports {posistionsens[0]}]
+set_property LOC P135 [get_ports {pwmpos[1]}]
+set_property LOC P137 [get_ports {pwmpos[0]}]
+set_property LOC P133 [get_ports {pwmseb[1]}]
+set_property LOC P134 [get_ports {pwmseb[0]}]
+set_property LOC P45 [get_ports {sebsensor[1]}]
+set_property LOC P47 [get_ports {sebsensor[0]}]
+set_property LOC P138 [get_ports {tobbi[11]}]
+set_property LOC P139 [get_ports {tobbi[10]}]
+set_property LOC P140 [get_ports {tobbi[9]}]
+set_property LOC P144 [get_ports {tobbi[8]}]
+set_property LOC P145 [get_ports {tobbi[7]}]
+set_property LOC P146 [get_ports {tobbi[6]}]
+set_property LOC P147 [get_ports {tobbi[5]}]
+set_property LOC P150 [get_ports {tobbi[4]}]
+set_property LOC P152 [get_ports {tobbi[3]}]
+set_property LOC P151 [get_ports {tobbi[2]}]
+set_property LOC P160 [get_ports {tobbi[1]}]
+set_property LOC P153 [get_ports {tobbi[0]}]

@@ -1,0 +1,461 @@
+V3 203
+FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd 2015/03/02.11:23:49 P.68d
+EN work/addsb_11_0_80bded47015320ce 1425288238 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/addsb_11_0_80bded47015320ce/addsb_11_0_80bded47015320ce_a 1425288239 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/addsb_11_0_80bded47015320ce 1425288238
+EN work/addsb_11_0_d2b0e63c2ff9bf9d 1425288240 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/addsb_11_0_d2b0e63c2ff9bf9d/addsb_11_0_d2b0e63c2ff9bf9d_a 1425288241 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/addsb_11_0_d2b0e63c2ff9bf9d 1425288240
+EN work/cntr_11_0_74252206ec4646ae 1425288242 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/cntr_11_0_74252206ec4646ae/cntr_11_0_74252206ec4646ae_a 1425288243 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/cntr_11_0_74252206ec4646ae 1425288242
+EN work/cntr_11_0_e7c6fab986d296a4 1425288244 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/cntr_11_0_e7c6fab986d296a4/cntr_11_0_e7c6fab986d296a4_a 1425288245 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/cntr_11_0_e7c6fab986d296a4 1425288244
+EN work/mult_11_2_b39611ba5425a680 1425288246 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/mult_11_2_b39611ba5425a680/mult_11_2_b39611ba5425a680_a 1425288247 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mult_11_2_b39611ba5425a680 1425288246
+EN work/mult_11_2_b9a510f8f49a69d2 1425288248 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/mult_11_2_b9a510f8f49a69d2/mult_11_2_b9a510f8f49a69d2_a 1425288249 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mult_11_2_b9a510f8f49a69d2 1425288248
+PH work/conv_pkg 1425288250 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+PB work/conv_pkg 1425288251 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PH work/conv_pkg 1425288250
+EN work/srl17e 1425288252 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/srl17e/structural 1425288253 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/srl17e 1425288252 CP srl16e CP fde
+EN work/synth_reg 1425288254 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/synth_reg/structural 1425288255 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/synth_reg 1425288254 CP srl17e
+EN work/synth_reg_reg 1425288256 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/synth_reg_reg/behav 1425288257 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/synth_reg_reg 1425288256
+EN work/single_reg_w_init 1425288258 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/single_reg_w_init/structural 1425288259 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/single_reg_w_init 1425288258 CP fdre CP fdse
+EN work/synth_reg_w_init 1425288260 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/synth_reg_w_init/structural 1425288261 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/synth_reg_w_init 1425288260 CP single_reg_w_init
+EN work/convert_func_call 1425288262 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/convert_func_call/behavior 1425288263 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/convert_func_call 1425288262
+EN work/xlconvert 1425288264 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/xlconvert/behavior 1425288265 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xlconvert 1425288264 CP convert_func_call CP synth_reg
+EN work/reinterpret_f21e7f2ddf 1425288266 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/reinterpret_f21e7f2ddf/behavior 1425288267 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/reinterpret_f21e7f2ddf 1425288266
+EN work/xladdsub_onOff 1425288268 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB work/conv_pkg 1425288251
+AR work/xladdsub_onOff/behavior 1425288269 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xladdsub_onOff 1425288268 CP addsb_11_0_80bded47015320ce \
+      CP addsb_11_0_d2b0e63c2ff9bf9d CP synth_reg
+EN work/bitbasher_b142b1358a 1425288270 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/bitbasher_b142b1358a/behavior 1425288271 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/bitbasher_b142b1358a 1425288270
+EN work/xldelay 1425288272 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/xldelay/behavior 1425288273 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xldelay 1425288272 CP synth_reg CP synth_reg_reg
+EN work/inverter_e5b38cca3b 1425288274 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/inverter_e5b38cca3b/behavior 1425288275 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/inverter_e5b38cca3b 1425288274
+EN work/logical_80f90b97d0 1425288276 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/logical_80f90b97d0/behavior 1425288277 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/logical_80f90b97d0 1425288276
+EN work/xlmult_onOff 1425288278 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB work/conv_pkg 1425288251
+AR work/xlmult_onOff/behavior 1425288279 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xlmult_onOff 1425288278 CP mult_11_2_b9a510f8f49a69d2 \
+      CP mult_11_2_b39611ba5425a680 CP synth_reg
+EN work/mux_65a0e0a5b3 1425288280 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/mux_65a0e0a5b3/behavior 1425288281 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mux_65a0e0a5b3 1425288280
+EN work/mux_a161f3a75c 1425288282 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/mux_a161f3a75c/behavior 1425288283 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mux_a161f3a75c 1425288282
+EN work/xlregister 1425288284 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/xlregister/behavior 1425288285 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xlregister 1425288284 CP synth_reg_w_init
+EN work/relational_5568c80e3e 1425288286 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_5568c80e3e/behavior 1425288287 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_5568c80e3e 1425288286
+EN work/relational_5ef1f4e573 1425288288 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_5ef1f4e573/behavior 1425288289 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_5ef1f4e573 1425288288
+EN work/relational_5153393142 1425288290 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_5153393142/behavior 1425288291 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_5153393142 1425288290
+EN work/constant_a803a2dbbb 1425288292 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_a803a2dbbb/behavior 1425288293 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_a803a2dbbb 1425288292
+EN work/constant_95270e073f 1425288294 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_95270e073f/behavior 1425288295 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_95270e073f 1425288294
+EN work/constant_58b5743dd8 1425288296 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_58b5743dd8/behavior 1425288297 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_58b5743dd8 1425288296
+EN work/constant_f2a2d93eac 1425288298 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_f2a2d93eac/behavior 1425288299 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_f2a2d93eac 1425288298
+EN work/constant_7044437b9b 1425288300 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_7044437b9b/behavior 1425288301 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_7044437b9b 1425288300
+EN work/constant_017d9de1ab 1425288302 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_017d9de1ab/behavior 1425288303 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_017d9de1ab 1425288302
+EN work/xlcounter_free_onOff 1425288304 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/xlcounter_free_onOff/behavior 1425288305 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/xlcounter_free_onOff 1425288304 CP cntr_11_0_e7c6fab986d296a4 \
+      CP cntr_11_0_74252206ec4646ae
+EN work/relational_7a2906d528 1425288306 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_7a2906d528/behavior 1425288307 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_7a2906d528 1425288306
+EN work/relational_7a7af7b80d 1425288308 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_7a7af7b80d/behavior 1425288309 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_7a7af7b80d 1425288308
+EN work/inverter_1ca63a13a1 1425288310 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/inverter_1ca63a13a1/behavior 1425288311 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/inverter_1ca63a13a1 1425288310
+EN work/mux_2c45f290ed 1425288312 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/mux_2c45f290ed/behavior 1425288313 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mux_2c45f290ed 1425288312
+EN work/constant_190a6d2a1a 1425288314 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_190a6d2a1a/behavior 1425288315 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_190a6d2a1a 1425288314
+EN work/constant_31026a6611 1425288316 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_31026a6611/behavior 1425288317 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_31026a6611 1425288316
+EN work/constant_515f6b5526 1425288318 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_515f6b5526/behavior 1425288319 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_515f6b5526 1425288318
+EN work/constant_6c8e1bed76 1425288320 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_6c8e1bed76/behavior 1425288321 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_6c8e1bed76 1425288320
+EN work/inverter_e2b989a05e 1425288322 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/inverter_e2b989a05e/behavior 1425288323 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/inverter_e2b989a05e 1425288322
+EN work/logical_938d99ac11 1425288324 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/logical_938d99ac11/behavior 1425288325 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/logical_938d99ac11 1425288324
+EN work/mux_20197168a0 1425288326 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/mux_20197168a0/behavior 1425288327 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/mux_20197168a0 1425288326
+EN work/relational_2a22b4eabc 1425288328 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_2a22b4eabc/behavior 1425288329 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_2a22b4eabc 1425288328
+EN work/relational_adf9a370cd 1425288330 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/relational_adf9a370cd/behavior 1425288331 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/relational_adf9a370cd 1425288330
+EN work/bitbasher_bb81282914 1425288332 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/bitbasher_bb81282914/behavior 1425288333 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/bitbasher_bb81282914 1425288332
+EN work/bitbasher_1b08270ac9 1425288334 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/bitbasher_1b08270ac9/behavior 1425288335 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/bitbasher_1b08270ac9 1425288334
+EN work/bitbasher_d33821db41 1425288336 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/bitbasher_d33821db41/behavior 1425288337 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/bitbasher_d33821db41 1425288336
+EN work/bitbasher_75b6572827 1425288338 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/bitbasher_75b6572827/behavior 1425288339 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/bitbasher_75b6572827 1425288338
+EN work/top_level 1425288340 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 LB UNISIM \
+      PH unisim/VCOMPONENTS 1370735613
+AR work/top_level/BEHAVIORAL 1425288341 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/top_level 1425288340 CP FDCE
+EN work/constant_6293007044 1425288342 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_6293007044/behavior 1425288343 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_6293007044 1425288342
+EN work/constant_32150454cb 1425288344 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/constant_32150454cb/behavior 1425288345 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/constant_32150454cb 1425288344
+EN work/logical_49a7e4b36d 1425288346 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/logical_49a7e4b36d/behavior 1425288347 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/logical_49a7e4b36d 1425288346
+EN work/ja1_entity_5c1b3675b2 1425288348 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/ja1_entity_5c1b3675b2/structural 1425288349 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/ja1_entity_5c1b3675b2 1425288348 CP work/xlconvert \
+      CP work/reinterpret_f21e7f2ddf
+EN work/onoff_entity_5ff5682403 1425288350 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/onoff_entity_5ff5682403/structural 1425288351 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/onoff_entity_5ff5682403 1425288350 CP work/xladdsub_onOff \
+      CP work/bitbasher_b142b1358a CP work/xlconvert CP work/constant_a803a2dbbb \
+      CP work/constant_f2a2d93eac CP work/xldelay CP work/constant_7044437b9b \
+      CP work/constant_017d9de1ab CP work/relational_5153393142 \
+      CP work/inverter_e5b38cca3b CP work/logical_80f90b97d0 CP work/xlmult_onOff \
+      CP work/mux_65a0e0a5b3 CP work/mux_a161f3a75c CP work/xlregister \
+      CP work/relational_5568c80e3e CP work/relational_5ef1f4e573 \
+      CP work/constant_95270e073f CP work/constant_58b5743dd8
+EN work/pwm8_entity_808ac00709 1425288352 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/pwm8_entity_808ac00709/structural 1425288353 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/pwm8_entity_808ac00709 1425288352 CP work/xlcounter_free_onOff \
+      CP work/logical_80f90b97d0 CP work/relational_7a2906d528 \
+      CP work/relational_7a7af7b80d
+EN work/pwm_reg2_entity_081d2a8bce 1425288354 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/pwm_reg2_entity_081d2a8bce/structural 1425288355 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/pwm_reg2_entity_081d2a8bce 1425288354 \
+      CP work/pwm8_entity_808ac00709
+EN work/signtousign_entity_1ca98ae371 1425288356 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/signtousign_entity_1ca98ae371/structural 1425288357 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/signtousign_entity_1ca98ae371 1425288356 \
+      CP work/inverter_1ca63a13a1 CP work/mux_2c45f290ed
+EN work/counter_entity_85906b2cda 1425288358 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/counter_entity_85906b2cda/structural 1425288359 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/counter_entity_85906b2cda 1425288358 CP work/xladdsub_onOff \
+      CP work/constant_31026a6611 CP work/constant_515f6b5526 \
+      CP work/constant_6c8e1bed76 CP work/constant_190a6d2a1a CP work/xlconvert \
+      CP work/xlcounter_free_onOff CP work/xldelay CP work/inverter_e2b989a05e \
+      CP work/logical_938d99ac11 CP work/xlmult_onOff CP work/mux_20197168a0 \
+      CP work/xlregister CP work/relational_2a22b4eabc \
+      CP work/relational_adf9a370cd
+EN work/onoff 1425288360 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/onoff/structural 1425288361 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd \
+      EN work/onoff 1425288360 CP work/bitbasher_bb81282914 \
+      CP work/bitbasher_1b08270ac9 CP work/bitbasher_d33821db41 \
+      CP work/bitbasher_75b6572827 CP work/top_level CP work/constant_6293007044 \
+      CP work/constant_32150454cb CP work/xlconvert \
+      CP work/counter_entity_85906b2cda CP work/inverter_e5b38cca3b \
+      CP work/ja1_entity_5c1b3675b2 CP work/logical_49a7e4b36d \
+      CP work/onoff_entity_5ff5682403 CP work/pwm_reg2_entity_081d2a8bce \
+      CP work/xlregister CP work/signtousign_entity_1ca98ae371
+FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd 2015/03/02.11:23:51 P.68d
+EN work/xlclockdriver 1425288362 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB work/conv_pkg 1425288251
+AR work/xlclockdriver/behavior 1425288363 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      EN work/xlclockdriver 1425288362 CP synth_reg_w_init CP bufg
+EN work/default_clock_driver_onOff 1425288364 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/default_clock_driver_onOff/structural 1425288365 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      EN work/default_clock_driver_onOff 1425288364 CP work/xlclockdriver
+EN work/onoff_cw 1425288366 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288251
+AR work/onoff_cw/structural 1425288367 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd \
+      EN work/onoff_cw 1425288366 CP work/default_clock_driver_onOff CP work/onoff \
+      CP xlpersistentdff

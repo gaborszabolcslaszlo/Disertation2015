@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><BoardSupport>
+	<FullName>Sparten3e500kpq208c4</FullName>
+	<ShortName>sparten3e500kpq208c4ip3motrokmere</ShortName>
+	<ClockFrequency>50</ClockFrequency>
+	<ClockPin>P184</ClockPin>
+	<ClockPinN/>
+	<JtagPosition>1</JtagPosition>
+	<JtagIrLengths>6, 8</JtagIrLengths>
+	<Devices>
+		<Device>
+			<Family>spartan3e</Family>
+			<Name>xc3s500e</Name>
+			<Speed>-4</Speed>
+			<Packaging>pq208</Packaging>
+		</Device>
+	</Devices>
+	<Ports>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P68</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P78</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P83</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P89</UCF>
+				</Pin>
+			</Pins>
+			<Name>LED</Name>
+			<Direction>out</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P101</UCF>
+				</Pin>
+			</Pins>
+			<Name>Rst</Name>
+			<Direction>in</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P47</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P45</UCF>
+				</Pin>
+			</Pins>
+			<Name>sebsensor</Name>
+			<Direction>in</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P49</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P48</UCF>
+				</Pin>
+			</Pins>
+			<Name>PosistionSens</Name>
+			<Direction>in</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P134</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P133</UCF>
+				</Pin>
+			</Pins>
+			<Name>PWMseb</Name>
+			<Direction>out</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">P137</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P135</UCF>
+				</Pin>
+			</Pins>
+			<Name>PWMpos</Name>
+			<Direction>out</Direction>
+		</Port>
+	</Ports>
+	<BoardParameters/>
+</BoardSupport>

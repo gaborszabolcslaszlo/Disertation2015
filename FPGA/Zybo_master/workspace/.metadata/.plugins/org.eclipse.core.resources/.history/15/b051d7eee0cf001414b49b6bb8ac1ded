@@ -1,0 +1,267 @@
+
+#include "xparameters.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xiic.h"
+
+
+/****************************INTERUPT********************************************/
+#define INTC		         XScuGic
+INTC InterruptController;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerCounterInst;   /* The instance of the Timer Counter */
+volatile int TimerExpired;
+
+/**************************LED***************************************/
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define GPIO_LED_DEVICE_ID  XPAR_AXI_GPIO_LED4_DEVICE_ID
+/************************************************************************/
+
+/***************************SWITCH***************************************/
+#define GPIO_DEVICE_SWITCH_ID		 	XPAR_AXI_GPIO_SWITCH_DEVICE_ID
+#define INTC_GPIO_SWITCH_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_SWITCH_IP2INTC_IRPT_INTR
+#define INTC_HANDLER_SWITCH	XScuGic_InterruptHandler
+#define SW0  				0x01
+#define SW1  				0x02
+#define SW2  				0x04
+#define SW3  				0x08
+#define GPIO_ALL_BUTTONS	0x0F
+#define BUTTON_CHANNEL		1	/* Channel 1 of the GPIO Device */
+#define BUTTON_INTERRUPT	0x01  /* Channel 1 Interrupt Mask */
+static  XGpio				GpioSwitch; /* The Instance of the GPIO Driver */
+volatile int InterruptCountSwitch; /* Count of interrupts that have occured */
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr);
+int	SetupInterruptSystem();
+/*************************************************************************/
+
+/**************************TIMER TS***************************************/
+#define TMRCTR_DEVICE_ID	 XPAR_AXI_TIMER_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID	 XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define INTC_DEVICE_ID		 XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_CNTR_0	     0
+#define INTC_HANDLER	     XScuGic_InterruptHandler
+#define RESET_VALUE			 0xFF000000
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr,	XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId);
+/***************************************************************************/
+
+/****************************IIC********************************************/
+#define IIC_BASE_ADDRESS XPAR_AXI_IIC_0_BASEADDR
+int GyroSensor(u32 IicBaseAddress,u8 TempSensorAddress,u8 *TemperaturePtr);
+
+/***************************Varables***************************************/
+u32 Data=0x00;
+/**************************************************************************/
+int main()
+{
+	int Status;
+	//4LED
+	xil_printf("4 LED Init.....");
+	Status = XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+	xil_printf("OK\r\n");
+	XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	//TsTimer
+	xil_printf("TsTimer Init.....");
+	Status = TmrCtrIntr(&InterruptController, &TimerCounterInst,TMRCTR_DEVICE_ID, TMRCTR_INTERRUPT_ID, TIMER_CNTR_0);
+	if (Status != XST_SUCCESS){xil_printf("Error\r\n"); return XST_FAILURE;	}
+	xil_printf("OK\r\n");
+	//4SWITCH
+	xil_printf("4 SWITCH BUTTON Init.....");
+	Status = XGpio_Initialize(&GpioSwitch, GPIO_DEVICE_SWITCH_ID	);
+	if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;}
+	xil_printf("OK\r\n");
+    XGpio_SelfTest(&GpioSwitch);
+	XGpio_SetDataDirection(&GpioSwitch, BUTTON_CHANNEL, GPIO_ALL_BUTTONS);
+	Status = SetupInterruptSystem();
+	while(1)
+		{
+		//GyroSensor( IIC_BASE_ADDRESS, 0x07, 0x01);
+		//XGpio_DiscreteWrite(&Gpio, LED_CHANNEL,XGpio_DiscreteRead(&GpioSW, BUTTON_SW_CHANNEL)|XGpio_DiscreteRead(&Gpio, BUTTON_SW_CHANNEL));
+		}
+	return XST_SUCCESS;
+}
+/***********************TsTimer*******************************************/
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* TmrCtrInstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber)
+{
+	int Status;
+	int LastTimerExpired = 0;
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = TmrCtrSetupIntrSystem(IntcInstancePtr,TmrCtrInstancePtr,DeviceId,IntrId,TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XTmrCtr_SetHandler(TmrCtrInstancePtr, TsTimerCounterHandler,TmrCtrInstancePtr);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber,	XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TmrCtrNumber, RESET_VALUE);
+	XTmrCtr_Start(TmrCtrInstancePtr, TmrCtrNumber);
+	//while (1){
+	//	while (TimerExpired == LastTimerExpired) {
+	//	}
+	//	LastTimerExpired = TimerExpired;
+	//	if (TimerExpired == 3) {
+	//		XTmrCtr_Stop(TmrCtrInstancePtr, TmrCtrNumber);
+	//		break;
+	//	}
+	//}
+	//TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
+	return XST_SUCCESS;
+}
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
+{
+	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
+	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
+		TimerExpired++;
+		xil_printf("TSTimer\r\n");
+		if (Data & LED) {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data & ~LED);
+					Data=Data & ~LED;
+				} else {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data | LED);
+					Data=Data | LED;
+				}
+
+
+		//if(TimerExpired == 3) {
+		//	XTmrCtr_SetOptions(InstancePtr, TmrCtrNumber, 0);
+		//}
+	}
+}
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr, XTmrCtr* TmrCtrInstancePtr, u16 DeviceId, u16 IntrId, u8 TmrCtrNumber)
+{
+	 int Status;
+
+	XScuGic_Config *IntcConfig;
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId,
+					0xA0, 0x3);
+
+	/*
+	 * Connect the interrupt handler that will be called when an
+	 * interrupt occurs for the device.
+	 */
+	Status = XScuGic_Connect(IntcInstancePtr, IntrId,
+				 (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+				 TmrCtrInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	/*
+	 * Enable the interrupt for the Timer device.
+	 */
+	XScuGic_Enable(IntcInstancePtr, IntrId);
+
+	/*
+	 * Initialize the exception table.
+	 */
+	Xil_ExceptionInit();
+
+	/*
+	 * Register the interrupt controller handler with the exception table.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+					(Xil_ExceptionHandler)
+					INTC_HANDLER,
+					IntcInstancePtr);
+
+	/*
+	 * Enable non-critical exceptions.
+	 */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId)
+{
+
+	XScuGic_Disable(IntcInstancePtr, IntrId);
+	XScuGic_Disconnect(IntcInstancePtr, IntrId);
+
+	return;
+}
+/***********************4SWITCHBUTTON*************************************************/
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr)
+{
+	XGpio *GpioPtr = (XGpio *)InstancePtr;
+	u32 Buttons; // 16 Stat 0..15
+	static u32 PreviousButtons;
+	XGpio_InterruptDisable(GpioPtr, BUTTON_INTERRUPT);
+	InterruptCountSwitch++;
+	if ((XGpio_InterruptGetStatus(GpioPtr) & BUTTON_INTERRUPT) !=BUTTON_INTERRUPT)
+	{
+		return;
+	}
+	Buttons = XGpio_DiscreteRead(GpioPtr, BUTTON_CHANNEL);
+	xil_printf("interupt: %d\r\n",Buttons);
+	if(Buttons&SW0==SW0){XTmrCtr_Start(&TimerCounterInst, 0);}
+	(void)XGpio_InterruptClear(GpioPtr, BUTTON_INTERRUPT);
+	 XGpio_InterruptEnable(GpioPtr, BUTTON_INTERRUPT);
+}
+int SetupInterruptSystem()
+{
+	int Result;
+	INTC *IntcInstancePtrSwitch = &InterruptController;
+	XScuGic_Config *IntcConfig;
+//	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_SWITCH_ID);
+//	if (NULL == IntcConfig) {
+//		return XST_FAILURE;
+//	}
+//	Result = XScuGic_CfgInitialize(IntcInstancePtrSwitch, IntcConfig,	IntcConfig->CpuBaseAddress);
+//	if (Result != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+	Result = XScuGic_Connect(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID,(Xil_ExceptionHandler)Gpio_4SWITCHBut_HANDLER, &GpioSwitch);
+	if (Result != XST_SUCCESS) {
+		return Result;
+	}
+	XScuGic_Enable(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID);
+	XGpio_InterruptEnable(&GpioSwitch, BUTTON_INTERRUPT);
+	XGpio_InterruptGlobalEnable(&GpioSwitch);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)INTC_HANDLER_SWITCH, IntcInstancePtrSwitch);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+/************************************************************************/
+
+int GyroSensor(u32 IicBaseAddress,u8  TempSensorAddress,	u8 *TemperaturePtr)
+{
+	int ByteCount;
+	ByteCount = XIic_Send(IicBaseAddress, TempSensorAddress,TemperaturePtr, 1, XIIC_STOP);
+	ByteCount = XIic_Recv(IicBaseAddress, TempSensorAddress,TemperaturePtr, 1, XIIC_STOP);
+	return ByteCount;
+}
+
+
+

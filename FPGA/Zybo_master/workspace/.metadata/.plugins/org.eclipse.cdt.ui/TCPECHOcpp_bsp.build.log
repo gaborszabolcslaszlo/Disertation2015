@@ -1,0 +1,55 @@
+18:05:57 **** Build of project TCPECHOcpp_bsp ****
+make -k all 
+libgen -hw ../GaborSZ_hw_platform/system.xml\
+	       -lp C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -lp C:/Diak/gl/Zybo_master/workspace/Xilinx_Zynq/sw/repo -lp ../Xilinx_Zynq -lp C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../GaborSZ_hw_platform/system.xml -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -lp
+C:/Diak/gl/Zybo_master/workspace/Xilinx_Zynq/sw/repo -lp ../Xilinx_Zynq -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+c:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin\arm-xilinx-eabi-ar.exe: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling iic
+Compiling intc
+Compiling tmrctr
+Compiling uartns550
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling spi
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+18:07:18 Build Finished (took 1m:20s.335ms)
+

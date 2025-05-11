@@ -1,0 +1,98 @@
+15:18:14 **** Build of configuration Debug for project ts ****
+make all 
+'Building file: ../src/testperiph.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+'Finished building: ../src/testperiph.c'
+' '
+'Building file: ../src/xdevcfg_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xdevcfg_selftest_example.d" -MT"src/xdevcfg_selftest_example.d" -o "src/xdevcfg_selftest_example.o" "../src/xdevcfg_selftest_example.c"
+'Finished building: ../src/xdevcfg_selftest_example.c'
+' '
+'Building file: ../src/xemacps_example_intr_dma.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.d" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+'Finished building: ../src/xemacps_example_intr_dma.c'
+' '
+'Building file: ../src/xemacps_example_util.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.d" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+'Finished building: ../src/xemacps_example_util.c'
+' '
+'Building file: ../src/xgpio_tapp_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.d" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+../src/xgpio_tapp_example.c: In function 'GpioOutputExample':
+../src/xgpio_tapp_example.c:182:6: warning: unused variable 'Data' [-Wunused-variable]
+'Finished building: ../src/xgpio_tapp_example.c'
+' '
+'Building file: ../src/xiic_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiic_selftest_example.d" -MT"src/xiic_selftest_example.d" -o "src/xiic_selftest_example.o" "../src/xiic_selftest_example.c"
+'Finished building: ../src/xiic_selftest_example.c'
+' '
+'Building file: ../src/xiicps_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiicps_selftest_example.d" -MT"src/xiicps_selftest_example.d" -o "src/xiicps_selftest_example.o" "../src/xiicps_selftest_example.c"
+'Finished building: ../src/xiicps_selftest_example.c'
+' '
+'Building file: ../src/xqspips_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_selftest_example.d" -MT"src/xqspips_selftest_example.d" -o "src/xqspips_selftest_example.o" "../src/xqspips_selftest_example.c"
+'Finished building: ../src/xqspips_selftest_example.c'
+' '
+'Building file: ../src/xscugic_tapp_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscugic_tapp_example.d" -MT"src/xscugic_tapp_example.d" -o "src/xscugic_tapp_example.o" "../src/xscugic_tapp_example.c"
+'Finished building: ../src/xscugic_tapp_example.c'
+' '
+'Building file: ../src/xscutimer_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_intr_example.d" -MT"src/xscutimer_intr_example.d" -o "src/xscutimer_intr_example.o" "../src/xscutimer_intr_example.c"
+'Finished building: ../src/xscutimer_intr_example.c'
+' '
+'Building file: ../src/xscutimer_polled_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscutimer_polled_example.d" -MT"src/xscutimer_polled_example.d" -o "src/xscutimer_polled_example.o" "../src/xscutimer_polled_example.c"
+'Finished building: ../src/xscutimer_polled_example.c'
+' '
+'Building file: ../src/xscuwdt_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xscuwdt_intr_example.d" -MT"src/xscuwdt_intr_example.d" -o "src/xscuwdt_intr_example.o" "../src/xscuwdt_intr_example.c"
+'Finished building: ../src/xscuwdt_intr_example.c'
+' '
+'Building file: ../src/xspi_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xspi_selftest_example.d" -MT"src/xspi_selftest_example.d" -o "src/xspi_selftest_example.o" "../src/xspi_selftest_example.c"
+'Finished building: ../src/xspi_selftest_example.c'
+' '
+'Building file: ../src/xtmrctr_selftest_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_selftest_example.d" -MT"src/xtmrctr_selftest_example.d" -o "src/xtmrctr_selftest_example.o" "../src/xtmrctr_selftest_example.c"
+'Finished building: ../src/xtmrctr_selftest_example.c'
+' '
+'Building file: ../src/xuartps_intr_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_intr_example.d" -MT"src/xuartps_intr_example.d" -o "src/xuartps_intr_example.o" "../src/xuartps_intr_example.c"
+'Finished building: ../src/xuartps_intr_example.c'
+' '
+'Building file: ../src/xuartps_polled_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ts_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_polled_example.d" -MT"src/xuartps_polled_example.d" -o "src/xuartps_polled_example.o" "../src/xuartps_polled_example.c"
+'Finished building: ../src/xuartps_polled_example.c'
+' '
+'Building target: ts.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ts_bsp/ps7_cortexa9_0/lib -o "ts.elf"  ./src/testperiph.o ./src/xdevcfg_selftest_example.o ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o ./src/xgpio_tapp_example.o ./src/xiic_selftest_example.o ./src/xiicps_selftest_example.o ./src/xqspips_selftest_example.o ./src/xscugic_tapp_example.o ./src/xscutimer_intr_example.o ./src/xscutimer_polled_example.o ./src/xscuwdt_intr_example.o ./src/xspi_selftest_example.o ./src/xtmrctr_selftest_example.o ./src/xuartps_intr_example.o ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ts.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ts.elf  |tee "ts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84024	   2160	  34180	 120364	  1d62c	ts.elf
+'Finished building: ts.elf.size'
+' '
+
+15:18:19 Build Finished (took 4s.618ms)
+

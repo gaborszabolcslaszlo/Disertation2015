@@ -1,0 +1,371 @@
+----------------------------------------------------------
+ EDK Import Wizard 
+==========================================================
+XILINX_EDK    : C:/Xilinx/14.7/ISE_DS/EDK
+XMP location  : C:\Users\laca\Desktop\MicroBlazeproject\system.xmp
+----------------------------------------------------------
+
+*** Copying System Generator pcores into user EDK project ***
+Copying pcore into to: C:\Users\laca\Desktop\MicroBlazeproject\pcores\sg_plbiface_v1_00_a
+Copying pcore into to: C:\Users\laca\Desktop\MicroBlazeproject\pcores\sg_axiiface_v1_00_a
+*** Configuring user EDK project ***
+Adding SysGen iface peripheral to MHS and MSS
+
+Xilinx Platform Studio
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+C:\Users\laca\Desktop\Allamvizsga\Elektronika\Digitalis\FPGA\SPARTAN3E500K\Syste
+mGenrator\SebessegEsPozicio\sg_xps_import.tcl
+xps_import settings: xmp_file(system.xmp), codebug(on)
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+  (0x81400000-0x8140ffff) DataInp	mb_plb
+  (0x81420000-0x8142ffff) Addres	mb_plb
+  (0x83c00000-0x83c0ffff) xps_timer_0	mb_plb
+  (0x83c14000-0x83c14fff) sg_plbiface_0	mb_plb
+  (0x83c18000-0x83c183ff) DataOut	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+
+
+WARNING:EDK - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 6 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 88 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataOut - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:Addres - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataInp - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: sg_plbiface, INSTANCE:sg_plbiface_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\laca\Desktop\MicroBlazeproject\pcores\sg_plbiface_v1_00_a\data\sg_pl
+   biface_v2_1_0.mpd line 32 
+
+Checking platform address map ...
+system name: system
+
+====> top-level input clock port (1) : fpga_0_clk_1_sys_clk_pin
+number of top-level input clock ports: 1
+
+collecting processor information ...
+proc_interconnect: 1 (1 for big-end PLB; 2 for little-end AXI)
+
+processor_type: MicroBlaze
+proc_inst_name: microblaze_0
+bus_interface: DPLB
+
+===> bus_type: PLB
+
+plb_inst_name: mb_plb
+backing up system.mhs to system.mhs.bak8 ...
+setting the XPS project as a submodule ...
+adding import related toplevel ports ...
+adding codebug related toplevel ports ...
+adding co-debugging ports ...
+saving MHS file ...
+Saved MHS file
+
+Loading Project File..
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+  (0x81400000-0x8140ffff) DataInp	mb_plb
+  (0x81420000-0x8142ffff) Addres	mb_plb
+  (0x83c00000-0x83c0ffff) xps_timer_0	mb_plb
+  (0x83c14000-0x83c14fff) sg_plbiface_0	mb_plb
+  (0x83c18000-0x83c183ff) DataOut	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+
+
+WARNING:EDK - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 6 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 88 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataOut - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:Addres - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataInp - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: sg_plbiface, INSTANCE:sg_plbiface_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\laca\Desktop\MicroBlazeproject\pcores\sg_plbiface_v1_00_a\data\sg_pl
+   biface_v2_1_0.mpd line 32 
+
+Checking platform address map ...
+saving MHS file ...
+No changes to be saved in MHS file
+getting a new mhs handle after reloading ...
+running addrgen ...
+
+Loading Project File..
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+WARNING:EDK - IPNAME: microblaze, INSTANCE: microblaze_0 - Superseded core for
+   architecture 'spartan3e' - C:\Users\laca\Desktop\MicroBlazeproject\system.mhs
+   line 40 
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+  (0x81400000-0x8140ffff) DataInp	mb_plb
+  (0x81420000-0x8142ffff) Addres	mb_plb
+  (0x83c00000-0x83c0ffff) xps_timer_0	mb_plb
+  (0x83c14000-0x83c14fff) sg_plbiface_0	mb_plb
+  (0x83c18000-0x83c183ff) DataOut	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+
+
+WARNING:EDK - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 6 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 87 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_02_a\da
+   ta\xps_timer_v2_1_0.mpd line 88 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataOut - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:Addres - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:DataInp - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK - IPNAME: sg_plbiface, INSTANCE:sg_plbiface_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Users\laca\Desktop\MicroBlazeproject\pcores\sg_plbiface_v1_00_a\data\sg_pl
+   biface_v2_1_0.mpd line 32 
+
+Checking platform address map ...
+getting baseaddr of sg_plbiface_0 ...
+Dumping project info into m code ...
+Dumping top-level pin info into M code ...
+internal_net_name: CLK_S
+====> port_info: fpga_0_clk_1_sys_clk_pin I {} CLK 50000000 {} CLK_S
+====> port_info: ntg_0_sig_in_pin I {} {} {} {} {}
+====> port_info: DataOut_GPIO_IO_O_pin O {[0:31]} {} {} {} {}
+====> port_info: DataInp_GPIO_IO_I_pin I {[0:31]} {} {} {} {}
+====> port_info: Addres_GPIO_IO_O_pin O {[0:7]} {} {} {} {}
+====> port_info: sg_splb_clk O {} {} {} {} {}
+====> port_info: sg_splb_rst O {} {} {} {} {}
+====> port_info: sg_plb_abus O {[31:0]} {} {} {} {}
+====> port_info: sg_plb_pavalid O {} {} {} {} {}
+====> port_info: sg_plb_rnw O {} {} {} {} {}
+====> port_info: sg_plb_wrdbus O {[31:0]} {} {} {} {}
+====> port_info: sg_sl_addrack I {} {} {} {} {}
+====> port_info: sg_sl_wait I {} {} {} {} {}
+====> port_info: sg_sl_wrcomp I {} {} {} {} {}
+====> port_info: sg_sl_wrdack I {} {} {} {} {}
+====> port_info: sg_sl_rdcomp I {} {} {} {} {}
+====> port_info: sg_sl_rddack I {} {} {} {} {}
+====> port_info: sg_sl_rddbus I {[31:0]} {} {} {} {}
+====> port_info: sg_codebug_halted O {} {} {} {} {}
+====> port_info: sg_codebug_stop I {} {} {} {} {}
+rm -f implementation/system.ngc
+rm -f implementation/system_microblaze_0_wrapper.ngc implementation/system_mb_plb_wrapper.ngc implementation/system_ilmb_wrapper.ngc implementation/system_dlmb_wrapper.ngc implementation/system_dlmb_cntlr_wrapper.ngc implementation/system_ilmb_cntlr_wrapper.ngc implementation/system_lmb_bram_wrapper.ngc implementation/system_xps_timer_0_wrapper.ngc implementation/system_clock_generator_0_wrapper.ngc implementation/system_mdm_0_wrapper.ngc implementation/system_proc_sys_reset_0_wrapper.ngc implementation/system_ntg_0_wrapper.ngc implementation/system_dataout_wrapper.ngc implementation/system_addres_wrapper.ngc implementation/system_datainp_wrapper.ngc implementation/system_sg_plbiface_0_wrapper.ngc
+rm -f platgen.log
+rm -f __xps/ise/_xmsgs/platgen.xmsgs
+rm -f implementation/system.bmm
+rm -rf implementation/cache
+SUCCESS:SYSGEN
+*** Collecting port info ***
+*** Constructing memory map ***
+*** Constructing system ***
+

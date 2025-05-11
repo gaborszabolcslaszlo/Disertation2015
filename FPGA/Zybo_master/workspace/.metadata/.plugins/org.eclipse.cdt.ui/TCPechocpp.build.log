@@ -1,0 +1,73 @@
+18:08:59 **** Auto Build of configuration Debug for project TCPechocpp ****
+make all 
+Building file: ../src/src/TinyGPS/TinyGPS.cc
+Invoking: ARM g++ compiler
+arm-xilinx-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -I../../timerTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/src/TinyGPS/TinyGPS.d" -MT"src/src/TinyGPS/TinyGPS.d" -o "src/src/TinyGPS/TinyGPS.o" "../src/src/TinyGPS/TinyGPS.cc"
+In file included from ../src/src/TinyGPS/TinyGPS.cc:24:0:
+../src/src/TinyGPS/TinyGPS.h:79:34: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:79:47: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:80:5: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:80:17: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:80:31: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:80:45: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.h:116:3: error: 'byte' does not name a type
+../src/src/TinyGPS/TinyGPS.h:119:3: error: 'byte' does not name a type
+../src/src/TinyGPS/TinyGPS.h:120:3: error: 'byte' does not name a type
+../src/src/TinyGPS/TinyGPS.h:121:3: error: 'byte' does not name a type
+../src/src/TinyGPS/TinyGPS.cc: In constructor 'TinyGPS::TinyGPS()':
+../src/src/TinyGPS/TinyGPS.cc:41:6: error: class 'TinyGPS' does not have any field named '_parity'
+../src/src/TinyGPS/TinyGPS.cc:43:6: error: class 'TinyGPS' does not have any field named '_sentence_type'
+../src/src/TinyGPS/TinyGPS.cc:44:6: error: class 'TinyGPS' does not have any field named '_term_number'
+../src/src/TinyGPS/TinyGPS.cc:45:6: error: class 'TinyGPS' does not have any field named '_term_offset'
+../src/src/TinyGPS/TinyGPS.cc: In member function 'bool TinyGPS::encode(char)':
+../src/src/TinyGPS/TinyGPS.cc:70:5: error: '_parity' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:74:9: error: '_term_offset' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:79:7: error: '_term_number' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:80:5: error: '_term_offset' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:87:5: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:94:7: error: '_term_offset' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:97:5: error: '_parity' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: In member function 'bool TinyGPS::term_complete()':
+../src/src/TinyGPS/TinyGPS.cc:170:5: error: 'byte' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:170:10: error: expected ';' before 'checksum'
+../src/src/TinyGPS/TinyGPS.cc:171:9: error: 'checksum' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:171:21: error: '_parity' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:181:16: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:213:7: error: '_term_number' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:216:7: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:218:7: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:220:7: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:224:7: error: '_sentence_type' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:225:12: error: '_term_number' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:230:30: error: 'millis' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: In static member function 'static float TinyGPS::distance_between(float, float, float, float)':
+../src/src/TinyGPS/TinyGPS.cc:303:36: error: 'radians' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:304:27: error: 'sin' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:305:27: error: 'cos' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:313:19: error: 'sq' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:315:21: error: 'sqrt' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:317:29: error: 'atan2' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: In static member function 'static float TinyGPS::course_to(float, float, float, float)':
+../src/src/TinyGPS/TinyGPS.cc:327:35: error: 'radians' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:330:22: error: 'sin' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:330:34: error: 'cos' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:333:20: error: 'atan2' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:336:11: error: 'TWO_PI' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc:338:20: error: 'degrees' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: In member function 'void TinyGPS::get_position(long int*, long int*, long unsigned int*)':
+../src/src/TinyGPS/TinyGPS.cc:356:29: error: 'millis' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: In member function 'void TinyGPS::get_datetime(long unsigned int*, long unsigned int*, long unsigned int*)':
+../src/src/TinyGPS/TinyGPS.cc:365:29: error: 'millis' was not declared in this scope
+../src/src/TinyGPS/TinyGPS.cc: At global scope:
+../src/src/TinyGPS/TinyGPS.cc:376:41: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc:376:54: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc:377:3: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc:377:15: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc:377:29: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc:377:43: error: 'byte' has not been declared
+../src/src/TinyGPS/TinyGPS.cc: In static member function 'static float TinyGPS::course_to(float, float, float, float)':
+../src/src/TinyGPS/TinyGPS.cc:339:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/src/TinyGPS/TinyGPS.o] Error 1
+
+18:09:01 Build Finished (took 1s.220ms)
+

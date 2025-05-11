@@ -1,0 +1,15 @@
+%implements s0_b0_tc9yf_Disable "C"
+
+%function Disable(block, system) Output
+%assign localVarDecl = ""
+%assign tlcDisableFcnOfS0B0 = OpaqueTLCBlockFcn("Disable", 0, 0, 0, 6)
+%assign tlcDisableFcnOfS0B12 = OpaqueTLCBlockFcn("Disable", 0, 12, 0, 6)
+%<tlcDisableFcnOfS0B0>\
+%<tlcDisableFcnOfS0B12>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Disable(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 6, fcnProtoType)>
+%endfunction

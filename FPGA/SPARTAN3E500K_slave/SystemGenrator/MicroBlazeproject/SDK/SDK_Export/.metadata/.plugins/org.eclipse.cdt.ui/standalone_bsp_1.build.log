@@ -1,0 +1,27 @@
+18:53:24 **** Build of project standalone_bsp_1 ****
+make -k all 
+libgen -hw ../MicroBlazeproject_hw_platform/system.xml\
+	       -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../MicroBlazeproject_hw_platform/system.xml -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - uartlite -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Expor
+   t\standalone_bsp_1\system.mss line 21 - No IP instance named debug_module_0
+   is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+18:53:25 Build Finished (took 953ms)
+

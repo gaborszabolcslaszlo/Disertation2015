@@ -1,0 +1,10 @@
+-batch 
+-create not_gate 
+-ver 1.00.a 
+-dir "C:\Diak\gszl\MicroBlazeproject" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 1 
+-xps 
+-ise 
+-driver 

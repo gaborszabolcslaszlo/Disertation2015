@@ -1,0 +1,377 @@
+V3 170
+FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd 2015/02/23.19:17:48 P.20131013
+EN work/addsb_11_0_09a98e96b9130e03 1424711870 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/addsb_11_0_09a98e96b9130e03/addsb_11_0_09a98e96b9130e03_a 1424711871 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/addsb_11_0_09a98e96b9130e03 1424711870
+EN work/addsb_11_0_40c59820e74e5c61 1424711872 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/addsb_11_0_40c59820e74e5c61/addsb_11_0_40c59820e74e5c61_a 1424711873 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/addsb_11_0_40c59820e74e5c61 1424711872
+EN work/addsb_11_0_69d6875ac191df7d 1424711874 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/addsb_11_0_69d6875ac191df7d/addsb_11_0_69d6875ac191df7d_a 1424711875 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/addsb_11_0_69d6875ac191df7d 1424711874
+EN work/addsb_11_0_ed61fefe391dafb3 1424711876 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/addsb_11_0_ed61fefe391dafb3/addsb_11_0_ed61fefe391dafb3_a 1424711877 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/addsb_11_0_ed61fefe391dafb3 1424711876
+EN work/cntr_11_0_5baa608aaa6fc4cf 1424711878 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cntr_11_0_5baa608aaa6fc4cf/cntr_11_0_5baa608aaa6fc4cf_a 1424711879 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/cntr_11_0_5baa608aaa6fc4cf 1424711878
+EN work/cntr_11_0_cee71699703bac4e 1424711880 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cntr_11_0_cee71699703bac4e/cntr_11_0_cee71699703bac4e_a 1424711881 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/cntr_11_0_cee71699703bac4e 1424711880
+EN work/cntr_11_0_d7c176806556610b 1424711882 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cntr_11_0_d7c176806556610b/cntr_11_0_d7c176806556610b_a 1424711883 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/cntr_11_0_d7c176806556610b 1424711882
+EN work/mult_11_2_782d0d00b37904bd 1424711884 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mult_11_2_782d0d00b37904bd/mult_11_2_782d0d00b37904bd_a 1424711885 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/mult_11_2_782d0d00b37904bd 1424711884
+PH work/conv_pkg 1424711886 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+PB work/conv_pkg 1424711887 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PH work/conv_pkg 1424711886
+EN work/srl17e 1424711888 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/srl17e/structural 1424711889 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/srl17e 1424711888 CP srl16e CP fde
+EN work/synth_reg 1424711890 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/synth_reg/structural 1424711891 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/synth_reg 1424711890 CP srl17e
+EN work/synth_reg_reg 1424711892 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/synth_reg_reg/behav 1424711893 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/synth_reg_reg 1424711892
+EN work/single_reg_w_init 1424711894 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/single_reg_w_init/structural 1424711895 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/single_reg_w_init 1424711894 CP fdre CP fdse
+EN work/synth_reg_w_init 1424711896 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/synth_reg_w_init/structural 1424711897 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/synth_reg_w_init 1424711896 CP single_reg_w_init
+EN work/xladdsub_MotorSpeed 1424711898 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB work/conv_pkg 1424711887
+AR work/xladdsub_MotorSpeed/behavior 1424711899 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xladdsub_MotorSpeed 1424711898 CP addsb_11_0_40c59820e74e5c61 \
+      CP addsb_11_0_69d6875ac191df7d CP addsb_11_0_ed61fefe391dafb3 \
+      CP addsb_11_0_09a98e96b9130e03 CP synth_reg
+EN work/constant_9f5572ba51 1424711900 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/constant_9f5572ba51/behavior 1424711901 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/constant_9f5572ba51 1424711900
+EN work/xlcounter_limit_MotorSpeed 1424711902 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/xlcounter_limit_MotorSpeed/behavior 1424711903 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xlcounter_limit_MotorSpeed 1424711902 CP cntr_11_0_cee71699703bac4e
+EN work/xldelay 1424711904 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/xldelay/behavior 1424711905 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xldelay 1424711904 CP synth_reg CP synth_reg_reg
+EN work/xlmult_MotorSpeed 1424711906 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB work/conv_pkg 1424711887
+AR work/xlmult_MotorSpeed/behavior 1424711907 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xlmult_MotorSpeed 1424711906 CP mult_11_2_782d0d00b37904bd \
+      CP synth_reg
+EN work/mux_32f647f217 1424711908 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/mux_32f647f217/behavior 1424711909 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/mux_32f647f217 1424711908
+EN work/mux_ba4efe1019 1424711910 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/mux_ba4efe1019/behavior 1424711911 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/mux_ba4efe1019 1424711910
+EN work/xlregister 1424711912 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/xlregister/behavior 1424711913 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xlregister 1424711912 CP synth_reg_w_init
+EN work/xlcounter_free_MotorSpeed 1424711914 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/xlcounter_free_MotorSpeed/behavior 1424711915 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xlcounter_free_MotorSpeed 1424711914 CP cntr_11_0_d7c176806556610b \
+      CP cntr_11_0_5baa608aaa6fc4cf
+EN work/logical_80f90b97d0 1424711916 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/logical_80f90b97d0/behavior 1424711917 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/logical_80f90b97d0 1424711916
+EN work/relational_7a2906d528 1424711918 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/relational_7a2906d528/behavior 1424711919 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/relational_7a2906d528 1424711918
+EN work/relational_7a7af7b80d 1424711920 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/relational_7a7af7b80d/behavior 1424711921 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/relational_7a7af7b80d 1424711920
+EN work/convert_func_call 1424711922 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/convert_func_call/behavior 1424711923 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/convert_func_call 1424711922
+EN work/xlconvert 1424711924 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/xlconvert/behavior 1424711925 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/xlconvert 1424711924 CP convert_func_call CP synth_reg
+EN work/reinterpret_f21e7f2ddf 1424711926 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/reinterpret_f21e7f2ddf/behavior 1424711927 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/reinterpret_f21e7f2ddf 1424711926
+EN work/inverter_e5b38cca3b 1424711928 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/inverter_e5b38cca3b/behavior 1424711929 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/inverter_e5b38cca3b 1424711928
+EN work/relational_3ffd1d0a40 1424711930 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/relational_3ffd1d0a40/behavior 1424711931 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/relational_3ffd1d0a40 1424711930
+EN work/inverter_1ca63a13a1 1424711932 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/inverter_1ca63a13a1/behavior 1424711933 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/inverter_1ca63a13a1 1424711932
+EN work/mux_2c45f290ed 1424711934 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/mux_2c45f290ed/behavior 1424711935 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/mux_2c45f290ed 1424711934
+EN work/constant_190a6d2a1a 1424711936 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/constant_190a6d2a1a/behavior 1424711937 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/constant_190a6d2a1a 1424711936
+EN work/constant_e48c5a6fd1 1424711938 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/constant_e48c5a6fd1/behavior 1424711939 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/constant_e48c5a6fd1 1424711938
+EN work/inverter_e2b989a05e 1424711940 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/inverter_e2b989a05e/behavior 1424711941 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/inverter_e2b989a05e 1424711940
+EN work/logical_938d99ac11 1424711942 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/logical_938d99ac11/behavior 1424711943 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/logical_938d99ac11 1424711942
+EN work/mux_20197168a0 1424711944 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/mux_20197168a0/behavior 1424711945 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/mux_20197168a0 1424711944
+EN work/bitbasher_75b6572827 1424711946 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/bitbasher_75b6572827/behavior 1424711947 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/bitbasher_75b6572827 1424711946
+EN work/top_level 1424711948 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/top_level/BEHAVIORAL 1424711949 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/top_level 1424711948 CP FDCE
+EN work/constant_32150454cb 1424711950 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/constant_32150454cb/behavior 1424711951 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/constant_32150454cb 1424711950
+EN work/constant_963ed6358a 1424711952 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/constant_963ed6358a/behavior 1424711953 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/constant_963ed6358a 1424711952
+EN work/bitbasher_bb81282914 1424711954 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/bitbasher_bb81282914/behavior 1424711955 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/bitbasher_bb81282914 1424711954
+EN work/pidrek_entity_2de86a3eda 1424711956 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/pidrek_entity_2de86a3eda/structural 1424711957 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/pidrek_entity_2de86a3eda 1424711956 CP work/xladdsub_MotorSpeed \
+      CP work/constant_9f5572ba51 CP work/xlcounter_limit_MotorSpeed \
+      CP work/xldelay CP work/xlmult_MotorSpeed CP work/mux_32f647f217 \
+      CP work/mux_ba4efe1019 CP work/xlregister
+EN work/pwm8_entity_b382bc4709 1424711958 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/pwm8_entity_b382bc4709/structural 1424711959 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/pwm8_entity_b382bc4709 1424711958 CP work/xlcounter_free_MotorSpeed \
+      CP work/logical_80f90b97d0 CP work/relational_7a2906d528 \
+      CP work/relational_7a7af7b80d
+EN work/pwm_reg2_entity_e6c05b507a 1424711960 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/pwm_reg2_entity_e6c05b507a/structural 1424711961 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/pwm_reg2_entity_e6c05b507a 1424711960 \
+      CP work/pwm8_entity_b382bc4709
+EN work/pmod2_entity_b34edec396 1424711962 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/pmod2_entity_b34edec396/structural 1424711963 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/pmod2_entity_b34edec396 1424711962 CP work/xlconvert \
+      CP work/reinterpret_f21e7f2ddf
+EN work/sampletime_generator_entity_8479939182 1424711964 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/sampletime_generator_entity_8479939182/structural 1424711965 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/sampletime_generator_entity_8479939182 1424711964 \
+      CP work/xlcounter_free_MotorSpeed CP work/inverter_e5b38cca3b \
+      CP work/logical_80f90b97d0 CP work/relational_3ffd1d0a40
+EN work/signtousign_entity_ce8f7fe695 1424711966 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/signtousign_entity_ce8f7fe695/structural 1424711967 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/signtousign_entity_ce8f7fe695 1424711966 \
+      CP work/inverter_1ca63a13a1 CP work/mux_2c45f290ed
+EN work/counter_entity_2f53ec633c 1424711968 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/counter_entity_2f53ec633c/structural 1424711969 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/counter_entity_2f53ec633c 1424711968 CP work/xladdsub_MotorSpeed \
+      CP work/constant_e48c5a6fd1 CP work/constant_190a6d2a1a CP work/xlconvert \
+      CP work/xldelay CP work/inverter_e2b989a05e CP work/logical_938d99ac11 \
+      CP work/mux_20197168a0 CP work/xlregister
+EN work/motorspeed 1424711970 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/motorspeed/structural 1424711971 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed.vhd \
+      EN work/motorspeed 1424711970 CP work/xladdsub_MotorSpeed \
+      CP work/bitbasher_75b6572827 CP work/top_level CP work/constant_32150454cb \
+      CP work/constant_963ed6358a CP work/xlconvert \
+      CP work/counter_entity_2f53ec633c CP work/inverter_e5b38cca3b \
+      CP work/bitbasher_bb81282914 CP work/pidrek_entity_2de86a3eda \
+      CP work/pmod2_entity_b34edec396 CP work/pwm_reg2_entity_e6c05b507a \
+      CP work/xlregister CP work/sampletime_generator_entity_8479939182 \
+      CP work/signtousign_entity_ce8f7fe695
+FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd 2015/02/23.19:17:48 P.20131013
+EN work/xlclockdriver 1424711972 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/conv_pkg 1424711887
+AR work/xlclockdriver/behavior 1424711973 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      EN work/xlclockdriver 1424711972 CP synth_reg_w_init CP bufg
+EN work/default_clock_driver_MotorSpeed 1424711974 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/default_clock_driver_MotorSpeed/structural 1424711975 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      EN work/default_clock_driver_MotorSpeed 1424711974 CP work/xlclockdriver
+EN work/motorspeed_cw 1424711976 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/conv_pkg 1424711887
+AR work/motorspeed_cw/structural 1424711977 \
+      FL C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORVelocityPID/netlist/synth_model/motorspeed_cw.vhd \
+      EN work/motorspeed_cw 1424711976 CP work/default_clock_driver_MotorSpeed \
+      CP work/motorspeed CP xlpersistentdff

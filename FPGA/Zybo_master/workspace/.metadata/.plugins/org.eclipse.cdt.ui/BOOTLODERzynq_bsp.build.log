@@ -1,0 +1,6 @@
+02:30:22 **** Build of project BOOTLODERzynq_bsp ****
+make -k all 
+Finished building libraries
+
+02:30:22 Build Finished (took 139ms)
+

@@ -1,0 +1,1 @@
+run -ifn xst_positionsimulation.prj -ifmt mixed -ofn positionsimulation_cw.ngc -ofmt NGC -p xc3s500e-4pq208 -ent positionsimulation_cw -keep_hierarchy NO -iobuf YES -bus_delimiter () -top positionsimulation_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc positionsimulation_cw.xcf -write_timing_constraints yes

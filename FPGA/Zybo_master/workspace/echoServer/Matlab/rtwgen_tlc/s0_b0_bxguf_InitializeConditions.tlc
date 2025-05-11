@@ -1,0 +1,17 @@
+%implements s0_b0_bxguf_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign localVarDecl = ""
+%assign tlcInitializeConditionsFcnOfS0B1 = OpaqueTLCBlockFcn("InitializeConditions", 0, 1, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B2 = OpaqueTLCBlockFcn("InitializeConditions", 0, 2, 0, 1)
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+%<tlcInitializeConditionsFcnOfS0B1>\
+%<tlcInitializeConditionsFcnOfS0B2>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void InitializeConditions(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

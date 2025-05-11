@@ -1,0 +1,9 @@
+
+
+# Global period constraint
+NET "clk" TNM_NET = "clk_832b210d";
+TIMESPEC "TS_clk_832b210d" = PERIOD "clk_832b210d" 20.0 ns HIGH 50 %;
+
+# ce_1000_832b210d_group and inner group constraint
+NET "ce_1000_sg_x1*" TNM_NET = "ce_1000_832b210d_group";
+TIMESPEC "TS_ce_1000_832b210d_group_to_ce_1000_832b210d_group" = FROM "ce_1000_832b210d_group" TO "ce_1000_832b210d_group" 20.0 us;

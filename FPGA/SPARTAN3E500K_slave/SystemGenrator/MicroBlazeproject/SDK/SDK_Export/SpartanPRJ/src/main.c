@@ -1,0 +1,315 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 20, 2015
+ *      Author: laca
+ */
+
+
+#include<xil_io.h>
+#include"xparameters.h"
+#include<xil_types.h>
+#include "xgpio.h"
+#include "ipsdksebesegespozicio_plbw.h"
+#include "xcope.h"
+#include "xutil.h"
+#include "xspi.h"		/* SPI device driver */
+
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xstatus.h"
+
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define LED1 0x01
+#define LED2 0x02
+#define LED3 0x03
+#define LED4 0x04
+#define GPIO_LED_DEVICE_ID  XPAR_LED4GPIO_DEVICE_ID
+#define SPI_DEVICE_ID		 XPAR_SPIZYBO_DEVICE_ID
+static int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId);
+static XSpi SpiInstance;   /* The instance of the SPI device */
+int Test;
+
+typedef struct{
+	                s32 Config0;
+			 	    s32 RefPos0;
+			 	    s32 RefSeb0;
+			 	    s32 Q0_0;
+			 	    s32 Q1_0;
+			 	    s32 Q2_0;
+			 	    s32 Ts0;
+			 	    s32 TsL0;
+			 	    s32 Egyeb0;
+			 	    s32 PwmFrekREgH0;
+			 	    s32 PwmFrekRegL0;
+			 	    s32 sugarakAranya0;
+			 	    s32 qSav0;
+
+			 	    s32 Config1;
+			 	    s32 RefPos1;
+					s32 RefSeb1;
+					s32 Q0_1;
+					s32 Q1_1;
+					s32 Q2_1;
+					s32 Ts1;
+					s32 TsL1;
+					s32 Egyeb1;
+					s32 PwmFrekREgH1;
+					s32 PwmFrekRegL1;
+					s32 sugarakAranya1;
+					s32 qSav1;
+
+					s32 Config2;
+					s32 RefPos2;
+					s32 RefSeb2;
+					s32 Q0_2;
+					s32 Q1_2;
+					s32 Q2_2;
+					s32 Ts2;
+					s32 TsL2;
+					s32 Egyeb2;
+					s32 PwmFrekREgH2;
+					s32 PwmFrekRegL2;
+					s32 sugarakAranya2;
+					s32 qSav2;
+
+					s32 Config3;
+					s32 RefPos3;
+					s32 RefSeb3;
+					s32 Q0_3;
+					s32 Q1_3;
+					s32 Q2_3;
+					s32 Ts3;
+					s32 TsL3;
+					s32 Egyeb3;
+					s32 PwmFrekREgH3;
+					s32 PwmFrekRegL3;
+					s32 sugarakAranya3;
+					s32 qSav3;
+
+					s32 addresReg;
+					s32 dataReg;
+ }inIpMag;
+typedef struct{
+	                s32 USebesseg0;
+				    s32 UPozicio0;
+				    s32 SebessegPozicio0;
+				    s32 AktPozicio0;
+				    s32 SzurtSebessegPozicio0;
+				    s32 AktSebesseg0;
+				    s32 SzurtSebesseg0;
+				    s32 eSebeseg0;
+				    s32 n20;
+				    s32 n30;
+				    s32 n40;
+				    s32 n50;
+				    s32 n60;
+
+				    s32 USebesseg1;
+				    s32 UPozicio1;
+					s32 SebessegPozicio1;
+					s32 AktPozicio1;
+					s32 SzurtSebessegPozicio1;
+					s32 AktSebesseg1;
+					s32 SzurtSebesseg1;
+					s32 eSebeseg1;
+					s32 n21;
+					s32 n31;
+					s32 n41;
+					s32 n51;
+					s32 n61;
+
+					s32 USebesseg2;
+					s32 UPozicio2;
+					s32 SebessegPozicio2;
+					s32 AktPozicio2;
+					s32 SzurtSebessegPozicio2;
+					s32 AktSebesseg2;
+					s32 SzurtSebesseg2;
+					s32 eSebeseg2;
+					s32 n22;
+					s32 n32;
+					s32 n42;
+					s32 n52;
+					s32 n62;
+
+					s32 USebesseg3;
+					s32 UPozicio3;
+					s32 SebessegPozicio3;
+					s32 AktPozicio3;
+					s32 SzurtSebessegPozicio3;
+					s32 AktSebesseg3;
+					s32 SzurtSebesseg3;
+					s32 eSebeseg3;
+					s32 n23;
+					s32 n33;
+					s32 n43;
+					s32 n53;
+					s32 n63;
+
+					s32 n100;
+					s32 n101;
+ }outMag;
+
+
+
+int main()
+{
+	//outMag send;
+	//inIpMag recv;
+	outMag send;
+	inIpMag recv;
+	 u8 Data=0xFA;
+	 u32 dataRead;
+	 u32 dataWrite;
+	 XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	 XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	 XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data| LED3);
+	 xc_iface_t *iface;
+	 int Status;
+	 Status = SpiSlaveInit(&SpiInstance, SPI_DEVICE_ID);
+	 if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	 }
+	 XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	 XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	 XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data);
+
+
+//initialize the software driver, assuming the Pcore device ID is 0
+XC_CfgInitialize(&iface, &IPSDKSEBESEGESPOZICIO_PLBW_ConfigTable[XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_DEVICE_ID]);
+while(1)
+  {
+
+
+	send.AktPozicio0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_AKTPOZICIO);
+	send.UPozicio0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_UPOZICIO);
+	send.AktSebesseg0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_AKTSEBESSEG);
+	send.SebessegPozicio0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_SEBESSEGPOZICIO);
+	send.USebesseg0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_USEBESSEG);
+	send.eSebeseg0=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_ESEBESSEG);
+
+
+
+	send.AktPozicio2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_AKTPOZICIO);
+	send.UPozicio2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_UPOZICIO);
+	send.AktSebesseg2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_AKTSEBESSEG);
+	send.SebessegPozicio2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_SEBESSEGPOZICIO);
+	send.USebesseg2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_USEBESSEG);
+	send.eSebeseg2=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_ESEBESSEG);
+
+	send.AktPozicio3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_AKTPOZICIO);
+	send.UPozicio3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_UPOZICIO);
+	send.AktSebesseg3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_AKTSEBESSEG);
+	send.SebessegPozicio3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_SEBESSEGPOZICIO);
+	send.USebesseg3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_USEBESSEG);
+	send.eSebeseg3=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_ESEBESSEG);
+
+	send.n21=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_AKTPOZICIO);
+	send.UPozicio1=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_UPOZICIO);
+	send.AktSebesseg1=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_AKTSEBESSEG);
+	send.SebessegPozicio1=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_SEBESSEGPOZICIO);
+	send.USebesseg1=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_USEBESSEG);
+	send.eSebeseg1=Xil_In32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_ESEBESSEG);
+
+
+	XSpi_Transfer(&SpiInstance,&send,&recv ,(u16)(sizeof(send)));
+	Data=~Data;
+	XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data);
+    int tolt=500;
+	Xil_Out16(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_TOLTESIIDO,tolt);
+	Xil_Out16(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_TOLTESIIDO,tolt);
+	Xil_Out16(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_TOLTESIIDO,tolt);
+	Xil_Out16(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_TOLTESIIDO,tolt);
+
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_CONFIG,recv.Config0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_Q0,recv.Q0_0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_Q1,recv.Q1_0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_Q2,recv.Q2_0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_PIDTS,recv.Ts0);
+	//Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_PWMFREK,recv.PwmFrekREgH0<<16+recv.PwmFrekRegL0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_REFSPEED,recv.RefSeb0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_POSREF,recv.RefPos0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_SUGARAKARANYA,recv.sugarakAranya0);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_0_MEMMAP_Q_SAV,recv.qSav0);
+
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_CONFIG,recv.Config1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_Q0,recv.Q0_1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_Q1,recv.Q1_1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_Q2,recv.Q2_1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_PIDTS,recv.Ts1);
+	//Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_PWMFREK,recv.PwmFrekREgH1<<16+recv.PwmFrekRegL1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_REFSPEED,recv.RefSeb1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_POSREF,recv.RefPos1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_SUGARAKARANYA,recv.sugarakAranya1);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_1_MEMMAP_Q_SAV,recv.qSav1);
+
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_CONFIG,recv.Config2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_Q0,recv.Q0_2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_Q1,recv.Q1_2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_Q2,recv.Q2_2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_PIDTS,recv.Ts2);
+	//Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_PWMFREK,recv.PwmFrekREgH2<<16+recv.PwmFrekRegL2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_REFSPEED,recv.RefSeb2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_POSREF,recv.RefPos2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_SUGARAKARANYA,recv.sugarakAranya2);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_2_MEMMAP_Q_SAV,recv.qSav2);
+
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_CONFIG,recv.Config3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_Q0,recv.Q0_3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_Q1,recv.Q1_3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_Q2,recv.Q2_3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_PIDTS,recv.Ts3);
+//	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_PWMFREK,recv.PwmFrekREgH3<<16+recv.PwmFrekRegL3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_REFSPEED,recv.RefSeb3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_POSREF,recv.RefPos3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_SUGARAKARANYA,recv.sugarakAranya3);
+	Xil_Out32(XPAR_IPSDKSEBESEGESPOZICIO_PLBW_3_MEMMAP_Q_SAV,recv.qSav3);
+
+    switch(recv.addresReg)
+    {
+    case 1:
+    	Xil_Out8(XPAR_COOLER0PWM_MEMMAP_CONFIG,(u8)recv.dataReg);
+    break;
+    case 2:
+    	Xil_Out16(XPAR_COOLER0PWM_MEMMAP_DUTY,(u16)recv.dataReg);
+    break;
+    case 3:
+       	Xil_Out8(XPAR_PUMPPWM_MEMMAP_CONFIG,(u8)recv.dataReg);
+    break;
+    case 4:
+       	Xil_Out16(XPAR_PUMPPWM_MEMMAP_DUTY,(u16)recv.dataReg);
+    break;
+    }
+
+  }
+}
+int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId)
+{
+	XSpi_Config *ConfigPtr;
+	int Status;
+	//u32 Count;
+
+	ConfigPtr = XSpi_LookupConfig(SpiDeviceId);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	Status = XSpi_CfgInitialize(SpiInstancePtr, ConfigPtr, XPAR_SPIZYBO_BASEADDR);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	//Status = XSpi_SetOptions(SpiInstancePtr, XSP_MASTER_OPTION |XSP_CLK_PHASE_1_OPTION);
+	Status = XSpi_SetOptions(SpiInstancePtr, XSP_CLK_PHASE_1_OPTION ); ///| XSP_CLK_ACTIVE_LOW_OPTION
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	//XSpi_GetSlaveSelect(SpiInstancePtr);
+	//XSpi_SetSlaveSelect(SpiInstancePtr,1);
+	XSpi_Start(SpiInstancePtr);
+	XSpi_IntrGlobalDisable(SpiInstancePtr);
+	return XST_SUCCESS;
+}

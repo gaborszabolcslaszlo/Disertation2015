@@ -1,0 +1,2688 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Reading constraint file onoff_cw.xcf.
+XCF parsing done.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_onoff.prj"
+Input Format                       : mixed
+Synthesis Constraint File          : onoff_cw.xcf
+
+---- Target Parameters
+Output File Name                   : "onoff_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4fg320
+
+---- Source Options
+Entity Name                        : onoff_cw
+Top Module Name                    : onoff_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+Write Timing Constraints           : yes
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" in Library work.
+Entity <addsb_11_0_80bded47015320ce> compiled.
+Entity <addsb_11_0_80bded47015320ce> (Architecture <addsb_11_0_80bded47015320ce_a>) compiled.
+Entity <addsb_11_0_d2b0e63c2ff9bf9d> compiled.
+Entity <addsb_11_0_d2b0e63c2ff9bf9d> (Architecture <addsb_11_0_d2b0e63c2ff9bf9d_a>) compiled.
+Entity <cntr_11_0_74252206ec4646ae> compiled.
+Entity <cntr_11_0_74252206ec4646ae> (Architecture <cntr_11_0_74252206ec4646ae_a>) compiled.
+Entity <cntr_11_0_e7c6fab986d296a4> compiled.
+Entity <cntr_11_0_e7c6fab986d296a4> (Architecture <cntr_11_0_e7c6fab986d296a4_a>) compiled.
+Entity <mult_11_2_b39611ba5425a680> compiled.
+Entity <mult_11_2_b39611ba5425a680> (Architecture <mult_11_2_b39611ba5425a680_a>) compiled.
+Entity <mult_11_2_b9a510f8f49a69d2> compiled.
+Entity <mult_11_2_b9a510f8f49a69d2> (Architecture <mult_11_2_b9a510f8f49a69d2_a>) compiled.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <srl17e> compiled.
+Entity <srl17e> (Architecture <structural>) compiled.
+Entity <synth_reg> compiled.
+Entity <synth_reg> (Architecture <structural>) compiled.
+Entity <synth_reg_reg> compiled.
+Entity <synth_reg_reg> (Architecture <behav>) compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <convert_func_call> compiled.
+Entity <convert_func_call> (Architecture <behavior>) compiled.
+Entity <xlconvert> compiled.
+Entity <xlconvert> (Architecture <behavior>) compiled.
+Entity <reinterpret_f21e7f2ddf> compiled.
+Entity <reinterpret_f21e7f2ddf> (Architecture <behavior>) compiled.
+Entity <xladdsub_onOff> compiled.
+Entity <xladdsub_onOff> (Architecture <behavior>) compiled.
+Entity <bitbasher_b142b1358a> compiled.
+Entity <bitbasher_b142b1358a> (Architecture <behavior>) compiled.
+Entity <xldelay> compiled.
+Entity <xldelay> (Architecture <behavior>) compiled.
+Entity <inverter_e5b38cca3b> compiled.
+Entity <inverter_e5b38cca3b> (Architecture <behavior>) compiled.
+Entity <logical_80f90b97d0> compiled.
+Entity <logical_80f90b97d0> (Architecture <behavior>) compiled.
+Entity <xlmult_onOff> compiled.
+Entity <xlmult_onOff> (Architecture <behavior>) compiled.
+Entity <mux_65a0e0a5b3> compiled.
+Entity <mux_65a0e0a5b3> (Architecture <behavior>) compiled.
+Entity <mux_a161f3a75c> compiled.
+Entity <mux_a161f3a75c> (Architecture <behavior>) compiled.
+Entity <xlregister> compiled.
+Entity <xlregister> (Architecture <behavior>) compiled.
+Entity <relational_5568c80e3e> compiled.
+Entity <relational_5568c80e3e> (Architecture <behavior>) compiled.
+Entity <relational_5ef1f4e573> compiled.
+Entity <relational_5ef1f4e573> (Architecture <behavior>) compiled.
+Entity <relational_5153393142> compiled.
+Entity <relational_5153393142> (Architecture <behavior>) compiled.
+Entity <constant_a803a2dbbb> compiled.
+Entity <constant_a803a2dbbb> (Architecture <behavior>) compiled.
+Entity <constant_95270e073f> compiled.
+Entity <constant_95270e073f> (Architecture <behavior>) compiled.
+Entity <constant_58b5743dd8> compiled.
+Entity <constant_58b5743dd8> (Architecture <behavior>) compiled.
+Entity <constant_f2a2d93eac> compiled.
+Entity <constant_f2a2d93eac> (Architecture <behavior>) compiled.
+Entity <constant_7044437b9b> compiled.
+Entity <constant_7044437b9b> (Architecture <behavior>) compiled.
+Entity <constant_017d9de1ab> compiled.
+Entity <constant_017d9de1ab> (Architecture <behavior>) compiled.
+Entity <xlcounter_free_onOff> compiled.
+Entity <xlcounter_free_onOff> (Architecture <behavior>) compiled.
+Entity <relational_7a2906d528> compiled.
+Entity <relational_7a2906d528> (Architecture <behavior>) compiled.
+Entity <relational_7a7af7b80d> compiled.
+Entity <relational_7a7af7b80d> (Architecture <behavior>) compiled.
+Entity <inverter_1ca63a13a1> compiled.
+Entity <inverter_1ca63a13a1> (Architecture <behavior>) compiled.
+Entity <mux_2c45f290ed> compiled.
+Entity <mux_2c45f290ed> (Architecture <behavior>) compiled.
+Entity <constant_190a6d2a1a> compiled.
+Entity <constant_190a6d2a1a> (Architecture <behavior>) compiled.
+Entity <constant_31026a6611> compiled.
+Entity <constant_31026a6611> (Architecture <behavior>) compiled.
+Entity <constant_515f6b5526> compiled.
+Entity <constant_515f6b5526> (Architecture <behavior>) compiled.
+Entity <constant_6c8e1bed76> compiled.
+Entity <constant_6c8e1bed76> (Architecture <behavior>) compiled.
+Entity <inverter_e2b989a05e> compiled.
+Entity <inverter_e2b989a05e> (Architecture <behavior>) compiled.
+Entity <logical_938d99ac11> compiled.
+Entity <logical_938d99ac11> (Architecture <behavior>) compiled.
+Entity <mux_20197168a0> compiled.
+Entity <mux_20197168a0> (Architecture <behavior>) compiled.
+Entity <relational_2a22b4eabc> compiled.
+Entity <relational_2a22b4eabc> (Architecture <behavior>) compiled.
+Entity <relational_adf9a370cd> compiled.
+Entity <relational_adf9a370cd> (Architecture <behavior>) compiled.
+Entity <bitbasher_bb81282914> compiled.
+Entity <bitbasher_bb81282914> (Architecture <behavior>) compiled.
+Entity <bitbasher_1b08270ac9> compiled.
+Entity <bitbasher_1b08270ac9> (Architecture <behavior>) compiled.
+Entity <bitbasher_d33821db41> compiled.
+Entity <bitbasher_d33821db41> (Architecture <behavior>) compiled.
+Entity <bitbasher_75b6572827> compiled.
+Entity <bitbasher_75b6572827> (Architecture <behavior>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <BEHAVIORAL>) compiled.
+Entity <constant_6293007044> compiled.
+Entity <constant_6293007044> (Architecture <behavior>) compiled.
+Entity <constant_32150454cb> compiled.
+Entity <constant_32150454cb> (Architecture <behavior>) compiled.
+Entity <logical_49a7e4b36d> compiled.
+Entity <logical_49a7e4b36d> (Architecture <behavior>) compiled.
+Entity <ja1_entity_5c1b3675b2> compiled.
+Entity <ja1_entity_5c1b3675b2> (Architecture <structural>) compiled.
+Entity <onoff_entity_5ff5682403> compiled.
+Entity <onoff_entity_5ff5682403> (Architecture <structural>) compiled.
+Entity <pwm8_entity_808ac00709> compiled.
+Entity <pwm8_entity_808ac00709> (Architecture <structural>) compiled.
+Entity <pwm_reg2_entity_081d2a8bce> compiled.
+Entity <pwm_reg2_entity_081d2a8bce> (Architecture <structural>) compiled.
+Entity <signtousign_entity_1ca98ae371> compiled.
+Entity <signtousign_entity_1ca98ae371> (Architecture <structural>) compiled.
+Entity <counter_entity_85906b2cda> compiled.
+Entity <counter_entity_85906b2cda> (Architecture <structural>) compiled.
+Entity <onoff> compiled.
+Entity <onoff> (Architecture <structural>) compiled.
+Compiling vhdl file "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd" in Library work.
+Entity <xlclockdriver> compiled.
+Entity <xlclockdriver> (Architecture <behavior>) compiled.
+Entity <default_clock_driver_onOff> compiled.
+Entity <default_clock_driver_onOff> (Architecture <structural>) compiled.
+Entity <onoff_cw> compiled.
+Entity <onoff_cw> (Architecture <structural>) compiled.
+
+Reading constraint file onoff_cw.xcf.
+XCF parsing done.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <onoff_cw> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <default_clock_driver_onOff> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <onoff> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlclockdriver> in library <work> (architecture <behavior>) with generics.
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+
+Analyzing hierarchy for entity <bitbasher_bb81282914> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_1b08270ac9> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_d33821db41> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_75b6572827> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <top_level> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_32150454cb> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <counter_entity_85906b2cda> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <ja1_entity_5c1b3675b2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <logical_49a7e4b36d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <onoff_entity_5ff5682403> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pwm_reg2_entity_081d2a8bce> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 17
+	init_value = "00000000000000000"
+
+Analyzing hierarchy for entity <signtousign_entity_1ca98ae371> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xladdsub_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_d2b0e63c2ff9bf9d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 1
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 1
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <constant_31026a6611> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_515f6b5526> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_6c8e1bed76> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_190a6d2a1a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlcounter_free_onOff> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_74252206ec4646ae"
+	op_arith = 1
+	op_width = 24
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+
+Analyzing hierarchy for entity <inverter_e2b989a05e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_938d99ac11> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlmult_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 24
+	b_arith = 2
+	b_bin_pt = 14
+	b_width = 16
+	c_a_type = 1
+	c_a_width = 24
+	c_b_type = 0
+	c_b_width = 16
+	c_baat = 24
+	c_output_width = 40
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_b39611ba5425a680"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	multsign = 2
+	overflow = 1
+	p_arith = 2
+	p_bin_pt = 14
+	p_width = 40
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+
+Analyzing hierarchy for entity <mux_20197168a0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 16
+	init_value = "0111111111111111"
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 16
+	init_value = "0000000000000000"
+
+Analyzing hierarchy for entity <relational_2a22b4eabc> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_adf9a370cd> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <reinterpret_f21e7f2ddf> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xladdsub_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <bitbasher_b142b1358a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_a803a2dbbb> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_f2a2d93eac> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 16
+
+Analyzing hierarchy for entity <constant_7044437b9b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_017d9de1ab> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_5153393142> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlmult_onOff> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_a_type = 0
+	c_a_width = 17
+	c_b_type = 0
+	c_b_width = 17
+	c_baat = 17
+	c_output_width = 34
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_b9a510f8f49a69d2"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 1
+	multsign = 2
+	overflow = 2
+	p_arith = 2
+	p_bin_pt = 0
+	p_width = 17
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+
+Analyzing hierarchy for entity <mux_65a0e0a5b3> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_a161f3a75c> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 1
+	init_value = "0"
+
+Analyzing hierarchy for entity <relational_5568c80e3e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_5ef1f4e573> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_95270e073f> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_58b5743dd8> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <pwm8_entity_808ac00709> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <inverter_1ca63a13a1> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_2c45f290ed> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0111111111111111"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <xlcounter_free_onOff> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_e7c6fab986d296a4"
+	op_arith = 1
+	op_width = 16
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_7a2906d528> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_7a7af7b80d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0111111111111111"
+	width = 16
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	width = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <onoff_cw> in library <work> (Architecture <structural>).
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x6>.
+    Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
+    Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "optimize_primitives = FALSE" for instance <persistentdff_inst> in unit <onoff_cw>.
+    Set property "syn_black_box = TRUE" for instance <persistentdff_inst> in unit <onoff_cw>.
+    Set property "syn_noprune = TRUE" for instance <persistentdff_inst> in unit <onoff_cw>.
+Entity <onoff_cw> analyzed. Unit <onoff_cw> generated.
+
+Analyzing Entity <default_clock_driver_onOff> in library <work> (Architecture <structural>).
+    Set property "syn_noprune = TRUE" for unit <default_clock_driver_onOff>.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd" line 378: Unconnected output port 'clr' of component 'xlclockdriver'.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd" line 378: Unconnected output port 'ce_logic' of component 'xlclockdriver'.
+Entity <default_clock_driver_onOff> analyzed. Unit <default_clock_driver_onOff> generated.
+
+Analyzing generic Entity <xlclockdriver> in library <work> (Architecture <behavior>).
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+Entity <xlclockdriver> analyzed. Unit <xlclockdriver> generated.
+
+Analyzing generic Entity <synth_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.1> analyzed. Unit <synth_reg_w_init.1> generated.
+
+Analyzing generic Entity <single_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	width = 1
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.1> analyzed. Unit <single_reg_w_init.1> generated.
+
+Analyzing Entity <onoff> in library <work> (Architecture <structural>).
+Entity <onoff> analyzed. Unit <onoff> generated.
+
+Analyzing Entity <bitbasher_bb81282914> in library <work> (Architecture <behavior>).
+Entity <bitbasher_bb81282914> analyzed. Unit <bitbasher_bb81282914> generated.
+
+Analyzing Entity <bitbasher_1b08270ac9> in library <work> (Architecture <behavior>).
+Entity <bitbasher_1b08270ac9> analyzed. Unit <bitbasher_1b08270ac9> generated.
+
+Analyzing Entity <bitbasher_d33821db41> in library <work> (Architecture <behavior>).
+Entity <bitbasher_d33821db41> analyzed. Unit <bitbasher_d33821db41> generated.
+
+Analyzing Entity <bitbasher_75b6572827> in library <work> (Architecture <behavior>).
+Entity <bitbasher_75b6572827> analyzed. Unit <bitbasher_75b6572827> generated.
+
+Analyzing Entity <top_level> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4396: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4403: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4410: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4418: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4425: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4432: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4441: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4448: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4455: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4463: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4470: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4477: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d3> in unit <top_level>.
+Entity <top_level> analyzed. Unit <top_level> generated.
+
+Analyzing Entity <constant_6293007044> in library <work> (Architecture <behavior>).
+Entity <constant_6293007044> analyzed. Unit <constant_6293007044> generated.
+
+Analyzing Entity <constant_32150454cb> in library <work> (Architecture <behavior>).
+Entity <constant_32150454cb> analyzed. Unit <constant_32150454cb> generated.
+
+Analyzing generic Entity <xlconvert.1> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.1> analyzed. Unit <xlconvert.1> generated.
+
+Analyzing generic Entity <convert_func_call.1> in library <work> (Architecture <behavior>).
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.1> analyzed. Unit <convert_func_call.1> generated.
+
+Analyzing generic Entity <xlconvert.2> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.2> analyzed. Unit <xlconvert.2> generated.
+
+Analyzing generic Entity <convert_func_call.2> in library <work> (Architecture <behavior>).
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.2> analyzed. Unit <convert_func_call.2> generated.
+
+Analyzing generic Entity <xlconvert.3> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.3> analyzed. Unit <xlconvert.3> generated.
+
+Analyzing generic Entity <convert_func_call.3> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.3> analyzed. Unit <convert_func_call.3> generated.
+
+Analyzing generic Entity <xlconvert.4> in library <work> (Architecture <behavior>).
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.4> analyzed. Unit <xlconvert.4> generated.
+
+Analyzing Entity <counter_entity_85906b2cda> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5308: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5308: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5308: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5340: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5340: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5340: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5372: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5372: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5372: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5404: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5404: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5404: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5534: Unconnected input port 'up' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5534: Unconnected input port 'load' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5534: Unconnected input port 'din' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5549: Unconnected input port 'up' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5549: Unconnected input port 'load' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5549: Unconnected input port 'din' of component 'xlcounter_free_onOff' is tied to default value.
+Entity <counter_entity_85906b2cda> analyzed. Unit <counter_entity_85906b2cda> generated.
+
+Analyzing generic Entity <xladdsub_onOff.1> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_d2b0e63c2ff9bf9d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 1
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 1
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2808: Instantiating black box module <addsb_11_0_d2b0e63c2ff9bf9d>.
+Entity <xladdsub_onOff.1> analyzed. Unit <xladdsub_onOff.1> generated.
+
+Analyzing generic Entity <xladdsub_onOff.2> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2800: Instantiating black box module <addsb_11_0_80bded47015320ce>.
+Entity <xladdsub_onOff.2> analyzed. Unit <xladdsub_onOff.2> generated.
+
+Analyzing generic Entity <xladdsub_onOff.3> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2800: Instantiating black box module <addsb_11_0_80bded47015320ce>.
+Entity <xladdsub_onOff.3> analyzed. Unit <xladdsub_onOff.3> generated.
+
+Analyzing Entity <constant_31026a6611> in library <work> (Architecture <behavior>).
+Entity <constant_31026a6611> analyzed. Unit <constant_31026a6611> generated.
+
+Analyzing Entity <constant_515f6b5526> in library <work> (Architecture <behavior>).
+Entity <constant_515f6b5526> analyzed. Unit <constant_515f6b5526> generated.
+
+Analyzing Entity <constant_6c8e1bed76> in library <work> (Architecture <behavior>).
+Entity <constant_6c8e1bed76> analyzed. Unit <constant_6c8e1bed76> generated.
+
+Analyzing Entity <constant_190a6d2a1a> in library <work> (Architecture <behavior>).
+Entity <constant_190a6d2a1a> analyzed. Unit <constant_190a6d2a1a> generated.
+
+Analyzing generic Entity <xlcounter_free_onOff.1> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_74252206ec4646ae"
+	op_arith = 1
+	op_width = 24
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlcounter_free_onOff.1>.
+Entity <xlcounter_free_onOff.1> analyzed. Unit <xlcounter_free_onOff.1> generated.
+
+Analyzing generic Entity <xldelay.1> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay.1> analyzed. Unit <xldelay.1> generated.
+
+Analyzing generic Entity <synth_reg.1> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+Entity <synth_reg.1> analyzed. Unit <synth_reg.1> generated.
+
+Analyzing generic Entity <srl17e.1> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.1> analyzed. Unit <srl17e.1> generated.
+
+Analyzing Entity <inverter_e2b989a05e> in library <work> (Architecture <behavior>).
+Entity <inverter_e2b989a05e> analyzed. Unit <inverter_e2b989a05e> generated.
+
+Analyzing Entity <logical_938d99ac11> in library <work> (Architecture <behavior>).
+Entity <logical_938d99ac11> analyzed. Unit <logical_938d99ac11> generated.
+
+Analyzing generic Entity <xlmult_onOff.1> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 24
+	b_arith = 2
+	b_bin_pt = 14
+	b_width = 16
+	c_a_type = 1
+	c_a_width = 24
+	c_b_type = 0
+	c_b_width = 16
+	c_baat = 24
+	c_output_width = 40
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_b39611ba5425a680"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	multsign = 2
+	overflow = 1
+	p_arith = 2
+	p_bin_pt = 14
+	p_width = 40
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlmult_onOff.1>.
+Entity <xlmult_onOff.1> analyzed. Unit <xlmult_onOff.1> generated.
+
+Analyzing Entity <mux_20197168a0> in library <work> (Architecture <behavior>).
+Entity <mux_20197168a0> analyzed. Unit <mux_20197168a0> generated.
+
+Analyzing generic Entity <xlregister.2> in library <work> (Architecture <behavior>).
+	d_width = 16
+	init_value = "0111111111111111"
+Entity <xlregister.2> analyzed. Unit <xlregister.2> generated.
+
+Analyzing generic Entity <synth_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0111111111111111"
+	latency = 1
+	width = 16
+Entity <synth_reg_w_init.3> analyzed. Unit <synth_reg_w_init.3> generated.
+
+Analyzing generic Entity <single_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0111111111111111"
+	width = 16
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2380: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.3> analyzed. Unit <single_reg_w_init.3> generated.
+
+Analyzing generic Entity <xlregister.3> in library <work> (Architecture <behavior>).
+	d_width = 16
+	init_value = "0000000000000000"
+Entity <xlregister.3> analyzed. Unit <xlregister.3> generated.
+
+Analyzing generic Entity <synth_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+Entity <synth_reg_w_init.4> analyzed. Unit <synth_reg_w_init.4> generated.
+
+Analyzing generic Entity <single_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.4> analyzed. Unit <single_reg_w_init.4> generated.
+
+Analyzing Entity <relational_2a22b4eabc> in library <work> (Architecture <behavior>).
+Entity <relational_2a22b4eabc> analyzed. Unit <relational_2a22b4eabc> generated.
+
+Analyzing Entity <relational_adf9a370cd> in library <work> (Architecture <behavior>).
+Entity <relational_adf9a370cd> analyzed. Unit <relational_adf9a370cd> generated.
+
+Analyzing Entity <inverter_e5b38cca3b> in library <work> (Architecture <behavior>).
+Entity <inverter_e5b38cca3b> analyzed. Unit <inverter_e5b38cca3b> generated.
+
+Analyzing Entity <ja1_entity_5c1b3675b2> in library <work> (Architecture <structural>).
+Entity <ja1_entity_5c1b3675b2> analyzed. Unit <ja1_entity_5c1b3675b2> generated.
+
+Analyzing generic Entity <xlconvert.5> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.5> analyzed. Unit <xlconvert.5> generated.
+
+Analyzing generic Entity <convert_func_call.4> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.4> analyzed. Unit <convert_func_call.4> generated.
+
+Analyzing Entity <reinterpret_f21e7f2ddf> in library <work> (Architecture <behavior>).
+Entity <reinterpret_f21e7f2ddf> analyzed. Unit <reinterpret_f21e7f2ddf> generated.
+
+Analyzing Entity <logical_49a7e4b36d> in library <work> (Architecture <behavior>).
+Entity <logical_49a7e4b36d> analyzed. Unit <logical_49a7e4b36d> generated.
+
+Analyzing Entity <onoff_entity_5ff5682403> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4676: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4676: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4676: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4708: Unconnected input port 'c_in' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4708: Unconnected input port 'rst' of component 'xladdsub_onOff' is tied to default value.
+WARNING:Xst:753 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 4708: Unconnected output port 'c_out' of component 'xladdsub_onOff'.
+Entity <onoff_entity_5ff5682403> analyzed. Unit <onoff_entity_5ff5682403> generated.
+
+Analyzing generic Entity <xladdsub_onOff.4> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2800: Instantiating black box module <addsb_11_0_80bded47015320ce>.
+Entity <xladdsub_onOff.4> analyzed. Unit <xladdsub_onOff.4> generated.
+
+Analyzing generic Entity <xladdsub_onOff.5> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_80bded47015320ce"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2800: Instantiating black box module <addsb_11_0_80bded47015320ce>.
+Entity <xladdsub_onOff.5> analyzed. Unit <xladdsub_onOff.5> generated.
+
+Analyzing Entity <bitbasher_b142b1358a> in library <work> (Architecture <behavior>).
+Entity <bitbasher_b142b1358a> analyzed. Unit <bitbasher_b142b1358a> generated.
+
+Analyzing Entity <constant_a803a2dbbb> in library <work> (Architecture <behavior>).
+Entity <constant_a803a2dbbb> analyzed. Unit <constant_a803a2dbbb> generated.
+
+Analyzing Entity <constant_f2a2d93eac> in library <work> (Architecture <behavior>).
+Entity <constant_f2a2d93eac> analyzed. Unit <constant_f2a2d93eac> generated.
+
+Analyzing generic Entity <xldelay.2> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 16
+Entity <xldelay.2> analyzed. Unit <xldelay.2> generated.
+
+Analyzing generic Entity <synth_reg.2> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 16
+Entity <synth_reg.2> analyzed. Unit <synth_reg.2> generated.
+
+Analyzing generic Entity <srl17e.2> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 16
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.2> analyzed. Unit <srl17e.2> generated.
+
+Analyzing Entity <constant_7044437b9b> in library <work> (Architecture <behavior>).
+Entity <constant_7044437b9b> analyzed. Unit <constant_7044437b9b> generated.
+
+Analyzing Entity <constant_017d9de1ab> in library <work> (Architecture <behavior>).
+Entity <constant_017d9de1ab> analyzed. Unit <constant_017d9de1ab> generated.
+
+Analyzing Entity <relational_5153393142> in library <work> (Architecture <behavior>).
+Entity <relational_5153393142> analyzed. Unit <relational_5153393142> generated.
+
+Analyzing Entity <logical_80f90b97d0> in library <work> (Architecture <behavior>).
+Entity <logical_80f90b97d0> analyzed. Unit <logical_80f90b97d0> generated.
+
+Analyzing generic Entity <xlmult_onOff.2> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_a_type = 0
+	c_a_width = 17
+	c_b_type = 0
+	c_b_width = 17
+	c_baat = 17
+	c_output_width = 34
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_b9a510f8f49a69d2"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 1
+	multsign = 2
+	overflow = 2
+	p_arith = 2
+	p_bin_pt = 0
+	p_width = 17
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlmult_onOff.2>.
+Entity <xlmult_onOff.2> analyzed. Unit <xlmult_onOff.2> generated.
+
+Analyzing generic Entity <synth_reg.3> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 17
+Entity <synth_reg.3> analyzed. Unit <synth_reg.3> generated.
+
+Analyzing generic Entity <srl17e.3> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2148: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.3> analyzed. Unit <srl17e.3> generated.
+
+Analyzing Entity <mux_65a0e0a5b3> in library <work> (Architecture <behavior>).
+Entity <mux_65a0e0a5b3> analyzed. Unit <mux_65a0e0a5b3> generated.
+
+Analyzing Entity <mux_a161f3a75c> in library <work> (Architecture <behavior>).
+Entity <mux_a161f3a75c> analyzed. Unit <mux_a161f3a75c> generated.
+
+Analyzing generic Entity <xlregister.4> in library <work> (Architecture <behavior>).
+	d_width = 1
+	init_value = "0"
+Entity <xlregister.4> analyzed. Unit <xlregister.4> generated.
+
+Analyzing generic Entity <synth_reg_w_init.5> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.5> analyzed. Unit <synth_reg_w_init.5> generated.
+
+Analyzing generic Entity <single_reg_w_init.5> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	width = 1
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.5> analyzed. Unit <single_reg_w_init.5> generated.
+
+Analyzing Entity <relational_5568c80e3e> in library <work> (Architecture <behavior>).
+Entity <relational_5568c80e3e> analyzed. Unit <relational_5568c80e3e> generated.
+
+Analyzing Entity <relational_5ef1f4e573> in library <work> (Architecture <behavior>).
+Entity <relational_5ef1f4e573> analyzed. Unit <relational_5ef1f4e573> generated.
+
+Analyzing Entity <constant_95270e073f> in library <work> (Architecture <behavior>).
+Entity <constant_95270e073f> analyzed. Unit <constant_95270e073f> generated.
+
+Analyzing Entity <constant_58b5743dd8> in library <work> (Architecture <behavior>).
+Entity <constant_58b5743dd8> analyzed. Unit <constant_58b5743dd8> generated.
+
+Analyzing Entity <pwm_reg2_entity_081d2a8bce> in library <work> (Architecture <structural>).
+Entity <pwm_reg2_entity_081d2a8bce> analyzed. Unit <pwm_reg2_entity_081d2a8bce> generated.
+
+Analyzing Entity <pwm8_entity_808ac00709> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5103: Unconnected input port 'up' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5103: Unconnected input port 'load' of component 'xlcounter_free_onOff' is tied to default value.
+WARNING:Xst:752 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 5103: Unconnected input port 'din' of component 'xlcounter_free_onOff' is tied to default value.
+Entity <pwm8_entity_808ac00709> analyzed. Unit <pwm8_entity_808ac00709> generated.
+
+Analyzing generic Entity <xlcounter_free_onOff.2> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_e7c6fab986d296a4"
+	op_arith = 1
+	op_width = 16
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_free_onOff.2>.
+Entity <xlcounter_free_onOff.2> analyzed. Unit <xlcounter_free_onOff.2> generated.
+
+Analyzing Entity <relational_7a2906d528> in library <work> (Architecture <behavior>).
+Entity <relational_7a2906d528> analyzed. Unit <relational_7a2906d528> generated.
+
+Analyzing Entity <relational_7a7af7b80d> in library <work> (Architecture <behavior>).
+Entity <relational_7a7af7b80d> analyzed. Unit <relational_7a7af7b80d> generated.
+
+Analyzing generic Entity <xlregister.1> in library <work> (Architecture <behavior>).
+	d_width = 17
+	init_value = "00000000000000000"
+Entity <xlregister.1> analyzed. Unit <xlregister.1> generated.
+
+Analyzing generic Entity <synth_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+Entity <synth_reg_w_init.2> analyzed. Unit <synth_reg_w_init.2> generated.
+
+Analyzing generic Entity <single_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd" line 2370: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.2> analyzed. Unit <single_reg_w_init.2> generated.
+
+Analyzing Entity <signtousign_entity_1ca98ae371> in library <work> (Architecture <structural>).
+Entity <signtousign_entity_1ca98ae371> analyzed. Unit <signtousign_entity_1ca98ae371> generated.
+
+Analyzing Entity <inverter_1ca63a13a1> in library <work> (Architecture <behavior>).
+Entity <inverter_1ca63a13a1> analyzed. Unit <inverter_1ca63a13a1> generated.
+
+Analyzing Entity <mux_2c45f290ed> in library <work> (Architecture <behavior>).
+Entity <mux_2c45f290ed> analyzed. Unit <mux_2c45f290ed> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e2b989a05e> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e5b38cca3b> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_1ca63a13a1> has a constant value of XXXXXXXXXXXXXXXX during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <bitbasher_bb81282914>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_bb81282914> synthesized.
+
+
+Synthesizing Unit <bitbasher_1b08270ac9>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <a_x0_1_28<7:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <bitbasher_1b08270ac9> synthesized.
+
+
+Synthesizing Unit <bitbasher_d33821db41>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <ar_x0_1_27<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <bitbasher_d33821db41> synthesized.
+
+
+Synthesizing Unit <bitbasher_75b6572827>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_75b6572827> synthesized.
+
+
+Synthesizing Unit <constant_6293007044>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_6293007044> synthesized.
+
+
+Synthesizing Unit <constant_32150454cb>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_32150454cb> synthesized.
+
+
+Synthesizing Unit <xlconvert_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_4> synthesized.
+
+
+Synthesizing Unit <inverter_e5b38cca3b>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e5b38cca3b> synthesized.
+
+
+Synthesizing Unit <logical_49a7e4b36d>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_49a7e4b36d> synthesized.
+
+
+Synthesizing Unit <convert_func_call_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <convert_func_call_1> synthesized.
+
+
+Synthesizing Unit <convert_func_call_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <convert_func_call_2> synthesized.
+
+
+Synthesizing Unit <convert_func_call_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <convert_func_call_3> synthesized.
+
+
+Synthesizing Unit <constant_31026a6611>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_31026a6611> synthesized.
+
+
+Synthesizing Unit <constant_515f6b5526>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_515f6b5526> synthesized.
+
+
+Synthesizing Unit <constant_6c8e1bed76>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_6c8e1bed76> synthesized.
+
+
+Synthesizing Unit <constant_190a6d2a1a>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_190a6d2a1a> synthesized.
+
+
+Synthesizing Unit <inverter_e2b989a05e>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e2b989a05e> synthesized.
+
+
+Synthesizing Unit <logical_938d99ac11>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_938d99ac11> synthesized.
+
+
+Synthesizing Unit <mux_20197168a0>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unregy_join_6_1<17:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_20197168a0> synthesized.
+
+
+Synthesizing Unit <relational_2a22b4eabc>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 24-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_2a22b4eabc> synthesized.
+
+
+Synthesizing Unit <relational_adf9a370cd>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 40-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_adf9a370cd> synthesized.
+
+
+Synthesizing Unit <reinterpret_f21e7f2ddf>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_f21e7f2ddf> synthesized.
+
+
+Synthesizing Unit <convert_func_call_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <convert_func_call_4> synthesized.
+
+
+Synthesizing Unit <bitbasher_b142b1358a>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_b142b1358a> synthesized.
+
+
+Synthesizing Unit <constant_a803a2dbbb>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_a803a2dbbb> synthesized.
+
+
+Synthesizing Unit <constant_f2a2d93eac>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_f2a2d93eac> synthesized.
+
+
+Synthesizing Unit <constant_7044437b9b>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_7044437b9b> synthesized.
+
+
+Synthesizing Unit <constant_017d9de1ab>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_017d9de1ab> synthesized.
+
+
+Synthesizing Unit <relational_5153393142>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_5153393142> synthesized.
+
+
+Synthesizing Unit <logical_80f90b97d0>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_80f90b97d0> synthesized.
+
+
+Synthesizing Unit <mux_65a0e0a5b3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit 4-to-1 multiplexer for signal <unregy_join_6_1>.
+    Summary:
+	inferred  17 Multiplexer(s).
+Unit <mux_65a0e0a5b3> synthesized.
+
+
+Synthesizing Unit <mux_a161f3a75c>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_a161f3a75c> synthesized.
+
+
+Synthesizing Unit <relational_5568c80e3e>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator greatequal for signal <result_22_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_5568c80e3e> synthesized.
+
+
+Synthesizing Unit <relational_5ef1f4e573>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator lessequal for signal <result_20_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_5ef1f4e573> synthesized.
+
+
+Synthesizing Unit <constant_95270e073f>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_95270e073f> synthesized.
+
+
+Synthesizing Unit <constant_58b5743dd8>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_58b5743dd8> synthesized.
+
+
+Synthesizing Unit <relational_7a2906d528>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator greater for signal <result_18_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_7a2906d528> synthesized.
+
+
+Synthesizing Unit <relational_7a7af7b80d>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_7a7af7b80d> synthesized.
+
+
+Synthesizing Unit <inverter_1ca63a13a1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_1ca63a13a1> synthesized.
+
+
+Synthesizing Unit <mux_2c45f290ed>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_2c45f290ed> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <single_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <top_level>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <top_level> synthesized.
+
+
+Synthesizing Unit <xlconvert_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_1> synthesized.
+
+
+Synthesizing Unit <xlconvert_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_2> synthesized.
+
+
+Synthesizing Unit <xlconvert_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_3> synthesized.
+
+
+Synthesizing Unit <signtousign_entity_1ca98ae371>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <signtousign_entity_1ca98ae371> synthesized.
+
+
+Synthesizing Unit <xladdsub_onOff_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_onOff_1> synthesized.
+
+
+Synthesizing Unit <xladdsub_onOff_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_onOff_2> synthesized.
+
+
+Synthesizing Unit <xladdsub_onOff_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <core_s<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_onOff_3> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_onOff_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_onOff_1> synthesized.
+
+
+Synthesizing Unit <xlmult_onOff_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <core_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <core_clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <rfd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_core_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_b> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_a> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xlmult_onOff_1> synthesized.
+
+
+Synthesizing Unit <srl17e_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <srl17e_1> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <single_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <single_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <xlconvert_5>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_5> synthesized.
+
+
+Synthesizing Unit <xladdsub_onOff_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_onOff_4> synthesized.
+
+
+Synthesizing Unit <xladdsub_onOff_5>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_onOff_5> synthesized.
+
+
+Synthesizing Unit <srl17e_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <srl17e_2> synthesized.
+
+
+Synthesizing Unit <srl17e_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <srl17e_3> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_5>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <single_reg_w_init_5> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_onOff_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_onOff_2> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <ja1_entity_5c1b3675b2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <ja1_entity_5c1b3675b2> synthesized.
+
+
+Synthesizing Unit <synth_reg_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_1> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <synth_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <synth_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <synth_reg_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_5>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <synth_reg_w_init_5> synthesized.
+
+
+Synthesizing Unit <pwm8_entity_808ac00709>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <pwm8_entity_808ac00709> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd".
+WARNING:Xst:1780 - Signal <internal_ce_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <internal_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found T flip-flop for signal <clk_num<0>>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+Unit <xlclockdriver> synthesized.
+
+
+Synthesizing Unit <pwm_reg2_entity_081d2a8bce>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <pwm_reg2_entity_081d2a8bce> synthesized.
+
+
+Synthesizing Unit <xlregister_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xldelay_1>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_1> synthesized.
+
+
+Synthesizing Unit <xlregister_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <xlregister_2> synthesized.
+
+
+Synthesizing Unit <xlregister_3>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <xlregister_3> synthesized.
+
+
+Synthesizing Unit <xldelay_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_2> synthesized.
+
+
+Synthesizing Unit <xlmult_onOff_2>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:647 - Input <core_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <core_clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <rfd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_core_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_b> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_a> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result8$xor0000> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0001> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0002> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0003> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0004> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0005> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0006> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0007> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0008> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0009> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0010> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0011> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0012> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0013> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0014> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0015> created at line 925.
+    Found 1-bit xor2 for signal <result8$xor0016> created at line 925.
+Unit <xlmult_onOff_2> synthesized.
+
+
+Synthesizing Unit <xlregister_4>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <xlregister_4> synthesized.
+
+
+Synthesizing Unit <default_clock_driver_onOff>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd".
+Unit <default_clock_driver_onOff> synthesized.
+
+
+Synthesizing Unit <counter_entity_85906b2cda>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <counter_entity_85906b2cda> synthesized.
+
+
+Synthesizing Unit <onoff_entity_5ff5682403>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+Unit <onoff_entity_5ff5682403> synthesized.
+
+
+Synthesizing Unit <onoff>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd".
+WARNING:Xst:646 - Signal <black_box_imp4_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_imp3_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_imp2_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir4_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir3_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir2_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <onoff> synthesized.
+
+
+Synthesizing Unit <onoff_cw>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <onoff_cw> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 9
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greatequal                          : 2
+ 17-bit comparator lessequal                           : 1
+ 24-bit comparator equal                               : 1
+ 40-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 17-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 17
+ 1-bit xor2                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Reading core <addsb_11_0_d2b0e63c2ff9bf9d.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <addsb_11_0_80bded47015320ce.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <cntr_11_0_74252206ec4646ae.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <mult_11_2_b39611ba5425a680.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <cntr_11_0_e7c6fab986d296a4.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <mult_11_2_b9a510f8f49a69d2.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+Loading core <addsb_11_0_d2b0e63c2ff9bf9d> for timing and area information for instance <comp2.core_instance2>.
+Loading core <addsb_11_0_80bded47015320ce> for timing and area information for instance <comp0.core_instance0>.
+Loading core <addsb_11_0_80bded47015320ce> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_74252206ec4646ae> for timing and area information for instance <comp1.core_instance1>.
+Loading core <mult_11_2_b39611ba5425a680> for timing and area information for instance <comp1.core_instance1>.
+Loading core <addsb_11_0_80bded47015320ce> for timing and area information for instance <comp0.core_instance0>.
+Loading core <addsb_11_0_80bded47015320ce> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_e7c6fab986d296a4> for timing and area information for instance <comp0.core_instance0>.
+Loading core <mult_11_2_b9a510f8f49a69d2> for timing and area information for instance <comp0.core_instance0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 129
+ Flip-Flops                                            : 129
+# Comparators                                          : 9
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greatequal                          : 2
+ 17-bit comparator lessequal                           : 1
+ 24-bit comparator equal                               : 1
+ 40-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 17-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 17
+ 1-bit xor2                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <onoff_entity_5ff5682403>: instances <ct0>, <ct2> of unit <constant_a803a2dbbb> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <onoff_entity_5ff5682403>: instances <ct0>, <ct4> of unit <constant_a803a2dbbb> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <onoff_entity_5ff5682403>: instances <ct0>, <u0> of unit <constant_a803a2dbbb> are equivalent, second instance is removed
+
+Optimizing unit <onoff_cw> ...
+
+Optimizing unit <top_level> ...
+
+Optimizing unit <single_reg_w_init_3> ...
+
+Optimizing unit <single_reg_w_init_4> ...
+
+Optimizing unit <srl17e_2> ...
+
+Optimizing unit <srl17e_3> ...
+
+Optimizing unit <single_reg_w_init_2> ...
+
+Optimizing unit <xlmult_onOff_2> ...
+
+Optimizing unit <counter_entity_85906b2cda> ...
+
+Optimizing unit <onoff_entity_5ff5682403> ...
+
+Optimizing unit <onoff> ...
+
+Mapping all equations...
+Annotating constraints using XCF file 'onoff_cw.xcf'
+XCF parsing done.
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp> in Unit <onoff_cw> is equivalent to the following 14 FFs/Latches : <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp>
+   <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp> <onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> 
+INFO:Xst:2260 - The FF/Latch <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp> in Unit <onoff_cw> is equivalent to the following 14 FFs/Latches : <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp>
+   <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp> <onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 129
+ Flip-Flops                                            : 129
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : onoff_cw.ngc
+Output Format                      : NGC
+Optimization Goal                  : SPEED
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 134
+
+Cell Usage :
+# BELS                             : 205
+#      GND                         : 1
+#      INV                         : 5
+#      LUT2                        : 6
+#      LUT3                        : 64
+#      LUT4                        : 58
+#      MUXCY                       : 70
+#      VCC                         : 1
+# FlipFlops/Latches                : 130
+#      FD                          : 1
+#      FDCE                        : 12
+#      FDE                         : 34
+#      FDRE                        : 38
+#      FDSE                        : 45
+# Others                           : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       67  out of   8672     0%  
+ Number of Slice Flip Flops:            130  out of  17344     0%  
+ Number of 4 input LUTs:                133  out of  17344     0%  
+ Number of IOs:                         134
+ Number of bonded IOBs:                   0  out of    250     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+clk                                | NONE(persistentdff_inst/q)           | 225   |
+jc1(1)                             | NONE(onoff_x0/black_box/a_kanalis_d1)| 8     |
+jc1(0)                             | NONE(onoff_x0/black_box/a_kanalis_d2)| 4     |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------+--------------------------------------+-------+
+Control Signal                                                               | Buffer(FF name)                      | Load  |
+-----------------------------------------------------------------------------+--------------------------------------+-------+
+N0(XST_GND:G)                                                                | NONE(onoff_x0/black_box/a_kanalis_d3)| 4     |
+onoff_x0/black_box/quada_tagadott(onoff_x0/black_box/quada_tagadott1_INV_0:O)| NONE(onoff_x0/black_box/a_kanalis_d1)| 4     |
+onoff_x0/black_box/quadb_tagadott(onoff_x0/black_box/quadb_tagadott1_INV_0:O)| NONE(onoff_x0/black_box/a_kanalis_d2)| 4     |
+-----------------------------------------------------------------------------+--------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.667ns (Maximum Frequency: 85.712MHz)
+   Minimum input arrival time before clock: 7.935ns
+   Maximum output required time after clock: 11.359ns
+   Maximum combinational path delay: 7.627ns
+
+=========================================================================
+Timing constraint: TS_clk_aaa28ed5 = PERIOD TIMEGRP "clk_aaa28ed5" 20 nS HIGH 10 nS
+  Clock period: 11.667ns (frequency: 85.712MHz)
+  Total number of paths / destination ports: 52879 / 370
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  8.333ns
+  Source:               onoff_x0/counter_85906b2cda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp (FF)
+  Destination:          onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp (FF)
+  Data Path Delay:      11.667ns (Levels of Logic = 25)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 20.000ns
+
+  Data Path: onoff_x0/counter_85906b2cda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp (FF) to onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             5   0.591   0.712  onoff_x0/counter_85906b2cda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp (onoff_x0/counter_85906b2cda/register_q_net(0))
+     begin scope: 'onoff_x0/counter_85906b2cda/addsub2/comp0.core_instance0'
+     begin scope: 'blk00000001'
+     SEC:in->out           1   0.704   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.464   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.804   0.595  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'onoff_x0/counter_85906b2cda/addsub2/comp0.core_instance0'
+     begin scope: 'onoff_x0/onoff_5ff5682403/addsub/comp0.core_instance0'
+     begin scope: 'blk00000001'
+     SEC:in->out           1   0.704   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.464   0.000  sec_inst (sec_net)
+     SEC:in->out           4   0.804   0.762  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'onoff_x0/onoff_5ff5682403/addsub/comp0.core_instance0'
+     LUT3:I0->O            1   0.704   0.424  onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_lut(3)_SW1 (N16)
+     LUT4:I3->O            1   0.704   0.000  onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_lut(3) (onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_lut(3))
+     MUXCY:S->O            1   0.464   0.000  onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_cy(3) (onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_cy(3))
+     MUXCY:CI->O           1   0.059   0.000  onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_cy(4) (onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_cy(4))
+     MUXCY:CI->O           3   0.459   0.706  onoff_x0/onoff_5ff5682403/relational/Mcompar_result_22_3_rel(0)_cy(5) (onoff_x0/onoff_5ff5682403/relational_op_net)
+     LUT4:I0->O           15   0.704   0.000  onoff_x0/onoff_5ff5682403/mux_y_net_x0(3)1 (u(1))
+     FDRE:D                    0.308          onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp
+    ----------------------------------------
+    Total                     11.667ns (8.468ns logic, 3.199ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.60 secs
+ 
+--> 
+
+Total memory usage is 307180 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  432 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

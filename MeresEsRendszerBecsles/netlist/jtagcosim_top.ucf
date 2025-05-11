@@ -1,0 +1,37 @@
+#
+# Filename:    sparten3e500kpq208c4.ucf
+#
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              Sparten3e500kpq208c4
+#
+
+NET "sys_clk" LOC = "P184";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 50 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.
+NET Pmod1(0) LOC = "P23"; # pmod1 contingent
+NET Pmod1(1) LOC = "P25"; # pmod1 contingent
+NET Pmod1(2) LOC = "P29"; # pmod1 contingent
+NET Pmod1(3) LOC = "P31"; # pmod1 contingent
+NET Pmod1(4) LOC = "P19"; # pmod1 contingent
+NET Pmod1(5) LOC = "P16"; # pmod1 contingent
+NET Pmod1(6) LOC = "P12"; # pmod1 contingent
+NET Pmod1(7) LOC = "P9"; # pmod1 contingent
+NET Pmod2(0) LOC = "P22"; # pmod2 contingent
+NET Pmod2(1) LOC = "P24"; # pmod2 contingent
+NET Pmod2(2) LOC = "P28"; # pmod2 contingent
+NET Pmod2(3) LOC = "P30"; # pmod2 contingent
+NET Pmod2(4) LOC = "P18"; # pmod2 contingent
+NET Pmod2(5) LOC = "P15"; # pmod2 contingent
+NET Pmod2(6) LOC = "P11"; # pmod2 contingent
+NET Pmod2(7) LOC = "P8"; # pmod2 contingent
+NET Pmod3(0) LOC = "P47"; # pmod3 contingent
+NET Pmod3(1) LOC = "P49"; # pmod3 contingent
+NET Pmod3(2) LOC = "P55"; # pmod3 contingent
+NET Pmod3(3) LOC = "P61"; # pmod3 contingent
+NET Pmod3(4) LOC = "P42"; # pmod3 contingent
+NET Pmod3(5) LOC = "P40"; # pmod3 contingent
+NET Pmod3(6) LOC = "P36"; # pmod3 contingent
+NET Pmod3(7) LOC = "P34"; # pmod3 contingent

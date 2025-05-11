@@ -1,0 +1,1340 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Feb 23 19:18:26 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Pmod2(0)" LOCATE = SITE "P22" LEVEL 1;
+COMP "Pmod2(1)" LOCATE = SITE "P24" LEVEL 1;
+COMP "Pmod2(2)" LOCATE = SITE "P28" LEVEL 1;
+COMP "Pmod2(3)" LOCATE = SITE "P30" LEVEL 1;
+COMP "Pmod2(4)" LOCATE = SITE "P18" LEVEL 1;
+COMP "Pmod2(5)" LOCATE = SITE "P15" LEVEL 1;
+COMP "Pmod2(6)" LOCATE = SITE "P11" LEVEL 1;
+COMP "Pmod2(7)" LOCATE = SITE "P8" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "P184" LEVEL 1;
+NET "ibufg_sys_clk_O" BEL "bufg_sys_clk.GCLKMUX" USELOCALCONNECT;
+PIN
+        jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>
+        = BEL
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B"
+        PINNAME CLKB;
+PIN
+        jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>
+        = BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B"
+        PINNAME CLKB;
+TIMEGRP hwcosim_sys_clk = BEL "bufgmux_comp1.GCLKMUX" BEL "bufgmux_comp1" BEL
+        "bufgmux_comp2.GCLKMUX" BEL "bufgmux_comp2" BEL
+        "jtag_iface/serial_iface/cmd_proc/mode" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/dout_fifo_we" BEL
+        "jtag_iface/serial_iface/cmd_proc/cosim_clk_sel" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/data_valid" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/seq_addr" BEL
+        "jtag_iface/serial_iface/cmd_proc/sstep_clk_i" BEL
+        "jtag_iface/serial_iface/cmd_proc/current_state_FSM_FFd2" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/full" BEL
+        "jtag_iface/serial_iface/dout_fifo/almost_full" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/wr_reset" BEL
+        "jtag_iface/serial_iface/dout_fifo/wr_reset_resync" PIN
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>"
+        BEL "jtag_iface/serial_iface/din_fifo/read_addr[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/empty1" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray_ext" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray_ext" BEL
+        "jtag_iface/serial_iface/din_fifo/bram_enb_pipe" BEL
+        "jtag_iface/serial_iface/din_fifo/rd_reset" BEL
+        "jtag_iface/serial_iface/din_fifo/rd_reset_resync" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[0]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[1]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[2]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[3]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[4]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[5]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[6]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[7]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[8]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[9]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[10]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[11]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[12]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[13]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[14]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[15]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[16]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[17]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[18]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[19]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[20]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[21]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[22]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[23]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[24]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[25]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[26]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[27]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[28]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[29]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[30]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[31]"
+        PIN
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>"
+        BEL "jtag_iface/serial_iface/cmd_proc/n_words_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/current_state_FSM_FFd1" BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay2/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay2/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register7/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].srl16_used.u1"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].srl16_used.u1"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[2].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[3].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[4].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[5].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[6].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[7].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[8].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[9].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[10].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[11].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[12].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[13].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[14].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[15].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[16].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/counter/comp0.core_instance0/blk00000001/blk00000007"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/counter/comp0.core_instance0/blk00000001/blk00000008"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000043"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000044"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000045"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000046"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000047"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000048"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000049"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000050"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000051"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000052"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000053"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000054"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000055"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000056"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000057"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000058"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000059"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000060"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000061"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000062"
+        BEL "sysgen_hwcosim_iface/memory_map/int_mm_enapwm" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cc_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_bb_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_aa_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_16" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_gateway_in_0" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_16" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_15" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_14" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_13" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_12" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_11" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_10" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_9" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_8" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_7" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_6" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_5" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_4" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_3" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_2" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_1" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_31" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_30" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_29" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_28" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_27" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_26" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_25" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_24" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_23" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_22" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_21" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_20" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_19" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_18" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_17" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_16" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_ts_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_recerencia_0" BEL
+        "bufg_sys_clk.GCLKMUX" BEL "bufg_sys_clk";
+PIN
+        jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>
+        = BEL
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A"
+        PINNAME CLKA;
+PIN
+        jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>
+        = BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A"
+        PINNAME CLKA;
+TIMEGRP J_CLK = BEL "jtag_iface/serial_iface/dout_fifo/read_addr[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/empty1" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/rd_reset" BEL
+        "jtag_iface/serial_iface/dout_fifo/rd_reset_resync" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[2]" PIN
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>"
+        BEL "jtag_iface/serial_iface/din_fifo/full" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/wr_reset" BEL
+        "jtag_iface/serial_iface/din_fifo/wr_reset_resync" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[4]" PIN
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>"
+        BEL "jtag_iface/serial_iface/din_fifo_we" BEL
+        "jtag_iface/serial_iface/sync_word_sr_0" BEL
+        "jtag_iface/serial_iface/sync_word_sr_1" BEL
+        "jtag_iface/serial_iface/sync_word_sr_2" BEL
+        "jtag_iface/serial_iface/sync_word_sr_3" BEL
+        "jtag_iface/serial_iface/sync_word_sr_4" BEL
+        "jtag_iface/serial_iface/sync_word_sr_5" BEL
+        "jtag_iface/serial_iface/sync_word_sr_6" BEL
+        "jtag_iface/serial_iface/sync_word_sr_7" BEL
+        "jtag_iface/serial_iface/sync_word_sr_8" BEL
+        "jtag_iface/serial_iface/sync_word_sr_9" BEL
+        "jtag_iface/serial_iface/sync_word_sr_10" BEL
+        "jtag_iface/serial_iface/sync_word_sr_11" BEL
+        "jtag_iface/serial_iface/sync_word_sr_12" BEL
+        "jtag_iface/serial_iface/sync_word_sr_13" BEL
+        "jtag_iface/serial_iface/sync_word_sr_14" BEL
+        "jtag_iface/serial_iface/sync_word_sr_15" BEL
+        "jtag_iface/serial_iface/sync_word_sr_16" BEL
+        "jtag_iface/serial_iface/sync_word_sr_17" BEL
+        "jtag_iface/serial_iface/sync_word_sr_18" BEL
+        "jtag_iface/serial_iface/sync_word_sr_19" BEL
+        "jtag_iface/serial_iface/sync_word_sr_20" BEL
+        "jtag_iface/serial_iface/sync_word_sr_21" BEL
+        "jtag_iface/serial_iface/sync_word_sr_22" BEL
+        "jtag_iface/serial_iface/sync_word_sr_23" BEL
+        "jtag_iface/serial_iface/sync_word_sr_24" BEL
+        "jtag_iface/serial_iface/sync_word_sr_25" BEL
+        "jtag_iface/serial_iface/sync_word_sr_26" BEL
+        "jtag_iface/serial_iface/sync_word_sr_27" BEL
+        "jtag_iface/serial_iface/sync_word_sr_28" BEL
+        "jtag_iface/serial_iface/sync_word_sr_29" BEL
+        "jtag_iface/serial_iface/sync_word_sr_30";
+TIMEGRP U_CLK = BEL "jtag_iface/serial_iface/din_fifo_we" BEL
+        "jtag_iface/serial_iface/sync_word_sr_0" BEL
+        "jtag_iface/serial_iface/sync_word_sr_1" BEL
+        "jtag_iface/serial_iface/sync_word_sr_2" BEL
+        "jtag_iface/serial_iface/sync_word_sr_3" BEL
+        "jtag_iface/serial_iface/sync_word_sr_4" BEL
+        "jtag_iface/serial_iface/sync_word_sr_5" BEL
+        "jtag_iface/serial_iface/sync_word_sr_6" BEL
+        "jtag_iface/serial_iface/sync_word_sr_7" BEL
+        "jtag_iface/serial_iface/sync_word_sr_8" BEL
+        "jtag_iface/serial_iface/sync_word_sr_9" BEL
+        "jtag_iface/serial_iface/sync_word_sr_10" BEL
+        "jtag_iface/serial_iface/sync_word_sr_11" BEL
+        "jtag_iface/serial_iface/sync_word_sr_12" BEL
+        "jtag_iface/serial_iface/sync_word_sr_13" BEL
+        "jtag_iface/serial_iface/sync_word_sr_14" BEL
+        "jtag_iface/serial_iface/sync_word_sr_15" BEL
+        "jtag_iface/serial_iface/sync_word_sr_16" BEL
+        "jtag_iface/serial_iface/sync_word_sr_17" BEL
+        "jtag_iface/serial_iface/sync_word_sr_18" BEL
+        "jtag_iface/serial_iface/sync_word_sr_19" BEL
+        "jtag_iface/serial_iface/sync_word_sr_20" BEL
+        "jtag_iface/serial_iface/sync_word_sr_21" BEL
+        "jtag_iface/serial_iface/sync_word_sr_22" BEL
+        "jtag_iface/serial_iface/sync_word_sr_23" BEL
+        "jtag_iface/serial_iface/sync_word_sr_24" BEL
+        "jtag_iface/serial_iface/sync_word_sr_25" BEL
+        "jtag_iface/serial_iface/sync_word_sr_26" BEL
+        "jtag_iface/serial_iface/sync_word_sr_27" BEL
+        "jtag_iface/serial_iface/sync_word_sr_28" BEL
+        "jtag_iface/serial_iface/sync_word_sr_29" BEL
+        "jtag_iface/serial_iface/sync_word_sr_30";
+TIMEGRP clk_be479027 = BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay2/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay2/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register7/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].srl16_used.u1"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].srl16_used.u1"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register6/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[2].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[3].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[4].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[5].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[6].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[7].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[8].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[9].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[10].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[11].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[12].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[13].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[14].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[15].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[16].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/counter_2f53ec633c/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/counter/comp0.core_instance0/blk00000001/blk00000007"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pidrek_2de86a3eda/counter/comp0.core_instance0/blk00000001/blk00000008"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/pwm_reg2_e6c05b507a/pwm8_b382bc4709/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000043"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000044"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000045"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000046"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000047"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000048"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000049"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000004f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000050"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000051"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000052"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000053"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000054"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000055"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000056"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000057"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000058"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000059"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk0000005f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000060"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000061"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/motorspeed_x0/sampletime_generator_8479939182/counter/comp1.core_instance1/blk00000001/blk00000062";
+NET "jtag_iface/drck1" PERIOD = 30 ns HIGH 50%;
+TS_clk_be479027 = PERIOD TIMEGRP "clk_be479027" 20 ns HIGH 50%;
+TS_J_TO_U = MAXDELAY FROM TIMEGRP "J_CLK" TO TIMEGRP "U_CLK" 15 ns;
+TS_hwcosim_sys_clk = PERIOD TIMEGRP "hwcosim_sys_clk" 50 MHz HIGH 50%;
+PIN bufgmux_comp2.GCLKMUX_pins<3> = BEL "bufgmux_comp2.GCLKMUX" PINNAME S;
+PIN "bufgmux_comp2.GCLKMUX_pins<3>" TIG;
+SCHEMATIC END;
+

@@ -1,0 +1,98 @@
+
+
+# Global period constraint
+NET "clk" TNM_NET = "clk_74519694";
+TIMESPEC "TS_clk_74519694" = PERIOD "clk_74519694" 20.0 ns HIGH 50 %;
+
+# Offset in constraints
+
+# Offset out constraints
+NET "position(0)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(0)" FAST;
+NET "position(1)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(1)" FAST;
+NET "position(2)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(2)" FAST;
+NET "position(3)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(3)" FAST;
+NET "position(4)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(4)" FAST;
+NET "position(5)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(5)" FAST;
+NET "position(6)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(6)" FAST;
+NET "position(7)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(7)" FAST;
+NET "position(8)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(8)" FAST;
+NET "position(9)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(9)" FAST;
+NET "position(10)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(10)" FAST;
+NET "position(11)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(11)" FAST;
+NET "position(12)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(12)" FAST;
+NET "position(13)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(13)" FAST;
+NET "position(14)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(14)" FAST;
+NET "position(15)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "position(15)" FAST;
+NET "sebesseg(0)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(0)" FAST;
+NET "sebesseg(1)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(1)" FAST;
+NET "sebesseg(2)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(2)" FAST;
+NET "sebesseg(3)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(3)" FAST;
+NET "sebesseg(4)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(4)" FAST;
+NET "sebesseg(5)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(5)" FAST;
+NET "sebesseg(6)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(6)" FAST;
+NET "sebesseg(7)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(7)" FAST;
+NET "sebesseg(8)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(8)" FAST;
+NET "sebesseg(9)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(9)" FAST;
+NET "sebesseg(10)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(10)" FAST;
+NET "sebesseg(11)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(11)" FAST;
+NET "sebesseg(12)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(12)" FAST;
+NET "sebesseg(13)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(13)" FAST;
+NET "sebesseg(14)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(14)" FAST;
+NET "sebesseg(15)" OFFSET = OUT : 20.0 : AFTER "clk";
+NET "sebesseg(15)" FAST;
+
+# Offset inout constraints
+
+# LOC constraints
+NET "clk" LOC = "Fixed";
+NET "posistionsens(1)" LOC = "P48";
+NET "posistionsens(0)" LOC = "P49";
+NET "pwmpos(1)" LOC = "P135";
+NET "pwmpos(0)" LOC = "P137";
+NET "pwmseb(1)" LOC = "P133";
+NET "pwmseb(0)" LOC = "P134";
+NET "sebsensor(1)" LOC = "P45";
+NET "sebsensor(0)" LOC = "P47";
+NET "tobbi(11)" LOC = "P138";
+NET "tobbi(10)" LOC = "P139";
+NET "tobbi(9)" LOC = "P140";
+NET "tobbi(8)" LOC = "P144";
+NET "tobbi(7)" LOC = "P145";
+NET "tobbi(6)" LOC = "P146";
+NET "tobbi(5)" LOC = "P147";
+NET "tobbi(4)" LOC = "P150";
+NET "tobbi(3)" LOC = "P152";
+NET "tobbi(2)" LOC = "P151";
+NET "tobbi(1)" LOC = "P160";
+NET "tobbi(0)" LOC = "P153";

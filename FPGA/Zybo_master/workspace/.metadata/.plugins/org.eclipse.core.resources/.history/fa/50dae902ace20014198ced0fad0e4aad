@@ -1,0 +1,341 @@
+/*
+ * Copyright (c) 2009-2013 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+#include <stdio.h>
+
+#include "xparameters.h"
+
+#include "netif/xadapter.h"
+
+#include "platform.h"
+#include "platform_config.h"
+#ifdef __arm__
+#include "xil_printf.h"
+#endif
+
+#include "xparameters.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xiic.h"
+#include "xuartns550.h"
+#include "xil_cache.h"
+#include "GyroReg6050.h"
+#include "GyroReg9150.h"
+#include "string.h"
+#include "stdio.h"
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <stdio.h>
+#include <string.h>
+#include<xil_types.h>
+#include<xiic_l.h>
+#include "xspi.h"
+#include "xspi_l.h"
+#include "SPI_csogag_type.h"
+
+
+//#include "Matlab/codegen/lib/getPachage/getPachage.h"
+//#include "sys/time.h"
+
+//#include  "TinyGPS/TinyGPS.h"
+
+/****************************INTERUPT********************************************/
+#define INTC		         XScuGic
+INTC InterruptController;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerCounterInst;   /* The instance of the Timer Counter */
+volatile int TimerExpired;
+
+/**************************LED***************************************/
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define GPIO_LED_DEVICE_ID  XPAR_AXI_GPIO_LED4_DEVICE_ID
+/************************************************************************/
+
+/***************************SWITCH***************************************/
+#define GPIO_DEVICE_SWITCH_ID		 	XPAR_AXI_GPIO_SWITCH_DEVICE_ID
+#define INTC_GPIO_SWITCH_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_SWITCH_IP2INTC_IRPT_INTR
+#define INTC_HANDLER_SWITCH	XScuGic_InterruptHandler
+#define SW0  				0x01
+#define SW1  				0x02
+#define SW2  				0x04
+#define SW3  				0x08
+#define GPIO_ALL_BUTTONS	0x0F
+#define BUTTON_CHANNEL		1	/* Channel 1 of the GPIO Device */
+#define BUTTON_INTERRUPT	0x01  /* Channel 1 Interrupt Mask */
+static  XGpio				GpioSwitch; /* The Instance of the GPIO Driver */
+static u32 ButtonsBefore=0;
+volatile int InterruptCountSwitch; /* Count of interrupts that have occured */
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr);
+int	SetupInterruptSystem();
+/*************************************************************************/
+
+/**************************TIMER TS***************************************/
+#define TMRCTR_DEVICE_ID	 XPAR_AXI_TIMER_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID	 XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define INTC_DEVICE_ID		 XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_CNTR_0	     0
+#define INTC_HANDLER	     XScuGic_InterruptHandler
+#define RESET_VALUE			 0xFF000000
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr,	XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId);
+/***************************************************************************/
+
+/****************************IIC********************************************/
+#define IIC_GYRO XPAR_IIC_0_BASEADDR
+int recvGyroData6050();
+int recvGyroData9150();
+u16 x=0;
+u8 c;
+u8 buff[14],bufs[3], rbuff[14];
+gyroReg6050 o;
+gyroVal6050 v;
+gyroReg9150 o1;
+gyroVal9150 v1;
+
+
+int GyroSensorInit();
+void MPU9150_setupCompass();
+/***************************GPS***************************************/
+#define UART_DEVICE_ID_Uart_GPS		XPAR_AXI_UART16550_0_DEVICE_ID
+#define UART_IRPT_INTR_Uart_GPS		XPAR_FABRIC_AXI_UART16550_0_IP2INTC_IRPT_INTR
+#define TEST_BUFFER_SIZE_GPS_UART 1000
+XUartNs550 UartNs550GPS;	/* Instance of the GPS UART Device */
+u8 SendBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Transmitting Data */
+u8 RecvBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Receiving Data */
+static volatile int TotalReceivedCountGPS;
+static volatile int TotalSentCountGPS;
+static volatile int TotalErrorCountGPS;
+int UartNs550IntrUartGPS(INTC *IntcInstancePtr,	XUartNs550 *UartInstancePtr,u16 UartDeviceId,u16 UartIntrId);
+void UartNs550IntrHandlerUartGPS(void *CallBackRef, u32 Event, unsigned int EventData);
+static int UartNs550SetupIntrSystemUartGPS(INTC *IntcInstancePtr,XUartNs550 *UartInstancePtr,	u16 UartIntrId);
+static void UartNs550DisableIntrSystemUartGPS(INTC *IntcInstancePtr, u16 UartIntrId);
+XUartNs550 UartNs550InstanceGPS;	/* Instance of the UART Device */
+
+//GPS data
+int parseGPS(char *cmd);
+#define GPS_DATA_BUFF_SIZE 1000
+u8 GPS_DATA_BUF[GPS_DATA_BUFF_SIZE];
+int sizeData;
+u8* GPS_DATA_BUF_AFTER;
+int sizeDataAfter;
+u8* ptrideig; //[GPS_DATA_BUFF_SIZE];
+int GPS_DATA_LENGTH=0;
+int cnt=0;
+/*****************************SPI_SPARTAN****************************************/
+
+#define BUFFER_SIZE_SPI_Spartan		1
+#define SPI_DEVICE_ID		XPAR_SPISPARTAN_DEVICE_ID
+typedef u8 DataBuffer[BUFFER_SIZE_SPI_Spartan];
+int SpiSpartanInit(XSpi *SpiInstancePtr, u16 SpiDeviceId);
+static XSpi  SpiInstance;
+CsomagSpi csomag;
+
+u32 ReadBufferSPIspartan[BUFFER_SIZE_SPI_Spartan];
+u32 WriteBufferSPIspartan[BUFFER_SIZE_SPI_Spartan];
+/***************************Szabalyzo***************************************/
+Modul_Ip_Pozicio_Sebesseg A;
+
+/***************************Varables***************************************/
+#define UART_DEVICE_UARTGPS_ID		XPAR_AXI_UART16550_0_DEVICE_ID
+XUartNs550 UartNs550;
+u32 Data=0x11;
+#define XPAR_XPS_IIC_0_BASEADDR     XPAR_IIC_0_BASEADDR
+/**************************************************************************/
+
+
+/* defined by each RAW mode application */
+void print_app_header();
+int start_application();
+int transfer_data();
+
+/* missing declaration in lwIP */
+void lwip_init();
+
+static struct netif server_netif;
+struct netif *echo_netif;
+
+void
+print_ip(char *msg, struct ip_addr *ip) 
+{
+	print(msg);
+	xil_printf("%d.%d.%d.%d\n\r", ip4_addr1(ip), ip4_addr2(ip), 
+			ip4_addr3(ip), ip4_addr4(ip));
+}
+
+void
+print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw)
+{
+
+	print_ip("Board IP: ", ip);
+	print_ip("Netmask : ", mask);
+	print_ip("Gateway : ", gw);
+}
+
+int main()
+{
+
+    A.refpoz= 10;
+    A.refseb= 20;
+    u16 x=0;
+    u8 c;
+    u8 buff[14],bufs[3], rbuff[14];
+	gyroReg6050 o;
+	gyroVal6050 v;
+	bufs[0]=0x6B;
+	bufs[1]=0x00;
+	buff[0] = MPU6050_RA_ACCEL_XOUT_H;
+	buff[1] = MPU6050_RA_ACCEL_XOUT_H+1;
+	buff[2] = MPU6050_RA_ACCEL_XOUT_H+2;
+    buff[3] = MPU6050_RA_ACCEL_XOUT_H+3;
+    buff[4] = MPU6050_RA_ACCEL_XOUT_H+4;
+	buff[5] = MPU6050_RA_ACCEL_XOUT_H+5;
+	buff[6] = MPU6050_RA_ACCEL_XOUT_H+6;
+	buff[7] = MPU6050_RA_ACCEL_XOUT_H+7;
+	buff[8] = MPU6050_RA_ACCEL_XOUT_H+8;
+	buff[9] = MPU6050_RA_ACCEL_XOUT_H+9;
+	buff[10] = MPU6050_RA_ACCEL_XOUT_H+10;
+	buff[11] = MPU6050_RA_ACCEL_XOUT_H+11;
+	buff[12] = MPU6050_RA_ACCEL_XOUT_H+12;
+	buff[13] = MPU6050_RA_ACCEL_XOUT_H+13;
+
+//GPS_DATA_BUF= (u8*)malloc(sizeof(u8*)*200); //[ GPS_DATA_BUFF_SIZE];
+GPS_DATA_BUF_AFTER= (u8*)malloc(sizeof(u8*)*200); //[ GPS_DATA_BUFF_SIZE];
+Xil_ICacheEnable();
+Xil_DCacheEnable();
+int Status;
+//4LED
+xil_printf("4 LED Init.....");
+Status = XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+//TsTimer
+xil_printf("TsTimer Init.....");
+Status = TmrCtrIntr(&InterruptController, &TimerCounterInst,TMRCTR_DEVICE_ID, TMRCTR_INTERRUPT_ID, TIMER_CNTR_0);
+if (Status != XST_SUCCESS){xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+//4SWITCH
+xil_printf("4 SWITCH BUTTON Init.....");
+Status = XGpio_Initialize(&GpioSwitch, GPIO_DEVICE_SWITCH_ID	);
+XGpio_SelfTest(&GpioSwitch);
+XGpio_SetDataDirection(&GpioSwitch, BUTTON_CHANNEL, GPIO_ALL_BUTTONS);
+Status = SetupInterruptSystem();
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;}
+xil_printf("OK\r\n");
+//Uart Gps
+xil_printf("Uart_GPS Init Proba.....");
+Status = UartNs550IntrUartGPS(&InterruptController,&UartNs550InstanceGPS,UART_DEVICE_ID_Uart_GPS,	UART_IRPT_INTR_Uart_GPS	);
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+//Gyro
+xil_printf("Gyro Init.....");
+Status =GyroSensorInit();
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+xil_printf("SPISpartan Init.....");
+Status = SpiSpartanInit(&SpiInstance, SPI_DEVICE_ID);
+if (Status != XST_SUCCESS){	xil_printf("Error\r\n"); return XST_FAILURE;}
+xil_printf("OK\r\n");
+
+
+
+int SentCount = 0;
+#define TEST_BUFFER_SIZE 16
+u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+u8 RecvBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
+unsigned int ReceivedCount = 0;
+
+//	Status = XUartNs550_Initialize(&UartNs550, UART_DEVICE_UARTGPS_ID);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+while(1)
+	{
+
+	//xil_printf("cik.....\r\n");
+	//GyroSensor( IIC_BASE_ADDRESS, 0x07, 0x01);
+	//XGpio_DiscreteWrite(&Gpio, LED_CHANNEL,XGpio_DiscreteRead(&GpioSW, BUTTON_SW_CHANNEL)|XGpio_DiscreteRead(&Gpio, BUTTON_SW_CHANNEL));
+	}
+
+	struct ip_addr ipaddr, netmask, gw;
+
+	/* the mac address of the board. this should be unique per board */
+	unsigned char mac_ethernet_address[] =
+	{ 0x00, 0x0a, 0x35, 0x00, 0x01, 0x02 };
+
+	echo_netif = &server_netif;
+
+	init_platform();
+
+	/* initliaze IP addresses to be used */
+	IP4_ADDR(&ipaddr,  192, 168,   0, 10);
+	IP4_ADDR(&netmask, 255, 255, 255,  0);
+	IP4_ADDR(&gw,      192, 168,   0,  1);
+
+	print_app_header();
+	print_ip_settings(&ipaddr, &netmask, &gw);
+
+	lwip_init();
+
+  	/* Add network interface to the netif_list, and set it as default */
+	if (!xemac_add(echo_netif, &ipaddr, &netmask,
+						&gw, mac_ethernet_address,
+						PLATFORM_EMAC_BASEADDR)) {
+		xil_printf("Error adding N/W interface\n\r");
+		return -1;
+	}
+	netif_set_default(echo_netif);
+
+	/* Create a new DHCP client for this interface.
+	 * Note: you must call dhcp_fine_tmr() and dhcp_coarse_tmr() at
+	 * the predefined regular intervals after starting the client.
+	 */
+	/* dhcp_start(echo_netif); */
+
+	/* now enable interrupts */
+	platform_enable_interrupts();
+
+	/* specify that the network if is up */
+	netif_set_up(echo_netif);
+
+	/* start the application (web server, rxtest, txtest, etc..) */
+	start_application();
+
+	/* receive and process packets */
+	while (1) {
+		xemacif_input(echo_netif);
+		transfer_data();
+	}
+  
+	/* never reached */
+	cleanup_platform();
+	 Xil_DCacheDisable();
+	 Xil_ICacheDisable();
+	return 0;
+}

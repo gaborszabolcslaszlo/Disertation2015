@@ -1,0 +1,6 @@
+13:46:55 **** Auto Build of project RTOS_BSP_2 ****
+make -k all 
+Finished building libraries
+
+13:46:55 Build Finished (took 188ms)
+

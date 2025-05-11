@@ -1,0 +1,1008 @@
+/*
+ * Copyright (c) 2009-2013 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+#include <stdio.h>
+
+#include "xparameters.h"
+
+#include "netif/xadapter.h"
+
+#include "platform.h"
+#include "platform_config.h"
+#ifdef __arm__
+#include "xil_printf.h"
+#endif
+
+#include "xparameters.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xiic.h"
+#include "xuartns550.h"
+#include "xil_cache.h"
+#include "GyroReg6050.h"
+#include "GyroReg9150.h"
+#include "string.h"
+#include "stdio.h"
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <stdio.h>
+#include <string.h>
+#include<xil_types.h>
+#include<xiic_l.h>
+#include "xspi.h"
+#include "xspi_l.h"
+#include "SPI_csogag_type.h"
+
+#include <stdio.h>
+#include <string.h>
+
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#ifdef __arm__
+#include "xil_printf.h"
+#endif
+
+
+
+//#include "Matlab/codegen/lib/getPachage/getPachage.h"
+//#include "sys/time.h"
+
+//#include  "TinyGPS/TinyGPS.h"
+
+/****************************INTERUPT********************************************/
+#define INTC		         XScuGic
+INTC InterruptController;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerCounterInst;   /* The instance of the Timer Counter */
+volatile int TimerExpired;
+
+/**************************LED***************************************/
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define GPIO_LED_DEVICE_ID  XPAR_AXI_GPIO_LED4_DEVICE_ID
+/************************************************************************/
+
+/***************************SWITCH***************************************/
+#define GPIO_DEVICE_SWITCH_ID		 	XPAR_AXI_GPIO_SWITCH_DEVICE_ID
+#define INTC_GPIO_SWITCH_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_SWITCH_IP2INTC_IRPT_INTR
+#define INTC_HANDLER_SWITCH	XScuGic_InterruptHandler
+#define SW0  				0x01
+#define SW1  				0x02
+#define SW2  				0x04
+#define SW3  				0x08
+#define GPIO_ALL_BUTTONS	0x0F
+#define BUTTON_CHANNEL		1	/* Channel 1 of the GPIO Device */
+#define BUTTON_INTERRUPT	0x01  /* Channel 1 Interrupt Mask */
+static  XGpio				GpioSwitch; /* The Instance of the GPIO Driver */
+static u32 ButtonsBefore=0;
+volatile int InterruptCountSwitch; /* Count of interrupts that have occured */
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr);
+int	SetupInterruptSystem();
+/*************************************************************************/
+
+/**************************TIMER TS***************************************/
+#define TMRCTR_DEVICE_ID	 XPAR_AXI_TIMER_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID	 XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define INTC_DEVICE_ID		 XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_CNTR_0	     0
+#define INTC_HANDLER	     XScuGic_InterruptHandler
+#define RESET_VALUE			 0xFFF00000
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr,	XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId);
+/***************************************************************************/
+
+/****************************IIC********************************************/
+#define IIC_GYRO XPAR_IIC_0_BASEADDR
+int recvGyroData6050();
+int recvGyroData9150();
+u16 x=0;
+u8 c;
+u8 buff[14],bufs[3], rbuff[14];
+gyroReg6050 o;
+gyroVal6050 v;
+gyroReg9150 o1;
+gyroVal9150 v1;
+
+
+
+int GyroSensorInit();
+void MPU9150_setupCompass();
+err_t accept_callback7(void *arg, struct tcp_pcb *newpcb, err_t err);
+err_t recv_callback7(void *arg, struct tcp_pcb *tpcb,struct pbuf *p, err_t err);
+start_application7();
+int enaSendGyro;
+struct tcp_pcb *pcb;
+int pointerToGYROTCPBuff=0;
+/***************************GPS***************************************/
+#define UART_DEVICE_ID_Uart_GPS		XPAR_AXI_UART16550_0_DEVICE_ID
+#define UART_IRPT_INTR_Uart_GPS		XPAR_FABRIC_AXI_UART16550_0_IP2INTC_IRPT_INTR
+#define TEST_BUFFER_SIZE_GPS_UART 1000
+XUartNs550 UartNs550GPS;	/* Instance of the GPS UART Device */
+u8 SendBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Transmitting Data */
+u8 RecvBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Receiving Data */
+static volatile int TotalReceivedCountGPS;
+static volatile int TotalSentCountGPS;
+static volatile int TotalErrorCountGPS;
+int UartNs550IntrUartGPS(INTC *IntcInstancePtr,	XUartNs550 *UartInstancePtr,u16 UartDeviceId,u16 UartIntrId);
+void UartNs550IntrHandlerUartGPS(void *CallBackRef, u32 Event, unsigned int EventData);
+static int UartNs550SetupIntrSystemUartGPS(INTC *IntcInstancePtr,XUartNs550 *UartInstancePtr,	u16 UartIntrId);
+static void UartNs550DisableIntrSystemUartGPS(INTC *IntcInstancePtr, u16 UartIntrId);
+XUartNs550 UartNs550InstanceGPS;	/* Instance of the UART Device */
+
+//GPS data
+int parseGPS(char *cmd);
+#define GPS_DATA_BUFF_SIZE 1000
+u8 GPS_DATA_BUF[GPS_DATA_BUFF_SIZE];
+int sizeData;
+u8* GPS_DATA_BUF_AFTER;
+int sizeDataAfter;
+u8* ptrideig; //[GPS_DATA_BUFF_SIZE];
+int GPS_DATA_LENGTH=0;
+int cnt=0;
+/*****************************SPI_SPARTAN****************************************/
+
+#define BUFFER_SIZE_SPI_Spartan		7
+#define SPI_DEVICE_ID		XPAR_SPISPARTAN_DEVICE_ID
+typedef u8 DataBuffer[BUFFER_SIZE_SPI_Spartan];
+int SpiSpartanInit(XSpi *SpiInstancePtr, u16 SpiDeviceId);
+static XSpi  SpiInstance;
+CsomagSpi csomag;
+
+s32 ReadBufferSPIspartan[BUFFER_SIZE_SPI_Spartan];
+s32 WriteBufferSPIspartan[BUFFER_SIZE_SPI_Spartan];
+/***************************Szabalyzo***************************************/
+Modul_Ip_Pozicio_Sebesseg A;
+
+/***************************Varables***************************************/
+#define UART_DEVICE_UARTGPS_ID		XPAR_AXI_UART16550_0_DEVICE_ID
+XUartNs550 UartNs550;
+u32 Data=0x11;
+#define XPAR_XPS_IIC_0_BASEADDR     XPAR_IIC_0_BASEADDR
+
+
+typedef struct{
+	    s32 USebesseg;
+	    s32 UPozicio;
+	    s32 SebessegPozicio;
+	    s32 AktPozicio;
+	    s32 SzurtSebessegPozicio;
+	    s32 AktSebesseg;
+	    s32 SzurtSebesseg;
+}outIpMag;
+
+typedef struct{
+	gyroVal9150 gi1;
+    outIpMag mag0;
+}csomgOut;
+
+#define maxSizeBufferGiro 200
+csomgOut GYROTCPBuf[maxSizeBufferGiro];
+outIpMag mag0;
+/**************************************************************************/
+
+
+/* defined by each RAW mode application */
+void print_app_header();
+int start_application();
+int transfer_data();
+
+/* missing declaration in lwIP */
+void lwip_init();
+
+static struct netif server_netif;
+struct netif *echo_netif;
+
+void
+print_ip(char *msg, struct ip_addr *ip) 
+{
+	print(msg);
+	xil_printf("%d.%d.%d.%d\n\r", ip4_addr1(ip), ip4_addr2(ip), 
+			ip4_addr3(ip), ip4_addr4(ip));
+}
+
+void
+print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw)
+{
+
+	print_ip("Board IP: ", ip);
+	print_ip("Netmask : ", mask);
+	print_ip("Gateway : ", gw);
+}
+
+int main()
+{
+
+    A.refpoz= 10;
+    A.refseb= 20;
+    u16 x=0;
+    u8 c;
+    u8 buff[14],bufs[3], rbuff[14];
+	gyroReg6050 o;
+	gyroVal6050 v;
+	bufs[0]=0x6B;
+	bufs[1]=0x00;
+	buff[0] = MPU6050_RA_ACCEL_XOUT_H;
+	buff[1] = MPU6050_RA_ACCEL_XOUT_H+1;
+	buff[2] = MPU6050_RA_ACCEL_XOUT_H+2;
+    buff[3] = MPU6050_RA_ACCEL_XOUT_H+3;
+    buff[4] = MPU6050_RA_ACCEL_XOUT_H+4;
+	buff[5] = MPU6050_RA_ACCEL_XOUT_H+5;
+	buff[6] = MPU6050_RA_ACCEL_XOUT_H+6;
+	buff[7] = MPU6050_RA_ACCEL_XOUT_H+7;
+	buff[8] = MPU6050_RA_ACCEL_XOUT_H+8;
+	buff[9] = MPU6050_RA_ACCEL_XOUT_H+9;
+	buff[10] = MPU6050_RA_ACCEL_XOUT_H+10;
+	buff[11] = MPU6050_RA_ACCEL_XOUT_H+11;
+	buff[12] = MPU6050_RA_ACCEL_XOUT_H+12;
+	buff[13] = MPU6050_RA_ACCEL_XOUT_H+13;
+
+//GPS_DATA_BUF= (u8*)malloc(sizeof(u8*)*200); //[ GPS_DATA_BUFF_SIZE];
+GPS_DATA_BUF_AFTER= (u8*)malloc(sizeof(u8*)*200); //[ GPS_DATA_BUFF_SIZE];
+Xil_ICacheEnable();
+Xil_DCacheEnable();
+int Status;
+//4LED
+xil_printf("4 LED Init.....");
+Status = XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+//TsTimer
+xil_printf("TsTimer Init.....");
+Status = TmrCtrIntr(&InterruptController, &TimerCounterInst,TMRCTR_DEVICE_ID, TMRCTR_INTERRUPT_ID, TIMER_CNTR_0);
+if (Status != XST_SUCCESS){xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+//4SWITCH
+xil_printf("4 SWITCH BUTTON Init.....");
+Status = XGpio_Initialize(&GpioSwitch, GPIO_DEVICE_SWITCH_ID	);
+XGpio_SelfTest(&GpioSwitch);
+XGpio_SetDataDirection(&GpioSwitch, BUTTON_CHANNEL, GPIO_ALL_BUTTONS);
+Status = SetupInterruptSystem();
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;}
+xil_printf("OK\r\n");
+//Uart Gps
+xil_printf("Uart_GPS Init Proba.....");
+Status = UartNs550IntrUartGPS(&InterruptController,&UartNs550InstanceGPS,UART_DEVICE_ID_Uart_GPS,	UART_IRPT_INTR_Uart_GPS	);
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+//Gyro
+xil_printf("Gyro Init.....");
+Status =GyroSensorInit();
+if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+xil_printf("OK\r\n");
+xil_printf("SPISpartan Init.....");
+Status = SpiSpartanInit(&SpiInstance, SPI_DEVICE_ID);
+if (Status != XST_SUCCESS){	xil_printf("Error\r\n"); return XST_FAILURE;}
+xil_printf("OK\r\n");
+
+
+
+int SentCount = 0;
+#define TEST_BUFFER_SIZE 16
+u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+u8 RecvBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
+unsigned int ReceivedCount = 0;
+
+//	Status = XUartNs550_Initialize(&UartNs550, UART_DEVICE_UARTGPS_ID);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+
+	struct ip_addr ipaddr, netmask, gw;
+	enaSendGyro=0;
+	/* the mac address of the board. this should be unique per board */
+	unsigned char mac_ethernet_address[] =
+	{ 0x00, 0x0a, 0x35, 0x00, 0x01, 0x02 };
+
+	echo_netif = &server_netif;
+
+	init_platform();
+
+	/* initliaze IP addresses to be used */
+	IP4_ADDR(&ipaddr,  192, 168,   0, 10);
+	IP4_ADDR(&netmask, 255, 255, 255,  0);
+	IP4_ADDR(&gw,      192, 168,   0,  1);
+
+	print_app_header();
+	print_ip_settings(&ipaddr, &netmask, &gw);
+
+	lwip_init();
+
+  	/* Add network interface to the netif_list, and set it as default */
+	if (!xemac_add(echo_netif, &ipaddr, &netmask,
+						&gw, mac_ethernet_address,
+						PLATFORM_EMAC_BASEADDR)) {
+		xil_printf("Error adding N/W interface\n\r");
+		return -1;
+	}
+	netif_set_default(echo_netif);
+
+	/* Create a new DHCP client for this interface.
+	 * Note: you must call dhcp_fine_tmr() and dhcp_coarse_tmr() at
+	 * the predefined regular intervals after starting the client.
+	 */
+	/* dhcp_start(echo_netif); */
+
+	/* now enable interrupts */
+	platform_enable_interrupts();
+
+	/* specify that the network if is up */
+	netif_set_up(echo_netif);
+
+	/* start the application (web server, rxtest, txtest, etc..) */
+	//start_application();
+	start_application7();
+
+	/* receive and process packets */
+	while (1) {
+		xemacif_input(echo_netif);
+		transfer_data();
+	}
+  
+	/* never reached */
+	cleanup_platform();
+	 Xil_DCacheDisable();
+	 Xil_ICacheDisable();
+	return 0;
+}
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* TmrCtrInstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber)
+{
+	int Status;
+	int LastTimerExpired = 0;
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = TmrCtrSetupIntrSystem(IntcInstancePtr,TmrCtrInstancePtr,DeviceId,IntrId,TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XTmrCtr_SetHandler(TmrCtrInstancePtr, TsTimerCounterHandler,TmrCtrInstancePtr);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber,	XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TmrCtrNumber, RESET_VALUE);
+	//XTmrCtr_Start(TmrCtrInstancePtr, TmrCtrNumber);
+	//while (1){
+	//	while (TimerExpired == LastTimerExpired) {
+	//	}
+	//	LastTimerExpired = TimerExpired;
+	//	if (TimerExpired == 3) {
+	//		XTmrCtr_Stop(TmrCtrInstancePtr, TmrCtrNumber);
+	//		break;
+	//	}
+	//}
+	//TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
+	return XST_SUCCESS;
+}
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
+{
+	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
+	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
+		TimerExpired++;
+		//xil_printf("TSTimer\r\n");
+		//recvGyroData6050();
+		recvGyroData9150();
+	//	u32 count=XUartNs550_Send(&UartNs550InstanceGPS, SendBufferGPSUart, TEST_BUFFER_SIZE);
+			//			xil_printf("Send Uart: %d\r\n", count);
+		if (Data & LED) {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data & ~LED);
+					Data=Data & ~LED;
+				} else {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data | LED);
+					Data=Data | LED;
+				}
+		if(maxSizeBufferGiro>pointerToGYROTCPBuff+3)
+						{
+						GYROTCPBuf[pointerToGYROTCPBuff].gi1=v1;
+						GYROTCPBuf[pointerToGYROTCPBuff].mag0=mag0;
+						++pointerToGYROTCPBuff;
+						}
+						else
+						{
+							pointerToGYROTCPBuff=0;
+						}
+
+
+			//xil_printf("Kuld SPI 01 \r\n");
+			int i=0;
+			XSpi_Transfer(&SpiInstance, WriteBufferSPIspartan[0],&mag0, 4*7);
+		/*	XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.USebesseg, 4);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+			XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.AktSebesseg,4);
+			for(i=0;i<6500;++i);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+			XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.SebessegPozicio, 4);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+			XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.SzurtSebesseg, 4);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+			XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.SzurtSebessegPozicio, 4);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+			XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.UPozicio, 4);
+			xil_printf("-------");
+			for(i=0;i<6500;++i);
+	    	XSpi_Transfer(&SpiInstance,ReadBufferSPIspartan, &m.AktPozicio,4);
+			xil_printf("-------"); */
+			xil_printf("Aktf %d,%d,%d,%d,%d,%d,%d\r\n",(s16)mag0.AktPozicio,(s16)mag0.SebessegPozicio,(s16)mag0.SzurtSebessegPozicio,(s16)mag0.UPozicio,(s16)mag0.SzurtSebesseg,(s16)mag0.USebesseg,(s16)mag0.AktSebesseg);
+
+		//	xil_printf("Aktfojhkg %d,%d\r\n",ReadBufferSPIspartan[0],ReadBufferSPIspartan[1]);
+
+		//xil_printf("Kuld SPI 01 \r\n");
+	//	XSpi_Transfer(&SpiInstance, &WriteBufferSPIspartan[0], &ReadBufferSPIspartan[0], 4);
+	//	xil_printf("SPI FOGAD %d\r\n",ReadBufferSPIspartan[0]);
+		//if(TimerExpired == 3) {
+		//	XTmrCtr_SetOptions(InstancePtr, TmrCtrNumber, 0);
+		//}
+
+
+	}
+}
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr, XTmrCtr* TmrCtrInstancePtr, u16 DeviceId, u16 IntrId, u8 TmrCtrNumber)
+{
+	 int Status;
+
+	XScuGic_Config *IntcConfig;
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId,
+					0xA0, 0x3);
+
+	/*
+	 * Connect the interrupt handler that will be called when an
+	 * interrupt occurs for the device.
+	 */
+	Status = XScuGic_Connect(IntcInstancePtr, IntrId,
+				 (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+				 TmrCtrInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	/*
+	 * Enable the interrupt for the Timer device.
+	 */
+	XScuGic_Enable(IntcInstancePtr, IntrId);
+
+	/*
+	 * Initialize the exception table.
+	 */
+	Xil_ExceptionInit();
+
+	/*
+	 * Register the interrupt controller handler with the exception table.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+					(Xil_ExceptionHandler)
+					INTC_HANDLER,
+					IntcInstancePtr);
+
+	/*
+	 * Enable non-critical exceptions.
+	 */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId)
+{
+
+	XScuGic_Disable(IntcInstancePtr, IntrId);
+	XScuGic_Disconnect(IntcInstancePtr, IntrId);
+
+	return;
+}
+
+/***********************4SWITCHBUTTON*************************************************/
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr)
+{
+	XGpio *GpioPtr = (XGpio *)InstancePtr;
+	u32 Buttons; // 16 Stat 0..15
+	//u32 ButtonsBefore;
+	u32 eventButon;
+	XGpio_InterruptDisable(GpioPtr, BUTTON_INTERRUPT);
+	InterruptCountSwitch++;
+	if ((XGpio_InterruptGetStatus(GpioPtr) & BUTTON_INTERRUPT) !=BUTTON_INTERRUPT)
+	{
+		return;
+	}
+
+
+	WriteBufferSPIspartan[0]=0x02;
+	WriteBufferSPIspartan[1]=0x02;
+	WriteBufferSPIspartan[2]=0x04;
+	WriteBufferSPIspartan[3]=0x08;
+	Buttons = XGpio_DiscreteRead(GpioPtr, BUTTON_CHANNEL);
+	eventButon=Buttons^ButtonsBefore;
+	xil_printf("interupt SWITCH: %d , event %d\r\n",Buttons,eventButon);
+	if(eventButon==SW1)//ON
+		if((Buttons&SW1)==SW1)
+		{
+			 xil_printf("Kuld SPI 01 \r\n");
+				XSpi_Transfer(&SpiInstance, &WriteBufferSPIspartan[0], &ReadBufferSPIspartan[0], 4);
+			xil_printf("SPI FOGAD %d\r\n",ReadBufferSPIspartan[0]);
+		}
+		//else
+		////{
+		//}
+	if(eventButon==SW0)//ON
+	{
+	 if((Buttons&SW0)==SW0)
+		{
+		 XTmrCtr_Start(&TimerCounterInst,TIMER_CNTR_0); xil_printf("Start Timer \r\n");
+		}
+		else//OFF
+		{
+			XTmrCtr_Stop(&TimerCounterInst,TIMER_CNTR_0);  xil_printf("Stop Timer \r\n");
+		}
+	}
+
+
+
+	ButtonsBefore=Buttons;
+	(void)XGpio_InterruptClear(GpioPtr, BUTTON_INTERRUPT);
+	 XGpio_InterruptEnable(GpioPtr, BUTTON_INTERRUPT);
+}
+int SetupInterruptSystem()
+{
+	int Result;
+	INTC *IntcInstancePtrSwitch = &InterruptController;
+	XScuGic_Config *IntcConfig;
+//	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_SWITCH_ID);
+//	if (NULL == IntcConfig) {
+//		return XST_FAILURE;
+//	}
+//	Result = XScuGic_CfgInitialize(IntcInstancePtrSwitch, IntcConfig,	IntcConfig->CpuBaseAddress);
+//	if (Result != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+	Result = XScuGic_Connect(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID,(Xil_ExceptionHandler)Gpio_4SWITCHBut_HANDLER, &GpioSwitch);
+	if (Result != XST_SUCCESS) {
+		return Result;
+	}
+	XScuGic_Enable(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID);
+	XGpio_InterruptEnable(&GpioSwitch, BUTTON_INTERRUPT);
+	XGpio_InterruptGlobalEnable(&GpioSwitch);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)INTC_HANDLER_SWITCH, IntcInstancePtrSwitch);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+
+/********************************Gyro****************************************/
+int GyroSensorInit()
+{
+	 //FIFO
+	 bufs[0]=MPU6050_RA_FIFO_EN  ;
+	 XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP); //csak ciomet kuldok
+	 XIic_Recv(IIC_GYRO, 0x68, &rbuff[0], 1, XIIC_STOP); // visszaolvasuk a FIFO EN erteket
+	 bufs[0]=MPU6050_RA_FIFO_EN  ;
+	 bufs[0]=rbuff[0]&0x7; //Disable All fifo
+	 XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP);
+	 //Scale
+	 //Accel MPU6050_RA_ACCEL_CONFIG
+	 bufs[0]=MPU6050_RA_ACCEL_CONFIG   ;
+	 XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP); //csak ciomet kuldok
+	 XIic_Recv(IIC_GYRO, 0x68, &rbuff[0], 1, XIIC_STOP); // visszaolvasuk a ACCEL Config erteket
+	 bufs[0]=MPU6050_RA_ACCEL_CONFIG  ;
+     bufs[0]=rbuff[0]&0xE7;
+     XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP);
+     //Accel MPU6050_RA_ACCEL_CONFIG
+     bufs[0]=MPU6050_RA_ACCEL_CONFIG   ;
+     XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP); //csak ciomet kuldok
+     XIic_Recv(IIC_GYRO, 0x68, &rbuff[0], 1, XIIC_STOP); // visszaolvasuk a ACCEL Config erteket
+     bufs[0]=MPU6050_RA_ACCEL_CONFIG  ;
+     bufs[0]=rbuff[0]&0xE7;
+     XIic_Send(IIC_GYRO, 0x68, &bufs[0], 1, XIIC_STOP);
+	 bufs[0]= MPU6050_RA_PWR_MGMT_1 ;
+	 bufs[1]=0x00;
+	 XIic_Send(IIC_GYRO, 0x68, &bufs[0], 2, XIIC_STOP); //csak ciomet kuldok
+	 MPU9150_setupCompass();
+	 return 0;
+}
+int recvGyroData6050()
+{
+	int countFifo=0;
+	int i=0;
+	buff[0]=MPU6050_RA_FIFO_COUNTH;
+	XIic_Send(IIC_GYRO, 0x68,&buff[0], 1, XIIC_STOP); //Send Buff Cont Reg addr
+	XIic_Recv(IIC_GYRO, 0x68,&rbuff[0], 2, XIIC_STOP);
+	countFifo=rbuff[0]*256+rbuff[1];
+	xil_printf("IN ok: %d\r\n",countFifo);
+	for(i;i<countFifo+1;i++)
+	{
+
+				buff[0] = MPU6050_RA_ACCEL_XOUT_H;
+				XIic_Send(IIC_GYRO, 0x68,&buff[0], 1, XIIC_STOP); //csak ciomet kuldok
+				XIic_Recv(IIC_GYRO, 0x68,&rbuff[0], 14, XIIC_STOP);
+
+				o.x_accel_h=rbuff[0];
+				o.x_accel_l=rbuff[1];
+				o.y_accel_h=rbuff[2];
+				o.y_accel_l=rbuff[3];
+				o.z_accel_h=rbuff[4];
+				o.z_accel_l=rbuff[5];
+				o.t_h=rbuff[6];
+				o.t_l=rbuff[7];
+				o.x_gyro_h=rbuff[8];
+				o.x_gyro_l=rbuff[9];
+				o.y_gyro_h=rbuff[10];
+				o.y_gyro_l=rbuff[11];
+				o.z_gyro_h=rbuff[12];
+				o.z_gyro_l=rbuff[13];
+				v.x_accel=(((o.x_accel_h))*256+o.x_accel_l);
+				v.y_accel=(((o.y_accel_h))*256+o.y_accel_l);
+				v.z_accel=(((o.z_accel_h))*256+o.z_accel_l);
+				v.x_gyro=(((o.x_gyro_h))*256+o.x_gyro_l);
+				v.y_gyro=(((o.y_gyro_h))*256+o.y_gyro_l);
+				v.z_gyro=(((o.z_gyro_h))*256+o.z_gyro_l);
+				v.temperature=(((o.t_h))*256+o.t_l)/340.0+36.53;
+				float a=(float)v.x_accel/8192.0;
+				xil_printf("%f\r\n",a);
+				xil_printf(" %d  %d  %d  %d  %d  %d  %d  %d\r\n",v.x_accel,v.y_accel,v.z_accel,v.x_gyro,v.y_gyro,v.z_gyro,v.temperature,0);
+	}
+}
+int recvGyroData9150()
+{
+	int countFifo=0;
+	int i=0;
+				buff[0] = MPU6050_RA_ACCEL_XOUT_H;
+				XIic_Send(IIC_GYRO, 0x68,&buff[0], 1, XIIC_STOP); //csak ciomet kuldok
+				XIic_Recv(IIC_GYRO, 0x68,&rbuff[0], 14, XIIC_STOP);
+				o1.x_accel_h=rbuff[0];
+				o1.x_accel_l=rbuff[1];
+				o1.y_accel_h=rbuff[2];
+				o1.y_accel_l=rbuff[3];
+				o1.z_accel_h=rbuff[4];
+				o1.z_accel_l=rbuff[5];
+				o1.t_h=rbuff[6];
+				o1.t_l=rbuff[7];
+				o1.x_gyro_h=rbuff[8];
+				o1.x_gyro_l=rbuff[9];
+				o1.y_gyro_h=rbuff[10];
+				o1.y_gyro_l=rbuff[11];
+				o1.z_gyro_h=rbuff[12];
+				o1.z_gyro_l=rbuff[13];
+				v1.x_accel=(((o1.x_accel_h))*256+o1.x_accel_l);
+				v1.y_accel=(((o1.y_accel_h))*256+o1.y_accel_l);
+				v1.z_accel=(((o1.z_accel_h))*256+o1.z_accel_l);
+				v1.x_gyro=(((o1.x_gyro_h))*256+o1.x_gyro_l);
+				v1.y_gyro=(((o1.y_gyro_h))*256+o1.y_gyro_l);
+				v1.z_gyro=(((o1.z_gyro_h))*256+o1.z_gyro_l);
+				v1.temperature=(((o1.t_h))*256+o1.t_l)/340.0+36.53;
+
+				buff[0] = MPU9150_CMPS_XOUT_L ;
+				XIic_Send(IIC_GYRO, 0x68,&buff[0], 1, XIIC_STOP); //csak ciomet kuldok
+				XIic_Recv(IIC_GYRO, 0x68,&rbuff[0], 6, XIIC_STOP);
+				o1.x_mag_l=rbuff[0];
+				o1.x_mag_h=rbuff[1];
+				o1.y_mag_l=rbuff[2];
+				o1.y_mag_h=rbuff[3];
+				o1.z_mag_l=rbuff[4];
+				o1.z_mag_h=rbuff[5];
+				v1.x_mag=(((o1.x_mag_h))*256+o1.x_mag_l);
+				v1.y_mag=(((o1.y_mag_h))*256+o1.y_mag_l);
+				v1.z_mag=(((o1.z_mag_h))*256+o1.z_mag_l);
+				//xil_printf(" %d  %d  %d  %d  %d  %d  %d  %d\r\n",v1.x_accel,v1.y_accel,v1.z_accel,v1.x_gyro,v1.y_gyro,v1.z_gyro,v1.temperature,0);
+				//xil_printf(" %d  %d  %d \r\n",v1.x_mag,v1.y_mag,v1.z_mag);
+
+}
+void MPU9150_setupCompass(){
+  //MPU9150_I2C_ADDRESS = 0x0C;      //change Adress to Compass
+  //MPU9150_writeSensor(0x0A, 0x00); //PowerDownMode
+  buff[0]=0x0A;
+  buff[1]=0x00;
+  XIic_Send(IIC_GYRO, 0x0C,&buff[0], 2, XIIC_STOP);
+  //MPU9150_writeSensor(0x0A, 0x0F); //SelfTest
+  buff[0]=0x0A;
+  buff[1]=0x0F;
+  XIic_Send(IIC_GYRO, 0x0C,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x0A, 0x00); //PowerDownMode
+  buff[0]=0x0A;
+  buff[1]=0x00;
+  XIic_Send(IIC_GYRO, 0x0C,&buff[0], 2, XIIC_STOP);
+
+  //MPU9150_I2C_ADDRESS= 0x69;      //change Adress to MPU
+
+ // MPU9150_writeSensor(0x24, 0x40); //Wait for Data at Slave0
+  buff[0]=0x24;
+   buff[1]=0x40;
+   XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+  //MPU9150_writeSensor(0x25, 0x8C); //Set i2c address at slave0 at 0x0C
+  buff[0]=0x25;
+     buff[1]=0x8C;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+//  MPU9150_writeSensor(0x26, 0x02); //Set where reading at slave 0 starts
+  buff[0]=0x26;
+     buff[1]=0x02;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+//  MPU9150_writeSensor(0x27, 0x88); //set offset at start reading and enable
+  buff[0]=0x27;
+     buff[1]=0x88;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+//  MPU9150_writeSensor(0x28, 0x0C); //set i2c address at slv1 at 0x0C
+  buff[0]=0x28;
+     buff[1]=0x0C;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x29, 0x0A); //Set where reading at slave 1 starts
+  buff[0]=0x29;
+     buff[1]=0x0A;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x2A, 0x81); //Enable at set length to 1
+  buff[0]=0x2A;
+     buff[1]=0x81;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x64, 0x01); //overvride register
+  buff[0]=0x64;
+     buff[1]=0x01;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x67, 0x03); //set delay rate
+  buff[0]=0x67;
+     buff[1]=0x03;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+  //MPU9150_writeSensor(0x01, 0x80);
+  buff[0]=0x01;
+     buff[1]=0x80;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+
+ // MPU9150_writeSensor(0x34, 0x04); //set i2c slv4 delay
+  buff[0]=0x34;
+     buff[1]=0x04;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x64, 0x00); //override register
+  buff[0]=0x64;
+     buff[1]=0x00;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x6A, 0x00); //clear usr setting
+  buff[0]=0x6A;
+     buff[1]=0x00;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x64, 0x01); //override register
+  buff[0]=0x64;
+     buff[1]=0x01;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x6A, 0x20); //enable master i2c mode
+  buff[0]=0x6A;
+     buff[1]=0x20;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+ // MPU9150_writeSensor(0x34, 0x13); //disable slv4
+  buff[0]=0x34;
+     buff[1]=0x13;
+     XIic_Send(IIC_GYRO, 0x68,&buff[0], 2, XIIC_STOP);
+}
+err_t recv_callback7(void *arg, struct tcp_pcb *tpcb,struct pbuf *p, err_t err)
+{
+	/* do not read the packet if we are not in ESTABLISHED state */
+	if (!p) {
+		tcp_close(tpcb);
+		tcp_recv(tpcb, NULL);
+		return ERR_OK;
+	}
+
+	/* indicate that the packet has been received */
+	tcp_recved(tpcb, p->len);
+
+	/* echo back the payload */
+	/* in this case, we assume that the payload is < TCP_SND_BUF */
+	if (pointerToGYROTCPBuff > 0) {
+		//err = tcp_write(tpcb, p->payload, p->len, 1);
+		//enaSendGyro= 1;
+		err = tcp_write(tpcb, GYROTCPBuf, (pointerToGYROTCPBuff)*48, 1);
+	pointerToGYROTCPBuff=0;
+	//if (tcp_sndbuf(tpcb) > p->len) {
+		//err = tcp_write(tpcb, p->payload, p->len, 1);
+	  // err = tcp_write(tpcb, "laca", 5, 1);
+	}
+    int ez=p->payload;
+	xil_printf("TCP %d %d",ez[0],ez[1]);
+
+	/* free the received pbuf */
+	pbuf_free(p);
+
+	return ERR_OK;
+}
+err_t accept_callback7(void *arg, struct tcp_pcb *newpcb, err_t err)
+{
+	static int connection = 1;
+
+	/* set the receive callback for this connection */
+	tcp_recv(newpcb, recv_callback7);
+
+	/* just use an integer number indicating the connection id as the
+	   callback argument */
+	tcp_arg(newpcb, (void*)connection);
+
+	/* increment for subsequent accepted connections */
+	connection++;
+
+	return ERR_OK;
+}
+int start_application7()
+{
+	err_t err;
+	unsigned port = 7;
+
+	/* create new TCP PCB structure */
+	pcb = tcp_new();
+	if (!pcb) {
+		xil_printf("Error creating PCB. Out of Memory\n\r");
+		return -1;
+	}
+
+	/* bind to specified @port */
+	err = tcp_bind(pcb, IP_ADDR_ANY, port);
+	if (err != ERR_OK) {
+		xil_printf("Unable to bind to port %d: err = %d\n\r", port, err);
+		return -2;
+	}
+
+	/* we do not need any arguments to callback functions */
+	tcp_arg(pcb, NULL);
+
+	/* listen for connections */
+	pcb = tcp_listen(pcb);
+	if (!pcb) {
+		xil_printf("Out of memory while tcp_listen\n\r");
+		return -3;
+	}
+
+	/* specify callback to use for incoming connections */
+	tcp_accept(pcb, accept_callback7);
+
+	xil_printf("TCP echo server started @ port %d\n\r", port);
+
+	return 0;
+}
+
+/****************************************************************************/
+
+/********************************UartGPS****************************************/
+int UartNs550IntrUartGPS(INTC *IntcInstancePtr,	XUartNs550 *UartInstancePtr,u16 UartDeviceId,u16 UartIntrId)
+{
+	int Status;
+	u32 Index;
+	u16 Options;
+	u32 BadByteCount = 0;
+	Status = XUartNs550_Initialize(UartInstancePtr, UartDeviceId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XUartNs550_SelfTest(UartInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = UartNs550SetupIntrSystemUartGPS(IntcInstancePtr,UartInstancePtr,UartIntrId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XUartNs550_SetHandler(UartInstancePtr, UartNs550IntrHandlerUartGPS, UartInstancePtr);
+
+	Options = XUN_OPTION_FIFOS_ENABLE |XUN_OPTION_DATA_INTR; //XUN_OPTION_LOOPBACK |XUN_OPTION_DATA_INTR |
+	Status=XUartNs550_SetOptions(UartInstancePtr, Options);
+	Status=XUartNs550_SetFifoThreshold(UartInstancePtr,XUN_FIFO_TRIGGER_14);
+		if (Status != XST_SUCCESS) {
+				xil_printf("Treshold error \r\n ");
+						return XST_FAILURE;
+					}
+	XUartNs550_SetBaudRate(UartInstancePtr,9600);
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		SendBufferGPSUart[Index] = 0;
+		RecvBufferGPSUart[Index] = 0;
+	}
+	return XST_SUCCESS;
+}
+void UartNs550IntrHandlerUartGPS(void *CallBackRef, u32 Event, unsigned int EventData)
+{
+	u8 Errors;
+	XUartNs550 *UartNs550Ptr = (XUartNs550 *)CallBackRef;
+	if(cnt==20)
+	        {
+				u32 count=XUartNs550_Recv(&UartNs550InstanceGPS, RecvBufferGPSUart, TEST_BUFFER_SIZE_GPS_UART);
+				cnt=0;
+			}
+	 else
+	       {
+	             	cnt++;
+	       }
+
+}
+static void UartNs550DisableIntrSystemUartGPS(INTC *IntcInstancePtr, u16 UartIntrId)
+{
+#ifdef XPAR_INTC_0_DEVICE_ID
+	XIntc_Disconnect(IntcInstancePtr, UartIntrId);
+#else
+	XScuGic_Disable(IntcInstancePtr, UartIntrId);
+	XScuGic_Disconnect(IntcInstancePtr, UartIntrId);
+
+#endif
+}
+static int UartNs550SetupIntrSystemUartGPS(INTC *IntcInstancePtr,XUartNs550 *UartInstancePtr,u16 UartIntrId)
+{
+	int Status;
+	XScuGic_Config *IntcConfig;
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+	Status = XScuGic_Connect(IntcInstancePtr, UartIntrId, (Xil_ExceptionHandler)XUartNs550_InterruptHandler, UartInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+	XScuGic_Enable(IntcInstancePtr, UartIntrId);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)INTC_HANDLER, IntcInstancePtr);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+/***************************SPI_Spartan***************************************************/
+int SpiSpartanInit(XSpi *SpiInstancePtr, u16 SpiDeviceId)
+{
+	int Status;
+	u32 Count;
+	u8 Test;
+	XSpi_Config *ConfigPtr;	/* Pointer to Configuration data */
+	ConfigPtr = XSpi_LookupConfig(SpiDeviceId);
+	if (ConfigPtr == NULL) {
+		return XST_DEVICE_NOT_FOUND;
+	}
+	Status = XSpi_CfgInitialize(SpiInstancePtr, ConfigPtr,  ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XSpi_SetOptions(SpiInstancePtr, XSP_MASTER_OPTION |XSP_CLK_PHASE_1_OPTION);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XSpi_SetSlaveSelect(SpiInstancePtr,1);
+	XSpi_Start(SpiInstancePtr);
+    XSpi_IntrGlobalDisable(SpiInstancePtr);
+	Test = 0x10;
+	return XST_SUCCESS;
+}
+/******************************************************************************/
+

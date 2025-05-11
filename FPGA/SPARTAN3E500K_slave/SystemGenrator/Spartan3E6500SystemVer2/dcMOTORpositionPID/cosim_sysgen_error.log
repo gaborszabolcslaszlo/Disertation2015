@@ -1,0 +1,23 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Failed to access the configuration bitstream: C:/Users/la...
+     Block: 'cosim/MotorPoz hwcosim'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'cosim/MotorPoz hwcosim'
+
+Details:
+Failed to access the configuration bitstream: C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/motorpoz_cw.bit
+
+File error: 2
+Error occurred during "Simulation Initialization".
+
+--------------------------------------------------------------------------------

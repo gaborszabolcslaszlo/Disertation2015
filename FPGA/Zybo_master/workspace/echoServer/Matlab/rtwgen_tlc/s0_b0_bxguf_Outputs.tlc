@@ -1,0 +1,23 @@
+%implements s0_b0_bxguf_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3, 0, 2)
+%assign tlcUpdateFcnOfS0B1 = OpaqueTLCBlockFcn("Update", 0, 1, 0, 2)
+%assign tlcUpdateFcnOfS0B2 = OpaqueTLCBlockFcn("Update", 0, 2, 0, 2)
+%<tlcOutputsFcnOfS0B1>\
+%<tlcOutputsFcnOfS0B2>\
+%<tlcOutputsFcnOfS0B3>\
+%<tlcUpdateFcnOfS0B1>\
+%<tlcUpdateFcnOfS0B2>\
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction

@@ -1,0 +1,3 @@
+
+NET processing_system7_0_FCLK_CLK0 TNM_NET = processing_system7_0_FCLK_CLK0;
+TIMESPEC TS_processing_system7_0_FCLK_CLK0 = PERIOD processing_system7_0_FCLK_CLK0 10.0 ns;

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Diak\gszl\MicroBlazeproject/drivers/ntg_v1_00_a/data/ntg_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Mon Jun 23 13:10:44 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER ntg
+
+  OPTION supported_peripherals = (ntg);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

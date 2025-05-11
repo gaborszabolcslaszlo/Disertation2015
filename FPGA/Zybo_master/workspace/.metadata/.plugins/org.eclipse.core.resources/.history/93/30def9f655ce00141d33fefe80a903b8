@@ -1,0 +1,27 @@
+/*
+ * Empty C++ Application
+ */
+#include "xiicps.h"
+#include "xuartns550.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "UartSend.h"
+
+
+#define UART_PC       XPAR_AXI_UART16550_0_DEVICE_ID
+#define UART_GPS	  XPAR_XUARTNS550_NUM_INSTANCES
+#define XPAR_DEFAULT_BAUD_RATE 19200;
+
+
+int main()
+{
+	print("itt");
+	char* s ="heloooo";
+	u8* dataptr=(u8*)s;
+	while(1)
+	{
+	Send_PC(UART_PC, dataptr,sizeof(s));
+	Send_PC(UART_GPS, dataptr,sizeof(s));
+	}
+	return 0;
+}

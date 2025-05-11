@@ -1,0 +1,1092 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_pwmmodlmag_plbw_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\" "C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\Nexys2_BSB_Support_v_3_0\lib\Digilent\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s500epq208-4
+Output File Name                   : "../implementation/system_pwmmodlmag_plbw_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_pwmmodlmag_plbw_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" in Library pwmmodlmag_plbw_v1_00_a.
+Entity <cntr_11_0_d7c176806556610b> compiled.
+Entity <cntr_11_0_d7c176806556610b> (Architecture <cntr_11_0_d7c176806556610b_a>) compiled.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <srl17e> compiled.
+Entity <srl17e> (Architecture <structural>) compiled.
+Entity <synth_reg> compiled.
+Entity <synth_reg> (Architecture <structural>) compiled.
+Entity <synth_reg_reg> compiled.
+Entity <synth_reg_reg> (Architecture <behav>) compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <constant_963ed6358a> compiled.
+Entity <constant_963ed6358a> (Architecture <behavior>) compiled.
+Entity <mcode_block_f4d0462e0e> compiled.
+Entity <mcode_block_f4d0462e0e> (Architecture <behavior>) compiled.
+Entity <mcode_block_d087e919af> compiled.
+Entity <mcode_block_d087e919af> (Architecture <behavior>) compiled.
+Entity <constant_9e0feede96> compiled.
+Entity <constant_9e0feede96> (Architecture <behavior>) compiled.
+Entity <xlcounter_free_PWMmodlMag> compiled.
+Entity <xlcounter_free_PWMmodlMag> (Architecture <behavior>) compiled.
+Entity <logical_49a7e4b36d> compiled.
+Entity <logical_49a7e4b36d> (Architecture <behavior>) compiled.
+Entity <mux_a54904b290> compiled.
+Entity <mux_a54904b290> (Architecture <behavior>) compiled.
+Entity <relational_7a2906d528> compiled.
+Entity <relational_7a2906d528> (Architecture <behavior>) compiled.
+Entity <relational_9fe1fd91dc> compiled.
+Entity <relational_9fe1fd91dc> (Architecture <behavior>) compiled.
+Entity <constant_407fc45d32> compiled.
+Entity <constant_407fc45d32> (Architecture <behavior>) compiled.
+Entity <convert_func_call> compiled.
+Entity <convert_func_call> (Architecture <behavior>) compiled.
+Entity <xlconvert> compiled.
+Entity <xlconvert> (Architecture <behavior>) compiled.
+Entity <bitbasher_e0a756412d> compiled.
+Entity <bitbasher_e0a756412d> (Architecture <behavior>) compiled.
+Entity <xlregister> compiled.
+Entity <xlregister> (Architecture <behavior>) compiled.
+Entity <edk_processor_entity_7cc3b36771> compiled.
+Entity <edk_processor_entity_7cc3b36771> (Architecture <structural>) compiled.
+Entity <pwm_entity_3d37a8f8ea> compiled.
+Entity <pwm_entity_3d37a8f8ea> (Architecture <structural>) compiled.
+Entity <pwmmodlmag> compiled.
+Entity <pwmmodlmag> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd" in Library pwmmodlmag_plbw_v1_00_a.
+Entity <xlclockdriver> compiled.
+Entity <xlclockdriver> (Architecture <behavior>) compiled.
+Entity <xland2> compiled.
+Entity <xland2> (Architecture <behavior>) compiled.
+Entity <default_clock_driver_PWMmodlMag> compiled.
+Entity <default_clock_driver_PWMmodlMag> (Architecture <structural>) compiled.
+Entity <pwmmodlmag_cw> compiled.
+Entity <pwmmodlmag_cw> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_plbw.vhd" in Library pwmmodlmag_plbw_v1_00_a.
+Entity <plbaddrpref> compiled.
+Entity <plbaddrpref> (Architecture <behavior>) compiled.
+Entity <pwmmodlmag_plbw> compiled.
+Entity <pwmmodlmag_plbw> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/hdl/system_pwmmodlmag_plbw_0_wrapper.vhd" in Library work.
+Entity <system_pwmmodlmag_plbw_0_wrapper> compiled.
+Entity <system_pwmmodlmag_plbw_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system_pwmmodlmag_plbw_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <pwmmodlmag_plbw> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	C_BASEADDR = "11000101111000000000000000000000"
+	C_HIGHADDR = "11000101111000000000111111111111"
+	C_MEMMAP_CONFIG = 2048
+	C_MEMMAP_CONFIG_BIN_PT = 0
+	C_MEMMAP_CONFIG_N_BITS = 8
+	C_MEMMAP_DUTY = 2052
+	C_MEMMAP_DUTY_BIN_PT = 0
+	C_MEMMAP_DUTY_N_BITS = 16
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 32
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_SUPPORT_BURSTS = 0
+
+Analyzing hierarchy for entity <plbaddrpref> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	C_BASEADDR = "11000101111000000000000000000000"
+	C_HIGHADDR = "11000101111000000000111111111111"
+	C_SPLB_DWIDTH = 32
+	C_SPLB_NATIVE_DWIDTH = 32
+
+Analyzing hierarchy for entity <pwmmodlmag_cw> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>).
+
+Analyzing hierarchy for entity <xland2> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000"
+	latency = 1
+	width = 8
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <default_clock_driver_PWMmodlMag> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>).
+
+Analyzing hierarchy for entity <pwmmodlmag> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>).
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000"
+	width = 8
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+
+Analyzing hierarchy for entity <xlclockdriver> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+
+Analyzing hierarchy for entity <bitbasher_e0a756412d> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <edk_processor_entity_7cc3b36771> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>).
+
+Analyzing hierarchy for entity <pwm_entity_3d37a8f8ea> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlregister> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	d_width = 8
+	init_value = "00000000"
+
+Analyzing hierarchy for entity <xlregister> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	d_width = 16
+	init_value = "0000000000000000"
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <constant_963ed6358a> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mcode_block_f4d0462e0e> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mcode_block_d087e919af> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlcounter_free_PWMmodlMag> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_d7c176806556610b"
+	op_arith = 1
+	op_width = 16
+
+Analyzing hierarchy for entity <logical_49a7e4b36d> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_a54904b290> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_7a2906d528> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_9fe1fd91dc> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_407fc45d32> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_9e0feede96> in library <pwmmodlmag_plbw_v1_00_a> (architecture <behavior>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000"
+	latency = 1
+	width = 8
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000"
+	width = 8
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <pwmmodlmag_plbw_v1_00_a> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system_pwmmodlmag_plbw_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <system_pwmmodlmag_plbw_0_wrapper> analyzed. Unit <system_pwmmodlmag_plbw_0_wrapper> generated.
+
+Analyzing generic Entity <pwmmodlmag_plbw> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	C_BASEADDR = "11000101111000000000000000000000"
+	C_HIGHADDR = "11000101111000000000111111111111"
+	C_MEMMAP_CONFIG = 2048
+	C_MEMMAP_CONFIG_BIN_PT = 0
+	C_MEMMAP_CONFIG_N_BITS = 8
+	C_MEMMAP_DUTY = 2052
+	C_MEMMAP_DUTY_BIN_PT = 0
+	C_MEMMAP_DUTY_N_BITS = 16
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 32
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_plbw.vhd" line 184: Unconnected input port 'ce' of component 'pwmmodlmag_cw' is tied to default value.
+Entity <pwmmodlmag_plbw> analyzed. Unit <pwmmodlmag_plbw> generated.
+
+Analyzing generic Entity <plbaddrpref> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	C_BASEADDR = "11000101111000000000000000000000"
+	C_HIGHADDR = "11000101111000000000111111111111"
+	C_SPLB_DWIDTH = 32
+	C_SPLB_NATIVE_DWIDTH = 32
+Entity <plbaddrpref> analyzed. Unit <plbaddrpref> generated.
+
+Analyzing Entity <pwmmodlmag_cw> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x2>.
+    Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
+    Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "optimize_primitives = FALSE" for instance <persistentdff_inst> in unit <pwmmodlmag_cw>.
+    Set property "syn_black_box = TRUE" for instance <persistentdff_inst> in unit <pwmmodlmag_cw>.
+    Set property "syn_noprune = TRUE" for instance <persistentdff_inst> in unit <pwmmodlmag_cw>.
+Entity <pwmmodlmag_cw> analyzed. Unit <pwmmodlmag_cw> generated.
+
+Analyzing Entity <xland2> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <xland2> analyzed. Unit <xland2> generated.
+
+Analyzing generic Entity <synth_reg_w_init.1> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000"
+	latency = 1
+	width = 8
+Entity <synth_reg_w_init.1> analyzed. Unit <synth_reg_w_init.1> generated.
+
+Analyzing generic Entity <single_reg_w_init.1> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000"
+	width = 8
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.1> analyzed. Unit <single_reg_w_init.1> generated.
+
+Analyzing generic Entity <synth_reg_w_init.2> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+Entity <synth_reg_w_init.2> analyzed. Unit <synth_reg_w_init.2> generated.
+
+Analyzing generic Entity <single_reg_w_init.2> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.2> analyzed. Unit <single_reg_w_init.2> generated.
+
+Analyzing Entity <default_clock_driver_PWMmodlMag> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+    Set property "syn_noprune = TRUE" for unit <default_clock_driver_PWMmodlMag>.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd" line 427: Unconnected output port 'clr' of component 'xlclockdriver'.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd" line 427: Unconnected output port 'ce_logic' of component 'xlclockdriver'.
+Entity <default_clock_driver_PWMmodlMag> analyzed. Unit <default_clock_driver_PWMmodlMag> generated.
+
+Analyzing generic Entity <xlclockdriver> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+Entity <xlclockdriver> analyzed. Unit <xlclockdriver> generated.
+
+Analyzing generic Entity <synth_reg_w_init.3> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.3> analyzed. Unit <synth_reg_w_init.3> generated.
+
+Analyzing generic Entity <single_reg_w_init.3> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	width = 1
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.3> analyzed. Unit <single_reg_w_init.3> generated.
+
+Analyzing Entity <pwmmodlmag> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3242: Unconnected output port 'a1' of component 'bitbasher_e0a756412d'.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3242: Unconnected output port 'a2' of component 'bitbasher_e0a756412d'.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3242: Unconnected output port 'a3' of component 'bitbasher_e0a756412d'.
+Entity <pwmmodlmag> analyzed. Unit <pwmmodlmag> generated.
+
+Analyzing Entity <bitbasher_e0a756412d> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <bitbasher_e0a756412d> analyzed. Unit <bitbasher_e0a756412d> generated.
+
+Analyzing generic Entity <xlconvert> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert> analyzed. Unit <xlconvert> generated.
+
+Analyzing Entity <edk_processor_entity_7cc3b36771> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+Entity <edk_processor_entity_7cc3b36771> analyzed. Unit <edk_processor_entity_7cc3b36771> generated.
+
+Analyzing Entity <constant_963ed6358a> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <constant_963ed6358a> analyzed. Unit <constant_963ed6358a> generated.
+
+Analyzing Entity <mcode_block_f4d0462e0e> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <mcode_block_f4d0462e0e> analyzed. Unit <mcode_block_f4d0462e0e> generated.
+
+Analyzing Entity <mcode_block_d087e919af> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <mcode_block_d087e919af> analyzed. Unit <mcode_block_d087e919af> generated.
+
+Analyzing Entity <pwm_entity_3d37a8f8ea> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3072: Unconnected input port 'up' of component 'xlcounter_free_PWMmodlMag' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3072: Unconnected input port 'load' of component 'xlcounter_free_PWMmodlMag' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd" line 3072: Unconnected input port 'din' of component 'xlcounter_free_PWMmodlMag' is tied to default value.
+Entity <pwm_entity_3d37a8f8ea> analyzed. Unit <pwm_entity_3d37a8f8ea> generated.
+
+Analyzing generic Entity <xlcounter_free_PWMmodlMag> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_d7c176806556610b"
+	op_arith = 1
+	op_width = 16
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_free_PWMmodlMag>.
+Entity <xlcounter_free_PWMmodlMag> analyzed. Unit <xlcounter_free_PWMmodlMag> generated.
+
+Analyzing Entity <logical_49a7e4b36d> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <logical_49a7e4b36d> analyzed. Unit <logical_49a7e4b36d> generated.
+
+Analyzing Entity <mux_a54904b290> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <mux_a54904b290> analyzed. Unit <mux_a54904b290> generated.
+
+Analyzing Entity <relational_7a2906d528> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <relational_7a2906d528> analyzed. Unit <relational_7a2906d528> generated.
+
+Analyzing Entity <relational_9fe1fd91dc> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <relational_9fe1fd91dc> analyzed. Unit <relational_9fe1fd91dc> generated.
+
+Analyzing Entity <constant_407fc45d32> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <constant_407fc45d32> analyzed. Unit <constant_407fc45d32> generated.
+
+Analyzing Entity <constant_9e0feede96> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+Entity <constant_9e0feede96> analyzed. Unit <constant_9e0feede96> generated.
+
+Analyzing generic Entity <xlregister.1> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	d_width = 8
+	init_value = "00000000"
+Entity <xlregister.1> analyzed. Unit <xlregister.1> generated.
+
+Analyzing generic Entity <xlregister.2> in library <pwmmodlmag_plbw_v1_00_a> (Architecture <behavior>).
+	d_width = 16
+	init_value = "0000000000000000"
+Entity <xlregister.2> analyzed. Unit <xlregister.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <plbaddrpref>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_plbw.vhd".
+Unit <plbaddrpref> synthesized.
+
+
+Synthesizing Unit <xland2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd".
+Unit <xland2> synthesized.
+
+
+Synthesizing Unit <bitbasher_e0a756412d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <a_1_36<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <bitbasher_e0a756412d> synthesized.
+
+
+Synthesizing Unit <xlconvert>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert> synthesized.
+
+
+Synthesizing Unit <constant_963ed6358a>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_963ed6358a> synthesized.
+
+
+Synthesizing Unit <mcode_block_f4d0462e0e>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <ps1reg_39_20<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <plbabusreg_13_25<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <avalidreg_28_23<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <plbabusreg_13_25>.
+    Found 1-bit register for signal <plbpavalidreg_14_28<0>>.
+    Found 1-bit register for signal <plbrnwreg_15_24<0>>.
+    Found 1-bit register for signal <plbrstreg_12_24<0>>.
+    Found 32-bit register for signal <plbwrdbusreg_16_27>.
+    Found 1-bit register for signal <psreg_47_19<0>>.
+    Found 3-bit register for signal <rdcompdelay_58_25>.
+    Found 1-bit register for signal <rdcompreg_62_23<0>>.
+    Found 1-bit register for signal <rddackreg_66_23<0>>.
+    Found 32-bit register for signal <rddbusreg_84_23>.
+    Found 20-bit comparator equal for signal <rel_33_4<0>>.
+    Found 1-bit register for signal <wrdackreg_70_23<0>>.
+    Summary:
+	inferred 106 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <mcode_block_f4d0462e0e> synthesized.
+
+
+Synthesizing Unit <mcode_block_d087e919af>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <wrdbus_1_93<31:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 2-bit register for signal <bankaddr_reg_74_26>.
+    Found 32-bit register for signal <read_bank_out_reg_71_31>.
+    Summary:
+	inferred  34 D-type flip-flop(s).
+Unit <mcode_block_d087e919af> synthesized.
+
+
+Synthesizing Unit <logical_49a7e4b36d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_49a7e4b36d> synthesized.
+
+
+Synthesizing Unit <mux_a54904b290>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_a54904b290> synthesized.
+
+
+Synthesizing Unit <relational_7a2906d528>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator greater for signal <result_18_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_7a2906d528> synthesized.
+
+
+Synthesizing Unit <relational_9fe1fd91dc>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_9fe1fd91dc> synthesized.
+
+
+Synthesizing Unit <constant_407fc45d32>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_407fc45d32> synthesized.
+
+
+Synthesizing Unit <constant_9e0feede96>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_9e0feede96> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <single_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <single_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <edk_processor_entity_7cc3b36771>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <edk_processor_entity_7cc3b36771> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_PWMmodlMag>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_PWMmodlMag> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <synth_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <pwm_entity_3d37a8f8ea>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <pwm_entity_3d37a8f8ea> synthesized.
+
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd".
+WARNING:Xst:1780 - Signal <internal_ce_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <internal_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found T flip-flop for signal <clk_num<0>>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+Unit <xlclockdriver> synthesized.
+
+
+Synthesizing Unit <xlregister_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xlregister_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <xlregister_2> synthesized.
+
+
+Synthesizing Unit <default_clock_driver_PWMmodlMag>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd".
+Unit <default_clock_driver_PWMmodlMag> synthesized.
+
+
+Synthesizing Unit <pwmmodlmag>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag.vhd".
+Unit <pwmmodlmag> synthesized.
+
+
+Synthesizing Unit <pwmmodlmag_cw>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_cw.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <pwmmodlmag_cw> synthesized.
+
+
+Synthesizing Unit <pwmmodlmag_plbw>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/pcores/pwmmodlmag_plbw_v1_00_a/hdl/vhdl/pwmmodlmag_plbw.vhd".
+Unit <pwmmodlmag_plbw> synthesized.
+
+
+Synthesizing Unit <system_pwmmodlmag_plbw_0_wrapper>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/hdl/system_pwmmodlmag_plbw_0_wrapper.vhd".
+Unit <system_pwmmodlmag_plbw_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 15
+ 1-bit register                                        : 10
+ 2-bit register                                        : 1
+ 32-bit register                                       : 4
+# Comparators                                          : 4
+ 16-bit comparator greater                             : 2
+ 17-bit comparator equal                               : 1
+ 20-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <plbabusreg_13_25_0> of sequential type is unconnected in block <mcode_block_f4d0462e0e>.
+WARNING:Xst:2677 - Node <plbabusreg_13_25_1> of sequential type is unconnected in block <mcode_block_f4d0462e0e>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 187
+ Flip-Flops                                            : 187
+# Comparators                                          : 4
+ 16-bit comparator greater                             : 2
+ 17-bit comparator equal                               : 1
+ 20-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <read_bank_out_reg_71_31_31> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_30> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_29> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_28> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_27> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_26> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_25> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_24> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_23> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_22> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_21> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_20> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_19> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_18> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_17> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_16> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_15> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_14> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_13> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_12> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_11> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_10> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_9> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_8> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_7> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_6> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_5> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_4> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_3> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_2> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_1> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <read_bank_out_reg_71_31_0> has a constant value of 0 in block <mcode_block_d087e919af>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bankaddr_reg_74_26_0> is unconnected in block <mcode_block_d087e919af>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bankaddr_reg_74_26_1> is unconnected in block <mcode_block_d087e919af>.
+INFO:Xst:2261 - The FF/Latch <rddbusreg_84_23_0> in Unit <mcode_block_f4d0462e0e> is equivalent to the following 31 FFs/Latches, which will be removed : <rddbusreg_84_23_1> <rddbusreg_84_23_2> <rddbusreg_84_23_3> <rddbusreg_84_23_4> <rddbusreg_84_23_5> <rddbusreg_84_23_6> <rddbusreg_84_23_7> <rddbusreg_84_23_8> <rddbusreg_84_23_9> <rddbusreg_84_23_10> <rddbusreg_84_23_11> <rddbusreg_84_23_12> <rddbusreg_84_23_13> <rddbusreg_84_23_14> <rddbusreg_84_23_15> <rddbusreg_84_23_16> <rddbusreg_84_23_17> <rddbusreg_84_23_18> <rddbusreg_84_23_19> <rddbusreg_84_23_20> <rddbusreg_84_23_21> <rddbusreg_84_23_22> <rddbusreg_84_23_23> <rddbusreg_84_23_24> <rddbusreg_84_23_25> <rddbusreg_84_23_26> <rddbusreg_84_23_27> <rddbusreg_84_23_28> <rddbusreg_84_23_29> <rddbusreg_84_23_30> <rddbusreg_84_23_31> 
+WARNING:Xst:1293 - FF/Latch <rddbusreg_84_23_0> has a constant value of 0 in block <mcode_block_f4d0462e0e>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <system_pwmmodlmag_plbw_0_wrapper> ...
+
+Optimizing unit <mcode_block_f4d0462e0e> ...
+
+Optimizing unit <single_reg_w_init_1> ...
+
+Optimizing unit <single_reg_w_init_2> ...
+
+Optimizing unit <pwm_entity_3d37a8f8ea> ...
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_31> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_30> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_29> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_28> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_27> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_26> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_25> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_24> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_23> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_22> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_21> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_20> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_19> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_18> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_17> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+WARNING:Xst:2677 - Node <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbwrdbusreg_16_27_16> of sequential type is unconnected in block <system_pwmmodlmag_plbw_0_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+Processing Unit <system_pwmmodlmag_plbw_0_wrapper> :
+	Found 3-bit shift register for signal <pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/rdcompreg_62_23_0>.
+Unit <system_pwmmodlmag_plbw_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+# Shift Registers                                      : 1
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system_pwmmodlmag_plbw_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 107
+
+Cell Usage :
+# BELS                             : 78
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 2
+#      LUT2                        : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 18
+#      LUT4                        : 17
+#      LUT4_D                      : 2
+#      MUXCY                       : 30
+#      VCC                         : 1
+# FlipFlops/Latches                : 103
+#      FDE                         : 54
+#      FDRE                        : 49
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+# Others                           : 2
+#      cntr_11_0_d7c176806556610b  : 1
+#      xlpersistentdff             : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-4 
+
+ Number of Slices:                       75  out of   4656     1%  
+ Number of Slice Flip Flops:            103  out of   9312     1%  
+ Number of 4 input LUTs:                 47  out of   9312     0%  
+    Number used as logic:                46
+    Number used as Shift registers:       1
+ Number of IOs:                         107
+ Number of bonded IOBs:                   0  out of    158     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                                              | Load  |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+splb_clk                           | NONE(pwmmodlmag_plbw_0/sysgen_dut/default_clock_driver_pwmmodlmag_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)| 104   |
+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.859ns (Maximum Frequency: 170.678MHz)
+   Minimum input arrival time before clock: 0.308ns
+   Maximum output required time after clock: 8.059ns
+   Maximum combinational path delay: 4.374ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'splb_clk'
+  Clock period: 5.859ns (frequency: 170.678MHz)
+  Total number of paths / destination ports: 936 / 78
+-------------------------------------------------------------------------
+Delay:               5.859ns (Levels of Logic = 7)
+  Source:            pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbabusreg_13_25_19 (FF)
+  Destination:       pwmmodlmag_plbw_0/sysgen_dut/Duty/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp (FF)
+  Source Clock:      splb_clk rising
+  Destination Clock: splb_clk rising
+
+  Data Path: pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbabusreg_13_25_19 to pwmmodlmag_plbw_0/sysgen_dut/Duty/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.595  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbabusreg_13_25_19 (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbabusreg_13_25_19)
+     LUT4:I0->O            1   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_lut<1> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<1> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<2> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<3> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<4> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<4>)
+     MUXCY:CI->O           6   0.331   0.704  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit_0_and0000_wg_cy<5> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/ps_42_1_bit)
+     LUT4:I2->O           16   0.704   1.034  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_memmap/rel_48_4_0_and00001 (pwmmodlmag_plbw_0/sysgen_dut/Duty_reg_ce)
+     FDRE:CE                   0.555          pwmmodlmag_plbw_0/sysgen_dut/Duty/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp
+    ----------------------------------------
+    Total                      5.859ns (3.526ns logic, 2.333ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'splb_clk'
+  Total number of paths / destination ports: 49 / 49
+-------------------------------------------------------------------------
+Offset:              0.308ns (Levels of Logic = 0)
+  Source:            plb_pavalid (PAD)
+  Destination:       pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbpavalidreg_14_28_0 (FF)
+  Destination Clock: splb_clk rising
+
+  Data Path: plb_pavalid to pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbpavalidreg_14_28_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:D                     0.308          pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/edk_processor_7cc3b36771/plb_decode/plbpavalidreg_14_28_0
+    ----------------------------------------
+    Total                      0.308ns (0.308ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'splb_clk'
+  Total number of paths / destination ports: 301 / 7
+-------------------------------------------------------------------------
+Offset:              8.059ns (Levels of Logic = 27)
+  Source:            pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
+  Destination:       pwmout (PAD)
+  Source Clock:      splb_clk rising
+
+  Data Path: pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp to pwmout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.622  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/register_q_net_x0<0>)
+     LUT1:I0->O            1   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<0>_rt (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<0> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<1> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<2> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<3> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<4> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<5> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<6> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<6>)
+     MUXCY:CI->O          16   0.459   1.113  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<7> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational2/Mcompar_result_18_3_rel<0>_cy<7>)
+     LUT3:I1->O            1   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_lut<0> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<0> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<1> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<2> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<3> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<4> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<5> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<6> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<7> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<8> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<9> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<10> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<11> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<12> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<13> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<14> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<14>)
+     MUXCY:CI->O           1   0.459   0.595  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<15> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<15>)
+     LUT2:I0->O            0   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/logical/fully_2_1_bit1 (pwmout)
+    ----------------------------------------
+    Total                      8.059ns (5.729ns logic, 2.330ns route)
+                                       (71.1% logic, 28.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 51 / 5
+-------------------------------------------------------------------------
+Delay:               4.374ns (Levels of Logic = 18)
+  Source:            pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/counter/comp0.core_instance0:q<0> (PAD)
+  Destination:       pwmout (PAD)
+
+  Data Path: pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/counter/comp0.core_instance0:q<0> to pwmout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    cntr_11_0_d7c176806556610b:q<0>    2   0.000   0.622  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/counter/comp0.core_instance0 (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/counter_op_net<0>)
+     LUT3:I0->O            1   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_lut<0> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<0> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<1> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<2> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<3> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<4> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<5> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<6> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<7> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<8> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<9> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<10> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<11> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<12> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<13> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<14> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<14>)
+     MUXCY:CI->O           1   0.459   0.595  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<15> (pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/relational/Mcompar_result_18_3_rel<0>_cy<15>)
+     LUT2:I0->O            0   0.704   0.000  pwmmodlmag_plbw_0/sysgen_dut/pwmmodlmag_x0/pwm_3d37a8f8ea/logical/fully_2_1_bit1 (pwmout)
+    ----------------------------------------
+    Total                      4.374ns (3.157ns logic, 1.217ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.40 secs
+ 
+--> 
+
+Total memory usage is 281528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  158 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

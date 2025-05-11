@@ -1,0 +1,9 @@
+-batch 
+-create ntg 
+-ver 1.00.a 
+-dir "C:\Diak\gszl\MicroBlazeproject" 
+-lang vhdl 
+-bus plbv46 s 
+-xps 
+-ise 
+-driver 

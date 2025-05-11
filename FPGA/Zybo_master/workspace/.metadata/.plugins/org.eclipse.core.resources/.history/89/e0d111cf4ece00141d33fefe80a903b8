@@ -1,0 +1,18 @@
+/*
+ * Empty C++ Application
+ */
+#include "xiicps.h"
+#include "xuartns550.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "UartSend.h"
+#include "string.h"
+#define UART_DEVICE_ID       XPAR_AXI_UART16550_0_DEVICE_ID
+
+
+int main()
+{
+	u8* dataptr=(*u8)"itttt";
+	SendString(UART_DEVICE_ID, dataptr,sizeof(dataptr));
+	return 0;
+}

@@ -1,0 +1,1463 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 22 13:42:28 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "PWMseb(0)" LOCATE = SITE "P134" LEVEL 1;
+COMP "PWMseb(1)" LOCATE = SITE "P133" LEVEL 1;
+COMP "PWMpos(0)" LOCATE = SITE "P137" LEVEL 1;
+COMP "PWMpos(1)" LOCATE = SITE "P135" LEVEL 1;
+COMP "sys_clk" LOCATE = SITE "P184" LEVEL 1;
+COMP "sebsensor(0)" LOCATE = SITE "P47" LEVEL 1;
+COMP "sebsensor(1)" LOCATE = SITE "P45" LEVEL 1;
+COMP "tobbi(10)" LOCATE = SITE "P139" LEVEL 1;
+COMP "tobbi(11)" LOCATE = SITE "P138" LEVEL 1;
+COMP "tobbi(0)" LOCATE = SITE "P153" LEVEL 1;
+COMP "tobbi(1)" LOCATE = SITE "P160" LEVEL 1;
+COMP "tobbi(2)" LOCATE = SITE "P151" LEVEL 1;
+COMP "tobbi(3)" LOCATE = SITE "P152" LEVEL 1;
+COMP "tobbi(4)" LOCATE = SITE "P150" LEVEL 1;
+COMP "tobbi(5)" LOCATE = SITE "P147" LEVEL 1;
+COMP "tobbi(6)" LOCATE = SITE "P146" LEVEL 1;
+COMP "tobbi(7)" LOCATE = SITE "P145" LEVEL 1;
+COMP "tobbi(8)" LOCATE = SITE "P144" LEVEL 1;
+COMP "tobbi(9)" LOCATE = SITE "P140" LEVEL 1;
+COMP "PosistionSens(0)" LOCATE = SITE "P49" LEVEL 1;
+COMP "PosistionSens(1)" LOCATE = SITE "P48" LEVEL 1;
+NET "ibufg_sys_clk_O" BEL "bufg_sys_clk.GCLKMUX" USELOCALCONNECT;
+PIN
+        jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>
+        = BEL
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B"
+        PINNAME CLKB;
+PIN
+        jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>
+        = BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B"
+        PINNAME CLKB;
+TIMEGRP hwcosim_sys_clk = BEL "bufgmux_comp1.GCLKMUX" BEL "bufgmux_comp1" BEL
+        "bufgmux_comp2.GCLKMUX" BEL "bufgmux_comp2" BEL
+        "jtag_iface/serial_iface/cmd_proc/mode" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_clk_pulses_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/dout_fifo_we" BEL
+        "jtag_iface/serial_iface/cmd_proc/cosim_clk_sel" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/pulse_count_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/data_valid" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/bank_sel_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/seq_addr" BEL
+        "jtag_iface/serial_iface/cmd_proc/sstep_clk_i" BEL
+        "jtag_iface/serial_iface/cmd_proc/current_state_FSM_FFd2" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nxtnxtgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addr[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_next[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/full" BEL
+        "jtag_iface/serial_iface/dout_fifo/almost_full" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_nextgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/write_addrgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/wr_reset" BEL
+        "jtag_iface/serial_iface/dout_fifo/wr_reset_resync" PIN
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>"
+        BEL "jtag_iface/serial_iface/din_fifo/read_addr[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addr[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/empty1" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray_ext" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_addrgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_nextgray_ext" BEL
+        "jtag_iface/serial_iface/din_fifo/bram_enb_pipe" BEL
+        "jtag_iface/serial_iface/din_fifo/rd_reset" BEL
+        "jtag_iface/serial_iface/din_fifo/rd_reset_resync" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/read_next[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[0]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[1]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[2]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[3]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[4]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[5]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[6]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[7]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[8]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[9]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[10]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[11]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[12]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[13]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[14]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[15]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[16]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[17]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[18]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[19]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[20]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[21]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[22]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[23]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[24]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[25]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[26]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[27]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[28]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[29]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[30]"
+        BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/DOB_int_reg[31]"
+        PIN
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.B_pins<10>"
+        BEL "jtag_iface/serial_iface/cmd_proc/n_words_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/n_words_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_0" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_1" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_2" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_3" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_4" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_5" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_6" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_7" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_8" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_9" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_10" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_11" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_12" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_13" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_14" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_15" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_16" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_17" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_18" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_19" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_20" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_21" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_22" BEL
+        "jtag_iface/serial_iface/cmd_proc/addr_i_23" BEL
+        "jtag_iface/serial_iface/cmd_proc/current_state_FSM_FFd1" BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[2].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[3].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[4].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[5].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[6].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[7].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[8].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[9].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[12].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[13].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[15].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[17].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[18].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[20].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[22].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/dir_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/imp_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/inverter/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/inverter/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/inverter1/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/inverter1/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000043"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000044"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000045"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000046"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000047"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000048"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000049"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000050"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000051"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000052"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000053"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000054"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000055"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000056"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000057"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000058"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000059"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000060"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000061"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000062"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL "sysgen_hwcosim_iface/memory_map/data_out_mm_15" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_14" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_13" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_12" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_11" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_10" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_9" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_8" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_7" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_6" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_5" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_4" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_3" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_2" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_1" BEL
+        "sysgen_hwcosim_iface/memory_map/data_out_mm_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seben" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_cseresebdir" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_csereposdir" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_16" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_seb_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_31" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_30" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_29" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_28" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_27" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_26" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_25" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_24" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_23" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_22" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_21" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_20" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_19" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_18" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_17" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_16" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_2" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_1" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_tsreg_0" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_en" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_16" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_15" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_14" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_13" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_12" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_11" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_10" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_9" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_8" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_7" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_6" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_5" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_4" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_3" BEL
+        "sysgen_hwcosim_iface/memory_map/int_mm_pos_2" BEL
+        "bufg_sys_clk.GCLKMUX" BEL "bufg_sys_clk";
+PIN
+        jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>
+        = BEL
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A"
+        PINNAME CLKA;
+PIN
+        jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>
+        = BEL
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A"
+        PINNAME CLKA;
+TIMEGRP J_CLK = BEL "jtag_iface/serial_iface/dout_fifo/read_addr[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addr[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/downcount_r[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/empty1" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_nextgray[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_addrgray[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/rd_reset" BEL
+        "jtag_iface/serial_iface/dout_fifo/rd_reset_resync" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[4]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[5]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[6]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[7]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[8]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[9]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[10]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[11]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[12]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[13]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[2]" BEL
+        "jtag_iface/serial_iface/dout_fifo/next_downcount_r[3]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[0]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[1]" BEL
+        "jtag_iface/serial_iface/dout_fifo/read_next[2]" PIN
+        "jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>"
+        BEL "jtag_iface/serial_iface/din_fifo/full" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nxtnxtgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addr[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_next[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[4]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_nextgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[5]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[6]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[7]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[8]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[9]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[10]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[11]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[12]" BEL
+        "jtag_iface/serial_iface/din_fifo/write_addrgray[13]" BEL
+        "jtag_iface/serial_iface/din_fifo/wr_reset" BEL
+        "jtag_iface/serial_iface/din_fifo/wr_reset_resync" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[0]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[1]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[2]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[3]" BEL
+        "jtag_iface/serial_iface/din_fifo/downcount_w[4]" PIN
+        "jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/genblk0.MEM[0].generate_v2ramb16s1s36.BRAM.A_pins<15>"
+        BEL "jtag_iface/serial_iface/din_fifo_we" BEL
+        "jtag_iface/serial_iface/sync_word_sr_0" BEL
+        "jtag_iface/serial_iface/sync_word_sr_1" BEL
+        "jtag_iface/serial_iface/sync_word_sr_2" BEL
+        "jtag_iface/serial_iface/sync_word_sr_3" BEL
+        "jtag_iface/serial_iface/sync_word_sr_4" BEL
+        "jtag_iface/serial_iface/sync_word_sr_5" BEL
+        "jtag_iface/serial_iface/sync_word_sr_6" BEL
+        "jtag_iface/serial_iface/sync_word_sr_7" BEL
+        "jtag_iface/serial_iface/sync_word_sr_8" BEL
+        "jtag_iface/serial_iface/sync_word_sr_9" BEL
+        "jtag_iface/serial_iface/sync_word_sr_10" BEL
+        "jtag_iface/serial_iface/sync_word_sr_11" BEL
+        "jtag_iface/serial_iface/sync_word_sr_12" BEL
+        "jtag_iface/serial_iface/sync_word_sr_13" BEL
+        "jtag_iface/serial_iface/sync_word_sr_14" BEL
+        "jtag_iface/serial_iface/sync_word_sr_15" BEL
+        "jtag_iface/serial_iface/sync_word_sr_16" BEL
+        "jtag_iface/serial_iface/sync_word_sr_17" BEL
+        "jtag_iface/serial_iface/sync_word_sr_18" BEL
+        "jtag_iface/serial_iface/sync_word_sr_19" BEL
+        "jtag_iface/serial_iface/sync_word_sr_20" BEL
+        "jtag_iface/serial_iface/sync_word_sr_21" BEL
+        "jtag_iface/serial_iface/sync_word_sr_22" BEL
+        "jtag_iface/serial_iface/sync_word_sr_23" BEL
+        "jtag_iface/serial_iface/sync_word_sr_24" BEL
+        "jtag_iface/serial_iface/sync_word_sr_25" BEL
+        "jtag_iface/serial_iface/sync_word_sr_26" BEL
+        "jtag_iface/serial_iface/sync_word_sr_27" BEL
+        "jtag_iface/serial_iface/sync_word_sr_28" BEL
+        "jtag_iface/serial_iface/sync_word_sr_29" BEL
+        "jtag_iface/serial_iface/sync_word_sr_30";
+TIMEGRP U_CLK = BEL "jtag_iface/serial_iface/din_fifo_we" BEL
+        "jtag_iface/serial_iface/sync_word_sr_0" BEL
+        "jtag_iface/serial_iface/sync_word_sr_1" BEL
+        "jtag_iface/serial_iface/sync_word_sr_2" BEL
+        "jtag_iface/serial_iface/sync_word_sr_3" BEL
+        "jtag_iface/serial_iface/sync_word_sr_4" BEL
+        "jtag_iface/serial_iface/sync_word_sr_5" BEL
+        "jtag_iface/serial_iface/sync_word_sr_6" BEL
+        "jtag_iface/serial_iface/sync_word_sr_7" BEL
+        "jtag_iface/serial_iface/sync_word_sr_8" BEL
+        "jtag_iface/serial_iface/sync_word_sr_9" BEL
+        "jtag_iface/serial_iface/sync_word_sr_10" BEL
+        "jtag_iface/serial_iface/sync_word_sr_11" BEL
+        "jtag_iface/serial_iface/sync_word_sr_12" BEL
+        "jtag_iface/serial_iface/sync_word_sr_13" BEL
+        "jtag_iface/serial_iface/sync_word_sr_14" BEL
+        "jtag_iface/serial_iface/sync_word_sr_15" BEL
+        "jtag_iface/serial_iface/sync_word_sr_16" BEL
+        "jtag_iface/serial_iface/sync_word_sr_17" BEL
+        "jtag_iface/serial_iface/sync_word_sr_18" BEL
+        "jtag_iface/serial_iface/sync_word_sr_19" BEL
+        "jtag_iface/serial_iface/sync_word_sr_20" BEL
+        "jtag_iface/serial_iface/sync_word_sr_21" BEL
+        "jtag_iface/serial_iface/sync_word_sr_22" BEL
+        "jtag_iface/serial_iface/sync_word_sr_23" BEL
+        "jtag_iface/serial_iface/sync_word_sr_24" BEL
+        "jtag_iface/serial_iface/sync_word_sr_25" BEL
+        "jtag_iface/serial_iface/sync_word_sr_26" BEL
+        "jtag_iface/serial_iface/sync_word_sr_27" BEL
+        "jtag_iface/serial_iface/sync_word_sr_28" BEL
+        "jtag_iface/serial_iface/sync_word_sr_29" BEL
+        "jtag_iface/serial_iface/sync_word_sr_30";
+TIMEGRP clk_74519694 = BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[1].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[2].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[3].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[4].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[5].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[6].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[7].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[8].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[9].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[10].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[11].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[12].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[13].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[14].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[15].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[16].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[17].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[18].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[19].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[20].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[21].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[22].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[23].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[24].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[25].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[26].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[27].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[28].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[29].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[30].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[31].fde_used.u2"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/sebess_g_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/kimeneti_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/dir_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/imp_reg/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/sebesseg_m_r_ab62890fbd/inverter/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/regiszeter/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pozic_eb514ec999/inverter/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/inverter1/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/inverter1/op_mem_22_20_0"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/pwm_c47c4260dc/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000043"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000044"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000045"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000046"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000047"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000048"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000049"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000004f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000050"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000051"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000052"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000053"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000054"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000055"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000056"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000057"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000058"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000059"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk0000005f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000060"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000061"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/sebess_g_szab_c964557ce9/mintav_teli_jel_generator_ba372a1d93/sz_ml_l/comp1.core_instance1/blk00000001/blk00000062"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto2_e490f1750e/counter/comp0.core_instance0/blk00000001/blk00000032"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000023"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000024"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000025"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000026"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000027"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000028"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000029"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002a"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002b"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002c"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002d"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002e"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk0000002f"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000030"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000031"
+        BEL
+        "sysgen_hwcosim_iface/sysgen_dut/meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/counter/comp0.core_instance0/blk00000001/blk00000032";
+NET "jtag_iface/drck1" PERIOD = 30 ns HIGH 50%;
+TS_clk_74519694 = PERIOD TIMEGRP "clk_74519694" 20 ns HIGH 50%;
+TS_J_TO_U = MAXDELAY FROM TIMEGRP "J_CLK" TO TIMEGRP "U_CLK" 15 ns;
+TS_hwcosim_sys_clk = PERIOD TIMEGRP "hwcosim_sys_clk" 50 MHz HIGH 50%;
+PIN bufgmux_comp2.GCLKMUX_pins<3> = BEL "bufgmux_comp2.GCLKMUX" PINNAME S;
+PIN "bufgmux_comp2.GCLKMUX_pins<3>" TIG;
+SCHEMATIC END;
+

@@ -1,0 +1,34 @@
+/*
+ * uartSend.c
+ *
+ *  Created on: Mar 19, 2015
+ *      Author: gaborsz
+ */
+#include "xparameters.h"
+#include "xuartps.h"
+#include  "UartSend.h"
+XUartPs Uart_Ps;
+int Send_PC(u16 DeviceId,u8 *data,int size)
+{
+	    u8 HelloWorld[] = "Hello World";
+		int SentCount = 0;
+		int Status;
+		XUartPs_Config *Config;
+		Config = XUartPs_LookupConfig(DeviceId);
+		if (NULL == Config) {
+			return XST_FAILURE;
+		}
+		Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+		XUartPs_SetBaudRate(&Uart_Ps, 115200);
+		SentCount += XUartPs_Send(&Uart_Ps, data ,size);
+
+
+	return 0;
+}
+
+
+
+

@@ -1,0 +1,17 @@
+error: register input port width does not equal the output port width
+com.xilinx.sysgen.netlist.Utility.getStackTrace(Utility.java:126)
+com.xilinx.sysgen.netlist.Utility.assert_(Utility.java:184)
+com.xilinx.sysgen.netlister.RegisterBlock.initialize(RegisterBlock.java:156)
+com.xilinx.sysgen.netlister.RegisterBlock.<init>(RegisterBlock.java:125)
+com.xilinx.sysgen.netlister.SharedMemoryJoiner.joinRegisterBlocks(SharedMemoryJoiner.java:509)
+com.xilinx.sysgen.netlister.SharedMemoryJoiner.joinRegisterBlocks(SharedMemoryJoiner.java:409)
+com.xilinx.sysgen.netlister.DesignStitcher.mergeSharedMemoryPairs(DesignStitcher.java:675)
+com.xilinx.sysgen.netlister.DesignStitcher.findAndMergeSharedMemories(DesignStitcher.java:900)
+com.xilinx.sysgen.netlister.ClockWrapper.stitchSharedMemories(ClockWrapper.java:829)
+com.xilinx.sysgen.netlister.ClockWrapper.transformWrapper(ClockWrapper.java:768)
+com.xilinx.sysgen.netlister.Wrapper.makeWrapperFromContainer(Wrapper.java:311)
+com.xilinx.sysgen.netlister.Wrapper.makeWrapper(Wrapper.java:236)
+com.xilinx.sysgen.netlister.DefaultWrapupNetlister.dowrapup(DefaultWrapupNetlister.java:45)
+com.xilinx.sysgen.netlister.Netlister.wrapup(Netlister.java:536)
+
+

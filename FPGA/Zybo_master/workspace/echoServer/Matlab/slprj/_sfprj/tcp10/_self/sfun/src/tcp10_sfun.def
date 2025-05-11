@@ -1,0 +1,3 @@
+LIBRARY tcp10_sfun.mexw64
+EXPORTS
+mexFunction

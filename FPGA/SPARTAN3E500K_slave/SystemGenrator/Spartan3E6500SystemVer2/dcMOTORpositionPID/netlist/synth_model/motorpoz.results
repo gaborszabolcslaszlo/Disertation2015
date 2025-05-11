@@ -1,0 +1,2555 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Reading constraint file motorpoz_cw.xcf.
+XCF parsing done.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_motorpoz.prj"
+Input Format                       : mixed
+Synthesis Constraint File          : motorpoz_cw.xcf
+
+---- Target Parameters
+Output File Name                   : "motorpoz_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4pq208
+
+---- Source Options
+Entity Name                        : motorpoz_cw
+Top Module Name                    : motorpoz_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+Write Timing Constraints           : yes
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" in Library work.
+Entity <addsb_11_0_09a98e96b9130e03> compiled.
+Entity <addsb_11_0_09a98e96b9130e03> (Architecture <addsb_11_0_09a98e96b9130e03_a>) compiled.
+Entity <addsb_11_0_40c59820e74e5c61> compiled.
+Entity <addsb_11_0_40c59820e74e5c61> (Architecture <addsb_11_0_40c59820e74e5c61_a>) compiled.
+Entity <addsb_11_0_69d6875ac191df7d> compiled.
+Entity <addsb_11_0_69d6875ac191df7d> (Architecture <addsb_11_0_69d6875ac191df7d_a>) compiled.
+Entity <addsb_11_0_ed61fefe391dafb3> compiled.
+Entity <addsb_11_0_ed61fefe391dafb3> (Architecture <addsb_11_0_ed61fefe391dafb3_a>) compiled.
+Entity <cntr_11_0_5baa608aaa6fc4cf> compiled.
+Entity <cntr_11_0_5baa608aaa6fc4cf> (Architecture <cntr_11_0_5baa608aaa6fc4cf_a>) compiled.
+Entity <cntr_11_0_cee71699703bac4e> compiled.
+Entity <cntr_11_0_cee71699703bac4e> (Architecture <cntr_11_0_cee71699703bac4e_a>) compiled.
+Entity <mult_11_2_782d0d00b37904bd> compiled.
+Entity <mult_11_2_782d0d00b37904bd> (Architecture <mult_11_2_782d0d00b37904bd_a>) compiled.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <srl17e> compiled.
+Entity <srl17e> (Architecture <structural>) compiled.
+Entity <synth_reg> compiled.
+Entity <synth_reg> (Architecture <structural>) compiled.
+Entity <synth_reg_reg> compiled.
+Entity <synth_reg_reg> (Architecture <behav>) compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <convert_func_call> compiled.
+Entity <convert_func_call> (Architecture <behavior>) compiled.
+Entity <xlconvert> compiled.
+Entity <xlconvert> (Architecture <behavior>) compiled.
+Entity <reinterpret_d610556e85> compiled.
+Entity <reinterpret_d610556e85> (Architecture <behavior>) compiled.
+Entity <xladdsub_MotorPoz> compiled.
+Entity <xladdsub_MotorPoz> (Architecture <behavior>) compiled.
+Entity <constant_9f5572ba51> compiled.
+Entity <constant_9f5572ba51> (Architecture <behavior>) compiled.
+Entity <xlcounter_limit_MotorPoz> compiled.
+Entity <xlcounter_limit_MotorPoz> (Architecture <behavior>) compiled.
+Entity <xldelay> compiled.
+Entity <xldelay> (Architecture <behavior>) compiled.
+Entity <xlmult_MotorPoz> compiled.
+Entity <xlmult_MotorPoz> (Architecture <behavior>) compiled.
+Entity <mux_32f647f217> compiled.
+Entity <mux_32f647f217> (Architecture <behavior>) compiled.
+Entity <mux_ba4efe1019> compiled.
+Entity <mux_ba4efe1019> (Architecture <behavior>) compiled.
+Entity <xlregister> compiled.
+Entity <xlregister> (Architecture <behavior>) compiled.
+Entity <reinterpret_f21e7f2ddf> compiled.
+Entity <reinterpret_f21e7f2ddf> (Architecture <behavior>) compiled.
+Entity <xlcounter_free_MotorPoz> compiled.
+Entity <xlcounter_free_MotorPoz> (Architecture <behavior>) compiled.
+Entity <inverter_e5b38cca3b> compiled.
+Entity <inverter_e5b38cca3b> (Architecture <behavior>) compiled.
+Entity <logical_80f90b97d0> compiled.
+Entity <logical_80f90b97d0> (Architecture <behavior>) compiled.
+Entity <relational_3ffd1d0a40> compiled.
+Entity <relational_3ffd1d0a40> (Architecture <behavior>) compiled.
+Entity <constant_190a6d2a1a> compiled.
+Entity <constant_190a6d2a1a> (Architecture <behavior>) compiled.
+Entity <constant_e48c5a6fd1> compiled.
+Entity <constant_e48c5a6fd1> (Architecture <behavior>) compiled.
+Entity <inverter_e2b989a05e> compiled.
+Entity <inverter_e2b989a05e> (Architecture <behavior>) compiled.
+Entity <logical_938d99ac11> compiled.
+Entity <logical_938d99ac11> (Architecture <behavior>) compiled.
+Entity <mux_20197168a0> compiled.
+Entity <mux_20197168a0> (Architecture <behavior>) compiled.
+Entity <bitbasher_a85d4d15a6> compiled.
+Entity <bitbasher_a85d4d15a6> (Architecture <behavior>) compiled.
+Entity <bitbasher_c5bad59cb6> compiled.
+Entity <bitbasher_c5bad59cb6> (Architecture <behavior>) compiled.
+Entity <bitbasher_75b6572827> compiled.
+Entity <bitbasher_75b6572827> (Architecture <behavior>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <BEHAVIORAL>) compiled.
+Entity <constant_963ed6358a> compiled.
+Entity <constant_963ed6358a> (Architecture <behavior>) compiled.
+Entity <bitbasher_bb81282914> compiled.
+Entity <bitbasher_bb81282914> (Architecture <behavior>) compiled.
+Entity <led_entity_2baf17759a> compiled.
+Entity <led_entity_2baf17759a> (Architecture <structural>) compiled.
+Entity <pidrek_entity_92f788bccf> compiled.
+Entity <pidrek_entity_92f788bccf> (Architecture <structural>) compiled.
+Entity <pmod4_entity_28850e4dc6> compiled.
+Entity <pmod4_entity_28850e4dc6> (Architecture <structural>) compiled.
+Entity <sampletime_generator_entity_19c853dc10> compiled.
+Entity <sampletime_generator_entity_19c853dc10> (Architecture <structural>) compiled.
+Entity <counter_entity_8137e9fb7a> compiled.
+Entity <counter_entity_8137e9fb7a> (Architecture <structural>) compiled.
+Entity <motorpoz> compiled.
+Entity <motorpoz> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd" in Library work.
+Entity <xlclockdriver> compiled.
+Entity <xlclockdriver> (Architecture <behavior>) compiled.
+Entity <default_clock_driver_MotorPoz> compiled.
+Entity <default_clock_driver_MotorPoz> (Architecture <structural>) compiled.
+Entity <motorpoz_cw> compiled.
+Entity <motorpoz_cw> (Architecture <structural>) compiled.
+
+Reading constraint file motorpoz_cw.xcf.
+XCF parsing done.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <motorpoz_cw> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <default_clock_driver_MotorPoz> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <motorpoz> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlclockdriver> in library <work> (architecture <behavior>) with generics.
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <bitbasher_a85d4d15a6> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_c5bad59cb6> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_75b6572827> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <top_level> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <constant_963ed6358a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <counter_entity_8137e9fb7a> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <bitbasher_bb81282914> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <led_entity_2baf17759a> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pidrek_entity_92f788bccf> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pmod4_entity_28850e4dc6> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 17
+	init_value = "00000000000000000"
+
+Analyzing hierarchy for entity <sampletime_generator_entity_19c853dc10> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_ed61fefe391dafb3"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 1
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 1
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <constant_e48c5a6fd1> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_190a6d2a1a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+
+Analyzing hierarchy for entity <inverter_e2b989a05e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_938d99ac11> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_20197168a0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 16
+	init_value = "0111111111111111"
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 4
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 4
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <reinterpret_d610556e85> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_40c59820e74e5c61"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_69d6875ac191df7d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_69d6875ac191df7d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <xladdsub_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_40c59820e74e5c61"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <constant_9f5572ba51> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlcounter_limit_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	cnt_15_0 = 3
+	cnt_31_16 = 0
+	cnt_47_32 = 0
+	cnt_63_48 = 0
+	core_name0 = "cntr_11_0_cee71699703bac4e"
+	count_limited = 0
+	op_arith = 1
+	op_width = 2
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 3
+	reg_retiming = 0
+	reset = 0
+	width = 1
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 2
+	reg_retiming = 0
+	reset = 0
+	width = 1
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 2
+
+Analyzing hierarchy for entity <xlmult_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_a_type = 1
+	c_a_width = 16
+	c_b_type = 0
+	c_b_width = 16
+	c_baat = 16
+	c_output_width = 32
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_782d0d00b37904bd"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 1
+	multsign = 2
+	overflow = 2
+	p_arith = 2
+	p_bin_pt = 0
+	p_width = 17
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+
+Analyzing hierarchy for entity <mux_32f647f217> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_ba4efe1019> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 1
+	init_value = "0"
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <reinterpret_f21e7f2ddf> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <xlcounter_free_MotorPoz> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_5baa608aaa6fc4cf"
+	op_arith = 1
+	op_width = 32
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_3ffd1d0a40> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0111111111111111"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 4
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 4
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 3
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 2
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 2
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0111111111111111"
+	width = 16
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 3
+	width = 1
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 2
+	width = 1
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 2
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	width = 1
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <motorpoz_cw> in library <work> (Architecture <structural>).
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x5>.
+    Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
+    Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "optimize_primitives = FALSE" for instance <persistentdff_inst> in unit <motorpoz_cw>.
+    Set property "syn_black_box = TRUE" for instance <persistentdff_inst> in unit <motorpoz_cw>.
+    Set property "syn_noprune = TRUE" for instance <persistentdff_inst> in unit <motorpoz_cw>.
+Entity <motorpoz_cw> analyzed. Unit <motorpoz_cw> generated.
+
+Analyzing Entity <default_clock_driver_MotorPoz> in library <work> (Architecture <structural>).
+    Set property "syn_noprune = TRUE" for unit <default_clock_driver_MotorPoz>.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd" line 378: Unconnected output port 'clr' of component 'xlclockdriver'.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd" line 378: Unconnected output port 'ce_logic' of component 'xlclockdriver'.
+Entity <default_clock_driver_MotorPoz> analyzed. Unit <default_clock_driver_MotorPoz> generated.
+
+Analyzing generic Entity <xlclockdriver> in library <work> (Architecture <behavior>).
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+Entity <xlclockdriver> analyzed. Unit <xlclockdriver> generated.
+
+Analyzing generic Entity <synth_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.1> analyzed. Unit <synth_reg_w_init.1> generated.
+
+Analyzing generic Entity <single_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	width = 1
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.1> analyzed. Unit <single_reg_w_init.1> generated.
+
+Analyzing Entity <motorpoz> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5282: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5282: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5282: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5333: Unconnected output port 'val' of component 'bitbasher_75b6572827'.
+Entity <motorpoz> analyzed. Unit <motorpoz> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.1> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2928: Instantiating black box module <addsb_11_0_09a98e96b9130e03>.
+Entity <xladdsub_MotorPoz.1> analyzed. Unit <xladdsub_MotorPoz.1> generated.
+
+Analyzing Entity <bitbasher_a85d4d15a6> in library <work> (Architecture <behavior>).
+Entity <bitbasher_a85d4d15a6> analyzed. Unit <bitbasher_a85d4d15a6> generated.
+
+Analyzing Entity <bitbasher_c5bad59cb6> in library <work> (Architecture <behavior>).
+Entity <bitbasher_c5bad59cb6> analyzed. Unit <bitbasher_c5bad59cb6> generated.
+
+Analyzing Entity <bitbasher_75b6572827> in library <work> (Architecture <behavior>).
+Entity <bitbasher_75b6572827> analyzed. Unit <bitbasher_75b6572827> generated.
+
+Analyzing Entity <top_level> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4186: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4193: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4200: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4208: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4215: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4222: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4231: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4238: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4245: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <c_kanalis_d3> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4253: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d1> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4260: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d2> in unit <top_level>.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4267: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <d_kanalis_d3> in unit <top_level>.
+Entity <top_level> analyzed. Unit <top_level> generated.
+
+Analyzing Entity <constant_963ed6358a> in library <work> (Architecture <behavior>).
+Entity <constant_963ed6358a> analyzed. Unit <constant_963ed6358a> generated.
+
+Analyzing generic Entity <xlconvert.1> in library <work> (Architecture <behavior>).
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.1> analyzed. Unit <xlconvert.1> generated.
+
+Analyzing generic Entity <xlconvert.2> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.2> analyzed. Unit <xlconvert.2> generated.
+
+Analyzing generic Entity <convert_func_call.1> in library <work> (Architecture <behavior>).
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 17
+	dout_arith = 2
+	dout_bin_pt = 0
+	dout_width = 17
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.1> analyzed. Unit <convert_func_call.1> generated.
+
+Analyzing Entity <counter_entity_8137e9fb7a> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5003: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5003: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5003: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5035: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5035: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5035: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5067: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5067: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 5067: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+Entity <counter_entity_8137e9fb7a> analyzed. Unit <counter_entity_8137e9fb7a> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.2> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_ed61fefe391dafb3"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 1
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 1
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2920: Instantiating black box module <addsb_11_0_ed61fefe391dafb3>.
+Entity <xladdsub_MotorPoz.2> analyzed. Unit <xladdsub_MotorPoz.2> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.3> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2928: Instantiating black box module <addsb_11_0_09a98e96b9130e03>.
+Entity <xladdsub_MotorPoz.3> analyzed. Unit <xladdsub_MotorPoz.3> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.4> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 1
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_09a98e96b9130e03"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 1
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2928: Instantiating black box module <addsb_11_0_09a98e96b9130e03>.
+Entity <xladdsub_MotorPoz.4> analyzed. Unit <xladdsub_MotorPoz.4> generated.
+
+Analyzing Entity <constant_e48c5a6fd1> in library <work> (Architecture <behavior>).
+Entity <constant_e48c5a6fd1> analyzed. Unit <constant_e48c5a6fd1> generated.
+
+Analyzing Entity <constant_190a6d2a1a> in library <work> (Architecture <behavior>).
+Entity <constant_190a6d2a1a> analyzed. Unit <constant_190a6d2a1a> generated.
+
+Analyzing generic Entity <xldelay.1> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay.1> analyzed. Unit <xldelay.1> generated.
+
+Analyzing generic Entity <synth_reg.1> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+Entity <synth_reg.1> analyzed. Unit <synth_reg.1> generated.
+
+Analyzing generic Entity <srl17e.1> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.1> analyzed. Unit <srl17e.1> generated.
+
+Analyzing Entity <inverter_e2b989a05e> in library <work> (Architecture <behavior>).
+Entity <inverter_e2b989a05e> analyzed. Unit <inverter_e2b989a05e> generated.
+
+Analyzing Entity <logical_938d99ac11> in library <work> (Architecture <behavior>).
+Entity <logical_938d99ac11> analyzed. Unit <logical_938d99ac11> generated.
+
+Analyzing Entity <mux_20197168a0> in library <work> (Architecture <behavior>).
+Entity <mux_20197168a0> analyzed. Unit <mux_20197168a0> generated.
+
+Analyzing generic Entity <xlregister.2> in library <work> (Architecture <behavior>).
+	d_width = 16
+	init_value = "0111111111111111"
+Entity <xlregister.2> analyzed. Unit <xlregister.2> generated.
+
+Analyzing generic Entity <synth_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0111111111111111"
+	latency = 1
+	width = 16
+Entity <synth_reg_w_init.3> analyzed. Unit <synth_reg_w_init.3> generated.
+
+Analyzing generic Entity <single_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0111111111111111"
+	width = 16
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2470: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.3> analyzed. Unit <single_reg_w_init.3> generated.
+
+Analyzing Entity <bitbasher_bb81282914> in library <work> (Architecture <behavior>).
+Entity <bitbasher_bb81282914> analyzed. Unit <bitbasher_bb81282914> generated.
+
+Analyzing Entity <led_entity_2baf17759a> in library <work> (Architecture <structural>).
+Entity <led_entity_2baf17759a> analyzed. Unit <led_entity_2baf17759a> generated.
+
+Analyzing generic Entity <xlconvert.3> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 4
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 4
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.3> analyzed. Unit <xlconvert.3> generated.
+
+Analyzing generic Entity <convert_func_call.2> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 4
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 4
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.2> analyzed. Unit <convert_func_call.2> generated.
+
+Analyzing Entity <reinterpret_d610556e85> in library <work> (Architecture <behavior>).
+Entity <reinterpret_d610556e85> analyzed. Unit <reinterpret_d610556e85> generated.
+
+Analyzing Entity <pidrek_entity_92f788bccf> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4461: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4461: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4461: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4493: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4493: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4493: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4525: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4525: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4525: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4557: Unconnected input port 'c_in' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4557: Unconnected input port 'rst' of component 'xladdsub_MotorPoz' is tied to default value.
+WARNING:Xst:753 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4557: Unconnected output port 'c_out' of component 'xladdsub_MotorPoz'.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4605: Unconnected input port 'up' of component 'xlcounter_limit_MotorPoz' is tied to default value.
+Entity <pidrek_entity_92f788bccf> analyzed. Unit <pidrek_entity_92f788bccf> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.5> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_40c59820e74e5c61"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2904: Instantiating black box module <addsb_11_0_40c59820e74e5c61>.
+Entity <xladdsub_MotorPoz.5> analyzed. Unit <xladdsub_MotorPoz.5> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.6> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 17
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_69d6875ac191df7d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2912: Instantiating black box module <addsb_11_0_69d6875ac191df7d>.
+Entity <xladdsub_MotorPoz.6> analyzed. Unit <xladdsub_MotorPoz.6> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.7> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_69d6875ac191df7d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2912: Instantiating black box module <addsb_11_0_69d6875ac191df7d>.
+Entity <xladdsub_MotorPoz.7> analyzed. Unit <xladdsub_MotorPoz.7> generated.
+
+Analyzing generic Entity <xladdsub_MotorPoz.8> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 17
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 18
+	core_name0 = "addsb_11_0_40c59820e74e5c61"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 18
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2904: Instantiating black box module <addsb_11_0_40c59820e74e5c61>.
+Entity <xladdsub_MotorPoz.8> analyzed. Unit <xladdsub_MotorPoz.8> generated.
+
+Analyzing Entity <constant_9f5572ba51> in library <work> (Architecture <behavior>).
+Entity <constant_9f5572ba51> analyzed. Unit <constant_9f5572ba51> generated.
+
+Analyzing generic Entity <xlcounter_limit_MotorPoz> in library <work> (Architecture <behavior>).
+	cnt_15_0 = 3
+	cnt_31_16 = 0
+	cnt_47_32 = 0
+	cnt_63_48 = 0
+	core_name0 = "cntr_11_0_cee71699703bac4e"
+	count_limited = 0
+	op_arith = 1
+	op_width = 2
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_limit_MotorPoz>.
+Entity <xlcounter_limit_MotorPoz> analyzed. Unit <xlcounter_limit_MotorPoz> generated.
+
+Analyzing generic Entity <xldelay.2> in library <work> (Architecture <behavior>).
+	latency = 3
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay.2> analyzed. Unit <xldelay.2> generated.
+
+Analyzing generic Entity <synth_reg.2> in library <work> (Architecture <structural>).
+	latency = 3
+	width = 1
+Entity <synth_reg.2> analyzed. Unit <synth_reg.2> generated.
+
+Analyzing generic Entity <srl17e.2> in library <work> (Architecture <structural>).
+	latency = 3
+	width = 1
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2225: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.2> analyzed. Unit <srl17e.2> generated.
+
+Analyzing generic Entity <xldelay.3> in library <work> (Architecture <behavior>).
+	latency = 2
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay.3> analyzed. Unit <xldelay.3> generated.
+
+Analyzing generic Entity <synth_reg.3> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 1
+Entity <synth_reg.3> analyzed. Unit <synth_reg.3> generated.
+
+Analyzing generic Entity <srl17e.3> in library <work> (Architecture <structural>).
+	latency = 2
+	width = 1
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2225: Instantiating black box module <SRL16E>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.3> analyzed. Unit <srl17e.3> generated.
+
+Analyzing generic Entity <xldelay.4> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 2
+Entity <xldelay.4> analyzed. Unit <xldelay.4> generated.
+
+Analyzing generic Entity <synth_reg.4> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 2
+Entity <synth_reg.4> analyzed. Unit <synth_reg.4> generated.
+
+Analyzing generic Entity <srl17e.4> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 2
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.4> analyzed. Unit <srl17e.4> generated.
+
+Analyzing generic Entity <xlmult_MotorPoz> in library <work> (Architecture <behavior>).
+	a_arith = 1
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_a_type = 1
+	c_a_width = 16
+	c_b_type = 0
+	c_b_width = 16
+	c_baat = 16
+	c_output_width = 32
+	c_pipelined = 1
+	c_type = 0
+	core_name0 = "mult_11_2_782d0d00b37904bd"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 1
+	multsign = 2
+	overflow = 2
+	p_arith = 2
+	p_bin_pt = 0
+	p_width = 17
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlmult_MotorPoz>.
+Entity <xlmult_MotorPoz> analyzed. Unit <xlmult_MotorPoz> generated.
+
+Analyzing generic Entity <synth_reg.5> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 17
+Entity <synth_reg.5> analyzed. Unit <synth_reg.5> generated.
+
+Analyzing generic Entity <srl17e.5> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2238: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e.5> analyzed. Unit <srl17e.5> generated.
+
+Analyzing Entity <mux_32f647f217> in library <work> (Architecture <behavior>).
+Entity <mux_32f647f217> analyzed. Unit <mux_32f647f217> generated.
+
+Analyzing Entity <mux_ba4efe1019> in library <work> (Architecture <behavior>).
+Entity <mux_ba4efe1019> analyzed. Unit <mux_ba4efe1019> generated.
+
+Analyzing generic Entity <xlregister.3> in library <work> (Architecture <behavior>).
+	d_width = 1
+	init_value = "0"
+Entity <xlregister.3> analyzed. Unit <xlregister.3> generated.
+
+Analyzing generic Entity <synth_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.4> analyzed. Unit <synth_reg_w_init.4> generated.
+
+Analyzing generic Entity <single_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	width = 1
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.4> analyzed. Unit <single_reg_w_init.4> generated.
+
+Analyzing Entity <pmod4_entity_28850e4dc6> in library <work> (Architecture <structural>).
+Entity <pmod4_entity_28850e4dc6> analyzed. Unit <pmod4_entity_28850e4dc6> generated.
+
+Analyzing generic Entity <xlconvert.4> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.4> analyzed. Unit <xlconvert.4> generated.
+
+Analyzing generic Entity <convert_func_call.3> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 8
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 8
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.3> analyzed. Unit <convert_func_call.3> generated.
+
+Analyzing Entity <reinterpret_f21e7f2ddf> in library <work> (Architecture <behavior>).
+Entity <reinterpret_f21e7f2ddf> analyzed. Unit <reinterpret_f21e7f2ddf> generated.
+
+Analyzing generic Entity <xlregister.1> in library <work> (Architecture <behavior>).
+	d_width = 17
+	init_value = "00000000000000000"
+Entity <xlregister.1> analyzed. Unit <xlregister.1> generated.
+
+Analyzing generic Entity <synth_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+Entity <synth_reg_w_init.2> analyzed. Unit <synth_reg_w_init.2> generated.
+
+Analyzing generic Entity <single_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 2460: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.2> analyzed. Unit <single_reg_w_init.2> generated.
+
+Analyzing Entity <sampletime_generator_entity_19c853dc10> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4915: Unconnected input port 'up' of component 'xlcounter_free_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4915: Unconnected input port 'load' of component 'xlcounter_free_MotorPoz' is tied to default value.
+WARNING:Xst:752 - "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd" line 4915: Unconnected input port 'din' of component 'xlcounter_free_MotorPoz' is tied to default value.
+Entity <sampletime_generator_entity_19c853dc10> analyzed. Unit <sampletime_generator_entity_19c853dc10> generated.
+
+Analyzing generic Entity <xlcounter_free_MotorPoz> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_5baa608aaa6fc4cf"
+	op_arith = 1
+	op_width = 32
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_free_MotorPoz>.
+Entity <xlcounter_free_MotorPoz> analyzed. Unit <xlcounter_free_MotorPoz> generated.
+
+Analyzing Entity <inverter_e5b38cca3b> in library <work> (Architecture <behavior>).
+Entity <inverter_e5b38cca3b> analyzed. Unit <inverter_e5b38cca3b> generated.
+
+Analyzing Entity <logical_80f90b97d0> in library <work> (Architecture <behavior>).
+Entity <logical_80f90b97d0> analyzed. Unit <logical_80f90b97d0> generated.
+
+Analyzing Entity <relational_3ffd1d0a40> in library <work> (Architecture <behavior>).
+Entity <relational_3ffd1d0a40> analyzed. Unit <relational_3ffd1d0a40> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e2b989a05e> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e5b38cca3b> has a constant value of X during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <bitbasher_a85d4d15a6>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <a_x0_1_28<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a_x0_1_28<4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <a_x0_1_28<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <bitbasher_a85d4d15a6> synthesized.
+
+
+Synthesizing Unit <bitbasher_c5bad59cb6>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_c5bad59cb6> synthesized.
+
+
+Synthesizing Unit <bitbasher_75b6572827>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_75b6572827> synthesized.
+
+
+Synthesizing Unit <constant_963ed6358a>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_963ed6358a> synthesized.
+
+
+Synthesizing Unit <xlconvert_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_1> synthesized.
+
+
+Synthesizing Unit <bitbasher_bb81282914>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_bb81282914> synthesized.
+
+
+Synthesizing Unit <convert_func_call_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <convert_func_call_1> synthesized.
+
+
+Synthesizing Unit <constant_e48c5a6fd1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_e48c5a6fd1> synthesized.
+
+
+Synthesizing Unit <constant_190a6d2a1a>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_190a6d2a1a> synthesized.
+
+
+Synthesizing Unit <inverter_e2b989a05e>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e2b989a05e> synthesized.
+
+
+Synthesizing Unit <logical_938d99ac11>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_938d99ac11> synthesized.
+
+
+Synthesizing Unit <mux_20197168a0>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unregy_join_6_1<17:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_20197168a0> synthesized.
+
+
+Synthesizing Unit <reinterpret_d610556e85>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_d610556e85> synthesized.
+
+
+Synthesizing Unit <convert_func_call_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <convert_func_call_2> synthesized.
+
+
+Synthesizing Unit <constant_9f5572ba51>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_9f5572ba51> synthesized.
+
+
+Synthesizing Unit <mux_32f647f217>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unregy_join_6_1<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 17-bit 4-to-1 multiplexer for signal <unregy_join_6_1>.
+    Summary:
+	inferred  17 Multiplexer(s).
+Unit <mux_32f647f217> synthesized.
+
+
+Synthesizing Unit <mux_ba4efe1019>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unregy_join_6_1<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 17-bit 4-to-1 multiplexer for signal <unregy_join_6_1>.
+    Summary:
+	inferred  17 Multiplexer(s).
+Unit <mux_ba4efe1019> synthesized.
+
+
+Synthesizing Unit <reinterpret_f21e7f2ddf>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_f21e7f2ddf> synthesized.
+
+
+Synthesizing Unit <convert_func_call_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <convert_func_call_3> synthesized.
+
+
+Synthesizing Unit <inverter_e5b38cca3b>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e5b38cca3b> synthesized.
+
+
+Synthesizing Unit <logical_80f90b97d0>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_80f90b97d0> synthesized.
+
+
+Synthesizing Unit <relational_3ffd1d0a40>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_3ffd1d0a40> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <single_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_MotorPoz_1> synthesized.
+
+
+Synthesizing Unit <top_level>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <top_level> synthesized.
+
+
+Synthesizing Unit <xlconvert_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_2> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_MotorPoz_2> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_MotorPoz_3> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <core_s<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xladdsub_MotorPoz_4> synthesized.
+
+
+Synthesizing Unit <srl17e_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <srl17e_1> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <single_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <xlconvert_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_3> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_5>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result12$xor0000> created at line 1015.
+Unit <xladdsub_MotorPoz_5> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_6>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result12$xor0000> created at line 1015.
+    Found 1-bit xor2 for signal <result12$xor0001> created at line 1015.
+Unit <xladdsub_MotorPoz_6> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_7>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result12$xor0000> created at line 1015.
+    Found 1-bit xor2 for signal <result12$xor0001> created at line 1015.
+Unit <xladdsub_MotorPoz_7> synthesized.
+
+
+Synthesizing Unit <xladdsub_MotorPoz_8>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result12$xor0000> created at line 1015.
+    Found 1-bit xor2 for signal <result12$xor0001> created at line 1015.
+Unit <xladdsub_MotorPoz_8> synthesized.
+
+
+Synthesizing Unit <xlcounter_limit_MotorPoz>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_thresh0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <low_cnt_to> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <high_cnt_to> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cnt_to> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlcounter_limit_MotorPoz> synthesized.
+
+
+Synthesizing Unit <srl17e_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <srl17e_2> synthesized.
+
+
+Synthesizing Unit <srl17e_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <srl17e_3> synthesized.
+
+
+Synthesizing Unit <srl17e_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <srl17e_4> synthesized.
+
+
+Synthesizing Unit <srl17e_5>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <srl17e_5> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <single_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <xlconvert_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_4> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_MotorPoz>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_MotorPoz> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <led_entity_2baf17759a>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <led_entity_2baf17759a> synthesized.
+
+
+Synthesizing Unit <pmod4_entity_28850e4dc6>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <pmod4_entity_28850e4dc6> synthesized.
+
+
+Synthesizing Unit <sampletime_generator_entity_19c853dc10>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <sampletime_generator_entity_19c853dc10> synthesized.
+
+
+Synthesizing Unit <synth_reg_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_1> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <synth_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_4> synthesized.
+
+
+Synthesizing Unit <synth_reg_5>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg_5> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <synth_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd".
+WARNING:Xst:1780 - Signal <internal_ce_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <internal_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found T flip-flop for signal <clk_num<0>>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+Unit <xlclockdriver> synthesized.
+
+
+Synthesizing Unit <xlregister_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xldelay_1>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_1> synthesized.
+
+
+Synthesizing Unit <xlregister_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <xlregister_2> synthesized.
+
+
+Synthesizing Unit <xldelay_2>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_2> synthesized.
+
+
+Synthesizing Unit <xldelay_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_3> synthesized.
+
+
+Synthesizing Unit <xldelay_4>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay_4> synthesized.
+
+
+Synthesizing Unit <xlmult_MotorPoz>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:647 - Input <core_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <core_clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <rfd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rdy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <nd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_core_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_b> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <conv_a> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result8$xor0000> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0001> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0002> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0003> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0004> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0005> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0006> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0007> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0008> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0009> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0010> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0011> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0012> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0013> created at line 1015.
+    Found 1-bit xor2 for signal <result8$xor0014> created at line 1015.
+Unit <xlmult_MotorPoz> synthesized.
+
+
+Synthesizing Unit <xlregister_3>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <xlregister_3> synthesized.
+
+
+Synthesizing Unit <default_clock_driver_MotorPoz>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd".
+Unit <default_clock_driver_MotorPoz> synthesized.
+
+
+Synthesizing Unit <counter_entity_8137e9fb7a>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <counter_entity_8137e9fb7a> synthesized.
+
+
+Synthesizing Unit <pidrek_entity_92f788bccf>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+Unit <pidrek_entity_92f788bccf> synthesized.
+
+
+Synthesizing Unit <motorpoz>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz.vhd".
+WARNING:Xst:646 - Signal <enapwm_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_imp4_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_imp3_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_imp2_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir4_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir3_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <black_box_dir2_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <motorpoz> synthesized.
+
+
+Synthesizing Unit <motorpoz_cw>.
+    Related source file is "C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/synth_model/motorpoz_cw.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <motorpoz_cw> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 2
+ 17-bit 4-to-1 multiplexer                             : 2
+# Xors                                                 : 22
+ 1-bit xor2                                            : 22
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Reading core <addsb_11_0_09a98e96b9130e03.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <addsb_11_0_ed61fefe391dafb3.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <addsb_11_0_40c59820e74e5c61.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <addsb_11_0_69d6875ac191df7d.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <cntr_11_0_cee71699703bac4e.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <cntr_11_0_5baa608aaa6fc4cf.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <mult_11_2_782d0d00b37904bd.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+Loading core <addsb_11_0_09a98e96b9130e03> for timing and area information for instance <comp5.core_instance5>.
+Loading core <addsb_11_0_ed61fefe391dafb3> for timing and area information for instance <comp4.core_instance4>.
+Loading core <addsb_11_0_09a98e96b9130e03> for timing and area information for instance <comp5.core_instance5>.
+Loading core <addsb_11_0_09a98e96b9130e03> for timing and area information for instance <comp5.core_instance5>.
+Loading core <addsb_11_0_40c59820e74e5c61> for timing and area information for instance <comp0.core_instance0>.
+Loading core <addsb_11_0_69d6875ac191df7d> for timing and area information for instance <comp1.core_instance1>.
+Loading core <addsb_11_0_69d6875ac191df7d> for timing and area information for instance <comp1.core_instance1>.
+Loading core <addsb_11_0_40c59820e74e5c61> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_cee71699703bac4e> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_5baa608aaa6fc4cf> for timing and area information for instance <comp0.core_instance0>.
+Loading core <mult_11_2_782d0d00b37904bd> for timing and area information for instance <comp0.core_instance0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 138
+ Flip-Flops                                            : 138
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 2
+ 17-bit 4-to-1 multiplexer                             : 2
+# Xors                                                 : 22
+ 1-bit xor2                                            : 22
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <pidrek_entity_92f788bccf>: instances <constant1>, <constant_x0> of unit <constant_9f5572ba51> are equivalent, second instance is removed
+
+Optimizing unit <motorpoz_cw> ...
+
+Optimizing unit <top_level> ...
+
+Optimizing unit <single_reg_w_init_3> ...
+
+Optimizing unit <xladdsub_MotorPoz_5> ...
+
+Optimizing unit <xladdsub_MotorPoz_6> ...
+
+Optimizing unit <xladdsub_MotorPoz_7> ...
+
+Optimizing unit <xladdsub_MotorPoz_8> ...
+
+Optimizing unit <srl17e_5> ...
+
+Optimizing unit <single_reg_w_init_2> ...
+
+Optimizing unit <xlmult_MotorPoz> ...
+
+Optimizing unit <counter_entity_8137e9fb7a> ...
+
+Optimizing unit <pidrek_entity_92f788bccf> ...
+
+Optimizing unit <motorpoz> ...
+
+Mapping all equations...
+Annotating constraints using XCF file 'motorpoz_cw.xcf'
+XCF parsing done.
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 138
+ Flip-Flops                                            : 138
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : motorpoz_cw.ngc
+Output Format                      : NGC
+Optimization Goal                  : SPEED
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 170
+
+Cell Usage :
+# BELS                             : 238
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 18
+#      LUT3                        : 50
+#      LUT4                        : 117
+#      LUT4_L                      : 17
+#      MUXCY                       : 16
+#      MUXF5                       : 16
+#      VCC                         : 1
+# FlipFlops/Latches                : 139
+#      FD                          : 1
+#      FDCE                        : 12
+#      FDE                         : 22
+#      FDRE                        : 89
+#      FDSE                        : 15
+# Shift Registers                  : 2
+#      SRL16E                      : 2
+# Others                           : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-4 
+
+ Number of Slices:                      216  out of   4656     4%  
+ Number of Slice Flip Flops:            139  out of   9312     1%  
+ Number of 4 input LUTs:                206  out of   9312     2%  
+    Number used as logic:               204
+    Number used as Shift registers:       2
+ Number of IOs:                         170
+ Number of bonded IOBs:                   0  out of    158     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+clk                                | NONE(persistentdff_inst/q)              | 163   |
+pmod1(5)                           | NONE(motorpoz_x0/black_box/a_kanalis_d1)| 2     |
+pmod1(1)                           | NONE(motorpoz_x0/black_box/a_kanalis_d2)| 10    |
+-----------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------+-----------------------------------------+-------+
+Control Signal                                                                     | Buffer(FF name)                         | Load  |
+-----------------------------------------------------------------------------------+-----------------------------------------+-------+
+motorpoz_x0/black_box/quada_tagadott(motorpoz_x0/black_box/quada_tagadott1_INV_0:O)| NONE(motorpoz_x0/black_box/a_kanalis_d1)| 7     |
+N0(XST_GND:G)                                                                      | NONE(motorpoz_x0/black_box/a_kanalis_d3)| 4     |
+motorpoz_x0/black_box/quadb_tagadott(motorpoz_x0/black_box/quadb_tagadott1_INV_0:O)| NONE(motorpoz_x0/black_box/a_kanalis_d2)| 1     |
+-----------------------------------------------------------------------------------+-----------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 27.694ns (Maximum Frequency: 36.109MHz)
+   Minimum input arrival time before clock: 11.216ns
+   Maximum output required time after clock: 6.593ns
+   Maximum combinational path delay: 2.936ns
+
+=========================================================================
+Timing constraint: TS_clk_d49fd61b = PERIOD TIMEGRP "clk_d49fd61b" 20 nS HIGH 10 nS
+WARNING:Xst:2245 - Timing constraint is not met.
+  Clock period: 27.694ns (frequency: 36.109MHz)
+  Total number of paths / destination ports: 29994377216 / 282
+  Number of failed paths / ports: 29992005632 (99.99%) / 17 (6.03%)
+-------------------------------------------------------------------------
+Slack:                  -7.694ns
+  Source:               motorpoz_x0/pidrek_92f788bccf/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
+  Destination:          motorpoz_x0/pidrek_92f788bccf/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[9].fde_used.u2 (FF)
+  Data Path Delay:      27.694ns (Levels of Logic = 72)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 20.000ns
+
+  Data Path: motorpoz_x0/pidrek_92f788bccf/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF) to motorpoz_x0/pidrek_92f788bccf/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[9].fde_used.u2 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.591   0.706  motorpoz_x0/pidrek_92f788bccf/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (motorpoz_x0/pidrek_92f788bccf/register1_q_net(0))
+     begin scope: 'motorpoz_x0/pidrek_92f788bccf/addsub5/comp1.core_instance1'
+     begin scope: 'blk00000001'
+     SEC:in->out           1   0.704   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.464   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out          19   0.804   1.089  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'motorpoz_x0/pidrek_92f788bccf/addsub5/comp1.core_instance1'
+     LUT4:I3->O            2   0.704   0.526  motorpoz_x0/pidrek_92f788bccf/addsub5/conv_s(0)1 (motorpoz_x0/pidrek_92f788bccf/ek_ek_1(0))
+     begin scope: 'motorpoz_x0/pidrek_92f788bccf/addsub7/comp1.core_instance1'
+     begin scope: 'blk00000001'
+     SEC:in->out           1   0.704   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.464   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out          18   0.804   1.072  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'motorpoz_x0/pidrek_92f788bccf/addsub7/comp1.core_instance1'
+     LUT4:I3->O            1   0.704   0.499  motorpoz_x0/pidrek_92f788bccf/addsub7/conv_s(0)1 (motorpoz_x0/pidrek_92f788bccf/ek_2ek_1(0))
+     begin scope: 'motorpoz_x0/pidrek_92f788bccf/addsub8/comp0.core_instance0'
+     begin scope: 'blk00000001'
+     SEC:in->out           1   0.704   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.464   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.059   0.000  sec_inst (sec_net)
+     SEC:in->out          30   0.804   1.266  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'motorpoz_x0/pidrek_92f788bccf/addsub8/comp0.core_instance0'
+     LUT4:I3->O            1   0.704   0.424  motorpoz_x0/pidrek_92f788bccf/mux1/Mmux_unregy_join_6_1832_SW1 (N37)
+     LUT4:I3->O            1   0.704   0.420  motorpoz_x0/pidrek_92f788bccf/mux1/Mmux_unregy_join_6_1847 (motorpoz_x0/pidrek_92f788bccf/mux1_y_net(11))
+     begin scope: 'motorpoz_x0/pidrek_92f788bccf/mult/comp0.core_instance0'
+     begin scope: 'blk00000001'
+     SEC:in->out           2   4.873   0.622  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'motorpoz_x0/pidrek_92f788bccf/mult/comp0.core_instance0'
+     LUT4:I0->O            1   0.704   0.595  motorpoz_x0/pidrek_92f788bccf/mult/result8_mux0016107 (motorpoz_x0/pidrek_92f788bccf/mult/result8_mux0016107)
+     LUT4:I0->O           17   0.704   1.086  motorpoz_x0/pidrek_92f788bccf/mult/result8_mux0016121 (motorpoz_x0/pidrek_92f788bccf/mult/result8_mux0016121)
+     LUT4:I2->O            1   0.704   0.000  motorpoz_x0/pidrek_92f788bccf/mult/conv_p(9)1 (motorpoz_x0/pidrek_92f788bccf/mult/conv_p(9))
+     FDE:D                     0.308          motorpoz_x0/pidrek_92f788bccf/mult/latency_gt_0.reg/partial_one.last_srl17e/reg_array[9].fde_used.u2
+    ----------------------------------------
+    Total                     27.694ns (19.389ns logic, 8.305ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.50 secs
+ 
+--> 
+
+Total memory usage is 281920 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  354 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

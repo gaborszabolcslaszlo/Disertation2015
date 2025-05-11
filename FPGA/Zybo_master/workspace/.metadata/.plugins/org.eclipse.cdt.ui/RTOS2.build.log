@@ -1,0 +1,6 @@
+20:55:19 **** Auto Build of configuration Debug for project RTOS2 ****
+make all 
+make: Nothing to be done for `all'.
+
+20:55:20 Build Finished (took 166ms)
+

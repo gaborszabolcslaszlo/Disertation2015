@@ -1,0 +1,5 @@
+the_ROM_image:
+{
+	[bootloader]C:\Diak\gl\Zybo_master\workspace\BOOTLODERzynq\Debug\BOOTLODERzynq.elf
+	C:\Diak\gl\Zybo_master\workspace\TCPecho\Debug\TCPecho.elf
+}

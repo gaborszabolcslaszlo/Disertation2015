@@ -1,0 +1,75 @@
+18:04:48 **** Build of project SpartanPRJ_bsp ****
+make -k all 
+libgen -hw ../MicroBlazeproject_hw_platform/system.xml\
+	       -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../MicroBlazeproject_hw_platform/system.xml -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:3323 -
+   C:\Users\laca\Desktop\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject
+   \SDK\SDK_Export\SpartanPRJ_bsp\system.mss line 49 - Cannot find MDD file
+   ipsdksebesegespozicio_plbw_v2_1_0.mdd for the driver
+   ipsdksebesegespozicio_plbw 1.00.b
+INFO:EDK:1040 - Directories Searched :
+  -
+C:\Users\laca\Desktop\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SD
+K\SDK_Export\SpartanPRJ_bsp\drivers/ipsdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Users\laca\Desktop\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SD
+K\SDK_Export\SpartanPRJ_bsp\pcores/ipsdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\drivers/ipsdkseb
+esegespozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores/ipsdksebe
+segespozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\drivers\drivers/
+ipsdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\drivers\pcores/i
+psdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\Zybo_master\workspace\xap\design\src\sdk_repo\drivers/ipsdksebesegesp
+ozicio_plbw_v1_00_b/data
+  -
+C:\Diak\gl\Zybo_master\workspace\xap\design\src\sdk_repo\pcores/ipsdksebesegespo
+zicio_plbw_v1_00_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\lib\drivers/ipsdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\lib\pcores/ipsdksebesegespozicio_plbw_v1_00_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\drivers/ipsdksebesegespozicio_
+plbw_v1_00_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\XilinxProcessorIPLib\pcores/ipsdksebesegespozicio_p
+lbw_v1_00_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\drivers/ipsdksebesegespozicio_plbw_v1_00
+_b/data
+  -
+C:\Xilinx\14.7\ISE_DS\EDK\sw\ThirdParty\pcores/ipsdksebesegespozicio_plbw_v1_00_
+b/data
+INFO:EDK:772 - Check the following for possible causes of not finding MDD:
+  - If DRIVER_VER is specified in MSS, it must follow literal form X.YY.Z
+  - There is no driver with given name
+  - Driver exists but not that version
+  - Driver and version (directory) exist but no MDD is available
+
+ERROR:EDK:1204 - Errors occured while creating Software System.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+18:04:49 Build Finished (took 1s.263ms)
+

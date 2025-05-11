@@ -1,0 +1,25 @@
+{
+  'diff' => {
+    'attributes' => {
+      'added' => [
+      ],
+      'modified' => [
+        'files',
+      ],
+      'removed' => [
+      ],
+    },
+    'changed' => 1,
+    'files' => {
+      'added' => [
+      ],
+      'common' => [
+        'onoff_cw.vhd',
+        'onoff.vhd',
+      ],
+      'removed' => [
+        'onoff_cw.ucf',
+      ],
+    },
+  },
+}

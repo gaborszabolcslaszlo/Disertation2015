@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><BoardSupport>
+	<FullName>Nexys2iROOBO</FullName>
+	<ShortName>nexys2iroobo</ShortName>
+	<ClockFrequency>50</ClockFrequency>
+	<ClockPin>B8</ClockPin>
+	<ClockPinN/>
+	<JtagPosition>1</JtagPosition>
+	<JtagIrLengths>6, 8</JtagIrLengths>
+	<Devices>
+		<Device>
+			<Family>spartan3e</Family>
+			<Name>xc3s1200e</Name>
+			<Speed>-4</Speed>
+			<Packaging>fg320</Packaging>
+		</Device>
+	</Devices>
+	<Ports>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">L15</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">K12</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">L17</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">M15</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">K13</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">L16</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">M14</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">M16</UCF>
+				</Pin>
+			</Pins>
+			<Name>JA1</Name>
+			<Direction>out</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">M13</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">R18</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">R15</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">T17</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">P17</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">R16</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">T18</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">U18</UCF>
+				</Pin>
+			</Pins>
+			<Name>JB1</Name>
+			<Direction>in</Direction>
+		</Port>
+		<Port>
+			<Pins>
+				<Pin>
+					<UCF type="LOC">G15</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">J16</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">G13</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">H16</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">H15</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">F14</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">G16</UCF>
+				</Pin>
+				<Pin>
+					<UCF type="LOC">J12</UCF>
+				</Pin>
+			</Pins>
+			<Name>JC1</Name>
+			<Direction>in</Direction>
+		</Port>
+	</Ports>
+	<BoardParameters/>
+</BoardSupport>

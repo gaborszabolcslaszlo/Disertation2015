@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:\Diak\gszl\MicroBlazeproject\pcores/ntg_v1_00_a/data/ntg_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Jun 23 13:18:05 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib plbv46_slave_single_v1_01_a all vhdl
+lib ntg_v1_00_a user_logic vhdl
+lib ntg_v1_00_a ntg vhdl

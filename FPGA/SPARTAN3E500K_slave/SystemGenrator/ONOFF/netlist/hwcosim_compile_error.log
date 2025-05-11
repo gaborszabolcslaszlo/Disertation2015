@@ -1,0 +1,5 @@
+Java exception occurred: 
+java.lang.NullPointerException
+	at com.xilinx.sysgen.netlister.HwcosimWrapperBuilder.makeNonMemoryMappedPorts(HwcosimWrapperBuilder.java:815)
+	at com.xilinx.sysgen.netlister.HwcosimWrapperBuilder.buildHwcosimWrapper(HwcosimWrapperBuilder.java:1253)
+	at com.xilinx.sysgen.netlister.HwcosimWrapperBuilder.buildHwcosimFiles(HwcosimWrapperBuilder.java:1468)

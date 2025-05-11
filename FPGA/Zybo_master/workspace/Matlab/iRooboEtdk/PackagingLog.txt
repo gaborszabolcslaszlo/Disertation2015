@@ -1,0 +1,9 @@
+ant:
+<ant>
+  <mkdir dir="C:\Diak\gl\Zybo_master\workspace\Matlab\iRooboEtdk\for_redistribution" />
+  <mkdir dir="C:\Diak\gl\Zybo_master\workspace\Matlab\iRooboEtdk\for_testing" />
+</ant>
+mcc -C -o iRooboEtdk -W WinMain:iRooboEtdk -T link:exe -d C:\Diak\gl\Zybo_master\workspace\Matlab\iRooboEtdk\for_testing -v C:\Diak\gl\Zybo_master\workspace\Matlab\untitled.m 
+Test checkout of feature 'Compiler' failed.
+
+mcc failed.

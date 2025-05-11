@@ -1,0 +1,1 @@
+ -p xc3s500epq208-4 -pe microblaze_0 SDK/SDK_Export/SpartanPRJ/Debug/SpartanPRJ.elf

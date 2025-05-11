@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\MicroBlazeproject_hw_platform//programFlashAllamvizsga -x xcf04s -u 00000000 C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/SDK/SDK_Export/MicroBlazeproject_hw_platform/download_cclktemp.bit 
+
+PROM C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\MicroBlazeproject_hw_platform\programFlashAllamvizsga.prm map: Fri Jun 26 17:05:24 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 043355e6
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0004:547f     Jun 26 17:04:36 2015 C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/SDK/SDK_Export/MicroBlazeproject_hw_platform/download_cclktemp.bit

@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Diak\gszl\MicroBlazeproject\pcores\ntg_v1_00_a\devl\synthesis\ntg_xst.prj"
+-top ntg
+-p virtex6
+-ofn "C:\Diak\gszl\MicroBlazeproject\pcores\ntg_v1_00_a\devl\synthesis\ntg_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib ntg_v1_00_a

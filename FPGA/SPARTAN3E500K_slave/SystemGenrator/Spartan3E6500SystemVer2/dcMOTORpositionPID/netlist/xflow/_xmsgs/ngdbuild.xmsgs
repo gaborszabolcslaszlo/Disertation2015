@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/default_clock_driver_motorpoz_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/b_kanalis_d1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/b_kanalis_d2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/b_kanalis_d3</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/c_kanalis_d1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/c_kanalis_d2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/c_kanalis_d3</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/d_kanalis_d1</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/d_kanalis_d2</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">sysgen_hwcosim_iface/sysgen_dut/motorpoz_x0/black_box/d_kanalis_d3</arg>&apos; has unconnected output pin
+</msg>
+
+</messages>
+

@@ -1,0 +1,8 @@
+INTSTYLE=xflow
+INFILE=E:\Allamvizsga\Spartan3E6500SystemVer2\ONOFF\netlist\xflow\jtagcosim_top.ncd
+OUTFILE=E:\Allamvizsga\Spartan3E6500SystemVer2\ONOFF\netlist\xflow\jtagcosim_top.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=E:\Allamvizsga\Spartan3E6500SystemVer2\ONOFF\netlist\xflow
+LICENSE=ISE
+USER_INFO=176860571_203016847_210573437_008

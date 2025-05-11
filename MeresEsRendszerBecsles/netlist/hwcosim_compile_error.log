@@ -1,0 +1,4 @@
+Java exception occurred: 
+com.xilinx.sysgen.netlist.NetlistInternal: java.io.FileNotFoundException: C:\Users\laca\Desktop\iRoobo2014Ver3\Fpga\SPARTAN3E\Spartan3E6500SystemVer2\MeresEsRendszerBecsles\netlist\synopsis (The system cannot find the file specified)
+	at com.xilinx.sysgen.netlist.XTable.valueOf(XTable.java:437)
+	at com.xilinx.sysgen.netlist.Block.fromXTable(Block.java:441)

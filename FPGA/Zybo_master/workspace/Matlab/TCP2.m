@@ -1,0 +1,224 @@
+function SampleFunction
+ModelName = 'TCPZybo';
+
+% Opens the Simulink model 
+open_system(ModelName);
+
+% Simulink may optimise your model by integrating all your blocks. To 
+% prevent this, you need to disable the Block Reduction in the Optimisation 
+% settings. 
+set_param(ModelName,'BlockReduction','off');
+
+% When the model starts, call the localAddEventListener function 
+set_param(ModelName,'StartFcn','localAddEventListener');
+
+% Start the model 
+set_param(ModelName, 'SimulationCommand', 'start');
+
+% Create a line handle 
+global ph; 
+ph = line([0],[0]);
+
+% When simulation starts, Simulink will call this function in order to 
+% register the event listener to the block 'SineWave'. The function 
+% localEventListener will execute everytime after the block 'SineWave' has 
+% returned its output. 
+function eventhandle = localAddEventListener
+eventhandle = add_exec_event_listener('TCPZybo/Giro/Mux', ... 
+                'PostOutputs', @localEventListener);
+
+% The function to be called when event is registered.            
+function localEventListener(block, eventdata) 
+disp('Event has occured!')
+
+global ph;
+
+% Gets the time and output value 
+simTime = block.CurrentTime; 
+simData = block.OutputPort(1).Data;
+
+% Gets handles to the point coordinates 
+xData = get(ph,'XData'); 
+yData = get(ph,'YData');
+
+% Displaying only the latest n-points
+n = 200; 
+if length(xData) <= n
+    xData = [xData simTime]; 
+    yData = [yData simData];
+
+else 
+    xData = [xData(2:end) simTime]; 
+    yData = [yData(2:end) simData]; 
+end
+
+% Update point coordinates 
+set(ph,... 
+    'XData',xData,... 
+    'YData',yData);
+
+% The axes limits need to change as you scroll 
+samplingtime = .01; %Sampling time of block 'SineWave' 
+offset = samplingtime*n; 
+xLim = [max(0,simTime-offset) max(offset,simTime)]; 
+set(gca,'Xlim',xLim);
+
+drawnow;
+
+function varargout = TCP2(varargin)
+
+open_system(ModelName);
+gui_Singleton = 1;
+gui_State = struct('gui_Name',       mfilename, ...
+                   'gui_Singleton',  gui_Singleton, ...
+                   'gui_OpeningFcn', @TCP2_OpeningFcn, ...
+                   'gui_OutputFcn',  @TCP2_OutputFcn, ...
+                   'gui_LayoutFcn',  [] , ...
+                   'gui_Callback',   []);
+if nargin && ischar(varargin{1})
+    gui_State.gui_Callback = str2func(varargin{1});
+end
+
+if nargout
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+else
+    gui_mainfcn(gui_State, varargin{:});
+end
+% End initialization code - DO NOT EDIT
+
+% --- Executes just before TCP2 is made visible.
+function TCP2_OpeningFcn(hObject, eventdata, handles, varargin)
+% This function has no output args, see OutputFcn.
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% varargin   command line arguments to TCP2 (see VARARGIN)
+
+% Choose default command line output for TCP2
+handles.output = hObject;
+
+% Update handles structure
+guidata(hObject, handles);
+
+% This sets up the initial plot - only do when we are invisible
+% so window can get raised using TCP2.
+if strcmp(get(hObject,'Visible'),'off')
+    plot(rand(5));
+end
+
+% UIWAIT makes TCP2 wait for user response (see UIRESUME)
+% uiwait(handles.figure1);
+
+
+% --- Outputs from this function are returned to the command line.
+function varargout = TCP2_OutputFcn(hObject, eventdata, handles)
+% varargout  cell array for returning output args (see VARARGOUT);
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Get default command line output from handles structure
+varargout{1} = handles.output;
+
+% --- Executes on button press in pushbutton1.
+function pushbutton1_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+axes(handles.axes1);
+cla;
+
+popup_sel_index = get(handles.popupmenu1, 'Value');
+switch popup_sel_index
+    case 1
+        plot(rand(5));
+    case 2
+        plot(sin(1:0.01:25.99));
+    case 3
+        bar(1:.5:10);
+    case 4
+        plot(membrane);
+    case 5
+        surf(peaks);
+end
+
+
+% --------------------------------------------------------------------
+function FileMenu_Callback(hObject, eventdata, handles)
+% hObject    handle to FileMenu (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function OpenMenuItem_Callback(hObject, eventdata, handles)
+% hObject    handle to OpenMenuItem (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+file = uigetfile('*.fig');
+if ~isequal(file, 0)
+    open(file);
+end
+
+% --------------------------------------------------------------------
+function PrintMenuItem_Callback(hObject, eventdata, handles)
+% hObject    handle to PrintMenuItem (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+printdlg(handles.figure1)
+
+% --------------------------------------------------------------------
+function CloseMenuItem_Callback(hObject, eventdata, handles)
+% hObject    handle to CloseMenuItem (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+selection = questdlg(['Close ' get(handles.figure1,'Name') '?'],...
+                     ['Close ' get(handles.figure1,'Name') '...'],...
+                     'Yes','No','Yes');
+if strcmp(selection,'No')
+    return;
+end
+
+delete(handles.figure1)
+
+
+% --- Executes on selection change in popupmenu1.
+function popupmenu1_Callback(hObject, eventdata, handles)
+% hObject    handle to popupmenu1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = get(hObject,'String') returns popupmenu1 contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from popupmenu1
+
+
+% --- Executes during object creation, after setting all properties.
+function popupmenu1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to popupmenu1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+     set(hObject,'BackgroundColor','white');
+end
+
+set(hObject, 'String', {'plot(rand(5))', 'plot(sin(1:0.01:25))', 'bar(1:.5:10)', 'plot(membrane)', 'surf(peaks)'});
+
+
+% --- Executes on button press in StartButon.
+function StartButon_Callback(hObject, eventdata, handles)
+SampleFunction
+% hObject    handle to StartButon (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- If Enable == 'on', executes on mouse press in 5 pixel border.
+% --- Otherwise, executes on mouse press in 5 pixel border or over StartButon.
+function StartButon_ButtonDownFcn(hObject, eventdata, handles)
+
+% hObject    handle to StartButon (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)

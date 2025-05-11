@@ -1,0 +1,92 @@
+#include<xil_io.h>
+#include<xparameters.h>
+#include<xil_types.h>
+#include "xgpio.h"
+#include "ipsdksebesegespozicio_plbw.h"
+#include "xcope.h"
+#include "stdio.h"
+#include "xutil.h"
+#include "xspi.h"		/* SPI device driver */
+#include "stdio.h"
+
+
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define LED1 0x01
+#define LED2 0x02
+#define LED3 0x03
+#define LED4 0x04
+#define GPIO_LED_DEVICE_ID  XPAR_LED4GPIO_DEVICE_ID
+
+
+
+#define SPI_DEVICE_ID		XPAR_SPI_0_DEVICE_ID
+
+#define BUFFER_SIZE		16
+static int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId);
+static XSpi SpiInstance;   /* The instance of the SPI device */
+u8 ReadBuffer[BUFFER_SIZE];
+u8 WriteBuffer[BUFFER_SIZE];
+int Test;
+
+int main()
+{
+	int Data=0x04;
+		XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+		XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+		XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data| LED3);
+	 xc_iface_t *iface;
+	 xc_from_reg_t *fromreg_result;
+	 xc_to_reg_t *toreg_red, *toreg_green, *toreg_blue;
+
+	 // initialize the software driver, assuming the Pcore device ID is 0
+	 XC_CfgInitialize(&iface, &IPSDKSEBESEGESPOZICIO_PLBW_ConfigTable[0]);
+	 xc_get_shmem(iface, "Position", (void **) &fromreg_result);
+
+		int Status;
+
+		/*
+		 * Run the Spi Slave polled example.
+		 */
+		Status = SpiSlavePolledExample(&SpiInstance, SPI_DEVICE_ID);
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+	return 0;
+}
+
+
+int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId)
+{
+	XSpi_Config *ConfigPtr;
+	int Status;
+	u32 Count;
+
+	ConfigPtr = XSpi_LookupConfig(SpiDeviceId);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	Status = XSpi_CfgInitialize(SpiInstancePtr, ConfigPtr,
+				ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XSpi_SetOptions(SpiInstancePtr, XSP_CLK_PHASE_1_OPTION | XSP_CLK_ACTIVE_LOW_OPTION);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XSpi_Start(SpiInstancePtr);
+	XSpi_IntrGlobalDisable(SpiInstancePtr);
+
+
+	xil_printf("\r\nReceived data is:\r\n");
+	for (Count = 0; Count < BUFFER_SIZE; Count++) {
+		xil_printf("0x%x \r\n", ReadBuffer[Count]);
+	}
+
+	xil_printf("\r\nExiting the Spi Slave Polled Example.\r\n");
+
+	return XST_SUCCESS;
+}

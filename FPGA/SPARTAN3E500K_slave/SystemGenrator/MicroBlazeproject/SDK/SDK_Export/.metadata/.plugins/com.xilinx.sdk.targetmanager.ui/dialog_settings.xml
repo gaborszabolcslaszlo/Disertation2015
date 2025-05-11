@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\SpartanPRJ\Debug\SpartanPRJ.elf" key="MicroBlazeproject_hw_platform-microblaze_0-initElf"/>
+	<item value="C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\MicroBlazeproject_hw_platform\system.bit" key="MicroBlazeproject_hw_platform-bitFile"/>
+	<item value="C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\MicroBlazeproject_hw_platform\system_bd.bmm" key="MicroBlazeproject_hw_platform-bmmFile"/>
+</section>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="laca" on="03/29/15||23:11:38" using="SimMechanics Link Version 4.4" from="Autodesk Inventor 2015 SP1 (Build 190203100, 203)"/>
+<ModelUnits mass="gram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="RobotMechanika.iam (LevelofDetail1)" uid="RobotMechanika.iam (LevelofDetail1)_D3E18064-4B37-B75B-90A1-E9A980C1BB97" version="{97651E5D-9511-9A82-16FB-41F09B2BE609}">
+<AssemblyFile name="RobotMechanika.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="RobotAlvaz:2" grounded="true" uid="RobotAlvaz:2" entityUid="RobotAlvaz.ipt_0B111939-40CD-B719-4C3D-F28D7CEAF48F">
+<Transform>
+<Rotation>0.018328612467488681 -0.99760105845027913 -0.066754701286870693 0.99928528081277357 0.020485393224026274 -0.031769107878433164 0.03306039195095975 -0.066124706754282003 0.99726352266625418</Rotation>
+<Translation>78.815950888090271 -70.450763585609295 18.634084306131847</Translation>
+</Transform>
+</Instance>
+<Instance name="KarMerev:5" uid="KarMerev:5" entityUid="KarMerev.ipt_C867C454-4079-6143-F745-659B4CA7DD26">
+<Transform>
+<Rotation>0.99895306041642917 -0.00077649595995948895 -0.045740355690290571 -0.00036177621144051209 0.99969057902773861 -0.024871978633747072 0.045745515655886609 0.02486248694738525 0.99864368247146496</Rotation>
+<Translation>94.335933309635976 42.035712425379828 -39.054877027538261</Translation>
+</Transform>
+</Instance>
+<Instance name="KarMerev:6" uid="KarMerev:6" entityUid="KarMerev.ipt_C867C454-4079-6143-F745-659B4CA7DD26">
+<Transform>
+<Rotation>-0.6297304798857789 -0.77532005846615171 0.048149035741843302 -0.77546558305328106 0.63107896786600659 0.019810750036555063 -0.045745515656306128 -0.024862486947584757 -0.99864368247144053</Rotation>
+<Translation>42.033798683346959 -37.783888484023848 5.1414738382371041</Translation>
+</Transform>
+</Instance>
+<Instance name="KarMerev:7" uid="KarMerev:7" entityUid="KarMerev.ipt_C867C454-4079-6143-F745-659B4CA7DD26">
+<Transform>
+<Rotation>0.99895306041641407 -0.00077649595996778017 -0.045740355690621369 -0.00036177621144777879 0.99969057902773473 -0.024871978633904491 0.045745515656217456 0.024862486947542582 0.99864368247144586</Rotation>
+<Translation>88.229019009330514 -15.799205611829391 -41.306066346237721</Translation>
+</Transform>
+</Instance>
+<Instance name="KarMerev:8" uid="KarMerev:8" entityUid="KarMerev.ipt_C867C454-4079-6143-F745-659B4CA7DD26">
+<Transform>
+<Rotation>-0.62973047989160413 -0.77532005846146435 0.048149035741133828 -0.77546558304860103 0.6310789678717813 0.019810750035787812 -0.045745515655448737 -0.024862486947177003 -0.99864368247148994</Rotation>
+<Translation>48.140712983394288 20.051029553389679 7.3926631569666057</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Insert:1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>KarMerev:5</Uid>
+</InstancePath>
+<Position>-28.742396120115565 5.2205764292336525 -3.9886931140760851</Position>
+<Axis>0.021052985750795304 0.0069129917793929289 -0.99975446102312271</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>115.41422367111136 19.552618918726125 -65.559413860777866</Position>
+<Axis>1.7583157152500917e-013 -1.1560197243909442e-014 -1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Insert:1_Coincident">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>KarMerev:5</Uid>
+</InstancePath>
+<Position>-28.742396120115565 5.2205764292336525 -3.9886931140760851</Position>
+<Axis>0.021052985750795304 0.0069129917793929289 -0.99975446102312271</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>115.41422367111136 19.552618918726125 -65.559413860777866</Position>
+<Axis>1.7583157152500917e-013 -1.1560197243909442e-014 -1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Insert:2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>KarMerev:8</Uid>
+</InstancePath>
+<Position>-28.742396120115572 5.2205764292336632 -3.9886931140760904</Position>
+<Axis>0.021052985750795346 0.0069129917793929255 -0.99975446102312326</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>115.41422367109946 19.5526189187269 -8.6194138607797868</Position>
+<Axis>1.5308587730800127e-013 2.0372592501871623e-014 1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Insert:2_Distance">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>KarMerev:8</Uid>
+</InstancePath>
+<Position>-28.742396120115572 5.2205764292336632 -3.9886931140760904</Position>
+<Axis>0.021052985750795346 0.0069129917793929255 -0.99975446102312326</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>115.41422367109946 19.5526189187269 -8.6194138607797868</Position>
+<Axis>1.5308587730800127e-013 2.0372592501871623e-014 1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Insert:3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>KarMerev:6</Uid>
+</InstancePath>
+<Position>-28.742396120115576 5.2205764292336738 -3.9886931140760886</Position>
+<Axis>0.021052985750795332 0.0069129917793929255 -0.99975446102312315</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>57.434284892607259 24.608971283998173 -8.6194138607774651</Position>
+<Axis>-1.7878754032807365e-013 4.4825254619240695e-014 1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Insert:3_Distance">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>KarMerev:6</Uid>
+</InstancePath>
+<Position>-28.742396120115576 5.2205764292336738 -3.9886931140760886</Position>
+<Axis>0.021052985750795332 0.0069129917793929255 -0.99975446102312315</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>57.434284892607259 24.608971283998173 -8.6194138607774651</Position>
+<Axis>-1.7878754032807365e-013 4.4825254619240695e-014 1.0000000000000013</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Insert:4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>KarMerev:7</Uid>
+</InstancePath>
+<Position>-28.742396120115558 5.2205764292336632 -3.9886931140760922</Position>
+<Axis>0.021052985750795311 0.0069129917793929324 -0.99975446102312282</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>57.43428489259464 24.608971283997612 -65.559413860775649</Position>
+<Axis>-1.5457080060343742e-013 -2.0358714714063808e-014 -1.0000000000000016</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Insert:4_Distance">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>KarMerev:7</Uid>
+</InstancePath>
+<Position>-28.742396120115558 5.2205764292336632 -3.9886931140760922</Position>
+<Axis>0.021052985750795311 0.0069129917793929324 -0.99975446102312282</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>RobotAlvaz:2</Uid>
+</InstancePath>
+<Position>57.43428489259464 24.608971283997612 -65.559413860775649</Position>
+<Axis>-1.5457080060343742e-013 -2.0358714714063808e-014 -1.0000000000000016</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="KarMerev.ipt" uid="KarMerev.ipt_C867C454-4079-6143-F745-659B4CA7DD26" version="{A78A076B-9AD0-B9D8-790A-B1F4F7B13936}">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="KarMerev.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.90965256720863685</Mass>
+<CenterOfMass>-21.631545137356476 2.1713446734600619 -7.9644208700607493</CenterOfMass>
+<Inertia>46.928964926101365 200.08338233059331 239.093864282412 -2.1392728272646218 4.7838584906933539 82.845427470013817</Inertia>
+</MassProperties>
+<GeometryFile name="KarMerev_ipt_6c6da441.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Diffuse r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20000000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="RobotAlvaz.ipt" uid="RobotAlvaz.ipt_0B111939-40CD-B719-4C3D-F28D7CEAF48F" version="{106F3F6A-7958-F1AB-9313-A451E74D27E3}">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="RobotAlvaz.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>2.0504433070474102</Mass>
+<CenterOfMass>86.442013533025204 22.275051971366185 -37.065862962553297</CenterOfMass>
+<Inertia>977.07438562326502 2169.8044599593991 1234.636403763717 4.3071416644868439 7.0214356426699087 104.87680833305744</Inertia>
+</MassProperties>
+<GeometryFile name="RobotAlvaz_ipt_1e4a51c.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Diffuse r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.20000000000000001</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

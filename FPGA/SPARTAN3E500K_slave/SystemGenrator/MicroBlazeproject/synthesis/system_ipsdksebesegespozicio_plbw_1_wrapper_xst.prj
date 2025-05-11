@@ -1,0 +1,4 @@
+vhdl ipsdksebesegespozicio_plbw_v55_00_a C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdksebesegespozicio_plbw_v55_00_a/hdl/vhdl/ipsdksebesegespozicio.vhd
+vhdl ipsdksebesegespozicio_plbw_v55_00_a C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdksebesegespozicio_plbw_v55_00_a/hdl/vhdl/ipsdksebesegespozicio_cw.vhd
+vhdl ipsdksebesegespozicio_plbw_v55_00_a C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdksebesegespozicio_plbw_v55_00_a/hdl/vhdl/ipsdksebesegespozicio_plbw.vhd
+vhdl work ../hdl/system_ipsdksebesegespozicio_plbw_1_wrapper.vhd

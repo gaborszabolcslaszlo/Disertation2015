@@ -1,0 +1,45 @@
+19:28:51 **** Auto Build of project standalone_bsp_6 ****
+make -k all 
+libgen -hw ../MicroBlazeproject_hw_platform/system.xml\
+	       -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../MicroBlazeproject_hw_platform/system.xml -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Generating Macros for ipsdksebesegespozicio_plbw driver access ... 
+
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+Compiling common
+Compiling standalone
+Compiling bram
+Compiling ipsdksebesegespozicio_plbw
+Compiling gpio
+Compiling spi
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+
+19:29:21 Build Finished (took 29s.578ms)
+

@@ -1,0 +1,6 @@
+12:51:32 **** Build of project FSBLSdCardBoot_bsp ****
+make -k all 
+Finished building libraries
+
+12:51:32 Build Finished (took 502ms)
+

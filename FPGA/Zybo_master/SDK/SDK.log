@@ -1,0 +1,26 @@
+11:14:08.888 INFO  - Processing command line option -hwspec C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml. 
+11:52:17.716 INFO  - Processing command line option -hwspec C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml. 
+11:52:17.903 INFO  - The hardware specification for project 'GaborSZ_hw_platform' is different from C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml. 
+11:52:18.044 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml into \GaborSZ_hw_platform\system.xml. 
+11:52:18.044 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.bit into \GaborSZ_hw_platform\system.bit. 
+11:52:18.168 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.c into \GaborSZ_hw_platform\ps7_init.c. 
+11:52:18.168 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.h into \GaborSZ_hw_platform\ps7_init.h. 
+11:52:18.200 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.html into \GaborSZ_hw_platform\ps7_init.html. 
+11:52:18.200 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.tcl into \GaborSZ_hw_platform\ps7_init.tcl. 
+11:52:18.480 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:52:18.590 INFO  - Clearing existing target manager status. 
+11:52:20.821 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+11:52:24.519 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:18:57.518 INFO  - Processing command line option -hwspec C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml. 
+12:18:58.808 INFO  - The hardware specification for project 'GaborSZ_hw_platform' is different from C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml. 
+12:18:58.833 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.xml into \GaborSZ_hw_platform\system.xml. 
+12:18:58.840 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\system.bit into \GaborSZ_hw_platform\system.bit. 
+12:18:58.901 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.c into \GaborSZ_hw_platform\ps7_init.c. 
+12:18:58.903 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.h into \GaborSZ_hw_platform\ps7_init.h. 
+12:18:58.906 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.html into \GaborSZ_hw_platform\ps7_init.html. 
+12:18:58.908 INFO  - Copied contents of C:\Diak\GaborSZ\SDK\SDK_Export\hw\ps7_init.tcl into \GaborSZ_hw_platform\ps7_init.tcl. 
+12:18:59.600 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:18:59.667 INFO  - Clearing existing target manager status. 
+12:18:59.683 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:19:01.826 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+12:19:03.679 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

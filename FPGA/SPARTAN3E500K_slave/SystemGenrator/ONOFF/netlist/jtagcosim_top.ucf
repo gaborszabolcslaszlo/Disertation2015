@@ -1,0 +1,37 @@
+#
+# Filename:    nexys2iroobo.ucf
+#
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              Nexys2iROOBO
+#
+
+NET "sys_clk" LOC = "B8";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 50 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.
+NET JA1(0) LOC = "L15"; # ja1 contingent
+NET JA1(1) LOC = "K12"; # ja1 contingent
+NET JA1(2) LOC = "L17"; # ja1 contingent
+NET JA1(3) LOC = "M15"; # ja1 contingent
+NET JA1(4) LOC = "K13"; # ja1 contingent
+NET JA1(5) LOC = "L16"; # ja1 contingent
+NET JA1(6) LOC = "M14"; # ja1 contingent
+NET JA1(7) LOC = "M16"; # ja1 contingent
+NET JB1(0) LOC = "M13"; # jb1 contingent
+NET JB1(1) LOC = "R18"; # jb1 contingent
+NET JB1(2) LOC = "R15"; # jb1 contingent
+NET JB1(3) LOC = "T17"; # jb1 contingent
+NET JB1(4) LOC = "P17"; # jb1 contingent
+NET JB1(5) LOC = "R16"; # jb1 contingent
+NET JB1(6) LOC = "T18"; # jb1 contingent
+NET JB1(7) LOC = "U18"; # jb1 contingent
+NET JC1(0) LOC = "G15"; # jc1 contingent
+NET JC1(1) LOC = "J16"; # jc1 contingent
+NET JC1(2) LOC = "G13"; # jc1 contingent
+NET JC1(3) LOC = "H16"; # jc1 contingent
+NET JC1(4) LOC = "H15"; # jc1 contingent
+NET JC1(5) LOC = "F14"; # jc1 contingent
+NET JC1(6) LOC = "G16"; # jc1 contingent
+NET JC1(7) LOC = "J12"; # jc1 contingent

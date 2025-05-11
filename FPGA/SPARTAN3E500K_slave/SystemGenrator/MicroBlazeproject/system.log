@@ -1,0 +1,2533 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Fri Jun 19 10:49:59 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Jun 19 10:50:00 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+
+********************************************************************************
+At Local date and time: Fri Jun 19 14:21:09 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Jun 19 14:21:09 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Sat Jun 20 16:43:53 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sat Jun 20 16:43:53 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Sun Jun 21 16:45:15 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Jun 21 16:45:16 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+The project's MHS file has changed on disk.
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Sun Jun 21 17:00:50 2015
+ make -f system.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp system.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/system.xml 
+Qt: Untested Windows version 6.2 detected!
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 8 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs
+   line 149 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp system.xmp -report SDK\SDK_Export\hw/system.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Qt: Untested Windows version 6.2 detected!
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=plb_v46;v=v1_05_a;d=plb_v46.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=bram_block;v=v1_00_a;d=bram_block.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clock_generator;v=v4_03_a;d=clock_
+   generator.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v3_00_a;d=proc_sy
+   s_reset.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_spi;v=v2_02_a;d=xps_spi.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_gpio;v=v2_00_a;d=xps_gpio.pdf
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+Rasterizing mb_plb.jpg.....
+Rasterizing ilmb.jpg.....
+Rasterizing dlmb.jpg.....
+Rasterizing dlmb_cntlr.jpg.....
+Rasterizing ilmb_cntlr.jpg.....
+Rasterizing lmb_bram.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing ntg_0.jpg.....
+Rasterizing SpiZybo.jpg.....
+Rasterizing LED4gpio.jpg.....
+Rasterizing Cooler0PWM.jpg.....
+Rasterizing PumpPWM.jpg.....
+Rasterizing ipsdksebesegespozicio_plbw_0.jpg.....
+Rasterizing ipsdksebesegespozicio_plbw_1.jpg.....
+Rasterizing ipsdksebesegespozicio_plbw_2.jpg.....
+Rasterizing ipsdksebesegespozicio_plbw_3.jpg.....
+Rasterizing system_blkd.jpg.....
+Report generated.
+Report generation completed.
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s500epq208-4 -lang vhdl -intstyle default -lp Nexys2_BSB_Support_v_3_0/lib/   -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s500epq208-4 -lang vhdl -intstyle default -lp
+Nexys2_BSB_Support_v_3_0/lib/ -msg __xps/ise/xmsgprops.lst system.mhs 
+
+Parse C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/system.mhs
+...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+  (0xcbe00000-0xcbe00fff) ipsdksebesegespozicio_plbw_3	mb_plb
+  (0xcbe12000-0xcbe123ff) LED4gpio	mb_plb
+  (0xcbe14000-0xcbe14fff) PumpPWM	mb_plb
+  (0xcbe18000-0xcbe19fff) SpiZybo	mb_plb
+  (0xcbe1d000-0xcbe1dfff) Cooler0PWM	mb_plb
+  (0xcbe20000-0xcbe20fff) ipsdksebesegespozicio_plbw_2	mb_plb
+  (0xcbe40000-0xcbe40fff) ipsdksebesegespozicio_plbw_1	mb_plb
+  (0xcbe60000-0xcbe60fff) ipsdksebesegespozicio_plbw_0	mb_plb
+
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_spi, INSTANCE:SpiZybo - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_spi_v2_02_a\data
+   \xps_spi_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:LED4gpio - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: pwmmodlmag_plbw, INSTANCE:Cooler0PWM - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmod
+   lmag_plbw_v2_00_a\data\pwmmodlmag_plbw_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: pwmmodlmag_plbw, INSTANCE:PumpPWM - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmod
+   lmag_plbw_v2_00_a\data\pwmmodlmag_plbw_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_2 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_3 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 8 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs
+   line 149 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The ilmb core has constraints automatically generated by XPS in
+implementation/ilmb_wrapper/ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The dlmb core has constraints automatically generated by XPS in
+implementation/dlmb_wrapper/dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:pwmmodlmag_plbw INSTANCE:cooler0pwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+183 - Copying (BBD-specified) netlist files.
+IPNAME:pwmmodlmag_plbw INSTANCE:pumppwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+192 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Copying (BBD-specified) netlist files.
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+65 - Copying cache implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+78 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+85 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+92 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+99 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+108 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+117 - Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+139 - Copying cache implementation netlist
+IPNAME:ntg INSTANCE:ntg_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+152 - Copying cache implementation netlist
+IPNAME:xps_spi INSTANCE:spizybo -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+159 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:led4gpio -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+173 - Copying cache implementation netlist
+IPNAME:pwmmodlmag_plbw INSTANCE:cooler0pwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+183 - Copying cache implementation netlist
+IPNAME:pwmmodlmag_plbw INSTANCE:pumppwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+192 - Copying cache implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+117 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s500epq208-4 -intstyle silent -i -sd .. system_clock_generator_0_wrapper.ngc
+../system_clock_generator_0_wrapper
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+clock_generator_0_wrapper/system_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  7 sec
+Total CPU time to NGCBUILD completion:   6 sec
+
+Writing NGCBUILD log file "../system_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_ipsdksebesegespozicio_plbw_0_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s500epq208-4 -intstyle silent -i -sd ..
+system_ipsdksebesegespozicio_plbw_0_wrapper.ngc
+../system_ipsdksebesegespozicio_plbw_0_wrapper
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+ipsdksebesegespozicio_plbw_0_wrapper/system_ipsdksebesegespozicio_plbw_0_wrapper
+.ngc" ...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/cntr_11_0_d7c176806556610b.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/addsb_11_0_178ba6eaed72af2d.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/addsb_11_0_09a98e96b9130e03.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/cntr_11_0_cee71699703bac4e.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/addsb_11_0_40c59820e74e5c61.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/mult_11_2_35e3d9e317f5b4b5.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/cntr_11_0_5baa608aaa6fc4cf.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/mult_11_2_99ead271b49e8ec3.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_0_wrapper/xlpersistentdff.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_ipsdksebesegespozicio_plbw_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file
+"../system_ipsdksebesegespozicio_plbw_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_ipsdksebesegespozicio_plbw_1_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s500epq208-4 -intstyle silent -i -sd ..
+system_ipsdksebesegespozicio_plbw_1_wrapper.ngc
+../system_ipsdksebesegespozicio_plbw_1_wrapper
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+ipsdksebesegespozicio_plbw_1_wrapper/system_ipsdksebesegespozicio_plbw_1_wrapper
+.ngc" ...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/cntr_11_0_d7c176806556610b.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/addsb_11_0_178ba6eaed72af2d.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/addsb_11_0_09a98e96b9130e03.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/cntr_11_0_cee71699703bac4e.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/addsb_11_0_40c59820e74e5c61.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/mult_11_2_35e3d9e317f5b4b5.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/cntr_11_0_5baa608aaa6fc4cf.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/mult_11_2_99ead271b49e8ec3.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_1_wrapper/xlpersistentdff.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_ipsdksebesegespozicio_plbw_1_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file
+"../system_ipsdksebesegespozicio_plbw_1_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_ipsdksebesegespozicio_plbw_2_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s500epq208-4 -intstyle silent -i -sd ..
+system_ipsdksebesegespozicio_plbw_2_wrapper.ngc
+../system_ipsdksebesegespozicio_plbw_2_wrapper
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+ipsdksebesegespozicio_plbw_2_wrapper/system_ipsdksebesegespozicio_plbw_2_wrapper
+.ngc" ...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/cntr_11_0_d7c176806556610b.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/addsb_11_0_178ba6eaed72af2d.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/addsb_11_0_09a98e96b9130e03.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/cntr_11_0_cee71699703bac4e.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/addsb_11_0_40c59820e74e5c61.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/mult_11_2_35e3d9e317f5b4b5.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/cntr_11_0_5baa608aaa6fc4cf.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/mult_11_2_99ead271b49e8ec3.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_2_wrapper/xlpersistentdff.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_ipsdksebesegespozicio_plbw_2_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   5 sec
+
+Writing NGCBUILD log file
+"../system_ipsdksebesegespozicio_plbw_2_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_ipsdksebesegespozicio_plbw_3_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc3s500epq208-4 -intstyle silent -i -sd ..
+system_ipsdksebesegespozicio_plbw_3_wrapper.ngc
+../system_ipsdksebesegespozicio_plbw_3_wrapper
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+ipsdksebesegespozicio_plbw_3_wrapper/system_ipsdksebesegespozicio_plbw_3_wrapper
+.ngc" ...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/cntr_11_0_d7c176806556610b.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/addsb_11_0_178ba6eaed72af2d.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/addsb_11_0_09a98e96b9130e03.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/cntr_11_0_cee71699703bac4e.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/addsb_11_0_40c59820e74e5c61.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/mult_11_2_35e3d9e317f5b4b5.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/cntr_11_0_5baa608aaa6fc4cf.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/mult_11_2_99ead271b49e8ec3.ngc"...
+Loading design module
+"C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\
+ipsdksebesegespozicio_plbw_3_wrapper/xlpersistentdff.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_ipsdksebesegespozicio_plbw_3_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file
+"../system_ipsdksebesegespozicio_plbw_3_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 156.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s500epq208-4 -implement xflow.opt system.ngc
+Release 14.7 - Xflow P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s500epq208-4 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File:
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/f
+pga.flw 
+Using Option File(s): 
+ C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s500epq208-4 -nt timestamp -bm system.bmm
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system.ngc" -uc system.ucf system.ngd 
+#----------------------------------------------#
+Release 14.7 - ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s500epq208-4 -nt timestamp -bm system.bmm
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/s
+ystem.ngc -uc system.ucf system.ngd
+
+Reading NGO file
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system.ngc" ...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_microblaze_0_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_mb_plb_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ilmb_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_dlmb_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_dlmb_cntlr_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ilmb_cntlr_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_lmb_bram_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_clock_generator_0_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_proc_sys_reset_0_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ntg_0_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_spizybo_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_led4gpio_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_cooler0pwm_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_pumppwm_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ipsdksebesegespozicio_plbw_0_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ipsdksebesegespozicio_plbw_1_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ipsdksebesegespozicio_plbw_2_wrapper.ngc"...
+Loading design module
+"C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/
+system_ipsdksebesegespozicio_plbw_3_wrapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_SP instance
+   clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST. The following new TNM
+   groups and period specifications were generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD
+   "clock_generator_0_clock_generator_0_SIG_DCM0_CLK0" TS_sys_clk_pin HIGH 50>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Ext_NM_
+   BRK_FDRSE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/default_clock_driver_pwmmodlmag_x0/xlclockd
+   river_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.f
+   dre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/late
+   ncy_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/default_clock_driver_pwmmodlmag_x0/xlclockdriver_
+   1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_co
+   mp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt
+   _0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[15].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[14].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[13].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[12].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[11].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[10].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/default
+   _clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.f
+   d_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[15].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[14].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[13].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[12].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[11].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[10].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/default
+   _clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.f
+   d_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[15].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[14].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[13].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[12].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[11].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[10].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/default
+   _clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.f
+   d_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[15].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[14].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[13].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[12].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[11].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[10].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_com
+   p/fd_prim_array[6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_g
+   t_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkse
+   besegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency
+   _gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/default
+   _clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.f
+   d_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  77
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  55 sec
+Total CPU time to NGDBUILD completion:   49 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.7 - Map P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s500epq208-4".
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP/ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP/ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP/ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP/ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP/ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP/ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP/ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP/ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP/ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP/ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP/ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP/ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP/ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP/ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP/ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP/ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+Writing file system_map.ngm...
+Running directed packing...
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[24].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[24].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[25].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[25].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[29].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[29].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[30].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[30].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[31].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[31].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[28].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[28].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[27].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[27].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[26].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[26].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[17].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[17].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[18].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[18].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[19].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[19].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[20].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[20].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[21].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[21].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[22].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[22].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[23].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[23].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 24 secs 
+Total CPU  time at the beginning of Placer: 22 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+...................
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y10>. The IO component
+   <ipsdksebesegespozicio_plbw_3_positiona_pin> is placed at site <P49>.  This
+   will not allow the use of the fast path between the IO and the Clock buffer.
+   This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <ipsdksebesegespozicio_plbw_3_positiona_pin.PAD> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN. The use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y10>. The IO component
+   <ipsdksebesegespozicio_plbw_3_positionb_pin> is placed at site <P48>.  This
+   will not allow the use of the fast path between the IO and the Clock buffer.
+   This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <ipsdksebesegespozicio_plbw_3_positionb_pin.PAD> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN. The use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y2>. The IO component <ipsdksebesegespozicio_plbw_0_positiona_pin>
+   is placed at site <P119>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y9>. The IO component <ipsdksebesegespozicio_plbw_0_positionb_pin>
+   is placed at site <P116>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y7>. The IO component <ipsdksebesegespozicio_plbw_0_speeda_pin> is
+   placed at site <P115>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y4>. The IO component <ipsdksebesegespozicio_plbw_0_speedb_pin> is
+   placed at site <P113>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y5>. The IO component <ipsdksebesegespozicio_plbw_1_speeda_pin> is
+   placed at site <P108>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y1>. The IO component <ipsdksebesegespozicio_plbw_1_speedb_pin> is
+   placed at site <P107>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y1>. The IO component <ipsdksebesegespozicio_plbw_2_positiona_pin>
+   is placed at site <P61>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y0>. The IO component <ipsdksebesegespozicio_plbw_2_positionb_pin>
+   is placed at site <P60>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y0>. The IO component <ipsdksebesegespozicio_plbw_2_speeda_pin> is
+   placed at site <P55>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X0Y3>. The IO component <ipsdksebesegespozicio_plbw_2_speedb_pin> is
+   placed at site <P50>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y6>. The IO component <ipsdksebesegespozicio_plbw_1_positiona_pin>
+   is placed at site <P112>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y3>. The IO component <ipsdksebesegespozicio_plbw_1_positionb_pin>
+   is placed at site <P109>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y11>. The IO component <ipsdksebesegespozicio_plbw_3_speeda_pin>
+   is placed at site <P47>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_3_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X0Y2>. The IO component <ipsdksebesegespozicio_plbw_3_speedb_pin> is
+   placed at site <P45>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_3_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:f3263c45) REAL time: 37 secs 
+
+...........................
+.............................................
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:f3263c45) REAL time: 1 mins 21 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:f3263c45) REAL time: 1 mins 21 secs 
+
+Phase 7.8  Global Placement
+.......................
+................................................
+.....
+..........
+Phase 7.8  Global Placement (Checksum:b57470ec) REAL time: 2 mins 9 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:b57470ec) REAL time: 2 mins 9 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:a089ea1e) REAL time: 2 mins 57 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:a089ea1e) REAL time: 2 mins 58 secs 
+
+Total REAL time to Placer completion: 2 mins 58 secs 
+Total CPU  time to Placer completion: 2 mins 43 secs 
+Running post-placement packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   50
+Logic Utilization:
+  Number of Slice Flip Flops:         4,610 out of   9,312   49
+  Number of 4 input LUTs:             5,246 out of   9,312   56
+Logic Distribution:
+  Number of occupied Slices:          3,971 out of   4,656   85
+    Number of Slices containing only related logic:   3,971 out of   3,971 100
+    Number of Slices containing unrelated logic:          0 out of   3,971   0
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,713 out of   9,312   61
+    Number used as logic:             4,838
+    Number used as a route-thru:        467
+    Number used for Dual Port RAMs:     256
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     152
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 48 out of     158   30
+    IOB Flip Flops:                       6
+  Number of RAMB16s:                     16 out of      20   80
+  Number of BUFGMUXs:                    17 out of      24   70
+  Number of DCMs:                         1 out of       4   25
+  Number of MULT18X18SIOs:               11 out of      20   55
+
+Average Fanout of Non-Clock Nets:                2.97
+
+Peak Memory Usage:  486 MB
+Total REAL time to MAP completion:  3 mins 5 secs 
+Total CPU time to MAP completion:   2 mins 50 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+
+
+
+#----------------------------------------------#
+# Starting program par
+# par -w -ol high system_map.ncd system.ncd system.pcf 
+#----------------------------------------------#
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/14.7/ISE_DS/EDK/data/parBmgr.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/data/parBmgr.acd>
+
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
+   "system" is an NCD, version 3.2, device xc3s500e, package pq208, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+
+Design Summary Report:
+
+ Number of External IOBs                          48 out of 158    30
+
+   Number of External Input IOBs                 25
+
+      Number of External Input IBUFs             25
+        Number of LOCed External Input IBUFs     25 out of 25    100
+
+
+   Number of External Output IOBs                23
+
+      Number of External Output IOBs             23
+        Number of LOCed External Output IOBs     23 out of 23    100
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                       17 out of 24     70
+   Number of DCMs                            1 out of 4      25
+   Number of MULT18X18SIOs                  11 out of 20     55
+   Number of RAMB16s                        16 out of 20     80
+   Number of Slices                       3971 out of 4656   85
+      Number of SLICEMs                    216 out of 2328    9
+
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 12 secs 
+Finished initial Timing Analysis.  REAL time: 13 secs 
+
+WARNING:Par:288 - The signal dlmb_LMB_ABus<30> has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal dlmb_LMB_ABus<31> has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 29288 unrouted;      REAL time: 20 secs 
+
+Phase  2  : 25341 unrouted;      REAL time: 21 secs 
+
+Phase  3  : 9042 unrouted;      REAL time: 26 secs 
+
+Phase  4  : 9042 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 27 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 45 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 46 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 49 secs 
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:fpga_0_clk_1_sys_clk_pin_IBUFG may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 49 secs 
+Total CPU time to Router completion: 46 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|      clk_50_0000MHz | BUFGMUX_X1Y11| No   | 3503 |  0.088     |  0.205      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_3_speeda_pin_ |              |      |      |            |             |
+|               BUFGP | BUFGMUX_X2Y11| No   |    4 |  0.000     |  0.141      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_3_speedb_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X0Y2| No   |    4 |  0.025     |  0.084      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_2_speeda_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X2Y0| No   |    4 |  0.000     |  0.140      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_2_speedb_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X0Y3| No   |    4 |  0.005     |  0.089      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_1_speeda_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X3Y5| No   |    4 |  0.000     |  0.080      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_1_speedb_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X2Y1| No   |    4 |  0.037     |  0.172      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_0_speeda_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X3Y7| No   |    4 |  0.000     |  0.122      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_0_speedb_pin_ |              |      |      |            |             |
+|               BUFGP |  BUFGMUX_X3Y4| No   |    4 |  0.049     |  0.126      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_3_positiona_p |              |      |      |            |             |
+|            in_BUFGP | BUFGMUX_X1Y10| No   |    4 |  0.000     |  0.158      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_3_positionb_p |              |      |      |            |             |
+|            in_BUFGP | BUFGMUX_X2Y10| No   |    4 |  0.001     |  0.136      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_2_positiona_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X1Y1| No   |    4 |  0.000     |  0.163      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_2_positionb_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X1Y0| No   |    4 |  0.048     |  0.165      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_1_positiona_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X3Y6| No   |    4 |  0.000     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_1_positionb_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X3Y3| No   |    4 |  0.019     |  0.139      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_0_positiona_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X3Y2| No   |    4 |  0.000     |  0.081      |
++---------------------+--------------+------+------+------------+-------------+
+|ipsdksebesegespozici |              |      |      |            |             |
+|o_plbw_0_positionb_p |              |      |      |            |             |
+|            in_BUFGP |  BUFGMUX_X3Y9| No   |    4 |  0.020     |  0.108      |
++---------------------+--------------+------+------+------------+-------------+
+|fpga_0_clk_1_sys_clk |              |      |      |            |             |
+|          _pin_IBUFG |         Local|      |    5 |  0.275     |  2.318      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     1.663ns|    18.337ns|       0|           0
+  G_DCM0_CLK0 = PERIOD TIMEGRP         "clo | HOLD        |     0.678ns|            |       0|           0
+  ck_generator_0_clock_generator_0_SIG_DCM0 |             |            |            |        |            
+  _CLK0" TS_sys_clk_pin         HIGH 50|             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    17.509ns|     2.491ns|       0|           0
+  pin" 50 MHz HIGH 50| HOLD        |     0.958ns|            |       0|           0
+                                            | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     20.000ns|      6.000ns|     18.337ns|            0|            0|            3|      4550939|
+| TS_clock_generator_0_clock_gen|     20.000ns|     18.337ns|          N/A|            0|            0|      4550939|            0|
+| erator_0_SIG_DCM0_CLK0        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 55 secs 
+Total CPU time to PAR completion: 49 secs 
+
+Peak Memory Usage:  443 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 21
+Number of info messages: 0
+
+Writing design to file system.ncd
+
+
+
+PAR done!
+
+
+
+#----------------------------------------------#
+# Starting program post_par_trce
+# trce -e 3 -xml system.twx system.ncd system.pcf 
+#----------------------------------------------#
+Release 14.7 - Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3e/data/spartan3e.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3e/data/spartan3e.acd>
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
+   "system" is an NCD, version 3.2, device xc3s500e, package pq208, speed -4
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml system.twx
+system.ncd system.pcf
+
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,speed:             xc3s500e,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             error report
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a
+   50 Ohm transmission line loading model.  For the details of this model, and
+   for more information on accounting for different loading conditions, please
+   see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
+   'Phase Error' calculations, these terms will be zero in the Clock Uncertainty
+   calculation.  Please make appropriate modification to SYSTEM_JITTER to
+   account for the unsupported Discrete Jitter and Phase Error.
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4550942 paths, 0 nets, and 28610 connections
+
+Design statistics:
+   Minimum period:  18.337ns (Maximum frequency:  54.535MHz)
+
+
+Analysis completed Sun Jun 21 17:12:50 2015
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Number of info messages: 5
+Total time: 16 secs 
+
+
+xflow done!
+touch __xps/system_routed
+xilperl C:/Xilinx/14.7/ISE_DS/EDK/data/fpga_impl/observe_par.pl -error no implementation/system.par
+Analyzing implementation/system.par
+"*********************************************"
+"Running Bitgen.."
+"*********************************************"
+cd implementation & bitgen -w -f bitgen.ut system & cd ..
+Release 14.7 - Bitgen P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3e/data/spartan3e.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3e/data/spartan3e.acd>
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
+   "system" is an NCD, version 3.2, device xc3s500e, package pq208, speed -4
+Opened constraints file system.pcf.
+
+Sun Jun 21 17:13:01 2015
+
+Running DRC.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<30>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<31>> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "system.bit".
+Bitstream generation is complete.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Jun 21 17:16:28 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Sun Jun 21 17:16:29 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Mon Jun 22 13:50:45 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Jun 22 13:50:46 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Thu Jun 25 12:43:03 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Thu Jun 25 12:43:04 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Fri Jun 26 13:11:29 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Jun 26 13:11:29 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Fri Jun 26 16:49:45 2015
+ make -f system.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+
+********************************************************************************
+At Local date and time: Mon Jun 29 08:58:19 2015
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Jun 29 08:58:20 2015
+ xsdk.exe -hwspec C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.filters
+Done writing Tab View settings to:
+	C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\etc\system.gui

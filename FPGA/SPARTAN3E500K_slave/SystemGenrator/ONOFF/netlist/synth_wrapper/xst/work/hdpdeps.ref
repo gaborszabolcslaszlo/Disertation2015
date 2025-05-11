@@ -1,0 +1,87 @@
+V3 46
+FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd 2015/03/02.11:24:18 P.68d
+PH work/conv_pkg 1425288263 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+PB work/conv_pkg 1425288264 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PH work/conv_pkg 1425288263
+EN work/single_reg_w_init 1425288265 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288264
+AR work/single_reg_w_init/structural 1425288266 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/single_reg_w_init 1425288265 CP fdre CP fdse
+EN work/synth_reg_w_init 1425288267 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288264
+AR work/synth_reg_w_init/structural 1425288268 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/synth_reg_w_init 1425288267 CP single_reg_w_init
+EN work/xlslicer 1425288269 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xlslicer/behavior 1425288270 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlslicer 1425288269
+EN work/xland2 1425288271 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xland2/behavior 1425288272 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xland2 1425288271
+EN work/xlreqgrantmanager 1425288273 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/xlreqgrantmanager/structural 1425288274 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlreqgrantmanager 1425288273
+EN work/xlmemmap 1425288275 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288264
+AR work/xlmemmap/behavioral 1425288276 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlmemmap 1425288275
+EN work/sysgen_hw_cosim_interface 1425288277 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288264
+AR work/sysgen_hw_cosim_interface/structural 1425288278 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/sysgen_hw_cosim_interface 1425288277 CP work/xlmemmap CP onoff_cw
+EN work/xliobuf 1425288279 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xliobuf/structural 1425288280 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xliobuf 1425288279 CP IOBUF
+EN work/xlibuf 1425288281 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xlibuf/structural 1425288282 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlibuf 1425288281 CP IBUF
+EN work/xlobuf 1425288283 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xlobuf/structural 1425288284 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlobuf 1425288283 CP OBUF
+EN work/xlibufds 1425288285 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xlibufds/structural 1425288286 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlibufds 1425288285 CP IBUFDS
+EN work/xlobufds 1425288287 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/xlobufds/structural 1425288288 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/xlobufds 1425288287 CP OBUFDS
+EN work/jtagcosim_top 1425288289 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      PB ieee/std_logic_1164 1370735607 PB work/conv_pkg 1425288264
+AR work/jtagcosim_top/structural 1425288290 \
+      FL E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd \
+      EN work/jtagcosim_top 1425288289 CP BUFG CP BUFGMUX CP xlibuf CP IBUFG \
+      CP jtagcosim_iface_spartan3 CP xlobuf CP work/sysgen_hw_cosim_interface

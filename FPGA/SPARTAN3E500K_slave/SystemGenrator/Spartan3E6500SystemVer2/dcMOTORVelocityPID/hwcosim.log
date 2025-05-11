@@ -1,0 +1,21 @@
+Digilent Plugin: Plugin Version: 2.4.4
+Digilent Plugin: no JTAG device was found.
+Unsupported frequency.  Using default frequency: 6 MHz.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_emb.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 11.5.0.0. WinDriver v11.5.0 Jungo Connectivity (c) 1997 - 2014 Build Date: Jan 26 2014 x86_64 64bit SYS 13:30:18, version = 1150.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of C:/Xilinx/14.7/ISE_DS/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Type = 0x0004.
+ ESN device is not available for this cable.

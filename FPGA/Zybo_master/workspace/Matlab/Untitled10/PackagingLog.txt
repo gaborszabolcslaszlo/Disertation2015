@@ -1,0 +1,9 @@
+ant:
+<ant>
+  <mkdir dir="C:\Diak\gl\Zybo_master\workspace\Matlab\Untitled10\for_redistribution" />
+  <mkdir dir="C:\Diak\gl\Zybo_master\workspace\Matlab\Untitled10\for_testing" />
+</ant>
+mcc -C -o Untitled10 -W WinMain:Untitled10 -T link:exe -d C:\Diak\gl\Zybo_master\workspace\Matlab\Untitled10\for_testing -v C:\Diak\gl\Zybo_master\workspace\Matlab\Untitled10.m 
+Test checkout of feature 'Compiler' failed.
+
+mcc failed.

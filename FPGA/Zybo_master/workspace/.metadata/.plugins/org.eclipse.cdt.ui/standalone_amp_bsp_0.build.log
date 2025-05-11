@@ -1,0 +1,6 @@
+12:51:32 **** Build of project standalone_amp_bsp_0 ****
+make -k all 
+Finished building libraries
+
+12:51:33 Build Finished (took 280ms)
+

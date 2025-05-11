@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'PositionControlerSimulation/counterPosition/Mux1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'PositionControlerSimulation/counterPosition/Mux1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

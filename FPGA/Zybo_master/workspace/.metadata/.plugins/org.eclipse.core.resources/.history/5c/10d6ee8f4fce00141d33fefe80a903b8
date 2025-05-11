@@ -1,0 +1,23 @@
+/*
+ * Empty C++ Application
+ */
+#include "xiicps.h"
+#include "xuartns550.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "UartSend.h"
+
+
+#define UART_PC       XPAR_AXI_UART16550_0_DEVICE_ID
+#define UART_GPS		XPAR_UARTNS550_0_DEVICE_ID
+
+
+
+int main()
+{
+	print("itt");
+	char* s ="heloooo";
+	u8* dataptr=(u8*)s;
+	SendString(UART_PC, dataptr,sizeof(s));
+	return 0;
+}

@@ -1,0 +1,14 @@
+16:36:17 **** Auto Build of configuration Debug for project projectrtos2 ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../RTOS_BSP_2/ps7_cortexa9_0/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.d" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+../src/freertos_hello_world.c:110:1: error: redefinition of 'print_ip'
+../src/freertos_hello_world.c:102:1: note: previous definition of 'print_ip' was here
+../src/freertos_hello_world.c: In function 'main':
+../src/freertos_hello_world.c:152:8: error: 'PLATFORM_EMAC_BASEADDR' undeclared (first use in this function)
+../src/freertos_hello_world.c:152:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/freertos_hello_world.o] Error 1
+
+16:36:18 Build Finished (took 330ms)
+

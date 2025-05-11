@@ -1,0 +1,323 @@
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc3s500epq208-4 -lang vhdl -intstyle default -lp
+Nexys2_BSB_Support_v_3_0/lib/ -msg __xps/ise/xmsgprops.lst system.mhs 
+
+Parse C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/system.mhs
+...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) dlmb_cntlr	dlmb
+  (0000000000-0x00007fff) ilmb_cntlr	ilmb
+  (0xcbe00000-0xcbe00fff) ipsdksebesegespozicio_plbw_3	mb_plb
+  (0xcbe12000-0xcbe123ff) LED4gpio	mb_plb
+  (0xcbe14000-0xcbe14fff) PumpPWM	mb_plb
+  (0xcbe18000-0xcbe19fff) SpiZybo	mb_plb
+  (0xcbe1d000-0xcbe1dfff) Cooler0PWM	mb_plb
+  (0xcbe20000-0xcbe20fff) ipsdksebesegespozicio_plbw_2	mb_plb
+  (0xcbe40000-0xcbe40fff) ipsdksebesegespozicio_plbw_1	mb_plb
+  (0xcbe60000-0xcbe60fff) ipsdksebesegespozicio_plbw_0	mb_plb
+
+
+WARNING:EDK:2137 - Peripheral ntg_0 is not accessible from any processor in the
+   system. Check Bus Interface connections and address parameters. 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_spi, INSTANCE:SpiZybo - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_spi_v2_02_a\data
+   \xps_spi_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:LED4gpio - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: pwmmodlmag_plbw, INSTANCE:Cooler0PWM - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmod
+   lmag_plbw_v2_00_a\data\pwmmodlmag_plbw_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: pwmmodlmag_plbw, INSTANCE:PumpPWM - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\pwmmod
+   lmag_plbw_v2_00_a\data\pwmmodlmag_plbw_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_1 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_2 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+INFO:EDK:4130 - IPNAME: ipsdksebesegespozicio_plbw,
+   INSTANCE:ipsdksebesegespozicio_plbw_3 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\pcores\ipsdks
+   ebesegespozicio_plbw_v55_00_a\data\ipsdksebesegespozicio_plbw_v2_1_0.mpd line
+   31 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 8 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+WARNING:EDK:4181 - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset -
+   floating connection -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs
+   line 149 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x00200000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The ilmb core has constraints automatically generated by XPS in
+implementation/ilmb_wrapper/ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The dlmb core has constraints automatically generated by XPS in
+implementation/dlmb_wrapper/dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:pwmmodlmag_plbw INSTANCE:cooler0pwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+183 - Copying (BBD-specified) netlist files.
+IPNAME:pwmmodlmag_plbw INSTANCE:pumppwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+192 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Copying (BBD-specified) netlist files.
+IPNAME:ipsdksebesegespozicio_plbw INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Copying (BBD-specified) netlist files.
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+65 - Copying cache implementation netlist
+IPNAME:plb_v46 INSTANCE:mb_plb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+78 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+85 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+92 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+99 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+108 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+117 - Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+139 - Copying cache implementation netlist
+IPNAME:ntg INSTANCE:ntg_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+152 - Copying cache implementation netlist
+IPNAME:xps_spi INSTANCE:spizybo -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+159 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:led4gpio -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+173 - Copying cache implementation netlist
+IPNAME:pwmmodlmag_plbw INSTANCE:cooler0pwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+183 - Copying cache implementation netlist
+IPNAME:pwmmodlmag_plbw INSTANCE:pumppwm -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+192 - Copying cache implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+117 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - Running XST synthesis
+INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Running XST synthesis
+INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Running XST synthesis
+INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Running XST synthesis
+INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+124 - Running NGCBUILD
+IPNAME:system_ipsdksebesegespozicio_plbw_0_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_0 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+201 - Running NGCBUILD
+IPNAME:system_ipsdksebesegespozicio_plbw_1_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_1 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+218 - Running NGCBUILD
+IPNAME:system_ipsdksebesegespozicio_plbw_2_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_2 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+235 - Running NGCBUILD
+IPNAME:system_ipsdksebesegespozicio_plbw_3_wrapper
+INSTANCE:ipsdksebesegespozicio_plbw_3 -
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\system.mhs line
+252 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 156.00 seconds

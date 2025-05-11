@@ -1,0 +1,1 @@
+run -ifn xst_sebessegespozicio.prj -ifmt mixed -ofn sebessegespozicio_cw.ngc -ofmt NGC -p xc3s500e-4pq208 -ent sebessegespozicio_cw -keep_hierarchy NO -iobuf YES -bus_delimiter () -top sebessegespozicio_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc sebessegespozicio_cw.xcf -write_timing_constraints yes

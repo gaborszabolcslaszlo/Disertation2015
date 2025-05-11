@@ -1,0 +1,20 @@
+C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\implementation\system.ngc 1434895642
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_microblaze_0_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_mb_plb_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ilmb_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_dlmb_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_dlmb_cntlr_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ilmb_cntlr_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_lmb_bram_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_clock_generator_0_wrapper.ngc 1434895419
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_proc_sys_reset_0_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ntg_0_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_spizybo_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_led4gpio_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_cooler0pwm_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_pumppwm_wrapper.ngc 1434895303
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ipsdksebesegespozicio_plbw_0_wrapper.ngc 1434895426
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ipsdksebesegespozicio_plbw_1_wrapper.ngc 1434895433
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ipsdksebesegespozicio_plbw_2_wrapper.ngc 1434895441
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/implementation/system_ipsdksebesegespozicio_plbw_3_wrapper.ngc 1434895448
+OK

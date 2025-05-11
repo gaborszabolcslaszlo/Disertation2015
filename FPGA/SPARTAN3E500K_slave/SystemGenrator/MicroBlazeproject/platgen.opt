@@ -1,0 +1,11 @@
+-p
+xc3s500epq208-4
+-lang
+vhdl
+-intstyle
+default
+-lp
+Nexys2_BSB_Support_v_3_0/lib/
+-msg
+__xps/ise/xmsgprops.lst
+system.mhs

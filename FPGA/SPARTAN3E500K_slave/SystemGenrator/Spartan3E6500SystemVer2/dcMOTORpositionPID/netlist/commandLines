@@ -1,0 +1,2 @@
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/motorpoz_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/Users/laca/Desktop/iRoobo2014Ver3/Fpga/SPARTAN3E/Spartan3E6500SystemVer2/dcMOTORpositionPID/netlist/motorpoz_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl

@@ -1,0 +1,22 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: caught standard exception
+     Block: Unspecified
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  Unspecified
+
+Details:
+standard exception: XNetlistEngine:
+Exception message could not be parsed:
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String'
+
+--------------------------------------------------------------------------------

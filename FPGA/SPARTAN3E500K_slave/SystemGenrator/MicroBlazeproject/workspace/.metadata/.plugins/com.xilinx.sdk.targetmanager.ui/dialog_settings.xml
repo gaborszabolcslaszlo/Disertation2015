@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Diak\gszl\MicroBlazeproject\workspace\MicroBlaze_project_hw_platform\system.bit" key="MicroBlaze_project_hw_platform-bitFile"/>
+	<item value="bootloop" key="MicroBlaze_project_hw_platform-microblaze_0-initElf"/>
+	<item value="C:\Diak\gszl\MicroBlazeproject\workspace\MicroBlaze_project_hw_platform\system_bd.bmm" key="MicroBlaze_project_hw_platform-bmmFile"/>
+</section>

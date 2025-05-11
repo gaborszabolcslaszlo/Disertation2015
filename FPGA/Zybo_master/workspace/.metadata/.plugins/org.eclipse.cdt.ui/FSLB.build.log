@@ -1,0 +1,17 @@
+22:07:19 **** Auto Build of configuration Debug for project FSLB ****
+make all 
+Building target: FSLB.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"C:\Diak\gl\Zybo_master\workspace\FSLB\src" -Wl,-T -Wl,../src/lscript.ld -L../../FSLB_bsp/ps7_cortexa9_0/lib -o "FSLB.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+../../FSLB_bsp/ps7_cortexa9_0/lib\libfreertos.a(tasks.o): In function `vTaskIncrementTick':
+C:\Diak\gl\Zybo_master\workspace\FSLB_bsp\ps7_cortexa9_0\libsrc\freertos_zynq_v1_00_a\src/tasks.c:1569: undefined reference to `vApplicationTickHook'
+C:\Diak\gl\Zybo_master\workspace\FSLB_bsp\ps7_cortexa9_0\libsrc\freertos_zynq_v1_00_a\src/tasks.c:1558: undefined reference to `vApplicationTickHook'
+../../FSLB_bsp/ps7_cortexa9_0/lib\libfreertos.a(heap_3.o): In function `pvPortMalloc':
+C:\Diak\gl\Zybo_master\workspace\FSLB_bsp\ps7_cortexa9_0\libsrc\freertos_zynq_v1_00_a\src/heap_3.c:95: undefined reference to `vApplicationMallocFailedHook'
+../../FSLB_bsp/ps7_cortexa9_0/lib\libfreertos.a(port.o): In function `xPortStartScheduler':
+C:\Diak\gl\Zybo_master\workspace\FSLB_bsp\ps7_cortexa9_0\libsrc\freertos_zynq_v1_00_a\src/port.c:195: undefined reference to `vApplicationSetupHardware'
+collect2.exe: error: ld returned 1 exit status
+make: *** [FSLB.elf] Error 1
+
+22:07:19 Build Finished (took 531ms)
+

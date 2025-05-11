@@ -1,0 +1,26 @@
+#
+# Filename:    sparten3e500kpq208c4ip3motrokmere.ucf
+# 
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              Sparten3e500kpq208c4
+#
+
+NET "sys_clk" LOC = "P184";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 50 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.
+NET LED(0) LOC = "P68"; # led contingent
+NET LED(1) LOC = "P78"; # led contingent
+NET LED(2) LOC = "P83"; # led contingent
+NET LED(3) LOC = "P89"; # led contingent
+NET Rst LOC = "P101"; # rst contingent
+NET sebsensor(0) LOC = "P47"; # sebsensor contingent
+NET sebsensor(1) LOC = "P45"; # sebsensor contingent
+NET PosistionSens(0) LOC = "P49"; # posistionsens contingent
+NET PosistionSens(1) LOC = "P48"; # posistionsens contingent
+NET PWMseb(0) LOC = "P134"; # pwmseb contingent
+NET PWMseb(1) LOC = "P133"; # pwmseb contingent
+NET PWMpos(0) LOC = "P137"; # pwmpos contingent
+NET PWMpos(1) LOC = "P135"; # pwmpos contingent

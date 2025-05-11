@@ -1,0 +1,22 @@
+
+
+# Global period constraint
+NET "clk" TNM_NET = "clk_be479027";
+TIMESPEC "TS_clk_be479027" = PERIOD "clk_be479027" 20.0 ns HIGH 50 %;
+
+# Offset in constraints
+
+# Offset out constraints
+
+# Offset inout constraints
+
+# LOC constraints
+NET "clk" LOC = "Fixed";
+NET "pmod2(7)" LOC = "P8";
+NET "pmod2(6)" LOC = "P11";
+NET "pmod2(5)" LOC = "P15";
+NET "pmod2(4)" LOC = "P18";
+NET "pmod2(3)" LOC = "P30";
+NET "pmod2(2)" LOC = "P28";
+NET "pmod2(1)" LOC = "P24";
+NET "pmod2(0)" LOC = "P22";

@@ -1,0 +1,26 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\processing_system7_0.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\processing_system7_0.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\processing_system7_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_uart16550_0.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_uart16550_0.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_uart16550_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_interconnect_1.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_interconnect_1.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_interconnect_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_iic_0.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_iic_0.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_iic_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_gpio_LED4.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_gpio_LED4.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_gpio_LED4.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_gpio_Switch.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_gpio_Switch.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_gpio_Switch.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\SpiSpartan.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\SpiSpartan.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\SpiSpartan.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_intc_0.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_intc_0.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_intc_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_iic_1.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\axi_iic_1.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\axi_iic_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\Diak\gl\Zybo_master\__xps\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

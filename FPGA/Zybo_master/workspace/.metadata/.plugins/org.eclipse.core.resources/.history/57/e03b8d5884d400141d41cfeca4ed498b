@@ -1,0 +1,640 @@
+
+#include "xparameters.h"
+#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xiic.h"
+#include "xuartns550.h"
+#include "xil_cache.h"
+#include "GyroReg.h"
+#include "string.h"
+#include "stdio.h"
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+//#include  "TinyGPS/TinyGPS.h"
+
+/****************************INTERUPT********************************************/
+#define INTC		         XScuGic
+INTC InterruptController;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerCounterInst;   /* The instance of the Timer Counter */
+volatile int TimerExpired;
+
+/**************************LED***************************************/
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define GPIO_LED_DEVICE_ID  XPAR_AXI_GPIO_LED4_DEVICE_ID
+/************************************************************************/
+
+/***************************SWITCH***************************************/
+#define GPIO_DEVICE_SWITCH_ID		 	XPAR_AXI_GPIO_SWITCH_DEVICE_ID
+#define INTC_GPIO_SWITCH_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_SWITCH_IP2INTC_IRPT_INTR
+#define INTC_HANDLER_SWITCH	XScuGic_InterruptHandler
+#define SW0  				0x01
+#define SW1  				0x02
+#define SW2  				0x04
+#define SW3  				0x08
+#define GPIO_ALL_BUTTONS	0x0F
+#define BUTTON_CHANNEL		1	/* Channel 1 of the GPIO Device */
+#define BUTTON_INTERRUPT	0x01  /* Channel 1 Interrupt Mask */
+static  XGpio				GpioSwitch; /* The Instance of the GPIO Driver */
+static u32 ButtonsBefore=0;
+volatile int InterruptCountSwitch; /* Count of interrupts that have occured */
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr);
+int	SetupInterruptSystem();
+/*************************************************************************/
+
+/**************************TIMER TS***************************************/
+#define TMRCTR_DEVICE_ID	 XPAR_AXI_TIMER_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID	 XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define INTC_DEVICE_ID		 XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define TIMER_CNTR_0	     0
+#define INTC_HANDLER	     XScuGic_InterruptHandler
+#define RESET_VALUE			 0xFF000000
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr,	XTmrCtr* InstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber);
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId);
+/***************************************************************************/
+
+/****************************IIC********************************************/
+#define IIC_BASE_ADDRESS XPAR_AXI_IIC_0_BASEADDR
+int GyroSensor(u32 IicBaseAddress,u8 TempSensorAddress,u8 *TemperaturePtr);
+
+/***************************GPS***************************************/
+#define UART_DEVICE_ID_Uart_GPS		XPAR_AXI_UART16550_0_DEVICE_ID
+#define UART_IRPT_INTR_Uart_GPS		XPAR_FABRIC_AXI_UART16550_0_IP2INTC_IRPT_INTR
+#define TEST_BUFFER_SIZE_GPS_UART 100
+XUartNs550 UartNs550GPS;	/* Instance of the GPS UART Device */
+u8 SendBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Transmitting Data */
+u8 RecvBufferGPSUart[TEST_BUFFER_SIZE_GPS_UART];	/* Buffer for Receiving Data */
+static volatile int TotalReceivedCountGPS;
+static volatile int TotalSentCountGPS;
+static volatile int TotalErrorCountGPS;
+int UartNs550IntrUartGPS(INTC *IntcInstancePtr,	XUartNs550 *UartInstancePtr,u16 UartDeviceId,u16 UartIntrId);
+void UartNs550IntrHandlerUartGPS(void *CallBackRef, u32 Event, unsigned int EventData);
+static int UartNs550SetupIntrSystemUartGPS(INTC *IntcInstancePtr,XUartNs550 *UartInstancePtr,	u16 UartIntrId);
+static void UartNs550DisableIntrSystemUartGPS(INTC *IntcInstancePtr, u16 UartIntrId);
+XUartNs550 UartNs550InstanceGPS;	/* Instance of the UART Device */
+
+//GPS data
+void parseGPS(char *cmd, int n);
+#define GPS_DATA_BUFF_SIZE 50
+u8* GPS_DATA_BUF[GPS_DATA_BUFF_SIZE];
+
+u8* ptrideig; //[GPS_DATA_BUFF_SIZE];
+int GPS_DATA_LENGTH;
+/*********************************************************************/
+
+/***************************Varables***************************************/
+
+#define UART_DEVICE_UARTGPS_ID		XPAR_AXI_UART16550_0_DEVICE_ID
+XUartNs550 UartNs550;
+u32 Data=0x00;
+#define XPAR_XPS_IIC_0_BASEADDR     XPAR_PS7_I2C_0_DEVICE_ID
+/**************************************************************************/
+int main()
+{
+//	GPS_DATA_BUF= (u8*)malloc(sizeof(u8*)*50); //[ GPS_DATA_BUFF_SIZE];
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
+	int Status;
+	//4LED
+	xil_printf("4 LED Init.....");
+	Status = XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+	xil_printf("OK\r\n");
+	XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	//TsTimer
+	xil_printf("TsTimer Init.....");
+	Status = TmrCtrIntr(&InterruptController, &TimerCounterInst,TMRCTR_DEVICE_ID, TMRCTR_INTERRUPT_ID, TIMER_CNTR_0);
+	if (Status != XST_SUCCESS){xil_printf("Error\r\n"); return XST_FAILURE;	}
+	xil_printf("OK\r\n");
+	//4SWITCH
+	xil_printf("4 SWITCH BUTTON Init.....");
+	Status = XGpio_Initialize(&GpioSwitch, GPIO_DEVICE_SWITCH_ID	);
+    XGpio_SelfTest(&GpioSwitch);
+	XGpio_SetDataDirection(&GpioSwitch, BUTTON_CHANNEL, GPIO_ALL_BUTTONS);
+	Status = SetupInterruptSystem();
+	if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;}
+		xil_printf("OK\r\n");
+    //Uart Gps
+	xil_printf("Uart_GPS Init Proba.....");
+	//Status = UartNs550IntrUartGPS(&InterruptController,&UartNs550InstanceGPS,UART_DEVICE_ID_Uart_GPS,	UART_IRPT_INTR_Uart_GPS	);
+	///if (Status != XST_SUCCESS) {xil_printf("Error\r\n"); return XST_FAILURE;	}
+	xil_printf("OK\r\n");
+
+
+
+	u8   data[] = "Hello World";
+	int SentCount = 0;
+    #define TEST_BUFFER_SIZE 16
+	u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+	u8 RecvBuffer[TEST_BUFFER_SIZE];	/* Buffer for Receiving Data */
+	unsigned int ReceivedCount = 0;
+
+//	Status = XUartNs550_Initialize(&UartNs550, UART_DEVICE_UARTGPS_ID);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+	while(1)
+		{
+
+		//xil_printf("cik.....\r\n");
+		//GyroSensor( IIC_BASE_ADDRESS, 0x07, 0x01);
+		//XGpio_DiscreteWrite(&Gpio, LED_CHANNEL,XGpio_DiscreteRead(&GpioSW, BUTTON_SW_CHANNEL)|XGpio_DiscreteRead(&Gpio, BUTTON_SW_CHANNEL));
+		}
+	  Xil_DCacheDisable();
+	  Xil_ICacheDisable();
+	return XST_SUCCESS;
+}
+/***********************TsTimer*******************************************/
+int TmrCtrIntr(INTC* IntcInstancePtr,XTmrCtr* TmrCtrInstancePtr,u16 DeviceId,u16 IntrId,u8 TmrCtrNumber)
+{
+	int Status;
+	int LastTimerExpired = 0;
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	Status = TmrCtrSetupIntrSystem(IntcInstancePtr,TmrCtrInstancePtr,DeviceId,IntrId,TmrCtrNumber);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XTmrCtr_SetHandler(TmrCtrInstancePtr, TsTimerCounterHandler,TmrCtrInstancePtr);
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber,	XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+	XTmrCtr_SetResetValue(TmrCtrInstancePtr, TmrCtrNumber, RESET_VALUE);
+	//XTmrCtr_Start(TmrCtrInstancePtr, TmrCtrNumber);
+	//while (1){
+	//	while (TimerExpired == LastTimerExpired) {
+	//	}
+	//	LastTimerExpired = TimerExpired;
+	//	if (TimerExpired == 3) {
+	//		XTmrCtr_Stop(TmrCtrInstancePtr, TmrCtrNumber);
+	//		break;
+	//	}
+	//}
+	//TmrCtrDisableIntr(IntcInstancePtr, DeviceId);
+	return XST_SUCCESS;
+}
+void TsTimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
+{
+	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
+	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
+		TimerExpired++;
+		xil_printf("TSTimer\r\n");
+	//	u32 count=XUartNs550_Send(&UartNs550InstanceGPS, SendBufferGPSUart, TEST_BUFFER_SIZE);
+			//			xil_printf("Send Uart: %d\r\n", count);
+		if (Data & LED) {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data & ~LED);
+					Data=Data & ~LED;
+				} else {
+					XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, Data | LED);
+					Data=Data | LED;
+				}
+
+
+		//if(TimerExpired == 3) {
+		//	XTmrCtr_SetOptions(InstancePtr, TmrCtrNumber, 0);
+		//}
+	}
+}
+static int TmrCtrSetupIntrSystem(INTC* IntcInstancePtr, XTmrCtr* TmrCtrInstancePtr, u16 DeviceId, u16 IntrId, u8 TmrCtrNumber)
+{
+	 int Status;
+
+	XScuGic_Config *IntcConfig;
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+					IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, IntrId,
+					0xA0, 0x3);
+
+	/*
+	 * Connect the interrupt handler that will be called when an
+	 * interrupt occurs for the device.
+	 */
+	Status = XScuGic_Connect(IntcInstancePtr, IntrId,
+				 (Xil_ExceptionHandler)XTmrCtr_InterruptHandler,
+				 TmrCtrInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	/*
+	 * Enable the interrupt for the Timer device.
+	 */
+	XScuGic_Enable(IntcInstancePtr, IntrId);
+
+	/*
+	 * Initialize the exception table.
+	 */
+	Xil_ExceptionInit();
+
+	/*
+	 * Register the interrupt controller handler with the exception table.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+					(Xil_ExceptionHandler)
+					INTC_HANDLER,
+					IntcInstancePtr);
+
+	/*
+	 * Enable non-critical exceptions.
+	 */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+void TmrCtrDisableIntr(INTC* IntcInstancePtr, u16 IntrId)
+{
+
+	XScuGic_Disable(IntcInstancePtr, IntrId);
+	XScuGic_Disconnect(IntcInstancePtr, IntrId);
+
+	return;
+}
+/***********************4SWITCHBUTTON*************************************************/
+void Gpio_4SWITCHBut_HANDLER(void *InstancePtr)
+{
+	XGpio *GpioPtr = (XGpio *)InstancePtr;
+	u32 Buttons; // 16 Stat 0..15
+	//u32 ButtonsBefore;
+	u32 eventButon;
+	XGpio_InterruptDisable(GpioPtr, BUTTON_INTERRUPT);
+	InterruptCountSwitch++;
+	if ((XGpio_InterruptGetStatus(GpioPtr) & BUTTON_INTERRUPT) !=BUTTON_INTERRUPT)
+	{
+		return;
+	}
+	Buttons = XGpio_DiscreteRead(GpioPtr, BUTTON_CHANNEL);
+	eventButon=Buttons^ButtonsBefore;
+	xil_printf("interupt SWITCH: %d , event %d\r\n",Buttons,eventButon);
+	if(eventButon==SW1)//ON
+		if((Buttons&SW1)==SW1)
+		{
+
+			XUartNs550_Send(&UartNs550InstanceGPS, SendBufferGPSUart, 1);
+			xil_printf("Send Uart: %d\r\n");
+
+		}
+		else
+		{
+
+			 /*u16 x=0;
+			u8 c;
+			u8 buff[14],bufs[3], rbuff[14];
+			gyroReg o;
+			gyroVal v;
+			xil_printf("P1: %d\r\n");
+			 bufs[0]= MPU6050_RA_PWR_MGMT_1  ;
+			 bufs[1]=0x00;
+			 //Giro inditas
+			 bufs[0]=MPU6050_RA_GYRO_CONFIG;
+			 bufs[1]=0x00;
+			 XIic_Send(XPAR_XPS_IIC_0_BASEADDR, 0x68, &bufs[0], 2, XIIC_STOP);
+			  bufs[0]=MPU6050_RA_ACCEL_CONFIG;
+			  bufs[1]=0x00;
+			 XIic_Send(XPAR_XPS_IIC_0_BASEADDR, 0x68, &bufs[0], 2, XIIC_STOP);
+			 XIic_Send(XPAR_XPS_IIC_0_BASEADDR, 0x68, &bufs[0], 2, XIIC_STOP); //csak ciomet kuldok
+			bufs[0]=0x6B;
+					bufs[1]=0x00;
+			        	buff[0] = MPU6050_RA_ACCEL_XOUT_H;
+			        	buff[1] = MPU6050_RA_ACCEL_XOUT_H+1;
+			        	        	buff[2] = MPU6050_RA_ACCEL_XOUT_H+2;
+			        	        	buff[3] = MPU6050_RA_ACCEL_XOUT_H+3;
+			        	        	buff[4] = MPU6050_RA_ACCEL_XOUT_H+4;
+			        	        	buff[5] = MPU6050_RA_ACCEL_XOUT_H+5;
+			        	        	buff[6] = MPU6050_RA_ACCEL_XOUT_H+6;
+			        	        	buff[7] = MPU6050_RA_ACCEL_XOUT_H+7;
+			        	        	buff[8] = MPU6050_RA_ACCEL_XOUT_H+8;
+			        	        	buff[9] = MPU6050_RA_ACCEL_XOUT_H+9;
+			        	        	buff[10] = MPU6050_RA_ACCEL_XOUT_H+10;
+			        	        	buff[11] = MPU6050_RA_ACCEL_XOUT_H+11;
+			        	        	buff[12] = MPU6050_RA_ACCEL_XOUT_H+12;
+			        	        	buff[13] = MPU6050_RA_ACCEL_XOUT_H+13;
+			        	        	xil_printf("P2: %d\r\n");
+						XIic_Send(XPAR_XPS_IIC_0_BASEADDR, 0x68, &bufs[0], 2, XIIC_STOP); //csak ciomet kuldok
+						xil_printf("P3: %d\r\n");
+						XIic_Send(XPAR_XPS_IIC_0_BASEADDR, 0x68, &buff[0], 1, XIIC_STOP); //csak ciomet kuldok
+						xil_printf("P4: %d\r\n");
+						XIic_Recv(XPAR_XPS_IIC_0_BASEADDR, 0x68, &rbuff[0], 14, XIIC_STOP);
+						xil_printf("P5: %d\r\n");
+
+						 o.x_accel_h=rbuff[0];
+						 o.x_accel_l=rbuff[1];
+						 o.y_accel_h=rbuff[2];
+						 o.y_accel_l=rbuff[3];
+						 o.z_accel_h=rbuff[4];
+						 o.z_accel_l=rbuff[5];
+						 o.t_h=rbuff[6];
+						 o.t_l=rbuff[7];
+						 o.x_gyro_h=rbuff[8];
+						 o.x_gyro_l=rbuff[9];
+						 o.y_gyro_h=rbuff[10];
+						 o.y_gyro_l=rbuff[11];
+						 o.z_gyro_h=rbuff[12];
+						 o.z_gyro_l=rbuff[13];
+
+						 v.x_accel=((u16)(o.x_accel_h))*256+o.x_accel_l;
+						 v.y_accel=((u16)(o.y_accel_h))*256+o.y_accel_l;
+						 v.z_accel=((u16)(o.z_accel_h))*256+o.z_accel_l;
+						 v.x_gyro=((u16)(o.x_gyro_h))*256+o.x_gyro_l;
+						 v.y_gyro=((u16)(o.y_gyro_h))*256+o.y_gyro_l;
+						 v.z_gyro=((u16)(o.z_gyro_h))*256+o.z_gyro_l;
+						 v.temperature=((u16)(o.t_h))*256+o.t_l;
+
+						//xil_printf("temp X: %d\r\n",v.x_accel);
+						//xil_printf("Axcel X: %d ",v.x_accel);
+						//xil_printf(" Y: %d ",v.y_accel);
+						//xil_printf(" Z: %d",v.z_accel);
+						//xil_printf("Gyro X: %d ",v.x_gyro);
+						//xil_printf(" Y: %d",v.y_gyro);
+						//xil_printf(" Z: %d",v.z_gyro);
+						//xil_printf(" TEMP: %d \r\n",v.temperature);
+
+
+
+
+					//	xil_printf("%i",v.x_accel); */
+		}
+
+	if(eventButon==SW0)//ON
+	{
+	 if((Buttons&SW0)==SW0)
+		{
+		 XTmrCtr_Start(&TimerCounterInst,TIMER_CNTR_0); xil_printf("Start Timer \r\n");
+		}
+		else//OFF
+		{
+			XTmrCtr_Stop(&TimerCounterInst,TIMER_CNTR_0);  xil_printf("Stop Timer \r\n");
+		}
+	}
+
+
+
+	ButtonsBefore=Buttons;
+	(void)XGpio_InterruptClear(GpioPtr, BUTTON_INTERRUPT);
+	 XGpio_InterruptEnable(GpioPtr, BUTTON_INTERRUPT);
+}
+int SetupInterruptSystem()
+{
+	int Result;
+	INTC *IntcInstancePtrSwitch = &InterruptController;
+	XScuGic_Config *IntcConfig;
+//	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_SWITCH_ID);
+//	if (NULL == IntcConfig) {
+//		return XST_FAILURE;
+//	}
+//	Result = XScuGic_CfgInitialize(IntcInstancePtrSwitch, IntcConfig,	IntcConfig->CpuBaseAddress);
+//	if (Result != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+	Result = XScuGic_Connect(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID,(Xil_ExceptionHandler)Gpio_4SWITCHBut_HANDLER, &GpioSwitch);
+	if (Result != XST_SUCCESS) {
+		return Result;
+	}
+	XScuGic_Enable(IntcInstancePtrSwitch, INTC_GPIO_SWITCH_INTERRUPT_ID);
+	XGpio_InterruptEnable(&GpioSwitch, BUTTON_INTERRUPT);
+	XGpio_InterruptGlobalEnable(&GpioSwitch);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)INTC_HANDLER_SWITCH, IntcInstancePtrSwitch);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+/********************************Gyro****************************************/
+int GyroSensor(u32 IicBaseAddress,u8  TempSensorAddress,	u8 *TemperaturePtr)
+{
+	int ByteCount;
+	ByteCount = XIic_Send(IicBaseAddress, TempSensorAddress,TemperaturePtr, 1, XIIC_STOP);
+	ByteCount = XIic_Recv(IicBaseAddress, TempSensorAddress,TemperaturePtr, 1, XIIC_STOP);
+	return ByteCount;
+}
+/****************************************************************************/
+
+/********************************UartGPS****************************************/
+
+int UartNs550IntrUartGPS(INTC *IntcInstancePtr,	XUartNs550 *UartInstancePtr,u16 UartDeviceId,u16 UartIntrId)
+{
+	int Status;
+	u32 Index;
+	u16 Options;
+	u32 BadByteCount = 0;
+
+	Status = XUartNs550_Initialize(UartInstancePtr, UartDeviceId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	Status = XUartNs550_SelfTest(UartInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	Status = UartNs550SetupIntrSystemUartGPS(IntcInstancePtr,UartInstancePtr,UartIntrId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XUartNs550_SetHandler(UartInstancePtr, UartNs550IntrHandlerUartGPS, UartInstancePtr);
+
+
+	Options = XUN_OPTION_DATA_INTR |XUN_OPTION_FIFOS_ENABLE; //XUN_OPTION_LOOPBACK |
+	XUartNs550_SetOptions(UartInstancePtr, Options);
+
+	XUartNs550_SetBaudRate(UartInstancePtr,9600);
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		SendBufferGPSUart[Index] = 0;
+		RecvBufferGPSUart[Index] = 0;
+	}
+
+	//XUartNs550_Recv(UartInstancePtr, RecvBufferGPSUart, TEST_BUFFER_SIZE);
+
+
+	//XUartNs550_Send(UartInstancePtr, SendBufferGPSUart, TEST_BUFFER_SIZE);
+
+
+	//while ((TotalReceivedCount != TEST_BUFFER_SIZE) ||	(TotalSentCount != TEST_BUFFER_SIZE))
+	//{
+	//}
+//	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+//		if (RecvBufferGPSUart[Index] != SendBufferGPSUart[Index]) {
+//			BadByteCount++;
+//		}
+//	}
+
+
+	//UartNs550DisableIntrSystemUartGPS(IntcInstancePtr, UartIntrId);
+
+
+ //if(BadByteCount != 0) {
+	//	return XST_FAILURE;
+	//}
+
+	return XST_SUCCESS;
+}
+void UartNs550IntrHandlerUartGPS(void *CallBackRef, u32 Event, unsigned int EventData)
+{
+	u8 Errors;
+	XUartNs550 *UartNs550Ptr = (XUartNs550 *)CallBackRef;
+
+	xil_printf("--------------------------------\r\n");
+	if (Event == XUN_EVENT_SENT_DATA) {
+		TotalSentCountGPS = EventData;
+	}
+
+
+	if (Event == XUN_EVENT_RECV_DATA) {
+		TotalReceivedCountGPS = EventData;
+	}
+
+
+	if (Event == XUN_EVENT_RECV_TIMEOUT) {
+		TotalReceivedCountGPS = EventData;
+	}
+
+
+	if (Event == XUN_EVENT_RECV_ERROR) {
+		TotalReceivedCountGPS = EventData;
+		TotalErrorCountGPS++;
+		Errors = XUartNs550_GetLastErrors(UartNs550Ptr);
+	}
+
+	int count=XUartNs550_Recv(&UartNs550InstanceGPS, RecvBufferGPSUart, TEST_BUFFER_SIZE_GPS_UART);
+	u8* ptrc;
+	u8 data[50];
+	//strcat(&GPS_DATA_BUF,&RecvBufferGPSUart);
+	int i=0;
+	xil_printf("Receved buffer%s\r\n",&RecvBufferGPSUart);
+	for(i;i<count;i++)
+	{
+		GPS_DATA_BUF[GPS_DATA_LENGTH+i]=RecvBufferGPSUart[i];
+		memccpy(data,GPS_DATA_BUF,'\n',50);
+	}
+	//memcpy(ptrideig,ptrc+1,GPS_DATA_LENGTH-(GPS_DATA_BUF-ptrc));
+	GPS_DATA_LENGTH+=count;
+	//xil_printf("Data buffer%s\r\n",GPS_DATA_BUF);
+	ptrc=strstr(GPS_DATA_BUF,'\n');
+	if(ptrc!=0)
+	{
+		char* data;
+		//data=(u8*)malloc(sizeof(u8)*50);
+		memccpy(data,GPS_DATA_BUF,'\n',50);
+		xil_printf("data %s,%c,%c,%c,%c\r\n",&data,data[0],data[1],data[2],data[3]);
+	//	memcpy(ptrideig,ptrc+1,GPS_DATA_LENGTH-(GPS_DATA_BUF-ptrc));
+	//	GPS_DATA_LENGTH-=&GPS_DATA_BUF-&ptrc;
+	//	GPS_DATA_BUF=ptrideig;
+	}
+	else
+	{
+	//	strcat(GPS_DATA_BUF,RecvBufferGPSUart);
+		xil_printf("data buff %s\r\n",&GPS_DATA_BUF);
+	}
+
+}
+static void UartNs550DisableIntrSystemUartGPS(INTC *IntcInstancePtr, u16 UartIntrId)
+{
+#ifdef XPAR_INTC_0_DEVICE_ID
+	XIntc_Disconnect(IntcInstancePtr, UartIntrId);
+#else
+	XScuGic_Disable(IntcInstancePtr, UartIntrId);
+	XScuGic_Disconnect(IntcInstancePtr, UartIntrId);
+
+#endif
+}
+static int UartNs550SetupIntrSystemUartGPS(INTC *IntcInstancePtr,XUartNs550 *UartInstancePtr,u16 UartIntrId)
+{
+	int Status;
+	XScuGic_Config *IntcConfig;
+
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+//	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,	IntcConfig->CpuBaseAddress);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+	//XScuGic_SetPriorityTriggerType(IntcInstancePtr, UartIntrId,	0xA0, 0x3);
+
+	Status = XScuGic_Connect(IntcInstancePtr, UartIntrId, (Xil_ExceptionHandler)XUartNs550_InterruptHandler, UartInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	XScuGic_Enable(IntcInstancePtr, UartIntrId);
+
+	Xil_ExceptionInit();
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)INTC_HANDLER, IntcInstancePtr);
+
+	Xil_ExceptionEnable();
+
+
+	return XST_SUCCESS;
+}
+
+/******************************************************************************/
+
+void parseGPS(char *cmd, int n)
+{
+
+    char ns, ew, tf, status;
+    int fq, nst, fix, date;                                     // fix quality, Number of satellites being tracked, 3D fix
+    float latitude, longitude, timefix, speed, altitude;
+
+
+    // Global Positioning System Fix Data
+    if(strncmp(cmd,"$GPGGA", 6) == 0)
+    {
+        sscanf(cmd, "$GPGGA,%f,%f,%c,%f,%c,%d,%d,%*f,%f", &timefix, &latitude, &ns, &longitude, &ew, &fq, &nst, &altitude);
+        xil_printf("GPGGA Fix taken at: %f, Latitude: %f %c, Longitude: %f %c, Fix quality: %d, Number of sat: %d, Altitude: %f M\n", timefix, latitude, ns, longitude, ew, fq, nst, altitude);
+    }
+
+    // Satellite status
+    if(strncmp(cmd,"$GPGSA", 6) == 0)
+    {
+        sscanf(cmd, "$GPGSA,%c,%d,%d", &tf, &fix, &nst);
+        xil_printf("GPGSA Type fix: %c, 3D fix: %d, number of sat: %d\r\n", tf, fix, nst);
+    }
+
+    // Geographic position, Latitude and Longitude
+    if(strncmp(cmd,"$GPGLL", 6) == 0)
+    {
+        sscanf(cmd, "$GPGLL,%f,%c,%f,%c,%f", &latitude, &ns, &longitude, &ew, &timefix);
+        xil_printf("GPGLL Latitude: %f %c, Longitude: %f %c, Fix taken at: %f\n", latitude, ns, longitude, ew, timefix);
+    }
+
+    // Geographic position, Latitude and Longitude
+    if(strncmp(cmd,"$GPRMC", 6) == 0)
+    {
+        sscanf(cmd, "$GPRMC,%f,%c,%f,%c,%f,%c,%f,,%d", &timefix, &status, &latitude, &ns, &longitude, &ew, &speed, &date);
+        xil_printf("GPRMC Fix taken at: %f, Status: %c, Latitude: %f %c, Longitude: %f %c, Speed: %f, Date: %d\n", timefix, status, latitude, ns, longitude, ew, speed, date);
+    }
+}
+
+

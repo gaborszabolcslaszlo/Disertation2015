@@ -1,0 +1,8 @@
+INTSTYLE=xflow
+INFILE=C:\Users\laca\Desktop\iRoobo2014Ver3\Fpga\SPARTAN3E\Spartan3E6500SystemVer2\dcMOTORVelocityPID\netlist\xflow\jtagcosim_top.ncd
+OUTFILE=C:\Users\laca\Desktop\iRoobo2014Ver3\Fpga\SPARTAN3E\Spartan3E6500SystemVer2\dcMOTORVelocityPID\netlist\xflow\jtagcosim_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4pq208
+WORKINGDIR=C:\Users\laca\Desktop\iRoobo2014Ver3\Fpga\SPARTAN3E\Spartan3E6500SystemVer2\dcMOTORVelocityPID\netlist\xflow
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,21 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Index out of bounds exception
+     Block: 'SebessegEsPozicioSimulationSW/NullSignal'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'SebessegEsPozicioSimulationSW/NullSignal'
+
+Details:
+Attempted to extract bit 4 from port a
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

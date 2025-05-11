@@ -1,0 +1,2 @@
+13:15:23.308 ERROR - Workspace location C:\Diak\gl\Zybo_master\k tutorial contains spaces. Please switch to a workspace without spaces in its path. 
+13:15:23.389 INFO  - Processing command line option -hwspec C:\Diak\gl\Zybo_master\SDK\SDK_Export\hw\system.xml. 

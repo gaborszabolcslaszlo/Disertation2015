@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]C:\Diak\gl\Zybo_master\workspace\FSBL\Release\FSBL.elf
+	C:\Diak\gl\Zybo_master\workspace\GaborSZ_hw_platform\system.bit
+	C:\Diak\gl\Zybo_master\workspace\TCPecho\Debug\TCPecho.elf
+}

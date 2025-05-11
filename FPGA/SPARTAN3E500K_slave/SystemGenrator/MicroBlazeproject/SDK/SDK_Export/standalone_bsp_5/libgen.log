@@ -1,0 +1,15 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../MicroBlazeproject_hw_platform/system.xml -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject -lp
+C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/MicroBlazeproject/drivers -lp
+C:/Diak/gl/Zybo_master/workspace/xap/design/src/sdk_repo -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - pwmmodlmag_plbw -
+   C:\Diak\gl\SPARTAN3E500K_slave\SystemGenrator\MicroBlazeproject\SDK\SDK_Expor
+   t\standalone_bsp_5\system.mss line 67 - No IP instance named
+   pwmmodlmag_plbw_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.

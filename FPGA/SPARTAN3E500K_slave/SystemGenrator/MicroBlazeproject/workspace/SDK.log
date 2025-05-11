@@ -1,0 +1,64 @@
+11:58:41.827 INFO  - Processing command line option -hwspec C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+12:03:48.512 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 
+12:03:58.310 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+12:04:22.092 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 
+12:05:34.104 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:23:21.878 INFO  - Processing command line option -hwspec C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+12:23:23.058 INFO  - The hardware specification for project 'MicroBlaze_project_hw_platform' is different from C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+12:23:23.098 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml into \MicroBlaze_project_hw_platform\system.xml. 
+12:23:23.101 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.bit into \MicroBlaze_project_hw_platform\system.bit. 
+12:23:23.103 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system_bd.bmm into \MicroBlaze_project_hw_platform\system_bd.bmm. 
+12:23:23.645 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:23:25.395 INFO  - Updating hardware inferred compiler options for test. 
+12:23:25.434 INFO  - Clearing existing target manager status. 
+12:23:39.629 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 
+12:24:22.611 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 
+12:24:28.253 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+12:42:06.101 INFO  - Project MicroBlaze_project_hw_platform's source hardware specification located at C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:51:41.369 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml into \MicroBlaze_project_hw_platform\system.xml. 
+12:51:41.451 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.bit into \MicroBlaze_project_hw_platform\system.bit. 
+12:51:41.465 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system_bd.bmm into \MicroBlaze_project_hw_platform\system_bd.bmm. 
+12:51:41.765 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:51:43.395 INFO  - Updating hardware inferred compiler options for test. 
+12:51:43.423 INFO  - Clearing existing target manager status. 
+12:51:46.314 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:30:13.844 INFO  - Processing command line option -hwspec C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+13:30:15.171 INFO  - The hardware specification for project 'MicroBlaze_project_hw_platform' is different from C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+13:30:15.213 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml into \MicroBlaze_project_hw_platform\system.xml. 
+13:30:15.216 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.bit into \MicroBlaze_project_hw_platform\system.bit. 
+13:30:15.218 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system_bd.bmm into \MicroBlaze_project_hw_platform\system_bd.bmm. 
+13:30:15.793 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:30:26.834 INFO  - Updating hardware inferred compiler options for test. 
+13:30:26.858 INFO  - Clearing existing target manager status. 
+13:30:58.575 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 
+13:41:54.420 INFO  - Project MicroBlaze_project_hw_platform's source hardware specification located at C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:45:43.679 INFO  - Project MicroBlaze_project_hw_platform's source hardware specification location will not be monitored anymore. 
+13:45:53.447 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:52:43.047 INFO  - Processing command line option -hwspec C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+13:52:44.122 INFO  - The hardware specification for project 'MicroBlaze_project_hw_platform' is different from C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml. 
+13:52:44.146 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.xml into \MicroBlaze_project_hw_platform\system.xml. 
+13:52:44.149 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system.bit into \MicroBlaze_project_hw_platform\system.bit. 
+13:52:44.151 INFO  - Copied contents of C:\Diak\gszl\MicroBlazeproject\SDK\SDK_Export\hw\system_bd.bmm into \MicroBlaze_project_hw_platform\system_bd.bmm. 
+13:52:44.499 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:52:45.598 INFO  - Updating MSS for Board Support Package Project: test_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: xps_iic_0, driver: iic_v2_07_a.
+			Peripheral Instance: xps_uartlite_0, driver: uartlite_v2_01_a.
+ 
+13:52:46.448 INFO  - Updating hardware inferred compiler options for test. 
+13:52:46.488 INFO  - Clearing existing target manager status. 
+14:03:27.306 INFO  - Settings changed on project test_bsp. Triggering a rebuild... 
+14:03:27.763 INFO  - Refreshed build settings on project test 
+14:04:36.959 INFO  - FPGA configured successfully with bitstream "C:/Diak/gszl/MicroBlazeproject/workspace/MicroBlaze_project_hw_platform/download.bit" 

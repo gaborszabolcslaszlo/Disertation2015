@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clock_generator_0/DCM0_INST/Using_Virtex.DCM_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_DCM0_CLK0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_DCM0_CLK0&quot; TS_sys_clk_pin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Ext_NM_BRK_FDRSE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/default_clock_driver_pwmmodlmag_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Cooler0PWM/Cooler0PWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/default_clock_driver_pwmmodlmag_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">PumpPWM/PumpPWM/sysgen_dut/pwmmodlmag_x0/register8/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/default_clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/default_clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/default_clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/pozici_szab_c4239a9ed1/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdksebesegespozicio_x0/sebess_g_szab_5adc82f9fe/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/default_clock_driver_ipsdksebesegespozicio_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp</arg>&apos; has unconnected output pin
+</msg>
+
+</messages>
+

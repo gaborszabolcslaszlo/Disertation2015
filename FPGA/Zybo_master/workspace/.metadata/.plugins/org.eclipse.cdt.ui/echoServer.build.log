@@ -1,0 +1,23 @@
+22:01:41 **** Auto Build of configuration Debug for project echoServer ****
+make all 
+Building target: echoServer.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../RTOS_BSP_2/ps7_cortexa9_0/lib -o "echoServer.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(print.o): In function `print':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/print.c:26: undefined reference to `outbyte'
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/xil_printf.c:50: undefined reference to `outbyte'
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/xil_printf.c:112: undefined reference to `outbyte'
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/xil_printf.c:168: undefined reference to `outbyte'
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/xil_printf.c:66: undefined reference to `outbyte'
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\standalone_v3_05_a\src/xil_printf.c:229: more undefined references to `outbyte' follow
+../../RTOS_BSP_2/ps7_cortexa9_0/lib\libfreertos.a(port.o): In function `xPortStartScheduler':
+C:\Diak\gl\Zybo_master\workspace\RTOS_BSP_2\ps7_cortexa9_0\libsrc\freertos_zynq_v1_00_a\src/port.c:195: undefined reference to `vApplicationSetupHardware'
+collect2.exe: error: ld returned 1 exit status
+make: *** [echoServer.elf] Error 1
+
+22:01:42 Build Finished (took 531ms)
+

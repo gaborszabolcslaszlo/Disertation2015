@@ -1,0 +1,95 @@
+#include<xil_io.h>
+#include"xparameters.h"
+#include<xil_types.h>
+#include "xgpio.h"
+#include "ipsdksebesegespozicio_plbw.h"
+#include "xcope.h"
+#include "xutil.h"
+#include "xspi.h"		/* SPI device driver */
+
+
+
+XGpio Gpio;
+#define LED_CHANNEL 1
+#define LED 0x01
+#define LED1 0x01
+#define LED2 0x02
+#define LED3 0x03
+#define LED4 0x04
+#define GPIO_LED_DEVICE_ID  XPAR_LED4GPIO_DEVICE_ID
+
+
+
+#define SPI_DEVICE_ID		 XPAR_SPIZYBO_DEVICE_ID
+
+#define BUFFER_SIZE		16
+static int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId);
+static XSpi SpiInstance;   /* The instance of the SPI device */
+u8 ReadBuffer[BUFFER_SIZE];
+u8 WriteBuffer[BUFFER_SIZE];
+int Test;
+
+int main()
+{
+	 u8 Data=0xF6;
+	// XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+	// XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	// XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data| LED3);
+	// xc_iface_t *iface;
+	// xc_from_reg_t *fromreg_result;
+	// xc_to_reg_t *toreg_red, *toreg_green, *toreg_blue;
+
+	 // initialize the software driver, assuming the Pcore device ID is 0
+	// XC_CfgInitialize(&iface, &IPSDKSEBESEGESPOZICIO_PLBW_ConfigTable[0]);
+	// xc_get_shmem(iface, "Position", (void **) &fromreg_result);
+	int Status;
+	 Status = SpiSlaveInit(&SpiInstance, SPI_DEVICE_ID);
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+		 XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+		 XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+		 XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data| LED3);
+     while(1)
+     {
+    	 WriteBuffer[0]=0x81;
+    	 WriteBuffer[1]=0x81;
+    	 WriteBuffer[2]=0x81;
+    	 WriteBuffer[3]=0x81;
+    	 Data=0xFF;
+    	 XSpi_Transfer(&SpiInstance, &WriteBuffer[0], &ReadBuffer[0], 4);
+    	 Data=ReadBuffer[0];
+         XGpio_Initialize(&Gpio, GPIO_LED_DEVICE_ID);
+    	 XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+    	 XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, ~Data);
+     }
+	return 0;
+}
+
+
+int SpiSlaveInit(XSpi *SpiInstancePtr, u16 SpiDeviceId)
+{
+	XSpi_Config *ConfigPtr;
+	int Status;
+	//u32 Count;
+
+	ConfigPtr = XSpi_LookupConfig(SpiDeviceId);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	Status = XSpi_CfgInitialize(SpiInstancePtr, ConfigPtr,
+				ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	//Status = XSpi_SetOptions(SpiInstancePtr, XSP_MASTER_OPTION |XSP_CLK_PHASE_1_OPTION);
+	Status = XSpi_SetOptions(SpiInstancePtr, XSP_CLK_PHASE_1_OPTION);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	//XSpi_GetSlaveSelect(SpiInstancePtr);
+	XSpi_SetSlaveSelect(SpiInstancePtr,1);
+	XSpi_Start(SpiInstancePtr);
+	XSpi_IntrGlobalDisable(SpiInstancePtr);
+	return XST_SUCCESS;
+}

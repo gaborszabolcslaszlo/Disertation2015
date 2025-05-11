@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">preserve_signal</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd</arg>&quot; line <arg fmt="%d" index="2">378</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">clr</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlclockdriver</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff_cw.vhd</arg>&quot; line <arg fmt="%d" index="2">378</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ce_logic</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlclockdriver</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4396</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4403</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4410</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4418</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4425</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4432</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4441</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4448</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4455</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4463</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4470</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4477</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDCE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5308</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5308</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5308</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5340</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5340</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5340</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5372</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5372</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5372</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5404</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5404</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5534</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5534</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5534</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5549</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5549</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5549</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2808</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">addsb_11_0_d2b0e63c2ff9bf9d</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2800</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">addsb_11_0_80bded47015320ce</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2800</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">addsb_11_0_80bded47015320ce</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2380</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4676</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4676</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4676</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4708</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">c_in</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4708</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">4708</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">c_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">xladdsub_onOff</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2800</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">addsb_11_0_80bded47015320ce</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2800</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">addsb_11_0_80bded47015320ce</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2148</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5103</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">up</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5103</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">load</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="752" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">5103</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">din</arg>&apos; of component &apos;<arg fmt="%s" index="4">xlcounter_free_onOff</arg>&apos; is tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_model/onoff.vhd</arg>&quot; line <arg fmt="%d" index="2">2370</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fdre</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">fpga_dont_touch</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">op_mem_22_20(0)</arg>&gt; in unit &lt;<arg fmt="%s" index="2">inverter_e2b989a05e</arg>&gt; has a constant value of <arg fmt="%s" index="3">X</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">op_mem_22_20(0)</arg>&gt; in unit &lt;<arg fmt="%s" index="2">inverter_e5b38cca3b</arg>&gt; has a constant value of <arg fmt="%s" index="3">X</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">op_mem_22_20(0)</arg>&gt; in unit &lt;<arg fmt="%s" index="2">inverter_1ca63a13a1</arg>&gt; has a constant value of <arg fmt="%s" index="3">XXXXXXXXXXXXXXXX</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">a_x0_1_28&lt;7:2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ar_x0_1_27&lt;7:1&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_front_din</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_back&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_front_din</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_back&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">unregy_join_6_1&lt;17:16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_front_din</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">op_mem_22_20_back</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">c_in&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_cout</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">override</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_clr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">extra_reg_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">c_in&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_cout</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">override</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_clr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">extra_reg_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">c_in&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_cout</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">override</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_clr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">extra_reg_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">core_s&lt;16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">din</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">load&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">up&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">core_clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">core_clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rfd</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rdy</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">nd</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_core_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">conv_b</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">conv_a</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">c_in&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_cout</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">override</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_clr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">extra_reg_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">c_in&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">temp_cout</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">override</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">logic1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_clr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">extra_reg_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">din</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">load&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">up&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce_logic</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_ce</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">ce_vec_logic</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">ce_vec</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">core_clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">core_clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rfd</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">rdy</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">nd</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_core_ce</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">conv_b</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">conv_a</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_imp4_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_imp3_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_imp2_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_dir4_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_dir3_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">black_box_dir2_net</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">onoff_entity_5ff5682403</arg>&gt;: instances &lt;<arg fmt="%s" index="2">ct0</arg>&gt;, &lt;<arg fmt="%s" index="3">ct2</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_a803a2dbbb</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">onoff_entity_5ff5682403</arg>&gt;: instances &lt;<arg fmt="%s" index="2">ct0</arg>&gt;, &lt;<arg fmt="%s" index="3">ct4</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_a803a2dbbb</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">onoff_entity_5ff5682403</arg>&gt;: instances &lt;<arg fmt="%s" index="2">ct0</arg>&gt;, &lt;<arg fmt="%s" index="3">u0</arg>&gt; of unit &lt;<arg fmt="%s" index="4">constant_a803a2dbbb</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">onoff_cw</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp&gt; &lt;onoff_x0/counter_85906b2cda/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">onoff_cw</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp&gt; &lt;onoff_x0/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

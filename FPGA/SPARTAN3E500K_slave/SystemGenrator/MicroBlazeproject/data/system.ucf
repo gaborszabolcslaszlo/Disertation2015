@@ -1,0 +1,248 @@
+#  Nexys 2-500 Board
+
+
+
+Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+Net fpga_0_clk_1_sys_clk_pin LOC=P184  |  IOSTANDARD = LVCMOS33;
+
+Net ntg_0_sig_in_pin LOC=P101  |  IOSTANDARD = LVCMOS33;
+
+
+##############################################Core3S500E#################################################
+#NET "clk" LOC = "P184" ;
+#NET "RST" LOC = "P101" ;
+NET "LED4gpio_GPIO_IO_O_pin[0]" LOC =" P68" |  IOSTANDARD = LVCMOS33;
+NET "LED4gpio_GPIO_IO_O_pin[1]" LOC = "P78" |  IOSTANDARD = LVCMOS33;
+NET "LED4gpio_GPIO_IO_O_pin[2]" LOC = "P83" |  IOSTANDARD = LVCMOS33;
+NET "LED4gpio_GPIO_IO_O_pin[3]" LOC = "P89" |  IOSTANDARD = LVCMOS33;
+
+############################################### Mother Board ########################################
+#NET "Buzzer"  LOC = "p123"  ;
+
+#NET "DS18B20"  LOC = "p126"  ;
+
+#JOYSTICK
+#NET "down"  LOC = "p116"  ;
+#NET "up"  LOC = "p122"  ;
+#NET "left"  LOC = "p119"  ;
+#NET "right"  LOC = "p120"  ;
+#NET "press"  LOC = "p115"  ;
+
+#8I/Os_1
+NET "Cooler0PWM_pwmout_pin"  LOC ="p75"|  IOSTANDARD = LVCMOS33 ;  #1
+NET "PumpPWM_pwmout_pin"  LOC ="p76" |  IOSTANDARD = LVCMOS33 ;  #2;
+#NET "ipsdksebesegespozicio_plbw_2_null_x0_pin"  LOC = "p69"  |  IOSTANDARD = LVCMOS33;
+#NET "ipsdksebesegespozicio_plbw_3_null_x0_pin"  LOC = "p74"  |  IOSTANDARD = LVCMOS33;
+#NET "8I/Os_1_5"  LOC = "p64"  ;
+#NET "8I/Os_1_6"  LOC = "p65"  ;
+#NET "8I/Os_1_7"  LOC = "p62"  ;
+#NET "8I/Os_1_8"  LOC = "p63"  ;
+
+#8I/Os_2 SPIZYBO
+NET "SpiZybo_SCK_I_pin"  LOC = "p132" |  IOSTANDARD = LVCMOS33;  #0
+NET "SpiZybo_MISO_O_pin"  LOC = "p129"  |  IOSTANDARD = LVCMOS33; #1
+NET "SpiZybo_MOSI_I_pin"  LOC = "p128"  |  IOSTANDARD = LVCMOS33;   #2
+NET "SpiZybo_SPISEL_pin"  LOC = "p127"   |  IOSTANDARD = LVCMOS33;   #3
+#NET "8I/Os_2_5"  LOC = "p126"  ;
+#NET "8I/Os_2_6"  LOC = "p123"  ;
+#NET "8I/Os_2_7"  LOC = "p122"  ;
+#NET "8I/Os_2_8"  LOC = "p120"  ;   #7
+
+#16I/Os_2 #INCREMENTALIS
+NET "ipsdksebesegespozicio_plbw_0_positiona_pin"  LOC = "p119"  |  IOSTANDARD = LVCMOS33; 
+NET "ipsdksebesegespozicio_plbw_0_positionb_pin"  LOC = "p116"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_speeda_pin"     LOC = "p115"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_speedb_pin"     LOC = "p113"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_1_positiona_pin"  LOC = "p112"  |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_1_positionb_pin"  LOC = "p109"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_1_speeda_pin"     LOC = "p108"  |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_1_speedb_pin"     LOC = "p107"  |  IOSTANDARD = LVCMOS33 ;
+
+
+NET "ipsdksebesegespozicio_plbw_0_null_x0_pin"  LOC = "p106"  |  IOSTANDARD = LVCMOS33; #Null signal Position A
+NET "ipsdksebesegespozicio_plbw_1_null_x0_pin"  LOC = "p102"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_2_null_x0_pin"  LOC = "p100"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_3_null_x0_pin"  LOC = "p99"  |  IOSTANDARD = LVCMOS33;
+
+#NET "ipsdksebesegespozicio_plbw_3_positiona_pin"  LOC = "p98"   |  IOSTANDARD = LVCMOS33 ;
+#NET "ipsdksebesegespozicio_plbw_3_positionb_pin"  LOC = "p97"   |  IOSTANDARD = LVCMOS33 ;
+#NET "ipsdksebesegespozicio_plbw_3_speeda_pin"     LOC = "p96"   |  IOSTANDARD = LVCMOS33;
+#NET "ipsdksebesegespozicio_plbw_3_speedb_pin"     LOC = "p94"   |  IOSTANDARD = LVCMOS33;
+
+#16I/Os_1 #MOTORVEZERLO
+NET "ipsdksebesegespozicio_plbw_0_pospwm1_pin"     LOC = "p153"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_pospwm0_pin"     LOC = "p160"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_speedpwm1_pin"   LOC = "p151"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_speedpwm0_pin"   LOC = "p152"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_0_speeda_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_0_speedb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_0_positiona_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_0_positionb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "ipsdksebesegespozicio_plbw_1_pospwm1_pin"  LOC = "p150" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_1_pospwm0_pin"  LOC = "p147" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_1_speedpwm1_pin"  LOC = "p146"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_1_speedpwm0_pin"  LOC = "p145"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_1_speeda_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_1_speedb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_1_positiona_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_1_positionb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "ipsdksebesegespozicio_plbw_2_pospwm1_pin"  LOC = "p144" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_2_pospwm0_pin"  LOC = "p140" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_2_speedpwm1_pin"  LOC = "p139" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_2_speedpwm0_pin"  LOC = "p138" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_2_speeda_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_2_speedb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_2_positiona_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_2_positionb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "ipsdksebesegespozicio_plbw_3_pospwm1_pin"  LOC = "p137" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_3_pospwm0_pin"  LOC = "p135"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_3_speedpwm1_pin"  LOC = "p134" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_3_speedpwm0_pin"  LOC = "p133" |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_3_speeda_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_3_speedb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_3_positiona_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "ipsdksebesegespozicio_plbw_3_positionb_pin" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#32I/Os_1
+NET "ipsdksebesegespozicio_plbw_2_positiona_pin"  LOC = "p61"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_2_positionb_pin"  LOC = "p60"  |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_2_speeda_pin"     LOC = "p55"  |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_2_speedb_pin"     LOC = "p50"   |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_3_positiona_pin"  LOC = "p49"   |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_3_positionb_pin"  LOC = "p48"   |  IOSTANDARD = LVCMOS33 ;
+NET "ipsdksebesegespozicio_plbw_3_speeda_pin"     LOC = "p47"   |  IOSTANDARD = LVCMOS33;
+NET "ipsdksebesegespozicio_plbw_3_speedb_pin"     LOC = "p45"   |  IOSTANDARD = LVCMOS33;
+#NET "32I/Os_1_9"  LOC ="p42";
+#NET "32I/Os_1_10"  LOC ="p41";
+#NET "32I/Os_1_11"  LOC ="p40";
+#NET "32I/Os_1_12"  LOC ="p39";
+#NET "32I/Os_1_13"  LOC ="p36";
+#NET "32I/Os_1_14"  LOC ="p35";
+#NET "32I/Os_1_15"  LOC ="p34";
+#NET "32I/Os_1_16"  LOC ="p33";
+#NET "32I/Os_1_17"  LOC ="p31";
+#NET "32I/Os_1_18"  LOC ="p30";
+#NET "32I/Os_1_19"  LOC ="p29";
+#NET "32I/Os_1_20"  LOC ="p28";
+#NET "32I/Os_1_21"  LOC ="p25";
+#NET "32I/Os_1_22"  LOC ="p24";
+#NET "32I/Os_1_23"  LOC ="p23";
+#NET "32I/Os_1_24"  LOC ="p22";
+#NET "32I/Os_1_25"  LOC ="p19";
+#NET "32I/Os_1_26"  LOC ="p18";
+#NET "32I/Os_1_27"  LOC ="p16";
+#NET "32I/Os_1_28"  LOC ="p15";
+#NET "32I/Os_1_29"  LOC ="p12";
+#NET "32I/Os_1_30"  LOC ="p11";
+#NET "32I/Os_1_31"  LOC ="p9";
+#NET "32I/Os_1_32"  LOC ="p8";
+
+
+
+#SDRAM_L
+#NET "SDRAM_L_1"  LOC ="GND" ;
+#NET "SDRAM_L_2"  LOC ="3.3V" ;
+#NET "SDRAM_L_3"  LOC = "p9";
+#NET "SDRAM_L_4"  LOC = "p8";
+#NET "SDRAM_L_5"  LOC = "p12";
+#NET "SDRAM_L_6"  LOC = "p11";
+#NET "SDRAM_L_7"  LOC = "p16";
+#NET "SDRAM_L_8"  LOC = "p15";
+#NET "SDRAM_L_9"  LOC = "p19";
+#NET "SDRAM_L_10"  LOC = "P18";
+#NET "SDRAM_L_11"  LOC = "p23";
+#NET "SDRAM_L_12"  LOC ="p22" ;
+#NET "SDRAM_L_13"  LOC = "p25";
+#NET "SDRAM_L_14"  LOC = "p24";
+#NET "SDRAM_L_15"  LOC = "p29";
+#NET "SDRAM_L_16"  LOC = "p28";
+#NET "SDRAM_L_17"  LOC = "p31";
+#NET "SDRAM_L_18"  LOC = "p30";
+#NET "SDRAM_L_19"  LOC = "p34";
+#NET "SDRAM_L_20"  LOC ="p33" ;
+#NET "SDRAM_L_21"  LOC ="p36" ;
+#NET "SDRAM_L_22"  LOC ="p35" ;
+
+
+
+#SDRAM_R
+#NET "SDRAM_R_1"  LOC ="3.3V" ;
+#NET "SDRAM_R_2"  LOC ="GND" ;
+#NET "SDRAM_R_3"  LOC = "p153";
+#NET "SpiZybo_MISO"  LOC = "p160" |  IOSTANDARD = LVCMOS33;
+#NET "SDRAM_R_5"  LOC = "p151";
+##NET "SpiZybo_SCK"  LOC = "p150"  |  IOSTANDARD = LVCMOS33;
+#NET "SDRAM_R_9"  LOC = "p145";
+#NET "SpiZybo_SS[0]"  LOC = "P146" |  IOSTANDARD = LVCMOS33;
+#NET "SDRAM_R_11"  LOC = "p140";
+#NET "SDRAM_R_12"  LOC ="p144" ;
+#NET "SDRAM_R_13"  LOC = "p138";
+#NET "SDRAM_R_14"  LOC = "p139";
+#NET "SDRAM_R_15"  LOC = "p135";
+#NET "SDRAM_R_16"  LOC = "p137";
+#NET "SDRAM_R_17"  LOC = "p133";
+#NET "SDRAM_R_18"  LOC = "p134";
+#NET "SDRAM_R_19"  LOC = "p129";
+#NET "SDRAM_R_20"  LOC ="p132" ;
+#NET "SDRAM_R_21"  LOC ="p127" ;
+#NET "SDRAM_R_22"  LOC ="p128" ;
+
+
+#LCD1602
+#NET "RS"  LOC ="p36"  ;
+#NET "R/W"  LOC = "p40"  ;
+#NET "EN"  LOC ="p39"  ;
+#NET "D0"  LOC = "p42"  ;
+#NET "D1"  LOC = "p41"  ;
+#NET "D2"  LOC = "p47"  ;
+#NET "D3"  LOC = "p45"  ;
+#NET "D4"  LOC = "p49"  ;
+#NET "D5"  LOC = "p48"  ;
+#NET "D6"  LOC = "p55"  ;
+#NET "D7"  LOC = "p50"  ;
+#NET "A"  LOC = "p61"  ;
+#NET "K"  LOC = "p60"  ;
+
+#LCD12864
+#NET "RS"  LOC ="p36"  ;
+#NET "R/W"  LOC = "p40"  ;
+#NET "EN"  LOC ="p39"  ;
+#NET "D0"  LOC = "p42"  ;
+#NET "D1"  LOC = "p41"  ;
+#NET "D2"  LOC = "p47"  ;
+#NET "D3"  LOC = "p45"  ;
+#NET "D4"  LOC = "p49"  ;
+#NET "D5"  LOC = "p48"  ;
+#NET "D6"  LOC = "p55"  ;
+#NET "D7"  LOC = "p50"  ;
+#NET "PSB"  LOC ="p61"  ;
+
+#NET "RST"  LOC ="p63"  ;
+
+#NET "A"  LOC ="p65"  ;
+#NET "K"  LOC ="p64"  ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

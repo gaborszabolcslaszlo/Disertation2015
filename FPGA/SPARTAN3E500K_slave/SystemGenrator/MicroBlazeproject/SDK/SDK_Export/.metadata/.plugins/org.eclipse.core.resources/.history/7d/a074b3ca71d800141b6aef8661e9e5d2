@@ -1,0 +1,18 @@
+#include "xparameters.h"
+#include <xil_io.h>
+#include "stdio.h"
+#include "xutil.h"
+#include "ipsdksebesegespozicio_plbw.h"
+
+int main()
+{
+	 xc_iface_t *iface;
+	 xc_from_reg_t *fromreg_result;
+	 xc_to_reg_t *toreg_red, *toreg_green, *toreg_blue;
+
+	 // initialize the software driver, assuming the Pcore device ID is 0
+	 XC_CfgInitialize(&iface, &IPSDKSEBESEGESPOZICIO_PLBW_ConfigTable[0]);
+	 xc_get_shmem(iface, "Position", (void **) &fromreg_result);
+
+	return 0;
+}

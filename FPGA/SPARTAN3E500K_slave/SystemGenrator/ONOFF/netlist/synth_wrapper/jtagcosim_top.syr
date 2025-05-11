@@ -1,0 +1,469 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_jtagcosim_top.prj"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "jtagcosim_top.ngc"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4fg320
+
+---- Source Options
+Entity Name                        : jtagcosim_top
+Top Module Name                    : jtagcosim_top
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" in Library work.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <xlslicer> compiled.
+Entity <xlslicer> (Architecture <behavior>) compiled.
+Entity <xland2> compiled.
+Entity <xland2> (Architecture <behavior>) compiled.
+Entity <xlreqgrantmanager> compiled.
+Entity <xlreqgrantmanager> (Architecture <structural>) compiled.
+Entity <xlmemmap> compiled.
+Entity <xlmemmap> (Architecture <behavioral>) compiled.
+Entity <sysgen_hw_cosim_interface> compiled.
+Entity <sysgen_hw_cosim_interface> (Architecture <structural>) compiled.
+Entity <xliobuf> compiled.
+Entity <xliobuf> (Architecture <structural>) compiled.
+Entity <xlibuf> compiled.
+Entity <xlibuf> (Architecture <structural>) compiled.
+Entity <xlobuf> compiled.
+Entity <xlobuf> (Architecture <structural>) compiled.
+Entity <xlibufds> compiled.
+Entity <xlibufds> (Architecture <structural>) compiled.
+Entity <xlobufds> compiled.
+Entity <xlobufds> (Architecture <structural>) compiled.
+Entity <jtagcosim_top> compiled.
+Entity <jtagcosim_top> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <jtagcosim_top> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlibuf> in library <work> (architecture <structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <xlobuf> in library <work> (architecture <structural>) with generics.
+	width = 8
+
+Analyzing hierarchy for entity <sysgen_hw_cosim_interface> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlmemmap> in library <work> (architecture <behavioral>) with generics.
+	data_width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <jtagcosim_top> in library <work> (Architecture <structural>).
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2329: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2335: Instantiating black box module <BUFGMUX>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2343: Instantiating black box module <BUFGMUX>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2369: Instantiating black box module <IBUFG>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2375: Instantiating black box module <jtagcosim_iface_spartan3>.
+Entity <jtagcosim_top> analyzed. Unit <jtagcosim_top> generated.
+
+Analyzing generic Entity <xlibuf> in library <work> (Architecture <structural>).
+	width = 8
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2154: Instantiating black box module <IBUF>.
+Entity <xlibuf> analyzed. Unit <xlibuf> generated.
+
+Analyzing generic Entity <xlobuf> in library <work> (Architecture <structural>).
+	width = 8
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2178: Instantiating black box module <OBUF>.
+Entity <xlobuf> analyzed. Unit <xlobuf> generated.
+
+Analyzing Entity <sysgen_hw_cosim_interface> in library <work> (Architecture <structural>).
+    Set property "syn_keep = TRUE" for signal <clk_x1>.
+    Set user-defined property "KEEP =  TRUE" for signal <clk_x1> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_keep = TRUE" for signal <pci_clk_x0>.
+    Set user-defined property "KEEP =  TRUE" for signal <pci_clk_x0> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "buffer_type = none" for signal <pci_clk_x0>.
+WARNING:Xst:2211 - "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd" line 2013: Instantiating black box module <onoff_cw>.
+Entity <sysgen_hw_cosim_interface> analyzed. Unit <sysgen_hw_cosim_interface> generated.
+
+Analyzing generic Entity <xlmemmap> in library <work> (Architecture <behavioral>).
+	data_width = 32
+Entity <xlmemmap> analyzed. Unit <xlmemmap> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <xlmemmap>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd".
+WARNING:Xst:647 - Input <data_in<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <re> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <data_out_mm>.
+    Found 1-bit register for signal <int_mm_enapwm>.
+    Found 1-bit register for signal <int_mm_ennulreset>.
+    Found 16-bit register for signal <int_mm_recerencia>.
+    Found 24-bit register for signal <int_mm_tsvalue>.
+    Summary:
+	inferred  74 D-type flip-flop(s).
+Unit <xlmemmap> synthesized.
+
+
+Synthesizing Unit <xlibuf>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd".
+Unit <xlibuf> synthesized.
+
+
+Synthesizing Unit <xlobuf>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd".
+Unit <xlobuf> synthesized.
+
+
+Synthesizing Unit <sysgen_hw_cosim_interface>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd".
+WARNING:Xst:1780 - Signal <clk_x0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <sysgen_hw_cosim_interface> synthesized.
+
+
+Synthesizing Unit <jtagcosim_top>.
+    Related source file is "E:/Allamvizsga/Spartan3E6500SystemVer2/ONOFF/netlist/synth_wrapper/jtagcosim_top.vhd".
+Unit <jtagcosim_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 16-bit register                                       : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <data_out_mm_17> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_18> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_19> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_20> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_21> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_22> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_23> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_24> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_25> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_26> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_27> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_28> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_29> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_30> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_mm_31> (without init value) has a constant value of 0 in block <xlmemmap>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <jtagcosim_top> ...
+
+Optimizing unit <xlmemmap> ...
+
+Optimizing unit <xlibuf> ...
+
+Optimizing unit <xlobuf> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : jtagcosim_top.ngc
+Output Format                      : NGC
+Optimization Goal                  : SPEED
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 118
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 19
+#      LUT4                        : 71
+#      MUXCY                       : 6
+#      MUXF5                       : 17
+#      VCC                         : 1
+# FlipFlops/Latches                : 59
+#      FDE                         : 59
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGMUX                     : 2
+# IO Buffers                       : 25
+#      IBUF                        : 16
+#      IBUFG                       : 1
+#      OBUF                        : 8
+# Others                           : 2
+#      jtagcosim_iface_spartan3    : 1
+#      onoff_cw                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       51  out of   8672     0%  
+ Number of Slice Flip Flops:             59  out of  17344     0%  
+ Number of 4 input LUTs:                 93  out of  17344     0%  
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    250    10%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sys_clk                            | IBUFG+BUFG+BUFGMUX     | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.406ns (Maximum Frequency: 415.628MHz)
+   Minimum input arrival time before clock: 8.910ns
+   Maximum output required time after clock: 1.038ns
+   Maximum combinational path delay: 4.999ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 2.406ns (frequency: 415.628MHz)
+  Total number of paths / destination ports: 23 / 17
+-------------------------------------------------------------------------
+Delay:               2.406ns (Levels of Logic = 2)
+  Source:            sysgen_hwcosim_iface/memory_map/data_out_mm_14 (FF)
+  Destination:       sysgen_hwcosim_iface/memory_map/data_out_mm_14 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: sysgen_hwcosim_iface/memory_map/data_out_mm_14 to sysgen_hwcosim_iface/memory_map/data_out_mm_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.482  sysgen_hwcosim_iface/memory_map/data_out_mm_14 (sysgen_hwcosim_iface/memory_map/data_out_mm_14)
+     LUT4:I2->O            1   0.704   0.000  sysgen_hwcosim_iface/memory_map/data_out_mm_mux0000(14)802 (sysgen_hwcosim_iface/memory_map/data_out_mm_mux0000(14)801)
+     MUXF5:I0->O           1   0.321   0.000  sysgen_hwcosim_iface/memory_map/data_out_mm_mux0000(14)80_f5 (sysgen_hwcosim_iface/memory_map/data_out_mm_mux0000(14))
+     FDE:D                     0.308          sysgen_hwcosim_iface/memory_map/data_out_mm_14
+    ----------------------------------------
+    Total                      2.406ns (1.924ns logic, 0.482ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 2434 / 118
+-------------------------------------------------------------------------
+Offset:              8.910ns (Levels of Logic = 9)
+  Source:            jtag_iface:addr(15) (PAD)
+  Destination:       sysgen_hwcosim_iface/memory_map/int_mm_tsvalue_23 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: jtag_iface:addr(15) to sysgen_hwcosim_iface/memory_map/int_mm_tsvalue_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    jtagcosim_iface_spartan3:addr(15)    1   0.000   0.595  jtag_iface (jtag_iface_addr(15))
+     LUT4:I0->O            1   0.704   0.000  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_lut(1) (sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_lut(1))
+     MUXCY:S->O            1   0.464   0.000  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(1) (sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(1))
+     MUXCY:CI->O           1   0.059   0.000  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(2) (sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(2))
+     MUXCY:CI->O           1   0.059   0.000  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(3) (sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(3))
+     MUXCY:CI->O           1   0.059   0.000  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(4) (sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(4))
+     MUXCY:CI->O          25   0.459   1.435  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not00011_wg_cy(5) (sysgen_hwcosim_iface/memory_map/data_out_mm_and0000)
+     LUT2:I0->O            4   0.704   0.591  sysgen_hwcosim_iface/memory_map/data_out_mm_mux0000(0)310 (sysgen_hwcosim_iface/memory_map/N41)
+     LUT4:I3->O            3   0.704   0.566  sysgen_hwcosim_iface/memory_map/int_mm_enapwm_not000121 (sysgen_hwcosim_iface/memory_map/N5)
+     LUT3:I2->O           24   0.704   1.252  sysgen_hwcosim_iface/memory_map/int_mm_tsvalue_not00011 (sysgen_hwcosim_iface/memory_map/int_mm_tsvalue_not0001)
+     FDE:CE                    0.555          sysgen_hwcosim_iface/memory_map/int_mm_tsvalue_0
+    ----------------------------------------
+    Total                      8.910ns (4.471ns logic, 4.439ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 59 / 59
+-------------------------------------------------------------------------
+Offset:              1.038ns (Levels of Logic = 0)
+  Source:            sysgen_hwcosim_iface/memory_map/data_out_mm_14 (FF)
+  Destination:       jtag_iface:data_out(14) (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: sysgen_hwcosim_iface/memory_map/data_out_mm_14 to jtag_iface:data_out(14)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  sysgen_hwcosim_iface/memory_map/data_out_mm_14 (sysgen_hwcosim_iface/memory_map/data_out_mm_14)
+    jtagcosim_iface_spartan3:data_out(14)        0.000          jtag_iface
+    ----------------------------------------
+    Total                      1.038ns (0.591ns logic, 0.447ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Delay:               4.999ns (Levels of Logic = 2)
+  Source:            sys_clk (PAD)
+  Destination:       bufgmux_comp1:I0 (PAD)
+
+  Data Path: sys_clk to bufgmux_comp1:I0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.675   0.420  ibufg_sys_clk (ibufg_sys_clk_O)
+     BUFG:I->O             2   1.457   0.447  bufg_sys_clk (bufg_sys_clk_O)
+    BUFGMUX:I0                 0.000          bufgmux_comp1
+    ----------------------------------------
+    Total                      4.999ns (4.132ns logic, 0.867ns route)
+                                       (82.7% logic, 17.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.46 secs
+ 
+--> 
+
+Total memory usage is 273644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

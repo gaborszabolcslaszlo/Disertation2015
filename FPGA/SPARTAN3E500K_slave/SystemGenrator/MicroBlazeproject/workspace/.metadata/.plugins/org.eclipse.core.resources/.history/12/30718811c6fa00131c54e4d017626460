@@ -1,0 +1,17 @@
+/*
+ * Empty C++ Application
+ */
+#include<xil_io.h>
+#include<xparameters.h>
+
+
+int main()
+{
+	while(1){
+		for(int i=0 ; i<70000;i++);
+		Xil_Out32(XPAR_TEST_PINS_BASEADDR, 0xffffffff);
+		for(int i=0 ; i<70000;i++);
+		Xil_Out32(XPAR_TEST_PINS_BASEADDR, 0x0000000);
+	}
+	return 0;
+}

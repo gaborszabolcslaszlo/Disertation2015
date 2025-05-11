@@ -1,0 +1,1 @@
+run -ifn xst_pwmepitetthidakhoz.prj -ifmt mixed -ofn pwmepitetthidakhoz_cw.ngc -ofmt NGC -p xc3s1200e-4fg320 -ent pwmepitetthidakhoz_cw -keep_hierarchy NO -iobuf YES -bus_delimiter () -top pwmepitetthidakhoz_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc pwmepitetthidakhoz_cw.xcf -write_timing_constraints yes

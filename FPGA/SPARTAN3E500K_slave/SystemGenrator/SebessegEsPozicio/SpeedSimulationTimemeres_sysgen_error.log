@@ -1,0 +1,50 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal Period, This blocks attempts to set period that i...
+     Block: 'SpeedSimulationTimemeres/CsereDir'
+Error 0002: Illegal Period, This blocks attempts to set period that i...
+     Block: 'SpeedSimulationTimemeres/counterSebesseg/Counter1'
+Error 0003: Illegal Period, This blocks attempts to set period that i...
+     Block: 'SpeedSimulationTimemeres/inp/inp'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'SpeedSimulationTimemeres/CsereDir'
+
+Details:
+Illegal Period, This blocks attempts to set period that is a
+non-integer multiple of the system rate
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'SpeedSimulationTimemeres/counterSebesseg/Counter1'
+
+Details:
+Illegal Period, This blocks attempts to set period that is a
+non-integer multiple of the system rate
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'SpeedSimulationTimemeres/inp/inp'
+
+Details:
+Illegal Period, This blocks attempts to set period that is a
+non-integer multiple of the system rate
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------

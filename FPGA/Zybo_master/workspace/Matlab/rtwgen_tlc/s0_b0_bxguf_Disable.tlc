@@ -1,0 +1,15 @@
+%implements s0_b0_bxguf_Disable "C"
+
+%function Disable(block, system) Output
+%assign localVarDecl = ""
+%assign tlcDisableFcnOfS0B1 = OpaqueTLCBlockFcn("Disable", 0, 1, 0, 6)
+%assign tlcDisableFcnOfS0B2 = OpaqueTLCBlockFcn("Disable", 0, 2, 0, 6)
+%<tlcDisableFcnOfS0B1>\
+%<tlcDisableFcnOfS0B2>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Disable(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 6, fcnProtoType)>
+%endfunction

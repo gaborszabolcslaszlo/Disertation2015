@@ -1,0 +1,268 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.6 Build EDK_P.68d
+# Mon Jun 23 11:10:56 2014
+# Target Board:  Digilent Nexys 2-500 Board Rev C
+# Family:    spartan3e
+# Device:    XC3S500E
+# Package:   FG320
+# Speed Grade:  -4
+# Processor number: 1
+# Processor 1: microblaze_0
+# System clock frequency: 75.0
+# Debug Interface: On-Chip HW Debug Module
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT fpga_0_clk_1_sys_clk_pin = CLK_S, DIR = I, SIGIS = CLK, CLK_FREQ = 50000000
+ PORT ntg_0_sig_in_pin = ntg_0_sig_in, DIR = I
+ PORT LED4gpio_GPIO_IO_O_pin = LED4gpio_GPIO_IO_O, DIR = O, VEC = [0:3]
+ PORT SpiZybo_SCK_I_pin = SpiZybo_SCK_I, DIR = I
+ PORT SpiZybo_SPISEL_pin = SpiZybo_SPISEL, DIR = I
+ PORT SpiZybo_MOSI_I_pin = SpiZybo_MOSI_I, DIR = I
+ PORT SpiZybo_MISO_O_pin = SpiZybo_MISO_O, DIR = O
+ PORT Cooler0PWM_pwmout_pin = Cooler0PWM_pwmout, DIR = O
+ PORT PumpPWM_pwmout_pin = PumpPWM_pwmout, DIR = O
+ PORT ipsdksebesegespozicio_plbw_0_positionb_pin = ipsdksebesegespozicio_plbw_0_positionb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_0_null_x0_pin = ipsdksebesegespozicio_plbw_0_null_x0, DIR = I
+ PORT ipsdksebesegespozicio_plbw_0_speedpwm0_pin = ipsdksebesegespozicio_plbw_0_speedpwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_0_pospwm0_pin = ipsdksebesegespozicio_plbw_0_pospwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_0_speedpwm1_pin = ipsdksebesegespozicio_plbw_0_speedpwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_0_pospwm1_pin = ipsdksebesegespozicio_plbw_0_pospwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_0_speedb_pin = ipsdksebesegespozicio_plbw_0_speedb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_0_speeda_pin = ipsdksebesegespozicio_plbw_0_speeda, DIR = I
+ PORT ipsdksebesegespozicio_plbw_0_positiona_pin = ipsdksebesegespozicio_plbw_0_positiona, DIR = I
+ PORT ipsdksebesegespozicio_plbw_1_pospwm1_pin = ipsdksebesegespozicio_plbw_1_pospwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_1_pospwm0_pin = ipsdksebesegespozicio_plbw_1_pospwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_1_positiona_pin = ipsdksebesegespozicio_plbw_1_positiona, DIR = I
+ PORT ipsdksebesegespozicio_plbw_1_null_x0_pin = ipsdksebesegespozicio_plbw_1_null_x0, DIR = I
+ PORT ipsdksebesegespozicio_plbw_1_speedpwm0_pin = ipsdksebesegespozicio_plbw_1_speedpwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_1_speedpwm1_pin = ipsdksebesegespozicio_plbw_1_speedpwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_1_speedb_pin = ipsdksebesegespozicio_plbw_1_speedb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_1_speeda_pin = ipsdksebesegespozicio_plbw_1_speeda, DIR = I
+ PORT ipsdksebesegespozicio_plbw_1_positionb_pin = ipsdksebesegespozicio_plbw_1_positionb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_null_x0_pin = ipsdksebesegespozicio_plbw_2_null_x0, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_pospwm1_pin = ipsdksebesegespozicio_plbw_2_pospwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_2_positionb_pin = ipsdksebesegespozicio_plbw_2_positionb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_speedpwm0_pin = ipsdksebesegespozicio_plbw_2_speedpwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_2_speeda_pin = ipsdksebesegespozicio_plbw_2_speeda, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_speedb_pin = ipsdksebesegespozicio_plbw_2_speedb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_positiona_pin = ipsdksebesegespozicio_plbw_2_positiona, DIR = I
+ PORT ipsdksebesegespozicio_plbw_2_pospwm0_pin = ipsdksebesegespozicio_plbw_2_pospwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_2_speedpwm1_pin = ipsdksebesegespozicio_plbw_2_speedpwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_3_positiona_pin = ipsdksebesegespozicio_plbw_3_positiona, DIR = I
+ PORT ipsdksebesegespozicio_plbw_3_positionb_pin = ipsdksebesegespozicio_plbw_3_positionb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_3_pospwm0_pin = ipsdksebesegespozicio_plbw_3_pospwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_3_speedb_pin = ipsdksebesegespozicio_plbw_3_speedb, DIR = I
+ PORT ipsdksebesegespozicio_plbw_3_speedpwm0_pin = ipsdksebesegespozicio_plbw_3_speedpwm0, DIR = O
+ PORT ipsdksebesegespozicio_plbw_3_speeda_pin = ipsdksebesegespozicio_plbw_3_speeda, DIR = I
+ PORT ipsdksebesegespozicio_plbw_3_pospwm1_pin = ipsdksebesegespozicio_plbw_3_pospwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_3_speedpwm1_pin = ipsdksebesegespozicio_plbw_3_speedpwm1, DIR = O
+ PORT ipsdksebesegespozicio_plbw_3_null_x0_pin = ipsdksebesegespozicio_plbw_3_null_x0, DIR = I
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER C_AREA_OPTIMIZED = 1
+ PARAMETER C_USE_BARREL = 1
+ PARAMETER C_DEBUG_ENABLED = 0
+ PARAMETER HW_VER = 8.50.c
+ BUS_INTERFACE DPLB = mb_plb
+ BUS_INTERFACE IPLB = mb_plb
+ BUS_INTERFACE DLMB = dlmb
+ BUS_INTERFACE ILMB = ilmb
+ PORT MB_RESET = mb_reset
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = mb_plb
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = clk_50_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = ilmb
+ PARAMETER HW_VER = 2.00.b
+ PORT LMB_Clk = clk_50_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = dlmb
+ PARAMETER HW_VER = 2.00.b
+ PORT LMB_Clk = clk_50_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = dlmb_cntlr
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SLMB = dlmb
+ BUS_INTERFACE BRAM_PORT = dlmb_port
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = ilmb_cntlr
+ PARAMETER HW_VER = 3.10.c
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SLMB = ilmb
+ BUS_INTERFACE BRAM_PORT = ilmb_port
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = lmb_bram
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = ilmb_port
+ BUS_INTERFACE PORTB = dlmb_port
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER C_CLKIN_FREQ = 50000000
+ PARAMETER C_CLKOUT0_FREQ = 50000000
+ PARAMETER C_CLKOUT0_PHASE = 0
+ PARAMETER C_CLKOUT0_GROUP = NONE
+ PARAMETER C_CLKOUT0_BUF = TRUE
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER HW_VER = 4.03.a
+ PORT CLKIN = CLK_S
+ PORT CLKOUT0 = clk_50_0000MHz
+ PORT RST = sys_rst_s
+ PORT LOCKED = Dcm_all_locked
+END
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_AUX_RESET_HIGH = 1
+ PORT Slowest_sync_clk = clk_50_0000MHz
+ PORT Ext_Reset_In = sys_rst_s
+ PORT Dcm_locked = Dcm_all_locked
+ PORT MB_Reset = mb_reset
+ PORT Bus_Struct_Reset = sys_bus_reset
+ PORT Peripheral_Reset = sys_periph_reset
+END
+
+BEGIN ntg
+ PARAMETER INSTANCE = ntg_0
+ PARAMETER HW_VER = 1.00.a
+ PORT sig_in = ntg_0_sig_in
+ PORT sig_out = sys_rst_s
+END
+
+BEGIN xps_spi
+ PARAMETER INSTANCE = SpiZybo
+ PARAMETER HW_VER = 2.02.a
+ PARAMETER C_NUM_TRANSFER_BITS = 32
+ PARAMETER C_FIFO_EXIST = 1
+ PARAMETER C_BASEADDR = 0xcbe18000
+ PARAMETER C_HIGHADDR = 0xcbe19fff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT SCK_I = SpiZybo_SCK_I
+ PORT SPISEL = SpiZybo_SPISEL
+ PORT MOSI_I = SpiZybo_MOSI_I
+ PORT MISO_O = SpiZybo_MISO_O
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = LED4gpio
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 4
+ PARAMETER C_BASEADDR = 0xcbe12000
+ PARAMETER C_HIGHADDR = 0xcbe123ff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT GPIO_IO_O = LED4gpio_GPIO_IO_O
+END
+
+BEGIN pwmmodlmag_plbw
+ PARAMETER INSTANCE = Cooler0PWM
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_BASEADDR = 0xcbe1d000
+ PARAMETER C_HIGHADDR = 0xcbe1dfff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT pwmout = Cooler0PWM_pwmout
+END
+
+BEGIN pwmmodlmag_plbw
+ PARAMETER INSTANCE = PumpPWM
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_BASEADDR = 0xcbe14000
+ PARAMETER C_HIGHADDR = 0xcbe14fff
+ BUS_INTERFACE SPLB = mb_plb
+ PORT pwmout = PumpPWM_pwmout
+END
+
+BEGIN ipsdksebesegespozicio_plbw
+ PARAMETER INSTANCE = ipsdksebesegespozicio_plbw_0
+ PARAMETER HW_VER = 55.00.a
+ PARAMETER C_BASEADDR = 0xCBE60000
+ PARAMETER C_HIGHADDR = 0xCBE60FFF
+ BUS_INTERFACE SPLB = mb_plb
+ PORT positionb = ipsdksebesegespozicio_plbw_0_positionb
+ PORT null_x0 = ipsdksebesegespozicio_plbw_0_null_x0
+ PORT speedpwm0 = ipsdksebesegespozicio_plbw_0_speedpwm0
+ PORT pospwm0 = ipsdksebesegespozicio_plbw_0_pospwm0
+ PORT speedpwm1 = ipsdksebesegespozicio_plbw_0_speedpwm1
+ PORT pospwm1 = ipsdksebesegespozicio_plbw_0_pospwm1
+ PORT speedb = ipsdksebesegespozicio_plbw_0_speedb
+ PORT speeda = ipsdksebesegespozicio_plbw_0_speeda
+ PORT positiona = ipsdksebesegespozicio_plbw_0_positiona
+END
+
+BEGIN ipsdksebesegespozicio_plbw
+ PARAMETER INSTANCE = ipsdksebesegespozicio_plbw_1
+ PARAMETER HW_VER = 55.00.a
+ PARAMETER C_BASEADDR = 0xCBE40000
+ PARAMETER C_HIGHADDR = 0xCBE40FFF
+ BUS_INTERFACE SPLB = mb_plb
+ PORT pospwm1 = ipsdksebesegespozicio_plbw_1_pospwm1
+ PORT pospwm0 = ipsdksebesegespozicio_plbw_1_pospwm0
+ PORT positiona = ipsdksebesegespozicio_plbw_1_positiona
+ PORT null_x0 = ipsdksebesegespozicio_plbw_1_null_x0
+ PORT speedpwm0 = ipsdksebesegespozicio_plbw_1_speedpwm0
+ PORT speedpwm1 = ipsdksebesegespozicio_plbw_1_speedpwm1
+ PORT speedb = ipsdksebesegespozicio_plbw_1_speedb
+ PORT speeda = ipsdksebesegespozicio_plbw_1_speeda
+ PORT positionb = ipsdksebesegespozicio_plbw_1_positionb
+END
+
+BEGIN ipsdksebesegespozicio_plbw
+ PARAMETER INSTANCE = ipsdksebesegespozicio_plbw_2
+ PARAMETER HW_VER = 55.00.a
+ PARAMETER C_BASEADDR = 0xCBE20000
+ PARAMETER C_HIGHADDR = 0xCBE20FFF
+ BUS_INTERFACE SPLB = mb_plb
+ PORT null_x0 = ipsdksebesegespozicio_plbw_2_null_x0
+ PORT pospwm1 = ipsdksebesegespozicio_plbw_2_pospwm1
+ PORT positionb = ipsdksebesegespozicio_plbw_2_positionb
+ PORT speedpwm0 = ipsdksebesegespozicio_plbw_2_speedpwm0
+ PORT speeda = ipsdksebesegespozicio_plbw_2_speeda
+ PORT speedb = ipsdksebesegespozicio_plbw_2_speedb
+ PORT positiona = ipsdksebesegespozicio_plbw_2_positiona
+ PORT pospwm0 = ipsdksebesegespozicio_plbw_2_pospwm0
+ PORT speedpwm1 = ipsdksebesegespozicio_plbw_2_speedpwm1
+END
+
+BEGIN ipsdksebesegespozicio_plbw
+ PARAMETER INSTANCE = ipsdksebesegespozicio_plbw_3
+ PARAMETER HW_VER = 55.00.a
+ PARAMETER C_BASEADDR = 0xCBE00000
+ PARAMETER C_HIGHADDR = 0xCBE00FFF
+ BUS_INTERFACE SPLB = mb_plb
+ PORT positiona = ipsdksebesegespozicio_plbw_3_positiona
+ PORT positionb = ipsdksebesegespozicio_plbw_3_positionb
+ PORT pospwm0 = ipsdksebesegespozicio_plbw_3_pospwm0
+ PORT speedb = ipsdksebesegespozicio_plbw_3_speedb
+ PORT speedpwm0 = ipsdksebesegespozicio_plbw_3_speedpwm0
+ PORT speeda = ipsdksebesegespozicio_plbw_3_speeda
+ PORT pospwm1 = ipsdksebesegespozicio_plbw_3_pospwm1
+ PORT speedpwm1 = ipsdksebesegespozicio_plbw_3_speedpwm1
+ PORT null_x0 = ipsdksebesegespozicio_plbw_3_null_x0
+END
+

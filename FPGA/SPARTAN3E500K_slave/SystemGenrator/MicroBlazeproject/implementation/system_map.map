@@ -1,0 +1,739 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -pr b -ol high -timing -detail system.ngd
+system.pcf 
+Target Device  : xc3s500e
+Target Package : pq208
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Jun 21 17:08:24 2015
+
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_0_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_0_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_0_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_0_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_0/ipsdksebesegespozicio_plbw_0/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_1_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_1_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_1_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_1_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_1/ipsdksebesegespozicio_plbw_1/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_2_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_2_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_2_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_2_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_2/ipsdksebesegespozicio_plbw_2/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_3_positiona_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP/ipsdksebeseg
+   espozicio_plbw_3_positionb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP) has a mix of clock
+   and non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_3_speeda_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol
+   "physical_group_ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP/ipsdksebesegesp
+   ozicio_plbw_3_speedb_pin_BUFGP/BUFG" (output
+   signal=ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP) has a mix of clock and
+   non-clock loads. The non-clock loads are:
+   Pin D of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+   Pin CLR of
+   ipsdksebesegespozicio_plbw_3/ipsdksebesegespozicio_plbw_3/sysgen_dut/ipsdkseb
+   esegespozicio_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2
+Writing file system_map.ngm...
+Running directed packing...
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[24].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[24].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[24].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[25].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[25].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[25].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[29].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[29].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[29].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[30].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[30].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[30].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[31].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[31].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[31].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[28].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[28].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[28].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[27].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[27].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[27].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[26].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[26].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[26].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[17].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[17].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[17].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[18].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[18].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[18].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[19].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[19].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[19].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[20].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[20].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[20].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[21].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[21].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[21].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[22].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[22].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[22].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[23].SRL16E_I/Use_unisim.MB_SRL16E_I1 failed to
+   merge with F5 multiplexer
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Using_LUT4_2.Op2_MUXF5. 
+   The function generator
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/U
+   sing_FPGA.PreFetch_Buffers[23].SRL16E_I/Use_unisim.MB_SRL16E_I1 is unable to
+   be placed in the G position because the output signal doesn't match other
+   symbols' use of the G signal.  The signal
+   microblaze_0/microblaze_0/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I
+   /Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/op2_Reg already uses G. 
+   The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 24 secs 
+Total CPU  time at the beginning of Placer: 22 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:f903f724) REAL time: 28 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+...................
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y10>. The IO component
+   <ipsdksebesegespozicio_plbw_3_positiona_pin> is placed at site <P49>.  This
+   will not allow the use of the fast path between the IO and the Clock buffer.
+   This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <ipsdksebesegespozicio_plbw_3_positiona_pin.PAD> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN. The use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y10>. The IO component
+   <ipsdksebesegespozicio_plbw_3_positionb_pin> is placed at site <P48>.  This
+   will not allow the use of the fast path between the IO and the Clock buffer.
+   This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <ipsdksebesegespozicio_plbw_3_positionb_pin.PAD> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN. The use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y2>. The IO component <ipsdksebesegespozicio_plbw_0_positiona_pin>
+   is placed at site <P119>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y9>. The IO component <ipsdksebesegespozicio_plbw_0_positionb_pin>
+   is placed at site <P116>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y7>. The IO component <ipsdksebesegespozicio_plbw_0_speeda_pin> is
+   placed at site <P115>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_0_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y4>. The IO component <ipsdksebesegespozicio_plbw_0_speedb_pin> is
+   placed at site <P113>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_0_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y5>. The IO component <ipsdksebesegespozicio_plbw_1_speeda_pin> is
+   placed at site <P108>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y1>. The IO component <ipsdksebesegespozicio_plbw_1_speedb_pin> is
+   placed at site <P107>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y1>. The IO component <ipsdksebesegespozicio_plbw_2_positiona_pin>
+   is placed at site <P61>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X1Y0>. The IO component <ipsdksebesegespozicio_plbw_2_positionb_pin>
+   is placed at site <P60>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y0>. The IO component <ipsdksebesegespozicio_plbw_2_speeda_pin> is
+   placed at site <P55>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_2_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X0Y3>. The IO component <ipsdksebesegespozicio_plbw_2_speedb_pin> is
+   placed at site <P50>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_2_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_positiona_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y6>. The IO component <ipsdksebesegespozicio_plbw_1_positiona_pin>
+   is placed at site <P112>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_positiona_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_1_positionb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X3Y3>. The IO component <ipsdksebesegespozicio_plbw_1_positionb_pin>
+   is placed at site <P109>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_1_positionb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_speeda_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X2Y11>. The IO component <ipsdksebesegespozicio_plbw_3_speeda_pin>
+   is placed at site <P47>.  This will not allow the use of the fast path
+   between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_3_speeda_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <ipsdksebesegespozicio_plbw_3_speedb_pin_BUFGP/BUFG> is placed at site
+   <BUFGMUX_X0Y2>. The IO component <ipsdksebesegespozicio_plbw_3_speedb_pin> is
+   placed at site <P45>.  This will not allow the use of the fast path between
+   the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <ipsdksebesegespozicio_plbw_3_speedb_pin.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:f3263c45) REAL time: 37 secs 
+
+...........................
+.............................................
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:f3263c45) REAL time: 1 mins 21 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:f3263c45) REAL time: 1 mins 21 secs 
+
+Phase 7.8  Global Placement
+.......................
+................................................
+.....
+..........
+Phase 7.8  Global Placement (Checksum:b57470ec) REAL time: 2 mins 9 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:b57470ec) REAL time: 2 mins 9 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:a089ea1e) REAL time: 2 mins 57 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:a089ea1e) REAL time: 2 mins 58 secs 
+
+Total REAL time to Placer completion: 2 mins 58 secs 
+Total CPU  time to Placer completion: 2 mins 43 secs 
+Running post-placement packing...
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<30>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<31>> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   50
+Logic Utilization:
+  Number of Slice Flip Flops:         4,610 out of   9,312   49%
+  Number of 4 input LUTs:             5,246 out of   9,312   56%
+Logic Distribution:
+  Number of occupied Slices:          3,971 out of   4,656   85%
+    Number of Slices containing only related logic:   3,971 out of   3,971 100%
+    Number of Slices containing unrelated logic:          0 out of   3,971   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       5,713 out of   9,312   61%
+    Number used as logic:             4,838
+    Number used as a route-thru:        467
+    Number used for Dual Port RAMs:     256
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     152
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 48 out of     158   30%
+    IOB Flip Flops:                       6
+  Number of RAMB16s:                     16 out of      20   80%
+  Number of BUFGMUXs:                    17 out of      24   70%
+  Number of DCMs:                         1 out of       4   25%
+  Number of MULT18X18SIOs:               11 out of      20   55%
+
+Average Fanout of Non-Clock Nets:                2.97
+
+Peak Memory Usage:  486 MB
+Total REAL time to MAP completion:  3 mins 5 secs 
+Total CPU time to MAP completion:   2 mins 50 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

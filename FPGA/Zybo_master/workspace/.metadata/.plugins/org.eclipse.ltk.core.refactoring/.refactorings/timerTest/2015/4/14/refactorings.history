@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;timerTest/src/GyroReg.h&apos; to &apos;GyroReg6051.h&apos;" description="Rename resource &apos;GyroReg.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/GyroReg.h" name="GyroReg6051.h" stamp="1427904346766" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;timerTest/src/GyroReg6051.h&apos; to &apos;GyroReg6050.h&apos;" description="Rename resource &apos;GyroReg6051.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/GyroReg6051.h" name="GyroReg6050.h" stamp="1427904595257" updateReferences="true"/>
+</session>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+########################################################################
+##
+## Copyright (c) 2010 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "sg_ipdialog.dtd" [
+<!ENTITY C_BASEADDR '
+<widget id="C_BASEADDR">
+    <key>C_BASEADDR</key>
+    <label>C_BASEADDR</label>
+    <tip>Base Address</tip>
+</widget>
+'>
+<!ENTITY C_HIGHADDR '
+<widget id="C_HIGHADDR">
+    <key>C_HIGHADDR</key>
+    <label>C_HIGHADDR</label>
+    <tip>High Address</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_USEBESSEG '
+<widget id="C_MEMMAP_USEBESSEG">
+    <key>C_MEMMAP_USEBESSEG</key>
+    <label>C_MEMMAP_USEBESSEG</label>
+    <tip>From Register
+    data type: Fix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_UPOZICIO '
+<widget id="C_MEMMAP_UPOZICIO">
+    <key>C_MEMMAP_UPOZICIO</key>
+    <label>C_MEMMAP_UPOZICIO</label>
+    <tip>From Register
+    data type: Fix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_SEBESSEGPOZICIO '
+<widget id="C_MEMMAP_SEBESSEGPOZICIO">
+    <key>C_MEMMAP_SEBESSEGPOZICIO</key>
+    <label>C_MEMMAP_SEBESSEGPOZICIO</label>
+    <tip>From Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_AKTPOZICIO '
+<widget id="C_MEMMAP_AKTPOZICIO">
+    <key>C_MEMMAP_AKTPOZICIO</key>
+    <label>C_MEMMAP_AKTPOZICIO</label>
+    <tip>From Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_AKTSEBESSEG '
+<widget id="C_MEMMAP_AKTSEBESSEG">
+    <key>C_MEMMAP_AKTSEBESSEG</key>
+    <label>C_MEMMAP_AKTSEBESSEG</label>
+    <tip>From Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_ESEBESSEG '
+<widget id="C_MEMMAP_ESEBESSEG">
+    <key>C_MEMMAP_ESEBESSEG</key>
+    <label>C_MEMMAP_ESEBESSEG</label>
+    <tip>From Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_POSREF '
+<widget id="C_MEMMAP_POSREF">
+    <key>C_MEMMAP_POSREF</key>
+    <label>C_MEMMAP_POSREF</label>
+    <tip>To Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_Q1 '
+<widget id="C_MEMMAP_Q1">
+    <key>C_MEMMAP_Q1</key>
+    <label>C_MEMMAP_Q1</label>
+    <tip>To Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_Q2 '
+<widget id="C_MEMMAP_Q2">
+    <key>C_MEMMAP_Q2</key>
+    <label>C_MEMMAP_Q2</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_Q0 '
+<widget id="C_MEMMAP_Q0">
+    <key>C_MEMMAP_Q0</key>
+    <label>C_MEMMAP_Q0</label>
+    <tip>To Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_PIDTS '
+<widget id="C_MEMMAP_PIDTS">
+    <key>C_MEMMAP_PIDTS</key>
+    <label>C_MEMMAP_PIDTS</label>
+    <tip>To Register
+    data type: UFix_32_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_REFSPEED '
+<widget id="C_MEMMAP_REFSPEED">
+    <key>C_MEMMAP_REFSPEED</key>
+    <label>C_MEMMAP_REFSPEED</label>
+    <tip>To Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_SUGARAKARANYA '
+<widget id="C_MEMMAP_SUGARAKARANYA">
+    <key>C_MEMMAP_SUGARAKARANYA</key>
+    <label>C_MEMMAP_SUGARAKARANYA</label>
+    <tip>To Register
+    data type: Fix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_Q_SAV '
+<widget id="C_MEMMAP_Q_SAV">
+    <key>C_MEMMAP_Q_SAV</key>
+    <label>C_MEMMAP_Q_SAV</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+<!ENTITY C_MEMMAP_CONFIG '
+<widget id="C_MEMMAP_CONFIG">
+    <key>C_MEMMAP_CONFIG</key>
+    <label>C_MEMMAP_CONFIG</label>
+    <tip>To Register
+    data type: UFix_16_0</tip>
+</widget>
+'>
+]>
+
+<doc>
+<view id="Memory Map Information">
+    <display>Memory Map Information</display>
+    <group id="All">
+        <display>All</display>
+        <item>&C_BASEADDR;</item>
+        <item>&C_MEMMAP_USEBESSEG;</item>
+        <item>&C_MEMMAP_UPOZICIO;</item>
+        <item>&C_MEMMAP_SEBESSEGPOZICIO;</item>
+        <item>&C_MEMMAP_AKTPOZICIO;</item>
+        <item>&C_MEMMAP_AKTSEBESSEG;</item>
+        <item>&C_MEMMAP_ESEBESSEG;</item>
+        <item>&C_MEMMAP_POSREF;</item>
+        <item>&C_MEMMAP_Q1;</item>
+        <item>&C_MEMMAP_Q2;</item>
+        <item>&C_MEMMAP_Q0;</item>
+        <item>&C_MEMMAP_PIDTS;</item>
+        <item>&C_MEMMAP_REFSPEED;</item>
+        <item>&C_MEMMAP_SUGARAKARANYA;</item>
+        <item>&C_MEMMAP_Q_SAV;</item>
+        <item>&C_MEMMAP_CONFIG;</item>
+    </group>
+    <group id="From/To Registers">
+        <display>From/To Registers</display>
+        <item>&C_BASEADDR;</item>
+        <item>&C_MEMMAP_USEBESSEG;</item>
+        <item>&C_MEMMAP_UPOZICIO;</item>
+        <item>&C_MEMMAP_SEBESSEGPOZICIO;</item>
+        <item>&C_MEMMAP_AKTPOZICIO;</item>
+        <item>&C_MEMMAP_AKTSEBESSEG;</item>
+        <item>&C_MEMMAP_ESEBESSEG;</item>
+        <item>&C_MEMMAP_POSREF;</item>
+        <item>&C_MEMMAP_Q1;</item>
+        <item>&C_MEMMAP_Q2;</item>
+        <item>&C_MEMMAP_Q0;</item>
+        <item>&C_MEMMAP_PIDTS;</item>
+        <item>&C_MEMMAP_REFSPEED;</item>
+        <item>&C_MEMMAP_SUGARAKARANYA;</item>
+        <item>&C_MEMMAP_Q_SAV;</item>
+        <item>&C_MEMMAP_CONFIG;</item>
+    </group>
+    <group id="From/To FIFOs">
+        <display>From/To FIFOs</display>
+        <item>&C_BASEADDR;</item>
+    </group>
+    <group id="Shared Memories">
+        <display>Shared Memories</display>
+        <item>&C_BASEADDR;</item>
+    </group>
+</view>
+</doc>

@@ -1,0 +1,9 @@
+
+#ifndef UARTSEND_H_
+#define UARTSEND_H_
+
+
+
+int SendString(u16 DeviceId,u8 *data[]);
+
+#endif /* UARTSEND_H_ */

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;timerTest/src/SPI_csogag_type&apos; to &apos;SPI_csogag_type.h&apos;" description="Rename resource &apos;SPI_csogag_type&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SPI_csogag_type" name="SPI_csogag_type.h" stamp="1427810146533" updateReferences="true"/>
+</session>

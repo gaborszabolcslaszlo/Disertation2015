@@ -1,0 +1,2014 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Reading constraint file meresholtidomotrok_cw.xcf.
+XCF parsing done.
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_meresholtidomotrok.prj"
+Input Format                       : mixed
+Synthesis Constraint File          : meresholtidomotrok_cw.xcf
+
+---- Target Parameters
+Output File Name                   : "meresholtidomotrok_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4pq208
+
+---- Source Options
+Entity Name                        : meresholtidomotrok_cw
+Top Module Name                    : meresholtidomotrok_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+Write Timing Constraints           : yes
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" in Library work.
+Entity <addsb_11_0_178ba6eaed72af2d> compiled.
+Entity <addsb_11_0_178ba6eaed72af2d> (Architecture <addsb_11_0_178ba6eaed72af2d_a>) compiled.
+Entity <cntr_11_0_5baa608aaa6fc4cf> compiled.
+Entity <cntr_11_0_5baa608aaa6fc4cf> (Architecture <cntr_11_0_5baa608aaa6fc4cf_a>) compiled.
+Entity <cntr_11_0_d7c176806556610b> compiled.
+Entity <cntr_11_0_d7c176806556610b> (Architecture <cntr_11_0_d7c176806556610b_a>) compiled.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <srl17e> compiled.
+Entity <srl17e> (Architecture <structural>) compiled.
+Entity <synth_reg> compiled.
+Entity <synth_reg> (Architecture <structural>) compiled.
+Entity <synth_reg_reg> compiled.
+Entity <synth_reg_reg> (Architecture <behav>) compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <convert_func_call> compiled.
+Entity <convert_func_call> (Architecture <behavior>) compiled.
+Entity <xlconvert> compiled.
+Entity <xlconvert> (Architecture <behavior>) compiled.
+Entity <xlcounter_free_MeresHoltidoMotrok> compiled.
+Entity <xlcounter_free_MeresHoltidoMotrok> (Architecture <behavior>) compiled.
+Entity <inverter_e5b38cca3b> compiled.
+Entity <inverter_e5b38cca3b> (Architecture <behavior>) compiled.
+Entity <inverter_6844eee868> compiled.
+Entity <inverter_6844eee868> (Architecture <behavior>) compiled.
+Entity <logical_49a7e4b36d> compiled.
+Entity <logical_49a7e4b36d> (Architecture <behavior>) compiled.
+Entity <logical_a670ce0bc3> compiled.
+Entity <logical_a670ce0bc3> (Architecture <behavior>) compiled.
+Entity <relational_7a7af7b80d> compiled.
+Entity <relational_7a7af7b80d> (Architecture <behavior>) compiled.
+Entity <xlregister> compiled.
+Entity <xlregister> (Architecture <behavior>) compiled.
+Entity <inverter_e4a281cf78> compiled.
+Entity <inverter_e4a281cf78> (Architecture <behavior>) compiled.
+Entity <logical_938d99ac11> compiled.
+Entity <logical_938d99ac11> (Architecture <behavior>) compiled.
+Entity <reinterpret_9a54e08c7c> compiled.
+Entity <reinterpret_9a54e08c7c> (Architecture <behavior>) compiled.
+Entity <constant_60b1e3cf3c> compiled.
+Entity <constant_60b1e3cf3c> (Architecture <behavior>) compiled.
+Entity <relational_7a2906d528> compiled.
+Entity <relational_7a2906d528> (Architecture <behavior>) compiled.
+Entity <relational_8059411daf> compiled.
+Entity <relational_8059411daf> (Architecture <behavior>) compiled.
+Entity <mux_2a57cddffb> compiled.
+Entity <mux_2a57cddffb> (Architecture <behavior>) compiled.
+Entity <relational_9fe1fd91dc> compiled.
+Entity <relational_9fe1fd91dc> (Architecture <behavior>) compiled.
+Entity <constant_b789b9ed67> compiled.
+Entity <constant_b789b9ed67> (Architecture <behavior>) compiled.
+Entity <shift_dacab189fc> compiled.
+Entity <shift_dacab189fc> (Architecture <behavior>) compiled.
+Entity <mux_cde5f13da6> compiled.
+Entity <mux_cde5f13da6> (Architecture <behavior>) compiled.
+Entity <logical_80f90b97d0> compiled.
+Entity <logical_80f90b97d0> (Architecture <behavior>) compiled.
+Entity <mux_2c45f290ed> compiled.
+Entity <mux_2c45f290ed> (Architecture <behavior>) compiled.
+Entity <constant_32150454cb> compiled.
+Entity <constant_32150454cb> (Architecture <behavior>) compiled.
+Entity <constant_190a6d2a1a> compiled.
+Entity <constant_190a6d2a1a> (Architecture <behavior>) compiled.
+Entity <xladdsub_MeresHoltidoMotrok> compiled.
+Entity <xladdsub_MeresHoltidoMotrok> (Architecture <behavior>) compiled.
+Entity <inverter_1ca63a13a1> compiled.
+Entity <inverter_1ca63a13a1> (Architecture <behavior>) compiled.
+Entity <bitbasher_7e62e7628d> compiled.
+Entity <bitbasher_7e62e7628d> (Architecture <behavior>) compiled.
+Entity <xldelay> compiled.
+Entity <xldelay> (Architecture <behavior>) compiled.
+Entity <relational_3ffd1d0a40> compiled.
+Entity <relational_3ffd1d0a40> (Architecture <behavior>) compiled.
+Entity <relational_14f77d7b05> compiled.
+Entity <relational_14f77d7b05> (Architecture <behavior>) compiled.
+Entity <bitbasher_75b6572827> compiled.
+Entity <bitbasher_75b6572827> (Architecture <behavior>) compiled.
+Entity <constant_963ed6358a> compiled.
+Entity <constant_963ed6358a> (Architecture <behavior>) compiled.
+Entity <reinterpret_75275f6c4a> compiled.
+Entity <reinterpret_75275f6c4a> (Architecture <behavior>) compiled.
+Entity <bitbasher_2014c2b795> compiled.
+Entity <bitbasher_2014c2b795> (Architecture <behavior>) compiled.
+Entity <bitbasher_44c78d706b> compiled.
+Entity <bitbasher_44c78d706b> (Architecture <behavior>) compiled.
+Entity <constant_f49489e83b> compiled.
+Entity <constant_f49489e83b> (Architecture <behavior>) compiled.
+Entity <constant_52ed67d34a> compiled.
+Entity <constant_52ed67d34a> (Architecture <behavior>) compiled.
+Entity <SensorIncModul> compiled.
+Entity <SensorIncModul> (Architecture <BEHAVIORAL>) compiled.
+Entity <inverter_e2b989a05e> compiled.
+Entity <inverter_e2b989a05e> (Architecture <behavior>) compiled.
+Entity <h_hid_ileszto1_entity_b3eaabbb0d> compiled.
+Entity <h_hid_ileszto1_entity_b3eaabbb0d> (Architecture <structural>) compiled.
+Entity <h_hid_ileszto2_entity_e490f1750e> compiled.
+Entity <h_hid_ileszto2_entity_e490f1750e> (Architecture <structural>) compiled.
+Entity <pwmpos_entity_eaf10e3dc0> compiled.
+Entity <pwmpos_entity_eaf10e3dc0> (Architecture <structural>) compiled.
+Entity <pwm_entity_165936bdb6> compiled.
+Entity <pwm_entity_165936bdb6> (Architecture <structural>) compiled.
+Entity <pozic_entity_eb514ec999> compiled.
+Entity <pozic_entity_eb514ec999> (Architecture <structural>) compiled.
+Entity <signtousign_entity_82abfe96fd> compiled.
+Entity <signtousign_entity_82abfe96fd> (Architecture <structural>) compiled.
+Entity <pozici_szab_entity_ee4c55f8e6> compiled.
+Entity <pozici_szab_entity_ee4c55f8e6> (Architecture <structural>) compiled.
+Entity <mintav_teli_jel_generator_entity_ba372a1d93> compiled.
+Entity <mintav_teli_jel_generator_entity_ba372a1d93> (Architecture <structural>) compiled.
+Entity <sebesseg_m_r_entity_ab62890fbd> compiled.
+Entity <sebesseg_m_r_entity_ab62890fbd> (Architecture <structural>) compiled.
+Entity <sebess_g_szab_entity_c964557ce9> compiled.
+Entity <sebess_g_szab_entity_c964557ce9> (Architecture <structural>) compiled.
+Entity <tobbi_entity_b548292082> compiled.
+Entity <tobbi_entity_b548292082> (Architecture <structural>) compiled.
+Entity <meresholtidomotrok> compiled.
+Entity <meresholtidomotrok> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd" in Library work.
+Entity <xlclockdriver> compiled.
+Entity <xlclockdriver> (Architecture <behavior>) compiled.
+Entity <default_clock_driver_MeresHoltidoMotrok> compiled.
+Entity <default_clock_driver_MeresHoltidoMotrok> (Architecture <structural>) compiled.
+Entity <meresholtidomotrok_cw> compiled.
+Entity <meresholtidomotrok_cw> (Architecture <structural>) compiled.
+
+Reading constraint file meresholtidomotrok_cw.xcf.
+XCF parsing done.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <meresholtidomotrok_cw> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <default_clock_driver_MeresHoltidoMotrok> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <meresholtidomotrok> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlclockdriver> in library <work> (architecture <behavior>) with generics.
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+
+Analyzing hierarchy for entity <bitbasher_2014c2b795> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_44c78d706b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_f49489e83b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_52ed67d34a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_963ed6358a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <h_hid_ileszto1_entity_b3eaabbb0d> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <h_hid_ileszto2_entity_e490f1750e> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <SensorIncModul> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <inverter_e2b989a05e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <pozici_szab_entity_ee4c55f8e6> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pwmpos_entity_eaf10e3dc0> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <sebess_g_szab_entity_c964557ce9> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <tobbi_entity_b548292082> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlcounter_free_MeresHoltidoMotrok> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_d7c176806556610b"
+	op_arith = 1
+	op_width = 16
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <inverter_6844eee868> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_49a7e4b36d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_a670ce0bc3> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_7a7af7b80d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 1
+	init_value = "0"
+
+Analyzing hierarchy for entity <inverter_e4a281cf78> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_938d99ac11> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_7e62e7628d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <pozic_entity_eb514ec999> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <pwm_entity_165936bdb6> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 17
+	init_value = "00000000000000000"
+
+Analyzing hierarchy for entity <signtousign_entity_82abfe96fd> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 2
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 2
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <reinterpret_9a54e08c7c> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <bitbasher_75b6572827> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_963ed6358a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mintav_teli_jel_generator_entity_ba372a1d93> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <sebesseg_m_r_entity_ab62890fbd> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 12
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 12
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <reinterpret_75275f6c4a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <mux_cde5f13da6> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <inverter_6844eee868> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_2c45f290ed> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_32150454cb> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_190a6d2a1a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 1
+	init_value = "0"
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 16
+	init_value = "0000000000000000"
+
+Analyzing hierarchy for entity <xladdsub_MeresHoltidoMotrok> in library <work> (architecture <behavior>) with generics.
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_178ba6eaed72af2d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+
+Analyzing hierarchy for entity <xlcounter_free_MeresHoltidoMotrok> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_d7c176806556610b"
+	op_arith = 1
+	op_width = 16
+
+Analyzing hierarchy for entity <relational_8059411daf> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_7a2906d528> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_49a7e4b36d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_2a57cddffb> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_b789b9ed67> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_9fe1fd91dc> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <shift_dacab189fc> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_60b1e3cf3c> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+
+Analyzing hierarchy for entity <inverter_1ca63a13a1> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 2
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 2
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 32
+
+Analyzing hierarchy for entity <logical_a670ce0bc3> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <relational_3ffd1d0a40> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlcounter_free_MeresHoltidoMotrok> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_5baa608aaa6fc4cf"
+	op_arith = 1
+	op_width = 32
+
+Analyzing hierarchy for entity <relational_14f77d7b05> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 12
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 12
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 32
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <meresholtidomotrok_cw> in library <work> (Architecture <structural>).
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x14>.
+    Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
+    Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "optimize_primitives = FALSE" for instance <persistentdff_inst> in unit <meresholtidomotrok_cw>.
+    Set property "syn_black_box = TRUE" for instance <persistentdff_inst> in unit <meresholtidomotrok_cw>.
+    Set property "syn_noprune = TRUE" for instance <persistentdff_inst> in unit <meresholtidomotrok_cw>.
+Entity <meresholtidomotrok_cw> analyzed. Unit <meresholtidomotrok_cw> generated.
+
+Analyzing Entity <default_clock_driver_MeresHoltidoMotrok> in library <work> (Architecture <structural>).
+    Set property "syn_noprune = TRUE" for unit <default_clock_driver_MeresHoltidoMotrok>.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd" line 378: Unconnected output port 'clr' of component 'xlclockdriver'.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd" line 378: Unconnected output port 'ce_logic' of component 'xlclockdriver'.
+Entity <default_clock_driver_MeresHoltidoMotrok> analyzed. Unit <default_clock_driver_MeresHoltidoMotrok> generated.
+
+Analyzing generic Entity <xlclockdriver> in library <work> (Architecture <behavior>).
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+Entity <xlclockdriver> analyzed. Unit <xlclockdriver> generated.
+
+Analyzing generic Entity <synth_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.1> analyzed. Unit <synth_reg_w_init.1> generated.
+
+Analyzing generic Entity <single_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	width = 1
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.1> analyzed. Unit <single_reg_w_init.1> generated.
+
+Analyzing Entity <meresholtidomotrok> in library <work> (Architecture <structural>).
+Entity <meresholtidomotrok> analyzed. Unit <meresholtidomotrok> generated.
+
+Analyzing Entity <bitbasher_2014c2b795> in library <work> (Architecture <behavior>).
+Entity <bitbasher_2014c2b795> analyzed. Unit <bitbasher_2014c2b795> generated.
+
+Analyzing Entity <bitbasher_44c78d706b> in library <work> (Architecture <behavior>).
+Entity <bitbasher_44c78d706b> analyzed. Unit <bitbasher_44c78d706b> generated.
+
+Analyzing Entity <constant_f49489e83b> in library <work> (Architecture <behavior>).
+Entity <constant_f49489e83b> analyzed. Unit <constant_f49489e83b> generated.
+
+Analyzing Entity <constant_52ed67d34a> in library <work> (Architecture <behavior>).
+Entity <constant_52ed67d34a> analyzed. Unit <constant_52ed67d34a> generated.
+
+Analyzing Entity <constant_963ed6358a> in library <work> (Architecture <behavior>).
+Entity <constant_963ed6358a> analyzed. Unit <constant_963ed6358a> generated.
+
+Analyzing Entity <h_hid_ileszto1_entity_b3eaabbb0d> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4153: Unconnected input port 'up' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4153: Unconnected input port 'load' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4153: Unconnected input port 'din' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+Entity <h_hid_ileszto1_entity_b3eaabbb0d> analyzed. Unit <h_hid_ileszto1_entity_b3eaabbb0d> generated.
+
+Analyzing generic Entity <xlconvert.1> in library <work> (Architecture <behavior>).
+	bool_conversion = 1
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.1> analyzed. Unit <xlconvert.1> generated.
+
+Analyzing generic Entity <xlcounter_free_MeresHoltidoMotrok.1> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_d7c176806556610b"
+	op_arith = 1
+	op_width = 16
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_free_MeresHoltidoMotrok.1>.
+Entity <xlcounter_free_MeresHoltidoMotrok.1> analyzed. Unit <xlcounter_free_MeresHoltidoMotrok.1> generated.
+
+Analyzing Entity <inverter_e5b38cca3b> in library <work> (Architecture <behavior>).
+Entity <inverter_e5b38cca3b> analyzed. Unit <inverter_e5b38cca3b> generated.
+
+Analyzing Entity <inverter_6844eee868> in library <work> (Architecture <behavior>).
+Entity <inverter_6844eee868> analyzed. Unit <inverter_6844eee868> generated.
+
+Analyzing Entity <logical_49a7e4b36d> in library <work> (Architecture <behavior>).
+Entity <logical_49a7e4b36d> analyzed. Unit <logical_49a7e4b36d> generated.
+
+Analyzing Entity <logical_a670ce0bc3> in library <work> (Architecture <behavior>).
+Entity <logical_a670ce0bc3> analyzed. Unit <logical_a670ce0bc3> generated.
+
+Analyzing Entity <relational_7a7af7b80d> in library <work> (Architecture <behavior>).
+Entity <relational_7a7af7b80d> analyzed. Unit <relational_7a7af7b80d> generated.
+
+Analyzing generic Entity <xlregister.1> in library <work> (Architecture <behavior>).
+	d_width = 1
+	init_value = "0"
+Entity <xlregister.1> analyzed. Unit <xlregister.1> generated.
+
+Analyzing generic Entity <synth_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.2> analyzed. Unit <synth_reg_w_init.2> generated.
+
+Analyzing generic Entity <single_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	width = 1
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.2> analyzed. Unit <single_reg_w_init.2> generated.
+
+Analyzing Entity <h_hid_ileszto2_entity_e490f1750e> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4511: Unconnected input port 'up' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4511: Unconnected input port 'load' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4511: Unconnected input port 'din' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+Entity <h_hid_ileszto2_entity_e490f1750e> analyzed. Unit <h_hid_ileszto2_entity_e490f1750e> generated.
+
+Analyzing Entity <inverter_e4a281cf78> in library <work> (Architecture <behavior>).
+Entity <inverter_e4a281cf78> analyzed. Unit <inverter_e4a281cf78> generated.
+
+Analyzing Entity <logical_938d99ac11> in library <work> (Architecture <behavior>).
+Entity <logical_938d99ac11> analyzed. Unit <logical_938d99ac11> generated.
+
+Analyzing Entity <SensorIncModul> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3833: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d1> in unit <SensorIncModul>.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3840: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d2> in unit <SensorIncModul>.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3847: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <a_kanalis_d3> in unit <SensorIncModul>.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3855: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d1> in unit <SensorIncModul>.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3862: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d2> in unit <SensorIncModul>.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3869: Instantiating black box module <FDCE>.
+    Set user-defined property "INIT =  0" for instance <b_kanalis_d3> in unit <SensorIncModul>.
+Entity <SensorIncModul> analyzed. Unit <SensorIncModul> generated.
+
+Analyzing Entity <inverter_e2b989a05e> in library <work> (Architecture <behavior>).
+Entity <inverter_e2b989a05e> analyzed. Unit <inverter_e2b989a05e> generated.
+
+Analyzing Entity <pozici_szab_entity_ee4c55f8e6> in library <work> (Architecture <structural>).
+Entity <pozici_szab_entity_ee4c55f8e6> analyzed. Unit <pozici_szab_entity_ee4c55f8e6> generated.
+
+Analyzing Entity <bitbasher_7e62e7628d> in library <work> (Architecture <behavior>).
+Entity <bitbasher_7e62e7628d> analyzed. Unit <bitbasher_7e62e7628d> generated.
+
+Analyzing generic Entity <xlconvert.2> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.2> analyzed. Unit <xlconvert.2> generated.
+
+Analyzing generic Entity <convert_func_call.1> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.1> analyzed. Unit <convert_func_call.1> generated.
+
+Analyzing generic Entity <xlconvert.3> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.3> analyzed. Unit <xlconvert.3> generated.
+
+Analyzing generic Entity <convert_func_call.2> in library <work> (Architecture <behavior>).
+	din_arith = 2
+	din_bin_pt = 0
+	din_width = 16
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 16
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.2> analyzed. Unit <convert_func_call.2> generated.
+
+Analyzing Entity <pozic_entity_eb514ec999> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5089: Unconnected input port 'c_in' of component 'xladdsub_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5089: Unconnected input port 'rst' of component 'xladdsub_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5089: Unconnected output port 'c_out' of component 'xladdsub_MeresHoltidoMotrok'.
+Entity <pozic_entity_eb514ec999> analyzed. Unit <pozic_entity_eb514ec999> generated.
+
+Analyzing Entity <mux_cde5f13da6> in library <work> (Architecture <behavior>).
+Entity <mux_cde5f13da6> analyzed. Unit <mux_cde5f13da6> generated.
+
+Analyzing Entity <mux_2c45f290ed> in library <work> (Architecture <behavior>).
+Entity <mux_2c45f290ed> analyzed. Unit <mux_2c45f290ed> generated.
+
+Analyzing Entity <logical_80f90b97d0> in library <work> (Architecture <behavior>).
+Entity <logical_80f90b97d0> analyzed. Unit <logical_80f90b97d0> generated.
+
+Analyzing Entity <constant_32150454cb> in library <work> (Architecture <behavior>).
+Entity <constant_32150454cb> analyzed. Unit <constant_32150454cb> generated.
+
+Analyzing Entity <constant_190a6d2a1a> in library <work> (Architecture <behavior>).
+Entity <constant_190a6d2a1a> analyzed. Unit <constant_190a6d2a1a> generated.
+
+Analyzing generic Entity <xlregister.3> in library <work> (Architecture <behavior>).
+	d_width = 16
+	init_value = "0000000000000000"
+Entity <xlregister.3> analyzed. Unit <xlregister.3> generated.
+
+Analyzing generic Entity <synth_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	latency = 1
+	width = 16
+Entity <synth_reg_w_init.4> analyzed. Unit <synth_reg_w_init.4> generated.
+
+Analyzing generic Entity <single_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0000000000000000"
+	width = 16
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.4> analyzed. Unit <single_reg_w_init.4> generated.
+
+Analyzing generic Entity <xladdsub_MeresHoltidoMotrok> in library <work> (Architecture <behavior>).
+	a_arith = 2
+	a_bin_pt = 0
+	a_width = 16
+	b_arith = 2
+	b_bin_pt = 0
+	b_width = 16
+	c_has_c_in = 0
+	c_has_c_out = 0
+	c_in_arith = 1
+	c_in_bin_pt = 4
+	c_in_width = 16
+	c_latency = 0
+	c_out_arith = 1
+	c_out_bin_pt = 4
+	c_out_width = 16
+	c_output_width = 17
+	core_name0 = "addsb_11_0_178ba6eaed72af2d"
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	extra_registers = 0
+	full_s_arith = 2
+	full_s_width = 17
+	latency = 0
+	mode = 1
+	overflow = 2
+	quantization = 1
+	rst_arith = 1
+	rst_bin_pt = 0
+	rst_width = 1
+	s_arith = 2
+	s_bin_pt = 0
+	s_width = 16
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 3283: Instantiating black box module <addsb_11_0_178ba6eaed72af2d>.
+Entity <xladdsub_MeresHoltidoMotrok> analyzed. Unit <xladdsub_MeresHoltidoMotrok> generated.
+
+Analyzing Entity <pwm_entity_165936bdb6> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4737: Unconnected input port 'up' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4737: Unconnected input port 'load' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 4737: Unconnected input port 'din' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+Entity <pwm_entity_165936bdb6> analyzed. Unit <pwm_entity_165936bdb6> generated.
+
+Analyzing Entity <relational_8059411daf> in library <work> (Architecture <behavior>).
+Entity <relational_8059411daf> analyzed. Unit <relational_8059411daf> generated.
+
+Analyzing Entity <relational_7a2906d528> in library <work> (Architecture <behavior>).
+Entity <relational_7a2906d528> analyzed. Unit <relational_7a2906d528> generated.
+
+Analyzing Entity <mux_2a57cddffb> in library <work> (Architecture <behavior>).
+Entity <mux_2a57cddffb> analyzed. Unit <mux_2a57cddffb> generated.
+
+Analyzing Entity <constant_b789b9ed67> in library <work> (Architecture <behavior>).
+Entity <constant_b789b9ed67> analyzed. Unit <constant_b789b9ed67> generated.
+
+Analyzing Entity <relational_9fe1fd91dc> in library <work> (Architecture <behavior>).
+Entity <relational_9fe1fd91dc> analyzed. Unit <relational_9fe1fd91dc> generated.
+
+Analyzing Entity <shift_dacab189fc> in library <work> (Architecture <behavior>).
+Entity <shift_dacab189fc> analyzed. Unit <shift_dacab189fc> generated.
+
+Analyzing Entity <constant_60b1e3cf3c> in library <work> (Architecture <behavior>).
+Entity <constant_60b1e3cf3c> analyzed. Unit <constant_60b1e3cf3c> generated.
+
+Analyzing generic Entity <xlregister.2> in library <work> (Architecture <behavior>).
+	d_width = 17
+	init_value = "00000000000000000"
+Entity <xlregister.2> analyzed. Unit <xlregister.2> generated.
+
+Analyzing generic Entity <synth_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	latency = 1
+	width = 17
+Entity <synth_reg_w_init.3> analyzed. Unit <synth_reg_w_init.3> generated.
+
+Analyzing generic Entity <single_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "00000000000000000"
+	width = 17
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 2058: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.3> analyzed. Unit <single_reg_w_init.3> generated.
+
+Analyzing Entity <signtousign_entity_82abfe96fd> in library <work> (Architecture <structural>).
+Entity <signtousign_entity_82abfe96fd> analyzed. Unit <signtousign_entity_82abfe96fd> generated.
+
+Analyzing Entity <inverter_1ca63a13a1> in library <work> (Architecture <behavior>).
+Entity <inverter_1ca63a13a1> analyzed. Unit <inverter_1ca63a13a1> generated.
+
+Analyzing Entity <pwmpos_entity_eaf10e3dc0> in library <work> (Architecture <structural>).
+Entity <pwmpos_entity_eaf10e3dc0> analyzed. Unit <pwmpos_entity_eaf10e3dc0> generated.
+
+Analyzing generic Entity <xlconvert.4> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 2
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 2
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.4> analyzed. Unit <xlconvert.4> generated.
+
+Analyzing generic Entity <convert_func_call.3> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 2
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 2
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.3> analyzed. Unit <convert_func_call.3> generated.
+
+Analyzing Entity <reinterpret_9a54e08c7c> in library <work> (Architecture <behavior>).
+Entity <reinterpret_9a54e08c7c> analyzed. Unit <reinterpret_9a54e08c7c> generated.
+
+Analyzing Entity <sebess_g_szab_entity_c964557ce9> in library <work> (Architecture <structural>).
+Entity <sebess_g_szab_entity_c964557ce9> analyzed. Unit <sebess_g_szab_entity_c964557ce9> generated.
+
+Analyzing Entity <bitbasher_75b6572827> in library <work> (Architecture <behavior>).
+Entity <bitbasher_75b6572827> analyzed. Unit <bitbasher_75b6572827> generated.
+
+Analyzing Entity <mintav_teli_jel_generator_entity_ba372a1d93> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5555: Unconnected input port 'up' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5555: Unconnected input port 'load' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5555: Unconnected input port 'din' of component 'xlcounter_free_MeresHoltidoMotrok' is tied to default value.
+Entity <mintav_teli_jel_generator_entity_ba372a1d93> analyzed. Unit <mintav_teli_jel_generator_entity_ba372a1d93> generated.
+
+Analyzing generic Entity <xldelay> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 32
+Entity <xldelay> analyzed. Unit <xldelay> generated.
+
+Analyzing generic Entity <synth_reg> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 32
+Entity <synth_reg> analyzed. Unit <synth_reg> generated.
+
+Analyzing generic Entity <srl17e> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 32
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 1836: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e> analyzed. Unit <srl17e> generated.
+
+Analyzing Entity <relational_3ffd1d0a40> in library <work> (Architecture <behavior>).
+Entity <relational_3ffd1d0a40> analyzed. Unit <relational_3ffd1d0a40> generated.
+
+Analyzing generic Entity <xlcounter_free_MeresHoltidoMotrok.2> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_5baa608aaa6fc4cf"
+	op_arith = 1
+	op_width = 32
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp1.core_instance1> in unit <xlcounter_free_MeresHoltidoMotrok.2>.
+Entity <xlcounter_free_MeresHoltidoMotrok.2> analyzed. Unit <xlcounter_free_MeresHoltidoMotrok.2> generated.
+
+Analyzing Entity <relational_14f77d7b05> in library <work> (Architecture <behavior>).
+Entity <relational_14f77d7b05> analyzed. Unit <relational_14f77d7b05> generated.
+
+Analyzing Entity <sebesseg_m_r_entity_ab62890fbd> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5630: Unconnected input port 'c_in' of component 'xladdsub_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:752 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5630: Unconnected input port 'rst' of component 'xladdsub_MeresHoltidoMotrok' is tied to default value.
+WARNING:Xst:753 - "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd" line 5630: Unconnected output port 'c_out' of component 'xladdsub_MeresHoltidoMotrok'.
+Entity <sebesseg_m_r_entity_ab62890fbd> analyzed. Unit <sebesseg_m_r_entity_ab62890fbd> generated.
+
+Analyzing Entity <tobbi_entity_b548292082> in library <work> (Architecture <structural>).
+Entity <tobbi_entity_b548292082> analyzed. Unit <tobbi_entity_b548292082> generated.
+
+Analyzing generic Entity <xlconvert.5> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 12
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 12
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.5> analyzed. Unit <xlconvert.5> generated.
+
+Analyzing generic Entity <convert_func_call.4> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 12
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 12
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.4> analyzed. Unit <convert_func_call.4> generated.
+
+Analyzing Entity <reinterpret_75275f6c4a> in library <work> (Architecture <behavior>).
+Entity <reinterpret_75275f6c4a> analyzed. Unit <reinterpret_75275f6c4a> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e5b38cca3b> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e2b989a05e> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_46_20(0)> in unit <shift_dacab189fc> has a constant value of XXXXXXXXXXXXXXXX during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_1ca63a13a1> has a constant value of XXXXXXXXXXXXXXXX during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <bitbasher_2014c2b795>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_2014c2b795> synthesized.
+
+
+Synthesizing Unit <bitbasher_44c78d706b>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_44c78d706b> synthesized.
+
+
+Synthesizing Unit <constant_f49489e83b>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_f49489e83b> synthesized.
+
+
+Synthesizing Unit <constant_52ed67d34a>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_52ed67d34a> synthesized.
+
+
+Synthesizing Unit <constant_963ed6358a>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_963ed6358a> synthesized.
+
+
+Synthesizing Unit <inverter_e2b989a05e>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e2b989a05e> synthesized.
+
+
+Synthesizing Unit <xlconvert_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_1> synthesized.
+
+
+Synthesizing Unit <inverter_e5b38cca3b>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e5b38cca3b> synthesized.
+
+
+Synthesizing Unit <inverter_6844eee868>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <op_mem_22_20<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <inverter_6844eee868> synthesized.
+
+
+Synthesizing Unit <logical_49a7e4b36d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_49a7e4b36d> synthesized.
+
+
+Synthesizing Unit <logical_a670ce0bc3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_a670ce0bc3> synthesized.
+
+
+Synthesizing Unit <relational_7a7af7b80d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_7a7af7b80d> synthesized.
+
+
+Synthesizing Unit <inverter_e4a281cf78>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <op_mem_22_20<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <inverter_e4a281cf78> synthesized.
+
+
+Synthesizing Unit <logical_938d99ac11>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_938d99ac11> synthesized.
+
+
+Synthesizing Unit <bitbasher_7e62e7628d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_7e62e7628d> synthesized.
+
+
+Synthesizing Unit <convert_func_call_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <convert_func_call_1> synthesized.
+
+
+Synthesizing Unit <convert_func_call_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <convert_func_call_2> synthesized.
+
+
+Synthesizing Unit <mux_cde5f13da6>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_cde5f13da6> synthesized.
+
+
+Synthesizing Unit <mux_2c45f290ed>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_2c45f290ed> synthesized.
+
+
+Synthesizing Unit <logical_80f90b97d0>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_80f90b97d0> synthesized.
+
+
+Synthesizing Unit <constant_32150454cb>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_32150454cb> synthesized.
+
+
+Synthesizing Unit <constant_190a6d2a1a>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_190a6d2a1a> synthesized.
+
+
+Synthesizing Unit <relational_8059411daf>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator greater for signal <result_18_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_8059411daf> synthesized.
+
+
+Synthesizing Unit <relational_7a2906d528>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit comparator greater for signal <result_18_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_7a2906d528> synthesized.
+
+
+Synthesizing Unit <mux_2a57cddffb>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <unregy_join_6_1<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <mux_2a57cddffb> synthesized.
+
+
+Synthesizing Unit <constant_b789b9ed67>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_b789b9ed67> synthesized.
+
+
+Synthesizing Unit <relational_9fe1fd91dc>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_9fe1fd91dc> synthesized.
+
+
+Synthesizing Unit <shift_dacab189fc>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_46_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_46_20_back> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ip_1_23<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <shift_dacab189fc> synthesized.
+
+
+Synthesizing Unit <constant_60b1e3cf3c>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_60b1e3cf3c> synthesized.
+
+
+Synthesizing Unit <inverter_1ca63a13a1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_1ca63a13a1> synthesized.
+
+
+Synthesizing Unit <reinterpret_9a54e08c7c>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_9a54e08c7c> synthesized.
+
+
+Synthesizing Unit <convert_func_call_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <convert_func_call_3> synthesized.
+
+
+Synthesizing Unit <bitbasher_75b6572827>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bitbasher_75b6572827> synthesized.
+
+
+Synthesizing Unit <relational_3ffd1d0a40>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator equal for signal <result_12_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_3ffd1d0a40> synthesized.
+
+
+Synthesizing Unit <relational_14f77d7b05>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator not equal for signal <result_14_3_rel<0>>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_14f77d7b05> synthesized.
+
+
+Synthesizing Unit <reinterpret_75275f6c4a>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_75275f6c4a> synthesized.
+
+
+Synthesizing Unit <convert_func_call_4>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <convert_func_call_4> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <single_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <SensorIncModul>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <SensorIncModul> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_MeresHoltidoMotrok_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_MeresHoltidoMotrok_1> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <xlconvert_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_2> synthesized.
+
+
+Synthesizing Unit <xlconvert_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_3> synthesized.
+
+
+Synthesizing Unit <signtousign_entity_82abfe96fd>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <signtousign_entity_82abfe96fd> synthesized.
+
+
+Synthesizing Unit <xladdsub_MeresHoltidoMotrok>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <c_in<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <temp_cout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <override> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <logic1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <extra_reg_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <result12$xor0000> created at line 613.
+Unit <xladdsub_MeresHoltidoMotrok> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_4>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <single_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <single_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <xlconvert_4>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_4> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_MeresHoltidoMotrok_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_MeresHoltidoMotrok_2> synthesized.
+
+
+Synthesizing Unit <srl17e>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <srl17e> synthesized.
+
+
+Synthesizing Unit <xlconvert_5>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_5> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <pwmpos_entity_eaf10e3dc0>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <pwmpos_entity_eaf10e3dc0> synthesized.
+
+
+Synthesizing Unit <tobbi_entity_b548292082>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <tobbi_entity_b548292082> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <pwm_entity_165936bdb6>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <pwm_entity_165936bdb6> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_4>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <synth_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <synth_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <synth_reg>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg> synthesized.
+
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd".
+WARNING:Xst:1780 - Signal <internal_ce_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <internal_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found T flip-flop for signal <clk_num<0>>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+Unit <xlclockdriver> synthesized.
+
+
+Synthesizing Unit <xlregister_1>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xlregister_2>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <xlregister_2> synthesized.
+
+
+Synthesizing Unit <xlregister_3>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <xlregister_3> synthesized.
+
+
+Synthesizing Unit <xldelay>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay> synthesized.
+
+
+Synthesizing Unit <default_clock_driver_MeresHoltidoMotrok>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd".
+Unit <default_clock_driver_MeresHoltidoMotrok> synthesized.
+
+
+Synthesizing Unit <h_hid_ileszto1_entity_b3eaabbb0d>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <h_hid_ileszto1_entity_b3eaabbb0d> synthesized.
+
+
+Synthesizing Unit <h_hid_ileszto2_entity_e490f1750e>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <h_hid_ileszto2_entity_e490f1750e> synthesized.
+
+
+Synthesizing Unit <pozic_entity_eb514ec999>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <pozic_entity_eb514ec999> synthesized.
+
+
+Synthesizing Unit <mintav_teli_jel_generator_entity_ba372a1d93>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <mintav_teli_jel_generator_entity_ba372a1d93> synthesized.
+
+
+Synthesizing Unit <sebesseg_m_r_entity_ab62890fbd>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <sebesseg_m_r_entity_ab62890fbd> synthesized.
+
+
+Synthesizing Unit <pozici_szab_entity_ee4c55f8e6>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <pozici_szab_entity_ee4c55f8e6> synthesized.
+
+
+Synthesizing Unit <sebess_g_szab_entity_c964557ce9>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <sebess_g_szab_entity_c964557ce9> synthesized.
+
+
+Synthesizing Unit <meresholtidomotrok>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok.vhd".
+Unit <meresholtidomotrok> synthesized.
+
+
+Synthesizing Unit <meresholtidomotrok_cw>.
+    Related source file is "C:/Diak/gl/SPARTAN3E500K_slave/SystemGenrator/SebessegEsPozicio/netlist/synth_model/meresholtidomotrok_cw.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <meresholtidomotrok_cw> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Comparators                                          : 10
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 2
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greater                             : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Reading core <cntr_11_0_d7c176806556610b.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <addsb_11_0_178ba6eaed72af2d.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <cntr_11_0_5baa608aaa6fc4cf.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+Loading core <cntr_11_0_d7c176806556610b> for timing and area information for instance <comp0.core_instance0>.
+Loading core <addsb_11_0_178ba6eaed72af2d> for timing and area information for instance <comp0.core_instance0>.
+Loading core <cntr_11_0_5baa608aaa6fc4cf> for timing and area information for instance <comp1.core_instance1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 131
+ Flip-Flops                                            : 131
+# Comparators                                          : 10
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 2
+ 17-bit comparator equal                               : 2
+ 17-bit comparator greater                             : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <pozici_szab_entity_ee4c55f8e6>: instances <convert>, <convert1> of unit <xlconvert_1> are equivalent, second instance is removed
+
+Optimizing unit <meresholtidomotrok_cw> ...
+
+Optimizing unit <SensorIncModul> ...
+
+Optimizing unit <xladdsub_MeresHoltidoMotrok> ...
+
+Optimizing unit <single_reg_w_init_4> ...
+
+Optimizing unit <single_reg_w_init_3> ...
+
+Optimizing unit <srl17e> ...
+
+Optimizing unit <h_hid_ileszto1_entity_b3eaabbb0d> ...
+
+Optimizing unit <h_hid_ileszto2_entity_e490f1750e> ...
+
+Optimizing unit <pozic_entity_eb514ec999> ...
+
+Optimizing unit <mintav_teli_jel_generator_entity_ba372a1d93> ...
+
+Optimizing unit <sebesseg_m_r_entity_ab62890fbd> ...
+
+Optimizing unit <pozici_szab_entity_ee4c55f8e6> ...
+
+Optimizing unit <sebess_g_szab_entity_c964557ce9> ...
+
+Optimizing unit <meresholtidomotrok> ...
+
+Mapping all equations...
+Annotating constraints using XCF file 'meresholtidomotrok_cw.xcf'
+XCF parsing done.
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 131
+ Flip-Flops                                            : 131
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : meresholtidomotrok_cw.ngc
+Output Format                      : NGC
+Optimization Goal                  : SPEED
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 124
+
+Cell Usage :
+# BELS                             : 233
+#      GND                         : 1
+#      INV                         : 6
+#      LUT2                        : 23
+#      LUT3                        : 40
+#      LUT4                        : 86
+#      MUXCY                       : 76
+#      VCC                         : 1
+# FlipFlops/Latches                : 132
+#      FD                          : 1
+#      FDCE                        : 6
+#      FDE                         : 36
+#      FDRE                        : 89
+# Others                           : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-4 
+
+ Number of Slices:                      179  out of   4656     3%  
+ Number of Slice Flip Flops:            132  out of   9312     1%  
+ Number of 4 input LUTs:                155  out of   9312     1%  
+ Number of IOs:                         124
+ Number of bonded IOBs:                   0  out of    158     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                | Load  |
+-----------------------------------+----------------------------------------------------------------------+-------+
+clk                                | NONE(persistentdff_inst/q)                                           | 222   |
+posistionsens(0)                   | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1)| 2     |
+sebsensor(0)                       | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2)| 1     |
+posistionsens(1)                   | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1)| 2     |
+sebsensor(1)                       | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2)| 1     |
+-----------------------------------+----------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                 | Buffer(FF name)                                                      | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
+tobbi(10)(XST_GND:G)                                                                                                                           | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d3)| 2     |
+meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quada_tagadott(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quada_tagadott1_INV_0:O)  | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d1)| 1     |
+meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quada_tagadott2(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quada_tagadott21_INV_0:O)| NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d1)| 1     |
+meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quadb_tagadott(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quadb_tagadott1_INV_0:O)  | NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/a_kanalis_d2)| 1     |
+meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quadb_tagadott2(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/quadb_tagadott21_INV_0:O)| NONE(meresholtidomotrok_x0/inkremnt_lis_jelfeldolgozó_2/b_kanalis_d2)| 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.642ns (Maximum Frequency: 93.965MHz)
+   Minimum input arrival time before clock: 7.031ns
+   Maximum output required time after clock: 9.640ns
+   Maximum combinational path delay: 0.783ns
+
+=========================================================================
+Timing constraint: TS_clk_74519694 = PERIOD TIMEGRP "clk_74519694" 20 nS HIGH 10 nS
+  Clock period: 10.642ns (frequency: 93.965MHz)
+  Total number of paths / destination ports: 11291 / 347
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  9.358ns
+  Source:               meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp (FF)
+  Destination:          meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
+  Data Path Delay:      10.642ns (Levels of Logic = 20)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 20.000ns
+
+  Data Path: meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp (FF) to meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            26   0.591   1.339  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16].bit_is_0.fdre_comp (meresholtidomotrok_x0/convert4_dout_net_x2)
+     LUT2:I1->O            1   0.704   0.595  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/mux_y_net_x0(15)1 (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/mux_y_net_x0(15))
+     LUT4:I0->O            1   0.704   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_korlátozása/Mcompar_result_18_3_rel(0)_lut(6) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_korlátozása/Mcompar_result_18_3_rel(0)_lut(6))
+     MUXCY:S->O           14   0.864   1.079  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_korlátozása/Mcompar_result_18_3_rel(0)_cy(6) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_korlátozása/Mcompar_result_18_3_rel(0)_cy(6))
+     LUT4:I1->O            1   0.704   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_lut(0) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_lut(0))
+     MUXCY:S->O            1   0.464   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(0) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(0))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(1) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(1))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(2) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(2))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(3) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(3))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(4) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(4))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(5) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(5))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(6) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(6))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(7) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(7))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(8) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(8))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(9) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(9))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(10) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(10))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(11) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(11))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(12) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(12))
+     MUXCY:CI->O           1   0.059   0.000  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(13) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(13))
+     MUXCY:CI->O           4   0.459   0.666  meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(14) (meresholtidomotrok_x0/pozici_szab_ee4c55f8e6/pwm_165936bdb6/kit_lt_s_v_ge/Mcompar_result_18_3_rel(0)_cy(14))
+     LUT3:I1->O            2   0.704   0.447  meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/logical2/fully_2_1_bit1 (meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/logical2_y_net)
+     FDRE:CE                   0.555          meresholtidomotrok_x0/h_hid_ileszto1_b3eaabbb0d/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp
+    ----------------------------------------
+    Total                     10.642ns (6.516ns logic, 4.126ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.12 secs
+ 
+--> 
+
+Total memory usage is 286540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  302 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

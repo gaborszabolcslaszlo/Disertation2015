@@ -1,0 +1,77 @@
+%implements s0_b0_gb9yf_Outputs "C"
+
+%function OutputsForTID(block, system, tid) Output
+%if tid == 0
+%assign ::GlobalCurrentTID = 0
+%assign ::GlobalCurrentTID = []
+%endif
+%if tid == 1
+%assign ::GlobalCurrentTID = 1
+%<SLibCGIRAccessLocalVar(1, 1)> %% rtb_Sum
+%<SLibCGIRAccessLocalVar(2, 1)> %% rtb_Sum_o
+%<SLibCGIRAccessLocalVar(3, 1)> %% rtb_Sum_f
+%<SLibCGIRAccessLocalVar(4, 1)> %% rtb_Sum_b
+%<SLibCGIRAccessLocalVar(5, 1)> %% rtb_Sum_o2
+%<SLibCGIRAccessLocalVar(6, 1)> %% rtb_Sum_a
+%<SLibCGIRAccessLocalVar(7, 1)> %% rtb_Sum_fd
+%<SLibCGIRAccessLocalVar(9, 1)> %% rtb_TCPIPReceive1_o1
+%assign localVarDecl = ""
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+%assign tlcOutputsFcnOfS0B10 = OpaqueTLCBlockFcn("Outputs", 0, 10, 0, 2)
+%assign tlcOutputsFcnOfS0B12 = OpaqueTLCBlockFcn("Outputs", 0, 12, 0, 2)
+%assign tlcUpdateFcnOfS0B0 = OpaqueTLCBlockFcn("Update", 0, 0, 0, 2)
+%assign tlcUpdateFcnOfS0B12 = OpaqueTLCBlockFcn("Update", 0, 12, 0, 2)
+%<tlcOutputsFcnOfS0B0>\
+%<tlcOutputsFcnOfS0B1>\
+%<tlcOutputsFcnOfS0B2>\
+/* Sum: '<S2>/Sum' incorporates:
+ *  Constant: '<S2>/Constant'
+ *  Product: '<S2>/Product'
+ */
+rtb_Sum = (real_T)rtb_TCPIPReceive1_o1[17] * TCPZybo_P.Constant_Value + (real_T)rtb_TCPIPReceive1_o1[16];
+/* Sum: '<S6>/Sum' incorporates:
+ *  Constant: '<S6>/Constant'
+ *  Product: '<S6>/Product'
+ */
+rtb_Sum_o = (real_T)rtb_TCPIPReceive1_o1[13] * TCPZybo_P.Constant_Value_a + (real_T)rtb_TCPIPReceive1_o1[12];
+/* Sum: '<S4>/Sum' incorporates:
+ *  Constant: '<S4>/Constant'
+ *  Product: '<S4>/Product'
+ */
+rtb_Sum_f = (real_T)rtb_TCPIPReceive1_o1[15] * TCPZybo_P.Constant_Value_c + (real_T)rtb_TCPIPReceive1_o1[14];
+/* Sum: '<S3>/Sum' incorporates:
+ *  Constant: '<S3>/Constant'
+ *  Product: '<S3>/Product'
+ */
+rtb_Sum_b = (real_T)rtb_TCPIPReceive1_o1[19] * TCPZybo_P.Constant_Value_l + (real_T)rtb_TCPIPReceive1_o1[18];
+/* Sum: '<S7>/Sum' incorporates:
+ *  Constant: '<S7>/Constant'
+ *  Product: '<S7>/Product'
+ */
+rtb_Sum_o2 = (real_T)rtb_TCPIPReceive1_o1[11] * TCPZybo_P.Constant_Value_e + (real_T)rtb_TCPIPReceive1_o1[10];
+/* Sum: '<S1>/Sum' incorporates:
+ *  Constant: '<S1>/Constant'
+ *  Product: '<S1>/Product'
+ */
+rtb_Sum_a = (real_T)rtb_TCPIPReceive1_o1[21] * TCPZybo_P.Constant_Value_b + (real_T)rtb_TCPIPReceive1_o1[20];
+/* Sum: '<S5>/Sum' incorporates:
+ *  Constant: '<S5>/Constant'
+ *  Product: '<S5>/Product'
+ */
+rtb_Sum_fd = (real_T)rtb_TCPIPReceive1_o1[23] * TCPZybo_P.Constant_Value_o + (real_T)rtb_TCPIPReceive1_o1[22];
+%<tlcOutputsFcnOfS0B10>\
+%<tlcOutputsFcnOfS0B12>\
+%<tlcUpdateFcnOfS0B0>\
+%<tlcUpdateFcnOfS0B12>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutput1LocalVars", localVarDecl)>
+%assign ::GlobalCurrentTID = []
+%endif
+%endfunction

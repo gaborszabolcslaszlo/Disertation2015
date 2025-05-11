@@ -1,0 +1,68 @@
+#VRML V2.0 utf8
+
+Box {
+}
+DEF RobotMechanika-(LevelofDetail1) Transform {
+  children [
+    DEF RobotAlvaz:2_Scale Transform {
+      scale 0.001 0.001 0.001
+      children DEF RobotAlvaz:2 Transform {
+        children DEF RobotAlvaz:2_Offset Transform {
+          translation 788.16 -704.508 186.341
+          rotation -0.0171806 -0.0499157 0.998605 1.55276
+          children DEF RobotAlvaz:2_Inline Inline {
+            url "RobotAlvaz_ipt_1e4a51c.wrl" 
+          }
+        }
+      }
+    }
+    DEF KarMerev:5_Scale Transform {
+      scale 0.001 0.001 0.001
+      children DEF KarMerev:5 Transform {
+        children DEF KarMerev:5_Offset Transform {
+          translation 943.359 420.357 -390.549
+          rotation 0.477672 -0.878672 0.00398316 0.0520828
+          children DEF KarMerev:5_Inline Inline {
+            url "KarMerev_ipt_6c6da441.wrl" 
+          }
+        }
+      }
+    }
+    DEF KarMerev:6_Scale Transform {
+      scale 0.001 0.001 0.001
+      children DEF KarMerev:6 Transform {
+        children DEF KarMerev:6_Offset Transform {
+          translation 420.338 -377.839 51.4147
+          rotation -0.429617 0.90297 -0.00140406 3.08958
+          children DEF KarMerev:6_Inline Inline {
+            url "KarMerev_ipt_6c6da441.wrl" 
+          }
+        }
+      }
+    }
+    DEF KarMerev:7_Scale Transform {
+      scale 0.001 0.001 0.001
+      children DEF KarMerev:7 Transform {
+        children DEF KarMerev:7_Offset Transform {
+          translation 882.29 -157.992 -413.061
+          rotation 0.477672 -0.878672 0.00398316 0.0520828
+          children DEF KarMerev:7_Inline Inline {
+            url "KarMerev_ipt_6c6da441.wrl" 
+          }
+        }
+      }
+    }
+    DEF KarMerev:8_Scale Transform {
+      scale 0.001 0.001 0.001
+      children DEF KarMerev:8 Transform {
+        children DEF KarMerev:8_Offset Transform {
+          translation 481.407 200.51 73.9266
+          rotation -0.429617 0.90297 -0.00140406 3.08958
+          children DEF KarMerev:8_Inline Inline {
+            url "KarMerev_ipt_6c6da441.wrl" 
+          }
+        }
+      }
+    }
+  ]
+}

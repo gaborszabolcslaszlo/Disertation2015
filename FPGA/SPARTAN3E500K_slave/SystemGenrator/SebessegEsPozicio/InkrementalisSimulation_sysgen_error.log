@@ -1,0 +1,60 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Input data type for port "QuadA" must have width=1.
+     Block: 'InkrementalisSimulation/Black Box1'
+Error 0002: Input data type for port "QuadB" must have width=1.
+     Block: 'InkrementalisSimulation/Black Box1'
+Error 0003: Input data type for port "QuadA" must have width=1.
+     Block: 'InkrementalisSimulation/Black Box1'
+Error 0004: Input data type for port "QuadB" must have width=1.
+     Block: 'InkrementalisSimulation/Black Box1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'InkrementalisSimulation/Black Box1'
+
+Details:
+Input data type for port "QuadA" must have width=1.
+Error occurred during "Rate and Type Propagation".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'InkrementalisSimulation/Black Box1'
+
+Details:
+Input data type for port "QuadB" must have width=1.
+Error occurred during "Rate and Type Propagation".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'InkrementalisSimulation/Black Box1'
+
+Details:
+Input data type for port "QuadA" must have width=1.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'InkrementalisSimulation/Black Box1'
+
+Details:
+Input data type for port "QuadB" must have width=1.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

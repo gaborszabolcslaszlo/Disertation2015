@@ -1,0 +1,15 @@
+%implements s0_b0_bxguf_Enable "C"
+
+%function Enable(block, system) Output
+%assign localVarDecl = ""
+%assign tlcEnableFcnOfS0B1 = OpaqueTLCBlockFcn("Enable", 0, 1, 0, 5)
+%assign tlcEnableFcnOfS0B2 = OpaqueTLCBlockFcn("Enable", 0, 2, 0, 5)
+%<tlcEnableFcnOfS0B1>\
+%<tlcEnableFcnOfS0B2>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Enable(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 5, fcnProtoType)>
+%endfunction

@@ -1,0 +1,1 @@
+C:/Xilinx/14.6/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -- c:/xilinx/14.6/ise_ds/ise//bin/nt64/xflow.exe -p xc3s1200e-4fg320 -implement balanced_jtag.opt -config bitgen_jtag.opt jtagcosim_top
