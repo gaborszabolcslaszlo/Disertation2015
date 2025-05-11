@@ -1,3 +1,6 @@
+Dolgozat/Allamvizsgadolgozat/utolsoverzio/GaborSzabolcsLaszlo_v10tanar .pdf
+
+
 Hasznalt Programok:
 -Matlab verzo: Matlab2014a -GUI
 	      Matlab2013b -SystemGenerator
